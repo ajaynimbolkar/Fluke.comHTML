@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <skin>
+    <searchButtonVisible value="true" />
+    <link>
+      <url value="http://flippingbook.com?src=1" />
+    </link>
+    <backgroundLogoPath value="" />
+  </skin>
+  <sound>
+    <effects>
+      <hardCoverStart>
+        <url value="sound/blow.mp3" />
+        <volume value="100" />
+      </hardCoverStart>
+      <softFlipEffects>
+        <element>
+          <url value="sound/flip2.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip3.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip4.mp3" />
+          <volume value="100" />
+        </element>
+      </softFlipEffects>
+      <volume value="25" />
+    </effects>
+    <background>
+      <order value="1" />
+      <music>
+        <SoundCollectionProperty>
+          <url value="" />
+        </SoundCollectionProperty>
+      </music>
+    </background>
+  </sound>
+  <wrapProperties>
+    <dropShadowFilter>
+      <blur value="2" />
+      <distance value="1" />
+      <alpha value="0.247058823529412" />
+      <angle value="90" />
+    </dropShadowFilter>
+    <textSelectionColor value="#000000" />
+    <textSelectionOpacity value="0.196078431372549" />
+    <stripe>
+      <stripeHeight>
+        <percentValue value="100" />
+      </stripeHeight>
+      <stripeArrowOpacity value="0.584313725490196" />
+      <stripeColor value="#FFFFFF" />
+      <stripeArrowColor value="#000000" />
+      <stripeOpacityHover value="0.705882352941176" />
+    </stripe>
+    <projectType value="catalog" />
+    <bevelFilter>
+      <blur value="0" />
+      <distance value="1" />
+      <enabled value="false" />
+    </bevelFilter>
+    <bookSize>
+      <percentValue value="95" />
+    </bookSize>
+    <linkRolloverColor value="#FFDA05" />
+    <linkRolloverOpacity value="0.470588235294118" />
+    <bookProportions>
+      <width>
+        <pixelValue value="595" />
+      </width>
+      <height>
+        <pixelValue value="782" />
+      </height>
+    </bookProportions>
+  </wrapProperties>
+  <bookProperties>
+    <flipCorner value="true" />
+    <zoomedPageTransition value="1" />
+    <cover>
+      <coverBorderColor value="#000000" />
+      <coverSize>
+        <width>
+          <pixelValue value="12" />
+        </width>
+        <height>
+          <pixelValue value="12" />
+        </height>
+      </coverSize>
+    </cover>
+    <pages>
+      <defaultValue>
+        <contentWidth value="488.32" />
+        <width value="595" />
+        <height value="782" />
+        <contentScale value="0.74375" />
+        <thumbFormat value="jpg" />
+        <zoomFormat value="swf" />
+        <format value="swf" />
+        <substrateFormat value="jpg" />
+        <substrateZoomFormat value="jpg" />
+        <textLayer value="true" />
+      </defaultValue>
+      <elements>
+        <page>
+          <pdfFileSize value="1057271" />
+          <contentWidth value="519.42" />
+          <thumbFormat value="png" />
+          <id value="1" />
+        </page>
+        <page>
+          <pdfFileSize value="261414" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="2" />
+        </page>
+        <page>
+          <pdfFileSize value="181170" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="3" />
+        </page>
+        <page>
+          <pdfFileSize value="476532" />
+          <links>
+            <contentProperty>
+              <y value="744.51" />
+              <z value="11" />
+              <x value="465.06" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="4" />
+        </page>
+        <page>
+          <pdfFileSize value="284011" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="5" />
+        </page>
+        <page>
+          <pdfFileSize value="159277" />
+          <contentWidth value="554.64" />
+          <thumbFormat value="png" />
+          <id value="6" />
+        </page>
+        <page>
+          <pdfFileSize value="216994" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="7" />
+        </page>
+        <page>
+          <pdfFileSize value="248725" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="537.08" />
+          <thumbFormat value="png" />
+          <id value="8" />
+        </page>
+        <page>
+          <pdfFileSize value="241988" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="9" />
+        </page>
+        <page>
+          <pdfFileSize value="253609" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="10" />
+        </page>
+        <page>
+          <pdfFileSize value="585509" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="503.5" />
+          <thumbFormat value="png" />
+          <id value="11" />
+        </page>
+        <page>
+          <pdfFileSize value="97656" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="12" />
+        </page>
+        <page>
+          <pdfFileSize value="359516" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="507.56" />
+          <thumbFormat value="png" />
+          <id value="13" />
+        </page>
+        <page>
+          <pdfFileSize value="211233" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="14" />
+        </page>
+        <page>
+          <pdfFileSize value="71667" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="495.24" />
+          <thumbFormat value="png" />
+          <id value="15" />
+        </page>
+        <page>
+          <pdfFileSize value="43812" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="16" />
+        </page>
+        <page>
+          <pdfFileSize value="71535" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487.72" />
+          <thumbFormat value="png" />
+          <id value="17" />
+        </page>
+        <page>
+          <pdfFileSize value="42982" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="18" />
+        </page>
+        <page>
+          <pdfFileSize value="69360" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="19" />
+        </page>
+        <page>
+          <pdfFileSize value="158409" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="20" />
+        </page>
+        <page>
+          <pdfFileSize value="211614" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="21" />
+        </page>
+        <page>
+          <pdfFileSize value="294029" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="22" />
+        </page>
+        <page>
+          <pdfFileSize value="221971" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="23" />
+        </page>
+        <page>
+          <pdfFileSize value="232427" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="24" />
+        </page>
+        <page>
+          <pdfFileSize value="222035" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="25" />
+        </page>
+        <page>
+          <pdfFileSize value="231321" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="26" />
+        </page>
+        <page>
+          <pdfFileSize value="238256" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="27" />
+        </page>
+        <page>
+          <pdfFileSize value="577740" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="28" />
+        </page>
+        <page>
+          <pdfFileSize value="186663" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="29" />
+        </page>
+        <page>
+          <pdfFileSize value="455348" />
+          <links>
+            <contentProperty>
+              <y value="744.11" />
+              <z value="11" />
+              <x value="443.2" />
+              <width value="98.41" />
+              <height value="11" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="524" />
+          <thumbFormat value="png" />
+          <id value="30" />
+        </page>
+        <page>
+          <pdfFileSize value="233097" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="490.56" />
+          <thumbFormat value="png" />
+          <id value="31" />
+        </page>
+        <page>
+          <pdfFileSize value="54930" />
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="32" />
+        </page>
+        <page>
+          <pdfFileSize value="80779" />
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="33" />
+        </page>
+        <page>
+          <pdfFileSize value="211513" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="505.94" />
+          <thumbFormat value="png" />
+          <id value="34" />
+        </page>
+        <page>
+          <pdfFileSize value="177404" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="35" />
+        </page>
+        <page>
+          <pdfFileSize value="171039" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="36" />
+        </page>
+        <page>
+          <pdfFileSize value="235393" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487.38" />
+          <thumbFormat value="png" />
+          <id value="37" />
+        </page>
+        <page>
+          <pdfFileSize value="220255" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="38" />
+        </page>
+        <page>
+          <pdfFileSize value="204565" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="39" />
+        </page>
+        <page>
+          <pdfFileSize value="139210" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="40" />
+        </page>
+        <page>
+          <pdfFileSize value="535658" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="514.5" />
+          <thumbFormat value="png" />
+          <id value="41" />
+        </page>
+        <page>
+          <pdfFileSize value="230962" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="42" />
+        </page>
+        <page>
+          <pdfFileSize value="413986" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="516.66" />
+          <thumbFormat value="png" />
+          <id value="43" />
+        </page>
+        <page>
+          <pdfFileSize value="181304" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="44" />
+        </page>
+        <page>
+          <pdfFileSize value="263958" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="45" />
+        </page>
+        <page>
+          <pdfFileSize value="217482" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="46" />
+        </page>
+        <page>
+          <pdfFileSize value="345026" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="47" />
+        </page>
+        <page>
+          <pdfFileSize value="498352" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="48" />
+        </page>
+        <page>
+          <pdfFileSize value="282817" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487.74" />
+          <thumbFormat value="png" />
+          <id value="49" />
+        </page>
+        <page>
+          <pdfFileSize value="139474" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="488.42" />
+          <thumbFormat value="png" />
+          <id value="50" />
+        </page>
+        <page>
+          <pdfFileSize value="152009" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="51" />
+        </page>
+        <page>
+          <pdfFileSize value="470088" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="52" />
+        </page>
+        <page>
+          <pdfFileSize value="185286" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="54" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="197.37" />
+              <z value="11" />
+              <x value="107.65" />
+              <width value="82.41" />
+              <height value="11.03" />
+              <urls>
+                <url value="http://www.flukecal.com/" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="339.37" />
+              <z value="11" />
+              <x value="54" />
+              <width value="110" />
+              <height value="11.03" />
+              <urls>
+                <url value="http://eu.flukecal.com/de/" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="389.37" />
+              <z value="11" />
+              <x value="54" />
+              <width value="100.7" />
+              <height value="11.03" />
+              <urls>
+                <url value="mailto:planung.de@flukecal.de" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="465.87" />
+              <z value="11" />
+              <x value="354.23" />
+              <width value="87.31" />
+              <height value="11.03" />
+              <urls>
+                <url value="mailto:training@flukecal.de" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="545.87" />
+              <z value="11" />
+              <x value="354.23" />
+              <width value="118.41" />
+              <height value="11.03" />
+              <urls>
+                <url value="http://www.flukecal.com/training." />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="487" />
+          <thumbFormat value="png" />
+          <id value="53" />
+        </page>
+        <page>
+          <pdfFileSize value="17743" />
+          <links>
+            <contentProperty>
+              <y value="744.43" />
+              <z value="11" />
+              <x value="462.96" />
+              <width value="78.7" />
+              <height value="10.65" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="54" />
+        </page>
+        <page>
+          <pdfFileSize value="467817" />
+          <contentWidth value="0" />
+          <thumbFormat value="png" />
+          <id value="55" />
+        </page>
+        <page>
+          <pdfFileSize value="298624" />
+          <links>
+            <contentProperty>
+              <y value="648.17" />
+              <z value="11" />
+              <x value="159.47" />
+              <width value="52.41" />
+              <height value="9.11" />
+              <urls>
+                <url value="http://www.flukecal.eu/" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="677.32" />
+              <z value="11" />
+              <x value="123.07" />
+              <width value="67" />
+              <height value="9.11" />
+              <urls>
+                <url value="+31 (0) 40 2675 200" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="677.32" />
+              <z value="11" />
+              <x value="220.17" />
+              <width value="67" />
+              <height value="9.11" />
+              <urls>
+                <url value="+31 (0) 40 2675 222" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="693.32" />
+              <z value="11" />
+              <x value="86.87" />
+              <width value="61.41" />
+              <height value="9.11" />
+              <urls>
+                <url value="+1 (425) 446-5500" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="693.32" />
+              <z value="11" />
+              <x value="178.47" />
+              <width value="61.41" />
+              <height value="9.11" />
+              <urls>
+                <url value="+1 (425) 446-5116" />
+              </urls>
+            </contentProperty>
+            <contentProperty>
+              <y value="701.32" />
+              <z value="11" />
+              <x value="64.97" />
+              <width value="52.6" />
+              <height value="9.11" />
+              <urls>
+                <url value="http://www.flukecal.de/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="520.46" />
+          <thumbFormat value="png" />
+          <id value="56" />
+        </page>
+      </elements>
+    </pages>
+    <publicationName value="Produits et services Fluke Calibration DE" />
+    <pageTypeHelper value="RLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRL" />
+    <searchIndex ext="search/searchtext.xml" />
+  </bookProperties>
+  <tableOfContent>
+    <tocData>
+      <pageNumber value="-1" />
+    </tocData>
+  </tableOfContent>
+  <pdfFileProperties>
+    <fileURL value="downloads/Produits et services Fluke Calibration DE.pdf" />
+    <fileSize value="13857536" />
+  </pdfFileProperties>
+</Properties>

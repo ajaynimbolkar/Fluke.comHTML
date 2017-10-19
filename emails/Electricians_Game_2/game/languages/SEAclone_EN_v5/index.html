@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fluke Electricians Game 4.1</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="static/img/favicon.ico">
+	<link rel="apple-touch-icon" href="static/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="static/img/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="static/img/touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon-precomposed" href="static/img/touch-icon-android.png"/>
+<!-- <link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/app.css"> -->
+	<link rel="stylesheet" href="static/css/style.min.css">
+</head>
+<body>
+	<div class="container howto-overlay"></div>
+	<div class="container howto-inner">
+		<div class="row">
+			<div class="span-12 align-center">
+				<img src="static/img/arrow-left.png" class="left" />
+				<img src="static/img/arrow-right.png" class="right" />
+				<h3>Drag and drop the right Fluke tool to the pictures.</h3>
+			</div>
+		</div>
+	</div>
+	<div class="container header">
+		<div class="row">
+			<div class="span-3">
+				<h1 onclick="window.location.hash = ''; window.location.reload();">Fluke Game</h1>
+			</div>
+			<div class="span-8">
+				<h2>Practice Prevention, Avoid Correction</h2>
+				<h4>1<sup>st</sup> Mar - 30<sup>th</sup> Jun 2015</h4>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container overlay">
+		<div class="row">
+			<div class="span-12">
+				<h2>Title goes here: Stand to Win a Fluke 1000FLT, Fluorescent Light Tester!!</h2>
+				<h3>To help you understand the applications of Fluke tools, <br>drag and drop the right tool to the pictures</h3>
+				<button class="btn event btn-start" data-event="start-game">Play Now&nbsp;&raquo;</button>
+			</div>
+		</div>
+	</div>
+	<div class="container cards">
+		<div class="row">
+			<div class="span-12">
+				<div id="blocks" class="row">
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="1">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="2">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="3">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="4">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="5">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 sequence">
+						<div class="game-block" data-item="6">
+							<div class="game-block-title"></div>
+							<div class="game-block-inner">
+								<div class="game-question-mark"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span-12">
+				<div id="items" class="row">
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="1">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="2">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="3">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="4">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="5">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+					<div class="span-2 sequence">
+						<div class="game-item" data-item="6">
+							<div class="game-item-inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row check-solution">
+			<div class="span-12 align-center">
+				<button class="btn">Check Solution</button>
+			</div>
+		</div>
+		<div class="row try-again">
+			<div class="span-12 align-center">
+				<button class="btn">Try again</button>
+			</div>
+		</div>
+		<div class="row submit-results">
+			<div class="span-12 align-center">
+				<button class="btn">Submit results</button>
+			</div>
+		</div>
+	</div>
+	<div class="container form">
+		<div class="row">
+			<div class="offset-1 span-10">
+				<h3>Well Done! Please fill  in your particulars to join the lucky draw for a Fluke 1000FLT, Fluorescent Light Tester.</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-2 span-8">
+				<iframe src="http://a.fluke.com/IG-HG-MULTI-2015-PREVENTIONMATCHWIN-SGEN-LP-1-A?lcid=8C18DED7-08C2-E411-ACC1-A4BADB1DDEB8&lls=200013&redir=http://a.fluke.com/IG-HG-MULTI-2015-PREVENTIONMATCHWINTHANKYOU-EN-LP-1-A&llr=2&lrpf=MULTI&lpid=d103b191-d0ff-de11-a94f-0015c5fdf7e6&scl=2914&emlConfirm=5444" scrolling="no" seamless>
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+			</div>
+		</div>
+	</div>
+	<div class="container footer">
+		<div class="row">
+			<div class="span-6">
+				<ul>
+					<li class="title-terms"><a href="#">Terms and Conditions</a></li>
+					<li class="separator">|</li>
+					<li class="title-privacy"><a href="#">Privacy Statement</a></li>
+					<li class="separator">|</li>
+					<li class="title-disclaimer"><a href="#">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="span-6 pull-right align-right title-copyright">
+				&copy; 1995-2013 Fluke Corporation
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="static/js/everything.uglify.js"></script>
+	<!--<script src="static/js/jquery-ui.touch-punch.js"></script>
+	<script src="static/js/jquery.randomize.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+	<script src="static/js/events.js"></script>
+	<script src="static/js/app.js"></script>-->
+</body>
+</html>

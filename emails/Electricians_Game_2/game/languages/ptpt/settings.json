@@ -1,0 +1,61 @@
+[
+	{
+		"title": "Wireless Testers",
+		"questionmark": {
+			"top": 20,
+			"left": 140
+		},
+		"image": "static/img/photos/1.jpg",
+		"thumb": "static/img/photos/thumb-1.jpg"
+	},
+
+	{
+		"title": "Checking Temperature",
+		"questionmark": {
+			"top": 70,
+			"left": 150
+		},
+		"image": "static/img/photos/2.jpg",
+		"thumb": "static/img/photos/thumb-2.jpg"
+	},
+	
+	{
+		"title": "Wireless Testers",
+		"questionmark": {
+			"top": 40,
+			"left": 60
+		},
+		"image": "static/img/photos/3.jpg",
+		"thumb": "static/img/photos/thumb-3.jpg"
+	},
+	
+	{
+		"title": "Measuring Distance",
+		"questionmark": {
+			"top": 40,
+			"left": 160
+		},
+		"image": "static/img/photos/4.jpg",
+		"thumb": "static/img/photos/thumb-4.jpg"
+	},
+	
+	{
+		"title": "Wireless Testers",
+		"questionmark": {
+			"top": 10,
+			"left": 180
+		},
+		"image": "static/img/photos/5.jpg",
+		"thumb": "static/img/photos/thumb-5.jpg"
+	},
+	
+	{
+		"title": "Measuring current",
+		"questionmark": {
+			"top": 50,
+			"left": 140
+		},
+		"image": "static/img/photos/6.jpg",
+		"thumb": "static/img/photos/thumb-6.jpg"
+	}
+]

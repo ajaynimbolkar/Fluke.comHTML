@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+PRODID:-//Successfactors//iCal4j 1.0//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20121120T093401Z
+DTSTART:20130430T080000
+SUMMARY:2012 Performance Appraisal for CELIA LEIJTEN
+UID:13673232000001353404041778
+DTEND:20130430T083000
+LOCATION:https://performancemanager.successfactors.com/sf/pmreview?fid=437746&company=DANAHER&username=celia.leijten@fluke.com
+PRIORITY:5
+DESCRIPTION:2012 Performance Appraisal for CELIA LEIJTEN\n\nhttps://performancemanager.successfactors.com/sf/pmreview?fid=437746&company=DANAHER&username=celia.leijten@fluke.com
+ATTENDEE;RSVP=FALSE:
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:PT15M
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

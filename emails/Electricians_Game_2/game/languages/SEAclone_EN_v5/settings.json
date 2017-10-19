@@ -1,0 +1,61 @@
+[
+	{
+		"title": "Hot-Spot Detection",
+		"questionmark": {
+			"top": 20,
+			"left": 100
+		},
+		"image": "static/img/photos/1.jpg",
+		"thumb": "static/img/photos/thumb-1.jpg"
+	},
+
+	{
+		"title": "Light Testing",
+		"questionmark": {
+			"top": 30,
+			"left": 110
+		},
+		"image": "static/img/photos/2.jpg",
+		"thumb": "static/img/photos/thumb-2.jpg"
+	},
+	
+	{
+		"title": "Measuring Current",
+		"questionmark": {
+			"top": 40,
+			"left": 150
+		},
+		"image": "static/img/photos/3.jpg",
+		"thumb": "static/img/photos/thumb-3.jpg"
+	},
+	
+	{
+		"title": "Measuring Temperature",
+		"questionmark": {
+			"top": 50,
+			"left": 110
+		},
+		"image": "static/img/photos/4.jpg",
+		"thumb": "static/img/photos/thumb-4.jpg"
+	},
+	
+	{
+		"title": "Testing Air Quality",
+		"questionmark": {
+			"top": 20,
+			"left": 60
+		},
+		"image": "static/img/photos/5.jpg",
+		"thumb": "static/img/photos/thumb-5.jpg"
+	},
+	
+	{
+		"title": "Trending Measurements",
+		"questionmark": {
+			"top": 50,
+			"left": 130
+		},
+		"image": "static/img/photos/6.jpg",
+		"thumb": "static/img/photos/thumb-6.jpg"
+	}
+]

@@ -1,0 +1,340 @@
+/**
+ * Fonts
+ */
+@font-face {
+    font-family: 'botonbold';
+    src: url('../fonts/botonprobold_2-webfont.eot');
+    src: url('../fonts/botonprobold_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonprobold_2-webfont.woff') format('woff'),
+         url('../fonts/botonprobold_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonprobold_2-webfont.svg#botonbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'botonlight';
+    src: url('../fonts/botonprolight_2-webfont.eot');
+    src: url('../fonts/botonprolight_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonprolight_2-webfont.woff') format('woff'),
+         url('../fonts/botonprolight_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonprolight_2-webfont.svg#botonlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'botonregular';
+    src: url('../fonts/botonproreg_2-webfont.eot');
+    src: url('../fonts/botonproreg_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonproreg_2-webfont.woff') format('woff'),
+         url('../fonts/botonproreg_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonproreg_2-webfont.svg#botonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #000 url('../img/bkgnd.jpeg') no-repeat center top;
+	color: #fff;
+}
+
+/**
+ * Overlay
+ */
+.container.overlay {
+	text-align: center;
+	color: #000;
+	display: none;
+}
+
+.container.overlay h2 {
+	font-family: 'botonbold';
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+	width: 700px;
+	margin: 50px auto 0;
+}
+
+.container.overlay h3 {
+	font-family: 'botonregular';
+	font-weight: normal;
+}
+
+/**
+ * Howto
+ */
+.container.howto-overlay {
+	position: absolute;
+	top: 510px;
+	left: 50%;
+	margin-left: -485px;
+	width: 970px;
+	height: 150px;
+	background: #000;
+	z-index: 999;
+	opacity: 0.7;
+}
+
+.container.howto-inner {
+	position: absolute;
+	top: 510px;
+	left: 50%;
+	margin-left: -485px;
+	width: 970px;
+	border-top: 2px solid #000;
+	z-index: 1000;
+}
+
+.container.howto-inner h3 {
+	font-family: 'botonregular';
+	font-weight: normal;
+	margin: 0;
+	padding: 50px 0 0 0;
+}
+
+.container.howto-inner img.left {
+	left: 30px;
+	position: absolute;
+	margin: 30px 0 0 0;
+}
+
+.container.howto-inner img.right {
+	right: 30px;
+	position: absolute;
+	margin: 30px 0 0 0;
+}
+
+.container.cards {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -470px;
+	display: none;
+}
+
+/**
+ * Header
+ */
+.container.header .row .span-3 {
+	margin-left: 5px;
+	width: 180px;
+}
+
+.container.header .row .span-4 {
+	margin-right: -15px;
+	width: 395px;
+}
+
+.container.header .row .span-5 {
+	width: 355px;
+}
+
+.container.header h1 {
+	text-indent: -9999px;
+	width: 166px;
+	height: 50px;
+	background: url('../img/logo.gif') no-repeat;
+	margin: 15px 0 0;
+}
+
+.container.header h2 {
+	font-family: 'botonregular';
+	font-weight: normal;
+	font-size: 30px;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.container.header h4 {
+	margin-top: 0px;
+}
+
+/**
+ * Form
+ */
+.container.form {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -470px;
+	color: #000;
+	display: none;
+}
+
+.container.form h3 {
+	font-family: 'botonregular';
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+
+.container.form iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width:100%;
+  height:470px;
+}
+
+/**
+ * Footer
+ */
+.footer {
+	position: absolute;
+	top: 660px;
+	left: 50%;
+	margin-left: -470px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 12px;
+}
+
+.footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer ul li {
+	display: inline-block;
+}
+
+.footer ul li a {
+	color: #fff;
+	margin: 0 10px;
+}
+
+/**
+ * Game items
+ */
+.game-block {
+	position: relative;
+	height: 205px;
+	width: 294px;
+	background: url('../img/block-bkgnd.png') center center;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin: 0 auto;
+}
+
+.game-block-title {
+	padding: 5px;
+	color: #000;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'botonregular';
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.game-block-inner {
+	position: relative;
+	width: 260px;
+	height: 153px;
+	margin: 0 auto;
+}
+
+.game-question-mark {
+	position: absolute;
+	background: yellow;
+	width: 75px;
+	height: 75px;
+	background: url('../img/question-mark.png') no-repeat;
+}
+
+.game-item {
+	width: 144px;
+	height: 132px;
+	background: url('../img/card-bkgnd.png') no-repeat;
+	padding: 11px 8px 0px 11px
+}
+
+.game-item-inner {
+	width: 122px;
+	height: 110px;
+}
+
+.answer-wrong,
+.answer-right {
+	position: absolute;
+	width: 143px;
+	height: 131px;
+	margin-top: -174px;
+	margin-left: 85px;
+	z-index: 1200;
+}
+
+.answer-wrong {
+	background: url('../img/answer-wrong.png') no-repeat;
+}
+
+.answer-right {
+	background: url('../img/answer-right.png') no-repeat;
+}
+
+/**
+ * Game states
+ */
+.check-solution {
+	display: none;
+}
+
+.try-again,
+.submit-results {
+	display: none;
+}
+
+.row.check-solution,
+.row.try-again,
+.row.submit-results {
+	position: absolute;
+	top: 450px;
+}
+
+/**
+ * Buttons
+ */
+.btn-start {
+	width: 231px;
+	height: 70px;
+	background: url('../img/btn-start.png') no-repeat;
+	border: none;
+	font-family: 'botonregular';
+	font-weight: normal;
+	font-size: 28px;
+	padding-top: 0;
+}
+
+.row.check-solution .btn,
+.row.try-again .btn,
+.row.submit-results .btn {
+	width: 251px;
+	height: 70px;
+	background: url('../img/btn-check.png') no-repeat;
+	border: none;
+	font-family: 'botonregular';
+	font-weight: normal;
+	font-size: 28px;
+	padding-top: 0;
+}
+
+.container.overlay {
+	position: relative;
+	height: 580px;
+}
+
+.container.form {
+	height: 555px;
+}
+
+/*.social {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 150px;
+}*/
