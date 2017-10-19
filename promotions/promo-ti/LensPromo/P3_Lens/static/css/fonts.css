@@ -1,0 +1,38 @@
+/**
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'botonbold';
+    src: url('../fonts/botonprobold_2-webfont.eot');
+    src: url('../fonts/botonprobold_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonprobold_2-webfont.woff') format('woff'),
+         url('../fonts/botonprobold_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonprobold_2-webfont.svg#botonbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'botonlight';
+    src: url('../fonts/botonprolight_2-webfont.eot');
+    src: url('../fonts/botonprolight_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonprolight_2-webfont.woff') format('woff'),
+         url('../fonts/botonprolight_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonprolight_2-webfont.svg#botonlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'botonregular';
+    src: url('../fonts/botonproreg_2-webfont.eot');
+    src: url('../fonts/botonproreg_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/botonproreg_2-webfont.woff') format('woff'),
+         url('../fonts/botonproreg_2-webfont.ttf') format('truetype'),
+         url('../fonts/botonproreg_2-webfont.svg#botonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

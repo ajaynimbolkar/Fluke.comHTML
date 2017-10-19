@@ -1,0 +1,315 @@
+
+@font-face {
+    font-family: 'boton_pro_regularregular';
+    src: url('fonts/botonproreg-webfont.eot');
+    src: url('fonts/botonproreg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/botonproreg-webfont.woff') format('woff'),
+         url('fonts/botonproreg-webfont.ttf') format('truetype'),
+         url('fonts/botonproreg-webfont.svg#boton_pro_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'boton_probold';
+    src: url('fonts/botonprobold-webfont.eot');
+    src: url('fonts/botonprobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/botonprobold-webfont.woff') format('woff'),
+         url('fonts/botonprobold-webfont.ttf') format('truetype'),
+         url('fonts/botonprobold-webfont.svg#boton_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   #form_div{
+    margin-left: 52px;
+   }
+}
+body {
+	margin:0 0 0 0;
+	background: #010101 url("Fluke Thermography_files/fluke_grunge_bg_1600px_v6.jpg") no-repeat scroll center 0;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-size:12px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.contain {
+	margin:0 auto 0 auto;
+	background-image:url(http://images.e.fluke.com/eloquaimages/clients/FlukeElectronicsCorporation/{556949b6-35e3-42bf-90ed-e46c102583e7}_prod.jpg );
+	background-repeat:no-repeat;
+	background-color:#FFF;
+	background-position:right 75px;
+}
+#logo
+{
+    color:#464545;
+    font-size: 13px;
+    float: left;
+	padding:20px 0 0 0px;
+    
+}
+#header
+{
+    width:960px;
+    overflow: hidden;
+}
+.imgheader{
+	margin: 10px 0px 50px 0px;
+	font-size:22px;
+	padding: 10px 10px 10px 30px;
+}
+.formbgtop {
+	background: transparent url("Fluke Thermography_files/hand.png") scroll 10px 30px;
+        height: 332px;
+        width: 170px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+	z-index: 1;
+}
+.formbgmid {
+	
+	background-position: right;
+	width: 423px;
+	background-repeat: repeat-y;
+	
+}
+.formbgbottom {
+	background-image: url(http://images.e.fluke.com/eloquaimages/clients/FlukeElectronicsCorporation/{25c199d2-d027-4133-aa4f-9cac22e66317}_PPC_TI_formBg_bottom.jpg );
+	background-position: right top;
+	height: 62px;
+	width: 364px;
+	background-repeat: no-repeat;
+        display: none;
+}
+.box{
+	font-size: 13px;
+	text-align:center;
+}
+.info{
+    font-size:16px;
+    padding:25px 50px;
+	background-color:#F3F2F2;
+}
+.footer{
+	width:960px;
+	background: url(http://images.e.fluke.com/eloquaimages/clients/FlukeElectronicsCorporation/{98fed7c6-bae6-46c4-a398-785638ebed91}_PPC_TI_footer.png  ) no-repeat 20px 20px;
+	min-height:208px;
+	height:208px;
+}
+.footertext{
+	padding-top: 49px;
+     padding-left: 140px;
+     width: 350px;
+     font-size: 13px;
+}
+li {
+     font-size: 16px;
+     margin: 0 0 5px 0;
+     color: #000;
+     line-height: 24px;
+     background: url("Fluke Thermography_files/bullet.jpg") no-repeat 0px 10px;
+     padding: 0 0 0 25px;
+}
+form {
+     margin-bottom: 0;
+}
+#ContainerDiv5 {
+     margin-top: 22px;
+}
+#PageTable {
+    background-color: #e1e1e1;
+}
+.elqFieldValidation { background-color:#FFF; width: 255px; font-family: lucida sans, lucida grande, tahoma; font-size:12px;} 
+.elqLayout{font-family: lucida sans, lucida grande, tahoma; font-size:12pt;  background-color: #e1e1e1; padding-top: 3px; padding-bottom: 3px;}
+.elqField{
+    font-family: lucida sans, lucida grande, tahoma;
+    font-size: 12px;
+    width: 290px !important;
+    }
+.elqLabel{
+    padding-left: 10px;
+    font-family: lucida sans, lucida grande, tahoma;
+    font-size: 14px;
+    color: #000;
+    padding-right: 5px;
+    /*width: 123px !important;*/
+    }
+.elqLayoutRow{padding-top: 5px; padding-bottom: 5px; vertical-align: middle; font-family: lucida sans, lucida grande, tahoma;}
+.elqSubmit{margin-top: 20px; margin-bottom: 20px; font-family: lucida sans, lucida grande, tahoma;}
+.elqHeading{padding-left: 15px; padding-right: 0px; padding-bottom: 10px; padding-top:20px; font-size:12px; color:#050505; font-weight:bold; margin-right:15px; width:445; font-family: lucida sans, lucida grande, tahoma;}
+.elqSubHeading{padding-top: 15px; padding-bottom: 15px; padding-left: 15px; font-family: lucida sans, lucida grande, tahoma; font-size:8pt; color:#EE081B; font-weight:bold;}
+.elqMatrix{font-family: lucida sans, lucida grande, tahoma;}
+.elqMatrixRow{horizontal-align: left; vertical-align: middle; font-family: lucida sans, lucida grande, tahoma;}
+.elqTextArea{font-family: lucida sans, lucida grande, tahoma;}
+.elqMatrixHeaderRow{font-family: lucida sans, lucida grande, tahoma;}
+.elqMatrixAltRow{horizontal-align: left; vertical-align: middle; font-family: lucida sans, lucida grande, tahoma;}
+
+.check_box {
+    padding: 10px 30px;
+    
+}
+input[type='checkbox'] {
+    margin-left: 30px;
+}
+.heading {
+    background-color: #dde6ed;
+    font-family: 'boton_pro_regularregular';
+    font-size: 20px;
+    padding: 15px 30px;
+    width: 900px;
+    margin: 0 0 20px 0px;
+    display: inline-table;
+}
+.why_fluke {
+    background-color: #dde6ed;
+    font-family: 'boton_pro_regularregular';
+    font-size: 20px;
+    padding: 15px 30px;
+    width: 900px;
+    margin: 0 0 20px 0px;
+    display: inline-table;
+}
+
+#products{
+    width: 920px;
+    /*margin-left: -20px;*/
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.last{
+    padding-right: 0px !important;
+}
+.prod{
+    float: left;
+    width: 100px;
+    padding:15px;
+}
+
+.prod h3{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.prod a img{
+    outline: none;
+    border: none;
+}
+.prod p{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+#innovations-td{
+}
+
+@-moz-document url-prefix() { 
+  #innovations-td {
+     width: 472px;
+  }
+}
+#innovations h2{
+    background: #dde6ed;
+    width: 290px;
+    margin-top: 20PX;
+    margin-left: 35px;
+    padding: 7px 10px;
+    font-family: 'boton_pro_regularregular';
+    font-size: 20px;
+}
+#form_div{
+    float: right;
+}
+
+#innovations ul{
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+#innovations ul li{
+    list-style: none !important;
+    background: none !important;
+    padding: 5px 0px !important;
+    border-bottom: 1px solid #f3f3f3;
+    
+}
+
+#innovations ul li img{
+    vertical-align: middle;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+}
+
+/*thankyou page css*/
+#thankyou{
+    font-family: 'boton_pro_regularregular';
+    width:960px;
+    margin: 0 auto;
+    background:#fff;
+    height:600px;
+}
+#thankyou #header{
+    height:120px;
+}
+
+#thankyou h1{
+    color:#000;
+    padding: 40px;
+    padding-bottom:0px;
+    font-size:26px;
+    font-weight: normal !important;
+    font-family:lucida sans, lucida grande, tahoma !important;
+}
+
+#thankyou p{
+    font-size:19px;
+    padding:0px 40px;
+    line-height: 26px;
+    float: left;
+    width: 600px;
+    margin-bottom: 20px;
+}
+#thankyou  a, #thankyou  a:active, #thankyou  a:visited{
+    color:#0000f0 !important;
+    text-decoration: none;
+}
+
+#thankyou #footer{
+    text-align:center;
+    width:960px;
+    overflow:hidden;
+    margin-top:220px;
+    
+}
+#thankyou #footer p{
+     font-size:14px !important;
+     width: 250px;
+     float: right;
+}
+
+
+#address{
+    font-size: 14px !important;
+    width: 520px !important;
+    line-height: 20px !important;
+}
+
+#right{
+    width: 300px;
+    float: right;
+    margin-top: -70px;
+    /*background: url(thankyou.jpg);*/
+}
+
+#right img{
+    margin-left: 60px;
+    margin-top: -20px;
+}

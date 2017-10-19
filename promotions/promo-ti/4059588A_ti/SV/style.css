@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****BEGIN NAV ****/
+#tiHome{ display: block; width: 144px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_01.jpg") no-repeat 0 0; } 
+#tiHome:hover { background-position: 0 -37px; z-index:999; } 
+#tiHome span { position: absolute; top: -999em;} 
+ 
+#tiDemos{ display: block; width: 197px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_02.jpg") no-repeat 0 0; } 
+#tiDemos:hover { background-position: 0 -37px; z-index:999; } 
+#tiDemos span { position: absolute; top: -999em;} 
+
+#tiProduct{ display: block; width: 160px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_03.jpg") no-repeat 0 0; } 
+#tiProduct:hover { background-position: 0 -37px; z-index:999; }
+#tiProduct span { position: absolute; top: -999em;} 
+
+#tiVideos{ display: block; width: 165px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_04.jpg") no-repeat 0 0; } 
+#tiVideos:hover { background-position: 0 -37px; z-index:999; } 
+#tiVideos span { position: absolute; top: -999em;} 
+
+#tiRequest{ display: block; width: 158px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_05.jpg") no-repeat 0 0; } 
+#tiRequest:hover { background-position: 0 -37px; z-index:999; } 
+#tiRequest span { position: absolute; top: -999em;}
+
+#tiResources{ display: block; width: 146px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_off_sv_06.jpg") no-repeat 0 0; } 
+#tiResources:hover { background-position: 0 -37px; z-index:999; } 
+#tiResources span { position: absolute; top: -999em;}
+
+/****BEGIN NAV HOVER****/
+#tiHomeon{ display: block; width: 144px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_01.jpg") no-repeat 0 0; } 
+#tiHomeon:hover { background-position: 0 -37px; z-index:999; } 
+#tiHomeon span { position: absolute; top: -999em;} 
+
+#tiDemoson{ display: block; width: 197px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_02.jpg") no-repeat 0 0; } 
+#tiDemoson:hover { background-position: 0 -37px; z-index:999; } 
+#tiDemoson span { position: absolute; top: -999em;} 
+
+#tiProducton{ display: block; width: 160px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_03.jpg") no-repeat 0 0; } 
+#tiProducton:hover { background-position: 0 -37px; z-index:999; }
+#tiProducton span { position: absolute; top: -999em;} 
+
+#tiVideoson{ display: block; width: 165px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_04.jpg") no-repeat 0 0; } 
+#tiVideoson:hover { background-position: 0 -37px; z-index:999; } 
+#tiVideoson span { position: absolute; top: -999em;} 
+
+#tiRequeston{ display: block; width: 158px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_05.jpg") no-repeat 0 0; } 
+#tiRequeston:hover { background-position: 0 -37px; z-index:999; } 
+#tiRequeston span { position: absolute; top: -999em;}
+
+#tiResourceson{ display: block; width: 146px; height: 37px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/sitewide/nav/nav_on_sv_06.jpg") no-repeat 0 0; } 
+#tiResourceson:hover { background-position: 0 -37px; z-index:999; } 
+#tiResourceson span { position: absolute; top: -999em;}
+
+
+/****BEGIN SUB NAV ****/
+#Ti125{ display: block; width: 98px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_01.jpg") no-repeat 0 0; } 
+#Ti125:hover { background-position: 0 -74px; z-index:999; } 
+#Ti125 span { position: absolute; top: -999em;} 
+
+#Ti110{ display: block; width: 96px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_02.jpg") no-repeat 0 0; } 
+#Ti110:hover { background-position: 0 -74px; z-index:999; } 
+#Ti110 span { position: absolute; top: -999em;} 
+
+#TiR125{ display: block; width: 132px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_03.jpg") no-repeat 0 0; } 
+#TiR125:hover { background-position: 0 -74px; z-index:999; }
+#TiR125 span { position: absolute; top: -999em;} 
+
+#TiR110{ display: block; width: 133px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_04.jpg") no-repeat 0 0; } 
+#TiR110:hover { background-position: 0 -74px; z-index:999; } 
+#TiR110 span { position: absolute; top: -999em;} 
+
+#Ti100{ display: block; width: 102px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_05.jpg") no-repeat 0 0; } 
+#Ti100:hover { background-position: 0 -74px; z-index:999; } 
+#Ti100 span { position: absolute; top: -999em;}
+
+#Compare{ display: block; width: 73px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_off_sv_06.jpg") no-repeat 0 0; } 
+#Compare:hover { background-position: 0 -74px; z-index:999; } 
+#Compare span { position: absolute; top: -999em;}
+
+/****BEGIN SUB NAV HOVER****/
+#Ti125on{ display: block; width: 98px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_01.jpg") no-repeat 0 0; } 
+#Ti125on:hover { background-position: 0 -74px; z-index:999; } 
+#Ti125on span { position: absolute; top: -999em;} 
+
+#Ti110on{ display: block; width: 96px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_02.jpg") no-repeat 0 0; } 
+#Ti110on:hover { background-position: 0 -74px; z-index:999; } 
+#Ti110on span { position: absolute; top: -999em;} 
+
+#TiR125on{ display: block; width: 132px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_03.jpg") no-repeat 0 0; } 
+#TiR125on:hover { background-position: 0 -74px; z-index:999; }
+#TiR125on span { position: absolute; top: -999em;} 
+
+#TiR110on{ display: block; width: 133px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_04.jpg") no-repeat 0 0; } 
+#TiR110on:hover { background-position: 0 -74px; z-index:999; } 
+#TiR110on span { position: absolute; top: -999em;} 
+
+#Ti100on{ display: block; width: 102px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_05.jpg") no-repeat 0 0; } 
+#Ti100on:hover { background-position: 0 -74px; z-index:999; } 
+#Ti100on span { position: absolute; top: -999em;}
+
+#Compareon{ display: block; width: 73px; height: 74px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_nav_on_sv_06.jpg") no-repeat 0 0; } 
+#Compareon:hover { background-position: 0 -74px; z-index:999; } 
+#Compareon span { position: absolute; top: -999em;}
+
+
+/* ***BEGIN TABS ****/
+#overview{ display: block; width: 176px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_off_sv_01.jpg") no-repeat 0 0; } 
+#overview:hover { background-position: 0 -34px; z-index:999; } 
+#overview span { position: absolute; top: -999em;} 
+
+#specs{ display: block; width: 161px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_off_sv_02.jpg") no-repeat 0 0; }
+#specs:hover { background-position: 0 -34px; z-index:999; } 
+#specs span { position: absolute; top: -999em;} 
+
+#videos{ display: block; width: 165px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_off_sv_03.jpg") no-repeat 0 0; } 
+#videos:hover { background-position: 0 -34px; z-index:999; }
+#videos span { position: absolute; top: -999em;} 
+
+
+/* ***BEGIN TABS HOVER****/
+#overviewon{ display: block; width: 176px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_on_sv_01.jpg") no-repeat 0 0; } 
+/*#overviewon:hover { background-position: 0 -34; z-index:999; } */
+#overviewon span { position: absolute; top: -999em;} 
+
+#specson{ display: block; width: 161px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_on_sv_02.jpg") no-repeat 0 0; } 
+#specson:hover { background-position: 0 -34px; z-index:999; } 
+#specson span { position: absolute; top: -999em;} 
+
+#videoson{ display: block; width: 165px; height: 34px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/nav/p_ov_tabs_on_sv_03.jpg") no-repeat 0 0; } 
+#videoson:hover { background-position: 0 -34px; z-index:999; }
+#videoson span { position: absolute; top: -999em;} 
+
+
+/* *** BEGIN 360 HOVER*** */ 
+#v360{ display: block; width: 131px; height: 39px; background: url("http://content.fluke.com/promotions/promo-ti/4059588A_ti/SV/products/PRODUCTS-overview/p_ov_360_sv.jpg") no-repeat 0 0; } 
+#v360:hover { background-position: 0 -39px; z-index:999; } 
+#v360 span { position: absolute; top: -999em;} 
+
+
+/* SPECS TABLE FORMATTING*/
+
+.specsLeft { vertical-align:top; nowrap:noWrap; align:right;}
+.specsRight { vertical-align:top; nowrap:noWrap; align:left;}
+
+.specsLeftI { vertical-align:top; nowrap:noWrap; align:right; BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: right; background: url ("http://content.fluke.com/promotions/promo-ti/4059588A_ti/All/p_specs_shade.jpg") no-repeat 0 0;}
+.specsRightI { vertical-align:top; nowrap:noWrap; align:left; background-color: #efeded;}
+
+.specsSpacer {width: 25px;}
+.specsSpacerI {background-color: #efeded; width: 25px;}
+
+
+#slideshow { position:relative; height:316px;}
+#slideshow IMG { position:absolute; top:0; left:0; z-index:8; opacity:0.0;} 
+#slideshow IMG.active { z-index:10; opacity:1.0;}
+#slideshow IMG.last-active { z-index:9;}
+
+
+/* FOOTER  */
+.footer { FONT-FAMILY: Arial; COLOR: #1261bb; FONT-SIZE: 9pt;}
+
+
+
+
+
+
+
+

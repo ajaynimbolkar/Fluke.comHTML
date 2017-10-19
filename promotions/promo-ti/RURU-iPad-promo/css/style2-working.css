@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'lucida_sans_unicoderegular';
+    src: url('http://download.fluke.com/fonts/6207-webfont.eot');
+    src: url('http://download.fluke.com/fonts/6207-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://download.fluke.com/fonts/6207-webfont.woff') format('woff'),
+         url('http://download.fluke.com/fonts/6207-webfont.ttf') format('truetype'),
+         url('http://download.fluke.com/fonts/6207-webfont.svg#lucida_sans_unicoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lucida_granderegular';
+    src: url('http://download.fluke.com/fonts/762168-webfont.eot');
+    src: url('http://download.fluke.com/fonts/762168-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://download.fluke.com/fonts/762168-webfont.woff') format('woff'),
+         url('http://download.fluke.com/fonts/762168-webfont.ttf') format('truetype'),
+         url('http://download.fluke.com/fonts/762168-webfont.svg#lucida_granderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lucida_grandebold';
+    src: url('http://download.fluke.com/fonts/762154-webfont.eot');
+    src: url('http://download.fluke.com/fonts/762154-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://download.fluke.com/fonts/762154-webfont.woff') format('woff'),
+         url('http://download.fluke.com/fonts/762154-webfont.ttf') format('truetype'),
+         url('http://download.fluke.com/fonts/762154-webfont.svg#lucida_grandebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dejavu_sanscondensed_bold';
+    src: url('http://download.fluke.com/fonts/dejavusanscondensed-bold-webfont.eot');
+    src: url('http://download.fluke.com/fonts/dejavusanscondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://download.fluke.com/fonts/dejavusanscondensed-bold-webfont.woff') format('woff'),
+         url('http://download.fluke.com/fonts/dejavusanscondensed-bold-webfont.ttf') format('truetype'),
+         url('http://download.fluke.com/fonts/dejavusanscondensed-bold-webfont.svg#dejavu_sanscondensed_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/****/
+* {
+	margin: 0;
+	padding: 0;
+}
+b {
+	font-weight: normal;
+}
+body{
+	margin:0px; 
+	padding:0px;
+	background-image:url('http://author.fluke.com/NR/rdonlyres/D77E8186-535B-44C6-AD22-6C0E6F7A2964/0/bg.png'); 
+	background-repeat:repeat;
+}
+.clearfloat, .clear{
+	clear:both;
+}
+.mainPage{
+	width:978px; 
+	margin:0 auto; 
+	background-color:#fff;
+}
+
+/* Header */
+
+.header{
+	width: 978px; 
+	height: 484px;
+	background-image: url('http://author.fluke.com/NR/rdonlyres/8F59DCFE-FD12-4F9C-80DD-7D109B0CB1D9/0/header.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+}
+.header .logo{
+	position: absolute; 
+	top: 43px;
+	right: 0px;
+}
+.header .header_text {
+	padding-top: 230px;
+	padding-left: 640px;
+}
+.header .title{ 
+	color:#000; 
+	font-family:"dejavu_sanscondensed_bold";
+	font-size: 14px;
+	text-transform: uppercase;
+	background:white;
+	padding: 7px 0 7px 5px;
+	width: 284px;
+	margin-bottom: 12px;
+}
+.header .descr{
+	line-height: 37px;
+}
+.header .descr span {
+	 font-family: 'lucida_grandebold';
+	 font-size: 24px;
+	 background: #FFC302;
+	 padding: 3px 7px 3px 7px;
+	 line-height: 31px;
+	 display: block;
+	 margin-bottom: 2px;
+}
+	
+/* Content */
+.content{
+	width:978px;
+}
+.part_1 .left_col {
+	width: 590px;
+	float:left;
+	margin-left: 30px;
+	margin-top: 9px;
+}
+.part_1 .right_col {
+	width: 340px;
+	float:right;
+	margin-right: -4px;
+}
+.left_brasket {
+	background: url('http://author.fluke.com/NR/rdonlyres/7816DE66-5139-478F-AA8B-F52279BFEA9A/0/left_brasket.png') no-repeat; 
+	width: 16px;
+	height: 93px;
+	float: left;
+}
+.content_brasket {
+	 font-family: 'lucida_granderegular';
+	 height: 73px;
+	 float: left;
+	 padding-top: 20px;
+	 font-size: 21px;
+	 margin-left: 12px;
+	 margin-right: 10px;
+}
+.content_brasket b {
+	 font-family: 'lucida_grandebold';
+}
+.right_brasket {
+	background: url('http://author.fluke.com/NR/rdonlyres/64F23CD7-7D98-4E17-980D-6147D06A2F7B/0/right_brasket.png') no-repeat; 
+	width: 16px;
+	height: 93px;
+	float: left;
+}
+ul.pribors {
+    margin-top: 20px;
+    margin-left: 28px;
+}
+ul.pribors li {
+    list-style-type: none;
+    float: left;
+    display: block;
+	
+    margin-left: 71px;
+}
+ul.pribors li:first-child {
+	margin-left:0px;
+}
+ul.pribors li a{
+	background: url('http://author.fluke.com/NR/rdonlyres/AFD4F12C-A05B-43C6-BE9D-F191A2867C5B/0/pribors.jpg') no-repeat; 
+	display:block;
+	width: 120px;
+	height: 20px;
+	padding-top: 248px;
+	font-family: 'lucida_granderegular';
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+ul.pribors li a.pribor_1{
+}
+ul.pribors li a.pribor_2{
+    background-position: -200px 0px;
+}
+ul.pribors li a.pribor_3{
+    background-position: -395px 0;
+    width: 130px;
+}
+.right_col .title {
+	height: 60px;
+	width: 306px;
+	background: #FFC302;
+	font-family: "dejavu_sanscondensed_bold";
+	font-size: 16px;
+	padding-top: 35px;
+	padding-left: 30px;
+}
+ul.how_take_part {
+    background: #F4F4F4;
+    margin-right: 4px;
+    height: 360px;
+}
+ul.how_take_part li{
+    border-bottom: 1px solid #D3D3D3;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+ul.how_take_part .number{
+	width: 22px;
+	height: 22px;
+	text-align:center;
+	font-size: 16px;
+	color: white;
+	font-family: 'lucida_granderegular';
+	float:left; 
+	background-color: black;
+	margin-right: 12px;
+	margin-top: 2px;
+	line-height: 20px;
+}
+ul.how_take_part p {
+	float:left;
+	font-family: 'lucida_granderegular';
+	font-size: 14px;
+	line-height: 18px;
+}
+ul.how_take_part p b {
+	font-family: 'lucida_grandebold';
+	font-size: 12px;
+}
+ul.how_take_part a {
+	text-decoration: none;
+	color: #1587d8;
+}
+.condition_part {
+    background: #FFC302;
+    padding-bottom: 30px;
+}
+.condition_part .title {
+	font-family:"dejavu_sanscondensed_bold";
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	background: black;
+	width: 293px;
+	height: 40px;
+	padding-left: 30px;
+	padding-top: 19px;
+	margin-bottom: 30px;
+}
+.condition_part .condition1,.condition_part .condition2, .condition_part .condition3 {
+	float:left;
+	margin-left: 30px;
+	font-family: 'lucida_granderegular';
+	font-size: 14px;
+	
+	width: 270px;
+	border-left: 3px solid white;
+	height: 90px;
+	padding-left: 18px;
+	line-height: 18px;
+}
+.condition_part .condition1 a {
+	text-decoration: none;
+	color: #1587d8;
+}
+.condition_part b {
+	font-family: 'lucida_grandebold';
+	font-size: 16px;
+}
+.part_2 .left_col {
+	float:left;
+	width: 450px;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-top: 30px;
+	font-family: 'lucida_granderegular';
+	font-size: 13px;
+	line-height: 18px;
+}
+.part_2 .right_col {
+	float:right;
+	width: 420px;
+	font-family: 'lucida_granderegular';  font-size: 13px;
+	margin-top: 30px;
+	margin-right: 30px;
+	line-height: 18px;
+}
+.part_2 a {
+	text-decoration: none;
+	color: #1587d8;
+}
+
+
+ul.yellow_bg
+{
+	background-color: #FFC302;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.content .rightBlock ul.rules
+{	
+	width:552px;margin-top: 12px;
+}
+.content .rightBlock ul.rules li
+{
+	color: black;
+	font-size: 12px;
+	font-family: 'lucida_sans_unicoderegular';
+	padding-right: 12px;
+	margin-bottom: 7px;
+}
+.content .rightBlock ul.rules li a
+{
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+.content .rightBlock ul.rules li a.email
+{
+	color: #72B7E7;
+}
+.content .rightBlock ul.yellow_bg li
+{
+	margin-bottom:0px;
+}
+
+
+/* Footer */
+.footer { 
+	background: #ECECEC;
+	margin-top: 40px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.footer p { 
+	color:#000;
+	font-family: 'lucida_grandebold';  
+	font-size: 14px;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer ul {
+    margin-left: 427px;
+    margin-top: 4px;
+}
+.footer ul li {
+    float: left;
+    display: block;
+    margin-left: 7px;
+}
+.footer ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url('http://author.fluke.com/NR/rdonlyres/ADEF038A-A6C1-4244-8567-E462E30738DD/0/social_bottom.png') no-repeat; 
+}
+.footer ul li a.facebook {
+}
+.footer ul li a.twitter {
+    background-position: -35px 0px;
+}
+.footer ul li a.youtube {
+    background-position: -72px 0;
+}

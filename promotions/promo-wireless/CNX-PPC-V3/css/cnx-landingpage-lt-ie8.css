@@ -1,0 +1,6 @@
+table.cnx-landingpage .floating-panel-fallback  {
+	visibility: visible;
+}
+table.cnx-landingpage .floating-panel {
+	display:none;
+}

@@ -1,0 +1,949 @@
+/**********************************************
+*               REDESIGN 2009                 *
+**********************************************/
+BODY, TABLE, TD, P
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;	
+}
+				
+
+INPUT, SELECT, TEXTAREA
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-size:12px;
+}
+
+
+H1, .headline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+.subhead1
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+				
+
+.subhead2
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+H2, .subhead3
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+H6, .largebody
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:14px;
+	text-decoration:none;
+padding-top: 0;
+}
+
+
+H3, .bodybold, .subhead4, .searchFindResource
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+I, .italic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+}
+
+
+.bolditalic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+.small
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+}
+
+
+H4, .smallbold
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+.smallitalic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-style:italic;
+}
+
+
+.smallbolditalic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+.xsmall
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:10px;
+}
+
+
+.xsmallbold
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:10px;
+	font-weight:bold;
+}
+
+
+.small_pipe
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#98A1A7;
+	font-size:11px;
+}
+	
+.footer_pipe
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#C5CDD2;
+	font-size:10px;
+	}
+
+/* ----------------- LINKS ----------------- */
+
+
+A
+{	color:#0058b3;
+	text-decoration:none;
+}
+
+
+A:hover
+{	color:#003B78;
+	text-decoration:underline;
+}
+
+
+.subhead2link
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.subhead2link:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:16px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.subhead3link
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.subhead3link:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:14px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.subhead4link
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;	
+}
+
+
+.subhead4link:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:12px;
+	text-decoration:underline;
+	font-weight:bold;	
+}
+
+
+.smalllink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.smalllink:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.xsmalllink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.xsmalllink:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:10px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.leftnavlink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#01172A;
+	font-size:12px;
+	text-decoration:none;	
+}
+
+
+.leftnavlink:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	/*font-weight:bold;*/
+	text-decoration:underline;
+}
+
+
+.leftnavlink:active
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	/* Commented on 25/11/2010 by Girish Deshpande(Abhijeet Koranne) for RI 1208	
+	 font-weight:bold; */
+	text-decoration:none;	
+}
+
+
+
+/* ----------------- Navigation ----------------- */
+
+.nav_company_location_bar
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav_company_location
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.nav_company_location:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.nav1
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav1:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#FFFFFF;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav2
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#FFFFFF;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav2:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/* ----------------- Tables ----------------- */
+.tableHead { background-color: #E9EFF4; border-bottom: solid #C5CDD2 1px; }
+.tableBody { border-bottom: solid #C5CDD2 1px; }
+
+/* ----------------- Images ----------------- */
+.prdButton_top { margin-bottom: 5px }
+.prdButton_bottom { margin-top: 5px }
+
+
+/**********************************************
+*                  LEGACY                     *
+**********************************************/
+		
+
+.BlackHeadline, .BlueHeadline, .PlusHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+}
+				
+
+.BlackSubHead, .BlueSubHead, .PlusSubhead
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+			
+.PrdPlainText, .PlainText, .Text1
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+}
+
+
+.PrdItalicText, .txtItalic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+}
+
+
+.PrdBoldText, .txtBold, .SearchTitle, .Text1Bold, .PlusArticleType, .PlusNewArticle
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+}
+
+
+.txtBoldItalic
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+		
+.SmallText, .copywrite, .TextSmall, .Option, .TDSub
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+}
+				
+
+.SmallTextBold
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*              Table Styles                   *
+**********************************************/
+
+.tblHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+}
+
+
+.tblSmallHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+}
+
+
+.tblItem
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.tblSubject
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.tblValue
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+
+/**********************************************
+*     NEEDS TO BE DEFINED WHERE USED          *
+**********************************************/
+
+.Background_LightGray{background-color:#EEEEEE;}
+.Background_DarkGray{background-color:#CCCCCC;}
+
+
+.CatTab
+{
+	color:black;
+	font-size:12px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.CatTab:hover
+{
+	Text-decoration:underline;
+}
+
+
+.GetMoreNav
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058B3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}		
+
+
+.GetMoreNav:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*              Link Styles                    *
+**********************************************/
+
+.PlainLink, .PlainLink2, .PlusLink, .Plusnew, .LinkHeadline, .FeaturedLink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.PlainLink:hover, .PlainLink2:hover, .PlusLink:hover, .Plusnew:hover, .LinkHeadline:hover, .FeaturedLink:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:12px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+
+.smlPlusLink, .hlpPlusLink, .PlusNav, .BoldLink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.smlPlusLink:hover, .hlpPlusLink:hover, .PlusNav:hover, .BoldLink:hover
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+
+.FakeLink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:underline;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*       NAV - NOT SURE HOW TO CHANGE         *
+**********************************************/
+
+
+.Nav:hover
+{
+	color:#FFC20E; 
+	font-size:12px; 
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";  
+	text-decoration:none; 
+	font-weight:bold; 
+}
+
+.Nav
+{
+	color:#FFFFFF; 
+	font-size:12px; 
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial"; 
+	text-decoration:none;
+	font-weight:bold; 
+}
+			
+.Nav2:hover
+{ 
+	color:#FFC20E; 
+	font-size:11px; 
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";  
+	text-decoration:none; 
+	font-weight:bold; 
+}
+				
+.Nav2
+{
+	color:#FFFFFF; 
+	font-size:11px; 
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial"; 
+	text-decoration:none;
+	font-weight:bold; 
+}	
+				
+
+.HNav:hover
+{
+	color:#000000;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+.HNav
+{
+	color:#000000; 
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.SetBgColor
+{
+	background-color: #DDE6ED;	
+}
+/**********************************************
+*               Product Page                  *
+**********************************************/
+.NewPrdSpecHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+	vertical-align:top;
+}
+
+.PrdSpecHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#FFC20E;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#000000;
+	vertical-align:top;
+}
+
+
+.PrdSpecItem
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+
+.PrdSpecSubject
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+
+.PrdSpecValue
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+	padding-left:5px;
+}
+
+
+.PrdMOAHeadline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+	vertical-align:bottom;
+}
+
+
+.MOALink
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	font-weight:normal;
+}
+				
+.MOALink:hover
+{
+	color:#003B78;
+	text-decoration:underline;
+}
+
+.PrdItal
+{
+	font-style:italic;
+}
+
+.PrdSub
+{
+	vertical-align:sub;
+	font-size:11px;
+}
+
+.PrdSup
+{
+	vertical-align:super;
+	font-size:11px;
+}
+
+.PrdSym
+{
+	font-family:symbol;
+}
+
+.Prdtextxsml
+{
+	font-size:11px;
+}
+
+.PrdRight
+{
+	text-align:right;
+}
+
+
+.requiredTD	
+{
+	background-color:#DDE6ED;
+	font-size:11px;
+	font-weight:bold;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+}
+
+
+/**********************************************
+*           Fluke Plus - remenants            *
+**********************************************/	
+
+.Pluslog
+{
+	color:#666600;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}		
+
+
+.Plusfield
+{
+	color:#FFFFFF;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}	
+
+
+.PHBorder
+{
+	border-top:1px;
+	border-bottom:1px;
+	border-left:1px;
+	border-right:1px;
+}		
+
+
+/**********************************************
+*                 Buttons                    *
+**********************************************/
+
+.SubmitButton
+{
+	font-size:11px;
+	font-weight:bold;
+	background-color:#FFC20E;
+}
+
+.ResetButton
+{
+	font-size:11px;
+	font-weight:bold;
+	background-color:#DDE6ED;
+}
+
+.Plusbutton
+{
+	color:#FFC20E;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}	
+
+
+/**********************************************
+*               Drop-in Boxes                 *
+**********************************************/
+				
+#dropinboxv2cover{
+width:300px; /*change width to desired */
+position:absolute; /*Don't change below 4 rules*/
+z-index:100;
+overflow:hidden;
+visibility:hidden;
+}
+
+#dropinboxv2{
+width:300px; /*change width to above width-20. */
+height:200px; /*change height to above height-20. REMOVE if you wish box to be content's natural height*/
+border:2px solid #4B6AA2; /*Customize box appearance*/
+background-color:#FFFFFF;
+padding:0px;
+position:absolute; /*Don't change below 3 rules */
+}
+
+.topHeaderBarClass
+{
+	background: url(/fluke_www/images/fluke/Web2_0/header/nav_hdr_bg_2px_x_90px.gif);
+	height: 90px;
+	padding: 0;
+	border: 0;
+	width: 100%;
+}
+
+.leftnavlinkactive1
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;	
+}
+/*************************************************
+*               Live Chat        
+/*************************************************/
+.lpPoweredBy {
+display:none;
+}
+
+.lpStaticButton {
+margin-bottom: 0;
+padding:0px;
+}
+
+.lpStaticButtonTR {
+margin-bottom: 0;
+padding:0px;
+}
+
+.lpPoweredByDiv {
+display:none;
+}
+
+.lpEmtStarRating {
+display:none;
+}
+
+/*************************************************
+*               Dynamic Site Classes        
+/*************************************************/
+.activeTabBg
+{
+	background-color: #FFC20E;	
+}
+.staticTabBg
+{
+	background-color: #DDE6ED;	
+}

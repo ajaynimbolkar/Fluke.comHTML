@@ -1,0 +1,182 @@
+@charset "UTF-8";
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #ffc300;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColFixCtr #container {
+	width: 940px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto;
+	text-align:left;
+	}
+	
+.oneColFixCtr #mainContent {
+	padding: 0 0 0 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+
+/* Download datasheet menu */
+
+#menu ul#item1 {
+	position:absolute;
+	top:-30px;
+	left:-35px;
+	list-style:none;
+	min-width:220px;
+	width: 227px;
+}
+#menu ul li.item {display:none;position:relative;top:-133px}
+#menu ul li.item a {
+	display:block;
+	width:130px;
+	height:14px;
+	background:#fbd865;
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	color:#600;
+	padding:5px 0px 0px 20px;}
+	
+#menu ul li.item a:hover {
+	background:#fdf3d1;
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	color:#000;}
+	
+#menu ul#item1 li.top {
+	background:url(images/DLdatasheet.jpg);
+	background-repeat:no-repeat;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	color:#000;
+	font-size:11px;
+	height:30px;
+	text-indent:29px;
+	padding:8px 0 0 0;
+	}
+	
+#menu ul#item1 li.top:hover {
+	background:url(images/DLdatasheet0.jpg);
+	background-repeat:no-repeat;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	color:#9d0200;
+	font-size:11px;
+	padding:8px 0 0 0;
+	}
+	
+
+#menu ul:hover .item {display:block;}
+#menu{position:absolute;}
+
+
+/* Email & other buttons */
+
+a.email {
+	display: block;
+	min-width: 144px;
+	height: 30px;
+	background-image: url('images/emailtofriend.jpg');
+	background-repeat:no-repeat;
+	background-position:center left;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000000;
+	font-size:11px;
+	text-indent:30px;
+	line-height:15px;
+	padding:15px 0 0 0;
+
+}
+
+a.email:hover {
+	display: block;
+	background-image: url('images/emailtofriend0.jpg');
+	background-repeat:no-repeat;
+	background-position:center left;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	color:#9d0200;
+
+}
+
+a.buynow {
+	display: block;
+	min-width:100px;
+	height: 30px;
+	background:url(images/btn_bg.jpg);
+	repeat:repeat-x;
+	border:1px solid #000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:14px;
+	color:#000000;
+	line-height:28px;
+	text-align:center;
+	}
+
+	
+a.buynow:hover {
+	display: block;
+	min-width:70px;
+	height: 30px;
+	background:url(images/btn_bg.jpg);
+	repeat:repeat-x;
+	border:1px solid #9d0200;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:#9d0200;
+	line-height:28px;
+	text-align:center;
+	}
+	
+	a.requestdemo {
+	display: block;
+	min-width:60px;
+	height: 30px;
+	background:url(images/btn_bg.jpg);
+	repeat:repeat-x;
+	border:1px solid #000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:14px;
+	color:#000000;
+	line-height:28px;
+	vertical-align: middle; height:30px;
+	text-align:center;
+	}
+
+
+a.requestdemo:hover {
+	display: block;
+	min-width:60px;
+	height: 30px;
+	background:url(images/btn_bg.jpg);
+	repeat:repeat-x;
+	border:1px solid #9d0200;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#9d0200;
+	line-height:28px;
+	text-align:center;
+	}
+	
+/* Button shadows */
+
+.shadow {
+ 	-moz-box-shadow: 2px 5px 15px 3px #cb9c01;
+  	-webkit-box-shadow: 2px 5px 15px 3px #cb9c01;
+ 	 box-shadow:         2px 5px 15px 3px #cb9c01;
+}

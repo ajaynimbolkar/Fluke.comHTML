@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Fluke Corporation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="opco" content="IG">
+    <!-- **************************************************************************************************
+      TABLE OF CONTENTS
+    - BEGIN STYLE INFO
+        - BEGIN STYLES
+        - BEGIN JAVASCRIPT
+        - BEGIN FORM HEADER
+        - Hidden Variables
+        - URL Variables
+        - Editable IX Variables
+        - IX Variables for EUR Lit Fulfilment
+        - BEGIN FORM FOOTER
+        - Prepopulate Checkbox Fields
+        - Google UTM Variables
+        - Custom URL Variables
+        -----------------------------
+        SUMMARY:
+        Landing page template for justification purchase
+     
+        
+        AUTHOR: 
+        CREATION DATE: 09/16/16
+        ------------------------------
+        REVISION INFO
+        1.0.0.0 - Randy Verduzco 09/16/16
+        Landing page template for justification purchase creation
+       
+
+    <!-- Styles : BEGIN -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/flukestrap-light.css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/eloqua-custom.css">
+
+    <!-- Custom CSS goes here: BEGIN -->
+    <style type="text/css">
+      .asterix{
+        font-size: 12px !important;
+        line-height: 12px;
+      }
+
+      #phone {
+        display: inline-block;
+        vertical-align: middle; 
+        font-size: 17px;
+        line-height: 150%;
+        font-weight: 700;
+      }
+
+      #phone {
+        height: 100%;
+        padding: 15px;
+        display: block;
+      }
+
+      @media (max-width: 768px) { 
+        #phone {
+            font-size: 15px;
+            padding-top: 0;
+        }
+
+        #nav-branding a img {
+            padding-bottom: 0;
+        }
+
+        #phone span {
+            display: none;
+        }
+      }
+
+    </style>
+    <!-- Custom CSS goes here: END -->
+
+    <!-- Styles : END -->
+
+    <!-- JAVASCRIPT : BEGIN -->
+
+    <!--JQUERY LIBRARY INCLUDE-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap & Custom Scripts : BEGIN -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/bootstrap.min.js"></script>
+    <!-- Bootstrap & Custom  Scripts : END -->
+
+    <!--JavaScript LIBRARY FOR ELOQUA DATA PROCESSING-->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/elqForm.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script>
+
+    <!--JavaScript Validation : WARNING!!! WARNING!!! WARNING!!! WARNING!!! Do not use this code outside of this landing page template -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/validate.js"></script>
+
+
+
+    <!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment-->
+    <script type="text/javascript">
+        jQuery(function($) {
+
+            $("form").submit(function() {
+
+                $("input[name=dcUniqueID]").val($("input[name=emailAddress]").val() + $.now());
+                if ($("input[name=iGBulkEmailOptIn]").prop("checked")) {
+                    $("input[name=iGBulkEmailOptOut]").val("False");
+                } else {
+                    $("input[name=iGBulkEmailOptOut]").val("True");
+                }
+
+                $("input[name=ixFirstName]").val($("input[name=firstName]").val());
+                $("input[name=ixLastName]").val($("input[name=lastName]").val());
+                $("input[name=ixCompany1]").val($("input[name=company]").val());
+                $("input[name=ixCountry]").val($("#countryone").val());
+                $("input[name=ixZip]").val($("input[name=zipOrPostalCode]").val());
+                
+            });
+        });
+
+        function setFields() {
+           
+                $("input[name=firstName]").val(localStorage.firstName);
+                $("input[name=lastName]").val(localStorage.lastName);
+                $("input[name=emailAddress]").val(localStorage.emailAddress);
+                $("input[name=company]").val(localStorage.company);
+                
+                setTimeout(function() {
+                    $("#countryone").val(localStorage.countryNormalized).change();
+                }, 500);  
+
+
+                $("input[name=businessPhone]").val(localStorage.businessPhone);
+                $("input[name=zipOrPostalCode]").val(localStorage.zipOrPostalCode);
+           
+        }
+
+        function setLocalStore() {
+            if (typeof(Storage) !== "undefined") {
+                localStorage.firstName = $("input[name=firstName]").val();
+                localStorage.lastName = $("input[name=lastName]").val();
+                localStorage.emailAddress = $("input[name=emailAddress]").val();
+                localStorage.company = $("input[name=company]").val();
+                localStorage.countryNormalized = $("#countryone option:selected").val();
+                localStorage.businessPhone = $("input[name=businessPhone]").val();
+                localStorage.zipOrPostalCode = $("input[name=zipOrPostalCode]").val();
+            }
+        }
+
+
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+
+    <!--JavaScript LIBRARY INCLUDES FOR DYNAMIC DROPDOWNS-->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/dropdown-v3.js"></script>
+    <!--ISSUES WITH CACHE ON DOWNLOAD-->
+
+
+    <!-- JavaScript : END -->
+</head>
+
+<body onload="setFields();" id="t4-justification-purchase">
+
+   <!-- NAV : BEGIN -->
+    <nav class="navbar navbar-inverse">
+        <div id="header" class="container">
+            <div class="row">
+                <div id="nav-branding" class="col-sm-8">
+                    <a href="http://en-us.fluke.com/?elqTrackId=ab64d7492dac4ded8e0a8513040b521b&elqaid=4351&elqat=2" target="_blank"><img src="http://content.fluke.com/Eloqua/lptemplates/images/fluke-logo.gif" alt="Fluke Corporation"></a>
+                    <span id="tagline" class="hidden-xs">Keeping your world up and running<sup>&reg;</sup></span>
+                </div>
+                <div id="phone" class="col-sm-4">
+                    <span>Questions? Please give us a call:</span><br>
+                    <a href="tel:888-873-0080" style="color: #fff;">888-873-0080</a>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV : END -->
+
+    <!-- MAIN : BEGIN -->
+    <main>
+        <div class="container">
+            <div class="row light-gray">
+                <div id="image-container" class="col-md-8 no-padding white">
+                    <img src="http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7B9835e97d-3fde-4b76-bb1b-29f8d3c7b180%7D_3540-landing-page-banner-835x340.jpg" alt="New from Fluke: 3540 FC 3-Phase Power Monitor">
+                    <h2>Knowledge is Power. <br> How energy-efficient is your facility?</h2>
+                    <div class="row no-margin-right">
+                        <div class="col-xs-12 padding-left-medium">
+                            <!-- Body Copy : BEGIN -->
+                            <p>The <strong>Fluke 3540 FC Three-Phase Power Monitor</strong> puts essential power quality monitoring and logging capabilities into an easy-to-position, compact form. Use it as a frontline troubleshooting tool for predictive maintenance and for performing long-term load studies. This stand-alone unit streams data directly to the secure <strong>Fluke Connect</strong> cloud so you can access data and analyze trends. Make informed decisions about prioritizing your team’s work!</p>
+                            <p>The system is quick to install, flexible and non-invasive, and you can start viewing data in less than an hour.</p>
+
+                            <h3>Finally, an energy monitoring solution for all of your equipment.</h3>
+                            
+                            <!-- Body Copy : END -->
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div id="form-container" class="col-md-4">
+                    <!-- FORM : BEGIN -->
+                    <!-- Form Fields : BEGIN -->
+                    <form method="post" name="everything" id="form25" onsubmit="return submitForm(this);" action="https://s1182545284.t.eloqua.com/e/f2">
+
+                        <input value="everything" type="hidden" name="elqFormName">
+                        <input value="1182545284" type="hidden" name="elqSiteId">
+
+                        <!-- Hidden Variables -->
+                        <input type="hidden" name="eloquaStatus" id="eloquaStatus">
+                        <input type="hidden" name="iGLastMSCRMAssetID" id="iGLastMSCRMAssetID">
+                        <input type="hidden" name="emlReciptAddress" id="emlReciptAddress">
+                        <input type="hidden" name="emlSubLine" id="emlSubLine">
+                        <input type="hidden" name="addToCampaign" id="addToCampaign">
+                        <input type="hidden" name="iGLastMSCRMDistributorAccountGUID" id="iGLastMSCRMDistributorAccountGUID">
+                        <input type="hidden" name="redir" id="redir">
+                        <input type="hidden" name="iGLastMSCRMProductGUID" id="iGLastMSCRMProductGUID">
+                        <input type="hidden" name="iGLastReportingProductFamily" id="iGLastReportingProductFamily">
+                        <input type="hidden" name="productLineType" id="productLineType">
+                        <input type="hidden" name="sharedContactList" id="sharedContactList">
+
+
+                        <!-- URL Variables DO NOT TOUCH-->
+                        <input type="hidden" name="utmAdGroup" id="utmAdGroup">
+                        <input type="hidden" name="utmAdName" id="utmAdName">
+                        <input type="hidden" name="utmCampaign" id="utmCampaign">
+                        <input type="hidden" name="utmContent" id="utmContent">
+                        <input type="hidden" name="utmDomain" id="utmDomain">
+                        <input type="hidden" name="utmKW" id="utmKW">
+                        <input type="hidden" name="utmLP" id="utmLP">
+                        <input type="hidden" name="utmMedium" id="utmMedium">
+                        <input type="hidden" name="utmSize" id="utmSize">
+                        <input type="hidden" name="utmSource" id="utmSource">
+                        <input type="hidden" name="utmTerm" id="utmTerm">
+                        <input type="hidden" name="emlConfirm" id="emlConfirm">
+                        <input type="hidden" name="dcUniqueID" id="dcUniqueID">
+                        <input type="hidden" name="elqCampaignId" id="elqCampaignId">
+                        <input type="hidden" name="ixMarcom" id="ixMarcom">
+                        <input type="hidden" name="ixKitCodes" id="ixKitCodes">
+                        <input type="hidden" name="iGLastMSCRMCampaignID" id="iGLastMSCRMCampaignID">
+                        <input type="hidden" name="CampaignResponseActivity" id="CampaignResponseActivity">
+
+
+                        <!-- Editable IX Variables -->
+                        <input type="hidden" name="ixDear" id="ixDear" value="Dear Mr./Mrs.">
+                        <input type="hidden" name="ixAccountNo" id="ixAccountNo" value="Account Default Value">
+                        <input type="hidden" name="ixGender" id="ixGender">
+                        <input type="hidden" anme="ixMailOk" id="ixMailOk">
+
+                        <!-- IX Variables for EUR Lit Fulfilment - DO NOT TOUCH -->
+                        <input type="hidden" name="ixCompany1" id="ixCompany1">
+                        <input type="hidden" name="ixFirstName" id="ixFirstName">
+                        <input type="hidden" name="ixLastName" id="ixLastName">
+                        <input type="hidden" name="ixAddress1" id="ixAddress1">
+                        <input type="hidden" name="ixAddress2" id="ixAddress2">
+                        <input type="hidden" name="ixZip" id="ixZip">
+                        <input type="hidden" name="ixCity" id="ixCity">
+                        <input type="hidden" name="ixCountry" id="ixCountry">
+                        <input type="hidden" name="ixLanguage" id="ixLanguage">
+                        <input type="hidden" name="ixState" id="ixState">
+                        <input type="hidden" name="ixTitle" id="ixTitle">
+                        <!-- Variables for Reverse Logic - DO NOT TOUCH -->
+                        <input type="hidden" name="iGBulkEmailOptOut" id="iGBulkEmailOptOut">
+
+
+
+                        <!-- Form Fields : BEGIN -->
+                        <h3>Yes, I’d like to learn more about Condition Monitoring!</h3>
+
+                        <div class="form-group">
+                            <label class="elqLabel">First Name*</label>
+                            <input id="field1" value="" type="text" name="firstName" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="elqLabel">Email address*</label>
+                            <input id="emailAddress" value="" type="text" name="emailAddress" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="elqLabel">Company*</label>
+                            <input id="company" name="company" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="elqLabel">Country*</label>
+                            <select id="countryone" name="countryNormalized" class="elqField form-control">
+                                    <option value="base">Please Select</option><!-- Hard Code Value -->
+                                </select>
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="elqLabel">Phone number*</label>
+                            <input id="businessPhone" value="" type="text" name="businessPhone" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="elqLabel">Zip or Postal Code*</label>
+                            <input id="zipOrPostalCode" value="" type="text" name="zipOrPostalCode" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                        <div id="optin">
+                            <div>
+                                <div>
+                                    <input id="field43" value="on" name="iGBulkEmailOptIn" type="checkbox" checked="">
+                                    <label class="elqLabel" for="field43">Yes, I would like to receive offers and updates from Fluke.</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <input id="submit" type="submit" class="elqSubmit CTA btn btn-primary btn-lg btn-block" value="Learn More" onclick="setLocalStore();">
+
+                        <p><a href="http://en-us.fluke.com/site/privacy/?elqTrackId=f1453ca5e0344b138c4d45a4dfc5cc38&elqaid=4351&elqat=2" target="_blank">Your privacy is protected by our privacy policy</a></p>
+                        
+                        <!-- Form Group : END -->
+
+                        <!-- Form Fields : END -->
+
+                    </form>
+
+                    <!-- Form Fields : END -->
+                    <!-- FORM : END -->
+                </div>
+            </div>
+          <!-- Content Header : BEGIN -->
+            <div class="row">
+                
+
+                <div class="col-xs-12 bg-dark-gray">
+                    
+                  <h2> </h2>
+
+                </div>
+               
+            </div>
+            <!-- Content Header : END -->
+        </div>
+    </main>
+    <!-- MAIN : END -->
+
+
+    <!-- SECTION : BEGIN -->
+    <section>
+        <div class="container">
+          
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7B4129460d-08ab-457c-9fcc-12cd728564e6%7D_3540-landing-page-banner-box1-387x230.jpg" alt="Man on phone and monitor">
+                    <h3>The power of Fluke Connect</h3>
+                    <p>View your energy quality data on your smartphone, tablet or desktop through the Fluke Condition Monitoring software solution. You’ll be able to track measurement fluctuations over days or months, collect trend data and graph analytics you can share with your team, and keep tabs on critical equipment from anywhere, at any time.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7Bcec53832-373a-4ff6-b7c0-094ef8743cac%7D_3540-landing-page-banner-box2-387x230.jpg" alt="Man with 3540">
+                    <h3>Smarter and safer</h3>
+                    <p>Taking readings on live circuits can be dangerous, and trying to pinpoint intermittent issues or identify trends means you’re spending a lot of time in the arc flash zone. With the 3540 FC, you simply set it up, define your parameters, and monitor equipment from a distance safely outside the arc flash zone, even miles away.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7B3ef8ca53-1eaf-4903-893c-171ee8bc5aba%7D_3540-landing-page-banner-box3-387x230.jpg" alt="Man at computer">
+                    <h3>Data logging made easy</h3>
+                    <p>Characterize power quality, conduct load studies and capture hard-to-find voltage events over a defined period of time. Easily monetize the cost of energy waste due to poor power quality and take informed steps to make your facility as energy-efficient as possible.</p>
+                </div>
+            </div>
+          <div class="row">
+            <div class="col-md-8">
+                <p><strong>What are people saying?</strong></p>
+                    <blockquote>
+                      <p><em>“We have more than 100,000 pieces of equipment and the reliability team can only assess so many. We’ve never been able to have maintenance techs collect data for us, until now. It had to be easy and quick.”</em></p>
+                        <footer><strong>Supervisor, Reliability Centered Maintenance, North American auto manufacturing</strong></footer>
+                    </blockquote>
+            </div>
+        </div> <!--BLOCKQUOTE ROW: END-->
+        </div>
+    </section>
+    
+    
+    
+    <!-- SECTION : END -->
+    
+    
+    <!-- Footer : BEGIN -->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">                
+                <ul>
+                    <li><a href="http://en-us.fluke.com/customer-service/safety-notices?elqTrackId=954719afe51a4f7bb35e57d6069a5b29&elqaid=4351&elqat=2" target="_blank ">Safety Notices</a></li>
+                    <li><a href="http://en-us.fluke.com/site/fluke-sitemap?elqTrackId=ca1e6af53f2f48c690a5c0101836b7e2&elqaid=4351&elqat=2" target="_blank ">Site Map</a></li>
+                    <li><a href="http://en-us.fluke.com/site/privacy?elqTrackId=f155efc087fc40418531bfa0b1418420&elqaid=4351&elqat=2" target="_blank ">Privacy Policy</a></li>
+                    <li><a href="http://en-us.fluke.com/site/terms?elqTrackId=cfe6b7a7b96a4493b205f8b58781f8c7&elqaid=4351&elqat=2" target="_blank ">Fluke Terms of Use</a></li>
+                    <li><a href="http://en-us.fluke.com/site/terms-conditions?elqTrackId=bb2e53ac3b474a7287a0287397068cec&elqaid=4351&elqat=2" target="_blank ">Fluke Terms &amp; Conditions of Sale</a></li>
+                </ul>
+                <p>Copyright ©1995-<script type="text/javascript ">document.write(new Date().getFullYear());</script> Fluke Inc.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Footer : END -->
+    
+                    
+
+    <!-- Form Variables : BEGIN -->
+    <script>
+        <!-- Google UTM Variables DO NOT TOUCH -->
+        document.getElementById('utmCampaign').value = getQueryStringParamValue('utm_campaign');
+        document.getElementById('utmKW').value = getQueryStringParamValue('utm_kw');
+        document.getElementById('utmMedium').value = getQueryStringParamValue('utm_medium');
+        document.getElementById('utmSource').value = getQueryStringParamValue('utm_source');
+        document.getElementById('utmDomain').value = getQueryStringParamValue('utm_domain');
+        document.getElementById('utmSize').value = getQueryStringParamValue('utm_size');
+        document.getElementById('utmAdName').value = getQueryStringParamValue('utm_adname');
+        document.getElementById('utmLP').value = getQueryStringParamValue('utm_lp');
+        document.getElementById('utmAdGroup').value = getQueryStringParamValue('utm_adgroup');
+        document.getElementById('utmTerm').value = getQueryStringParamValue('utm_term');
+        document.getElementById('utmContent').value = getQueryStringParamValue('utm_content');
+
+        <!-- Custom URL Variables DO NOT TOUCH-->
+        if (getQueryStringParamValue('PID')) {
+
+            document.getElementById('redir').value = "http://www.fluke.com/fluke/ " +
+                getQueryStringParamValue('locale') + "/?PID=" + getQueryStringParamValue('PID'); + " &utm_source=Eloqua "
+        } else if (getQueryStringParamValue('Document')) {
+            document.getElementById('redir').value = "http://support.fluke.com/find_it.asp?Document=" + getQueryStringParamValue('Document');
+        } else if (getQueryStringParamValue('publication')) {
+            document.getElementById('redir').value = " http://fluke.informationstore.net/efulfillment.asp?publication=" + getQueryStringParamValue('publication');
+        } else {
+            document.getElementById('redir').value = getQueryStringParamValue('redir');
+        }
+        document.getElementById('emlConfirm').value = getQueryStringParamValue('emlConfirm');
+        document.getElementById('iGLastMSCRMCampaignID').value = getQueryStringParamValue('lcid');
+        document.getElementById('productLineType').value = getQueryStringParamValue('plt');
+        document.getElementById('elqCampaignId').value = getQueryStringParamValue('ecid');
+        document.getElementById('ixMarcom').value = getQueryStringParamValue('ixmar');
+        document.getElementById('ixKitCodes').value = getQueryStringParamValue('ixkc');
+        document.getElementById('sharedContactList').value = getQueryStringParamValue('scl');
+        document.getElementById('CampaignResponseActivity').value = getQueryStringParamValue('cra');
+
+
+
+        switch (getQueryStringParamValue('lrpf')) {
+
+            case "ACC":
+                document.getElementById('iGLastReportingProductFamily').value = "286C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "DMMS":
+                document.getElementById('iGLastReportingProductFamily').value = "2B6C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "EPROD":
+                document.getElementById('iGLastReportingProductFamily').value = "2C6C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "IAD":
+                document.getElementById('iGLastReportingProductFamily').value = "F4E98626-3676-DE11-A28C-001E0B4616F4 ";
+                break;
+            case "IRW":
+                document.getElementById('iGLastReportingProductFamily').value = "D92D1D4A-3676-DE11-A28C-001E0B4616F4 ";
+                break;
+            case "MECH":
+                document.getElementById('iGLastReportingProductFamily').value = "6549A90B-BC15-DF11-A94F-0015C5FDF7E6 ";
+                break;
+            case "MULTI":
+                document.getElementById('iGLastReportingProductFamily').value = "DF2C273B-D270-DE11-BCC9-001E0B46B5F4 ";
+                break;
+            case "FBT":
+                document.getElementById('iGLastReportingProductFamily').value = "AA20900E-12F8-E311-AB56-BC305B2A71D8 ";
+                break;
+            case "FPQ":
+                document.getElementById('iGLastReportingProductFamily').value = "2E6C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "PTOOLS":
+                document.getElementById('iGLastReportingProductFamily').value = "F624B332-3676-DE11-A28C-001E0B4616F4 ";
+                break;
+            case "SAAS":
+                document.getElementById('iGLastReportingProductFamily').value = "3714FA10-4ECA-E311-BF9F-A4BADB1DDEB4 ";
+                break;
+            case "SCM":
+                document.getElementById('iGLastReportingProductFamily').value = "68BB9E41-3676-DE11-A28C-001E0B4616F4 ";
+                break;
+            case "TEMP":
+                document.getElementById('iGLastReportingProductFamily').value = "316C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "TI":
+                document.getElementById('iGLastReportingProductFamily').value = "306C4BD2-C170-DE11-95B8-02BF0A064B97 ";
+                break;
+            case "VIRT":
+                document.getElementById('iGLastReportingProductFamily').value = "1D73815F-601D-E211-8DDC-BC305B2A7226 ";
+                break;
+            default:
+                break;
+        }
+    </script>
+    <!-- Form Variables : END -->
+
+<!--[if lt IE 7]>
+<script src='http://images.a.fluke.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+<!--[if lt IE 7]>
+<script src='http://images.a.fluke.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+</body>
+
+</html>
+<script type="text/javascript">
+<!--
+if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+     document.write('<layer hidden=true><img src="http://s1182545284.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1182545284&PURLSiteID=5&optin=disabled&PURLSiteAlternateDNSID=0&LandingPageID=4351&PURLRecordID=0&PURLGUID=3F2578E79B1440059EB00B8BF2A950C4&UseRelativePath=True&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 alt="" ><\/layer>');
+}else{
+     document.write('<img style="display:none" src="http://s1182545284.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1182545284&PURLSiteID=5&optin=disabled&PURLSiteAlternateDNSID=0&LandingPageID=4351&PURLRecordID=0&PURLGUID=3F2578E79B1440059EB00B8BF2A950C4&UseRelativePath=True&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 alt="">');
+}
+
+-->
+</script>

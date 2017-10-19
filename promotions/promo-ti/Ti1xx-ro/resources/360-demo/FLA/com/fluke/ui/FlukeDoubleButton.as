@@ -1,0 +1,1 @@
+﻿package com.fluke.ui{	import com.fluke.ui.*;		public class FlukeDoubleButton extends FlukeButton	{					}}

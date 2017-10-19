@@ -1,0 +1,52 @@
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+#wrapper-lp h1,
+#wrapper-lp h2,
+#wrapper-lp h3,
+#header-lp span{font-family:'Roboto Slab', serif;font-weight:bold;}
+#wrapper-lp{font-family:'Roboto Slab', serif;}
+#wrapper-lp p,
+#wrapper-lp li,
+#wrapper-lp a{font-family:"Helvetica Neue", Helvetica, sans-serif;}
+#col-left,
+#col-right,
+.col-1,
+.col-2{float:left;}
+#col-left{width:60%;}
+.col-1{width:60%;}
+.col-2{width:40%;}
+.body{background-color:#000000;}
+.img .a{border:0;}
+#banner-lp{width:1200px;margin:0 auto;background:#fff;}
+#wrapper-lp{width:1200px;margin:0 auto;background:#fff;}
+#banner-lp{width:1200px;margin:0 auto;background:#000;padding:20px 0;}
+#header-lp{width:1200px;height:290px;background-image:url('http://www.fluke.com/NR/rdonlyres/3066EFDA-F253-4808-9DEC-CAC71B97C107/0/6005973_EMEA_TiS_LP_header.jpg');background-repeat:none;padding-top:25px;border:0;}
+#header-lp img{display:block;}
+#eight{display:inline-block;font-size:145px;margin-left:10px;}
+#header-lp h1{font-size:50px;line-height:60px;display:inline-block;margin-left:10px;}
+#header-lp h1 span{color:#336699;}
+.clear-fix:after,
+.clear-fix:before,
+.row:after{display:table;content:"";clear:both;}
+#col-left{padding:20px 10px;}
+#col-left h2{font-size:42px;margin:0;}
+#col-left h2 span{font-size:12pt;margin:0;}
+#col-left h3{font-size:54px;color:#6f6f6f;margin:0 0 50px 0;}
+#col-left h3 span{color:#ffc20e;}
+#col-left p,
+#col-left li{font-size:17px;}
+#col-left ul{padding-left:0px;margin-top:0px;margin-bottom:;;}
+#wrapper-lp .small-font{margin-top:0px;padding-bottom:5px;font-size:11px;}
+.col-1,
+.col-2{padding-top:15px;}
+.col-2 ul li{padding-bottom:5px;}
+#fc{margin-right:90px;margin-bottom:20px}
+#apple,
+#google{margin-bottom:30px;border:0;}
+#apple{margin-right:5px;border:0;}
+#footer-lp{background-color:#000;padding:20px 0px;}
+#footer-lp ul li{list-style-type:none;display:inline-block;color:#ffc20e;}
+#footer-lp a{color:#ffc20e;}
+.button{display:inline-block;background-color:#336699;color:#ffffff;font-size:18px !important;font-weight:bold;text-align:center;padding:15px 0px;border:1px solid #003b78;transition:1s;-webkit-transition:1s;-moz-transition:1s;bottom:0;}
+.col-1 .button{min-width:372px;margin-bottom:80px;}
+.col-2 .button{width:276px;margin-bottom:10px;}
+.button:hover{color:#000;transition:1s;-webkit-transition:1s;-moz-transition:1s;text-decoration:none;}

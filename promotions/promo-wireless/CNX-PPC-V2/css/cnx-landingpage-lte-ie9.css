@@ -1,0 +1,25 @@
+table.cnx-landingpage .lte-ie9 {
+	display:inherit;
+}
+
+table.cnx-landingpage .lte-ie9.shadow {
+	display:block;
+	zoom:1;
+	color:#222222;
+	position:absolute;
+	top:0;
+	filter: progid:DXImageTransform.Microsoft.blur(MakeShadow='false', PixelRadius='2',ShadowOpacity='0.75');
+}
+
+table.cnx-landingpage #title1 {
+	left:49px;
+}
+
+table.cnx-landingpage #title2 {
+	top:5px;
+	left:422px;
+}
+
+table.cnx-landingpage #title3 {
+	left:40px;
+}
