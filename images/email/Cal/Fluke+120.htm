@@ -1,0 +1,727 @@
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<html lang="en">
+<!--HEAD.start---------------------------------------------------------------------------------------------------->
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+			<!-- Added by Zensar 20th Sept start-->
+			
+				<title>Fluke ScopeMeter® 120 Series</title>
+			
+			
+			<link rel="stylesheet" type="text/css" href="/css/FlukeStyle.css">
+			<meta name="lang" content="en">
+			<meta name="description" content="">
+			<meta name="keywords" content="">
+								
+			<META NAME="CATEGORY" CONTENT="SCM">
+			<META NAME="CONTENTNAME" CONTENT="Fluke ScopeMeter® 120 Series">
+			<META NAME="CONTENTTYPE" CONTENT="M">
+			<META NAME="CATALOG" CONTENT="FlukeProducts">
+		
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+				var IDS_FRAMEWORK_VIRTUAL_PATH =  "/NR/System/WBC";
+		// -->
+		</script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</head>
+<!--HEAD.end---------------------------------------------------------------------------------------------------->
+<!--BODY.start---------------------------------------------------------------------------------------------------->
+  <body onResize="doResize();" onLoad="doResize();" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF">
+<TABLE ALIGN="CENTER" CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH=780 bgcolor="#FFFFFF"><TR><TD>
+
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+
+<!--NAVTOP.start---------------------------------------------------------------------------------------------------->
+<!--NAVTOP.end---------------------------------------------------------------------------------------------------->
+			<script language="JavaScript"> 
+var MenusOn = 0;
+var brw = 0	//browser type  0=IE&Opera6, 1=NS4, 2=NS6, 3=other
+if (document.all) brw = 0 //IE , Opera6
+else if (document.layers) brw = 1 //NS4
+else if (document.getElementById) brw = 2 //NS6
+else brw = 3 //other: do not run javascript 
+
+//alert(brw);
+
+function doResize(){
+MenusOn=1;//turn on the menu's
+var offset = Math.floor((document.body.clientWidth-780)/2);
+if (brw == 0){ //IE, Opera
+if (offset <0) offset=0
+document.all['apps'].style.pixelLeft = offset+54;
+document.all['apps2'].style.pixelLeft = offset+54;
+document.all['products'].style.pixelLeft = offset+144;
+document.all['products2'].style.pixelLeft = offset+144;
+document.all['new'].style.pixelLeft = offset+314;
+document.all['new2'].style.pixelLeft = offset+314;
+document.all['support'].style.pixelLeft = offset+400;
+document.all['support2'].style.pixelLeft = offset+400;
+document.all['Service'].style.pixelLeft = offset+465;
+document.all['Service2'].style.pixelLeft = offset+465;
+document.all['about'].style.pixelLeft = offset+529;
+document.all['about2'].style.pixelLeft = offset+529;
+}
+if (brw == 2){ //netscape, firefox
+if (offset <0) offset=0
+document.getElementById('apps').style.left = offset+54;
+document.getElementById('apps2').style.left = offset+54;
+document.getElementById('products').style.left = offset+144;
+document.getElementById('products2').style.left = offset+144;
+document.getElementById('new').style.left = offset+314;
+document.getElementById('new2').style.left = offset+314;
+document.getElementById('support').style.left = offset+400;
+document.getElementById('support2').style.left = offset+400;
+document.getElementById('Service').style.left = offset+465;
+document.getElementById('Service2').style.left = offset+465;
+document.getElementById('about').style.left = offset+529;
+document.getElementById('about2').style.left = offset+529;
+}
+}
+//by passing in the the ID or Name of the div tag we change its visibility to 'visible'
+function ShowDiv(divID)
+{
+if (MenusOn == 1){
+var divID2 = divID +'2';
+if (brw == 2){
+document.getElementById(divID).style.visibility = 'visible'; //NS6 
+document.getElementById(divID2).style.visibility = 'visible'; //NS6 
+} 
+if (brw == 0){
+var objSel = document.getElementsByTagName('select');
+for (var iCounter = 0; iCounter < objSel.length; iCounter++){
+	objSel(iCounter).style.visibility = 'hidden';
+}
+document.all[divID].style.visibility = 'visible'; //IE, Opera 
+document.all[divID2].style.visibility = 'visible'; //IE, Opera 
+}
+}//END if MenusOn
+}//END ShowDiv
+// Check which menus are visible and hide them
+function hideAll()
+{
+if (brw == 2){ //NS6
+if (document.getElementById('apps').style.visibility != "hidden") {document.getElementById('apps').style.visibility = "hidden";}
+if (document.getElementById('apps2').style.visibility != "hidden") {document.getElementById('apps2').style.visibility = "hidden";}
+if (document.getElementById('products').style.visibility != "hidden") {document.getElementById('products').style.visibility = "hidden";}
+if (document.getElementById('products2').style.visibility != "hidden") {document.getElementById('products2').style.visibility = "hidden";}
+if (document.getElementById('new').style.visibility != "hidden") {document.getElementById('new').style.visibility = "hidden";}
+if (document.getElementById('new2').style.visibility != "hidden") {document.getElementById('new2').style.visibility = "hidden";}
+if (document.getElementById('support').style.visibility != "hidden") {document.getElementById('support').style.visibility = "hidden";}
+if (document.getElementById('support2').style.visibility != "hidden") {document.getElementById('support2').style.visibility = "hidden";}
+if (document.getElementById('Service').style.visibility != "hidden") {document.getElementById('Service').style.visibility = "hidden";}
+if (document.getElementById('Service2').style.visibility != "hidden") {document.getElementById('Service2').style.visibility = "hidden";}
+if (document.getElementById('about').style.visibility != "hidden") {document.getElementById('about').style.visibility = "hidden";}
+if (document.getElementById('about2').style.visibility != "hidden") {document.getElementById('about2').style.visibility = "hidden";}
+}
+if (brw == 0){ //IE, Opera
+var objSel = document.getElementsByTagName('select');
+for (var iCounter = 0; iCounter < objSel.length; iCounter++){
+	objSel(iCounter).style.visibility = 'visible';
+}
+if (document.all['apps'].style.visibility != "hidden") {document.all['apps'].style.visibility = "hidden";}
+if (document.all['apps2'].style.visibility != "hidden") {document.all['apps2'].style.visibility = "hidden";}
+if (document.all['products'].style.visibility != "hidden") {document.all['products'].style.visibility = "hidden";}
+if (document.all['products2'].style.visibility != "hidden") {document.all['products2'].style.visibility = "hidden";}
+if (document.all['new'].style.visibility != "hidden") {document.all['new'].style.visibility = "hidden";}
+if (document.all['new2'].style.visibility != "hidden") {document.all['new2'].style.visibility = "hidden";}
+if (document.all['support'].style.visibility != "hidden") {document.all['support'].style.visibility = "hidden";}
+if (document.all['support2'].style.visibility != "hidden") {document.all['support2'].style.visibility = "hidden";}
+if (document.all['Service'].style.visibility != "hidden") {document.all['Service'].style.visibility = "hidden";}
+if (document.all['Service2'].style.visibility != "hidden") {document.all['Service2'].style.visibility = "hidden";}
+if (document.all['about'].style.visibility != "hidden") {document.all['about'].style.visibility = "hidden";}
+if (document.all['about2'].style.visibility != "hidden") {document.all['about2'].style.visibility = "hidden";}
+}
+}// END hideAll
+function PopItUp(sURL,W,H){
+window.open(sURL,'','status=no,height='+H+',width='+W+',scrollbars=1,resizable=1,toolbar=0');
+}
+//-->
+</script>
+<div onmouseout="hideAll();" onmouseover="hideAll();" style="visibility:visible; position:absolute; TOP:46px; LEFT:0px" name="InvisibleBar">
+<img src="/images/spacer.gif" width="700" height="5" border="0">
+</div>
+<!----- apps ------>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('apps');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:54px" name="apps" id="apps">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/apps/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">Applications<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('apps');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:54px" name="apps2" id="apps2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="http://global.flukebiomedical.com/busen/home/default.htm" class="Nav">Biomedical</a><br>
+<a href="/usen/apps/Education/" class="Nav">Education</a><br>
+<a href="/usen/apps/electrical/" class="Nav">Electrical</a><br>
+<a href="/usen/apps/electronics/" class="Nav">Electronics</a><br>
+<a href="/usen/apps/IAQ/" class="Nav">HVAC&nbsp;-&nbsp;IAQ</a><br>
+<a href="/usen/apps/plant/" class="Nav">Plant&nbsp;Maintenance</a><br>
+<a href="/usen/apps/PM/" class="Nav">Precision&nbsp;Measurement</a><br>
+<a href="/usen/apps/ProcessControl/" class="Nav">Process&nbsp;Control</a><br>
+<a href="/usen/apps/Safety/" class="Nav">Safety</a><br>
+<a href="/usen/apps/Thermography/" class="Nav">Thermal&nbsp;Imaging</a><br>
+<a href="/usen/apps/Utilities/" class="Nav">Utilities</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('products');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:144px" name="products" id="products">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/products/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">Products<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('products');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:144px" name="products2" id="products2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="/usen/support/AccessorySearch/default.htm" class="Nav">Accessories</a><br>
+<a href="/usen/products/categoryben.htm" class="Nav">Bench Instruments</a><br>
+<a href="http://global.flukebiomedical.com" class="Nav">Biomedical</a><br>
+<a href="/usen/products/category.htm?category=NMT(FlukeProducts)" class="Nav">Cable Testers</a><br>
+<a href="/usen/products/category.htm?category=CAL(FlukeProducts)" class="Nav">Calibration Instruments</a><br>
+<a href="/usen/products/categoryclmp" class="Nav">Clamp Meters</a><br>
+<a href="/usen/products/categorydaq" class="Nav">Data Acquisition Equipment</a><br>
+<a href="/usen/products/categorydmm" class="Nav">Digital Multimeters</a><br>
+<a href="/usen/products/categoryegt" class="Nav">Earth Ground</a><br>
+<a href="/usen/products/categoryind" class="Nav">Electrical Test Tools</a><br>
+<a href="/usen/products/categoryiaq.htm" class="Nav">HVAC/IAQ Tools</a><br>
+<a href="/usen/products/categoryinsul.htm" class="Nav">Insulation Testers</a><br>
+<a href="/usen/products/category.htm?category=SCM(FlukeProducts)" class="Nav">Portable Oscilloscopes</a><br>
+<a href="/usen/products/categorypqttop.htm" class="Nav">Power Quality Tools</a><br>
+<a href="/usen/products/CategoryPCT.htm" class="Nav">Process Calibration Tools</a><br>
+<a href="/usen/products/CategoryTI" class="Nav">Thermal Imaging</a><br>
+<a href="/usen/products/CategoryTemp.htm" class="Nav">Thermometers</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+<!----- new ------>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('new');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:314px" name="new" id="new">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/new/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">What's&nbsp;New<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('new');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:314px" name="new2" id="new2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="/usen/new/promos/" class="Nav">Contests&nbsp;and&nbsp;Promotions</a><br>
+<a href="/usen/new/events/" class="Nav">Events&nbsp;and&nbsp;Training</a><br>
+<a href="/usen/new/NewProduct/" class="Nav">New&nbsp;Products</a><br>
+<a href="/usen/new/press/" class="Nav">Press&nbsp;Releases</a><br>
+<a href="http://www.cse-fluke.com" TARGET="_blank" class="Nav">Promotional&nbsp;Items</a><br>
+<a href="/usen/new/safetynotes/" class="Nav">Safety&nbsp;Notices</a><br>
+<a href="/usen/new/demos/" class="Nav">Virtual&nbsp;Product&nbsp;Demos</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+<!----- support ------>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('support');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:400px" name="support" id="support">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/support/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">Support<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('support');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:400px" name="support2" id="support2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="/usen/support/appnotes/" class="Nav">Application&nbsp;Notes</a><br>
+<a href="http://www.testtools.fluke.dgtlpub.com" TARGET="_Blank" class="Nav">Online&nbsp;Catalog</a><br>
+<a href="http://register.fluke.com/globalforms/global.asp?formnum=66&locale=usen" TARGET="_blank" class="Nav">Request&nbsp;Catalog</a><br>
+<a href="/usen/apps/Education/" class="Nav">Education&nbsp;Partnership&nbsp;Program</a><br>
+<a href="/usen/support/events/" class="Nav">Events&nbsp;and&nbsp;Training</a><br>
+<a href="http://plus.fluke.com" class="Nav">Fluke&nbsp;Plus</a><br>
+<a href="/usen/support/Instrument+Security/" class="Nav">Instrument&nbsp;Security</a><br>
+<a href="/usen/support/manuals/" class="Nav">Manuals</a><br>
+<a href="http://register.fluke.com" TARGET="_blank" class="Nav">Product&nbsp;Registration</a><br>
+<a href="/usen/support/safetynote/" class="Nav">Safety&nbsp;Notices</a><br>
+<a href="/usen/support/software/" class="Nav">Software&nbsp;Downloads</a><br>
+<a href="/usen/support/demos/" class="Nav">Virtual&nbsp;Product&nbsp;Demos</a><br>
+<a href="/usen/about/contactus/default.htm" class="Nav">Contact&nbsp;Us</a><br>
+<a href="/usen/support/AccessorySearch/" class="Nav">Accessory&nbsp;Search</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+<!----- Service ------>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('Service');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:465px" name="Service" id="Service">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/Service/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">Service<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('Service');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:465px" name="Service2" id="Service2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="/usen/Service/Accreditation/" class="Nav">Accreditation</a><br>
+<a href="/usen/Service/calservice/" class="Nav">Calibration&nbsp;Service</a><br>
+<a href="/usen/Service/OnlineRMA/" class="Nav">Online&nbsp;Service&nbsp;RMA</a><br>
+<a href="/usen/Service/ServiceCenters/" class="Nav">Service&nbsp;Centers</a><br>
+<a href="/usen/Service/service/" class="Nav">Service&nbsp;Programs</a><br>
+<a href="/usen/Service/Warranties/" class="Nav">Warranties</a><br>
+<a href="/usen/Service/ReplacementParts/" class="Nav">Replacement&nbsp;Parts</a><br>
+<a href="/usen/Service/FuseGuide/" class="Nav">Fuse&nbsp;Selection&nbsp;Guide</a><br>
+<a href="/usen/about/contactus/default.htm" class="Nav">Contact&nbsp;Us</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+<!----- about ------>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('about');"  style="z-index:0; visibility:hidden; position:absolute; TOP:56px; LEFT:529px" name="about" id="about">
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="table1">
+<tr height="20">
+<td bgcolor="#999999" VALIGN="bottom" ALIGN="left"><a href="/usen/about/" class="Nav"><img SRC="/images/spacer.gif" width="10" height="8" border="0">About&nbsp;Us<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+<br clear="ALL">
+</div>
+<div onmouseout="hideAll();" onmouseover="hideAll(); ShowDiv('about');"  style="z-index:0; visibility:hidden; position:absolute; TOP:76px; LEFT:529px" name="about2" id="about2">
+<table border="0" cellspacing="0" cellpadding="0" align="left" id="table2">
+<tr valign="top">
+<td valign="top" bgcolor="#999999"><img src="/images/spacer.gif" width="9" height="9" border="0"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="top" width="9" height="9"><img src="/images/Menu_TR_corner.gif" border="0"  width="9" height="9"></td>
+</tr>
+<tr valign="top" >
+<td bgcolor="#999999" height="99%">&nbsp;</td>
+<td valign="top" bgcolor="#999999">
+<a href="/usen/about/contactus/" class="Nav">Contact&nbsp;Us</a><br>
+<a href="/usen/about/Employment/" class="Nav">Employment</a><br>
+</td>
+<td  bgcolor="#999999" height="99%">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BL_corner.gif" border="0" width="9" height="9"></td>
+<td bgcolor="#999999"><img src="/images/spacer.gif" width="100" height="9" border="0"></td>
+<td valign="bottom" width="9" height="9"><img src="/images/Menu_BR_corner.gif" border="0" width="9" height="9"></td>
+</tr>
+</table>
+</div>
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" id="Table3">
+<tr>
+<td>
+<!----------- Very Top Black area with Logo -------------->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000000" id="Table4">
+<tr height="56">
+<td valign="top" align="left" height="56"><img src="/usen/images/Flag_Globe.gif"  border="0"></td>
+<td valign="top" align="right" height="56"><img src="/images/spacer.gif" width="134" height="5" border="0"><BR><A HREF="/usen/home/"><img id="logo" src="/usen/images/flukelogo.gif"  border="0"></A></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!----------- top NAVIGATION items -------------->
+<table bgcolor="black" width="100%" border="0" cellspacing="0" cellpadding="0" align="left" id="Table5">
+<tr height="20" align="top">
+<td>
+<table bgcolor="black" border="0" cellspacing="0" cellpadding="1" align="left" id="Table6">
+<tr height="20" valign="top">
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="this.style.backgroundColor='#999999';hideAll(); " onmouseout="this.style.backgroundColor='black'"><a href="/usen/home/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Home<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="hideAll(); ShowDiv('apps');" onmouseout="this.style.backgroundColor='black'"><a href="/usen/apps/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Applications<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="#FFCC00" onmouseover="hideAll(); ShowDiv('products');" onmouseout="this.style.backgroundColor='#FFCC00'"><a href="/usen/products/" class="HNav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Products<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="this.style.backgroundColor='#999999';hideAll(); " onmouseout="this.style.backgroundColor='black'"><a href="/usen/wtb/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Where&nbsp;To&nbsp;Buy<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="hideAll(); ShowDiv('new');" onmouseout="this.style.backgroundColor='black'"><a href="/usen/new/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">What's&nbsp;New<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="hideAll(); ShowDiv('support');" onmouseout="this.style.backgroundColor='black'"><a href="/usen/support/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Support<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="hideAll(); ShowDiv('Service');" onmouseout="this.style.backgroundColor='black'"><a href="/usen/Service/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">Service<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+<td VALIGN="bottom" ALIGN="left" nowrap id="Nav" bgcolor="black" onmouseover="hideAll(); ShowDiv('about');" onmouseout="this.style.backgroundColor='black'"><a href="/usen/about/" class="Nav" id="Nav"><img src="/images/spacer.gif" width="10" height="8" border="0">About&nbsp;Us<img src="/images/spacer.gif" width="10" height="8" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!------------- Yellow Bar ------------------>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffcc00" id="Table7">
+<tr>
+<td height="6" width="100%" bgcolor="#ffcc00" colspan="3"><img src="/images/spacer.gif" height="6" width="400" border="0"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!------------- WhiteSpace ------------------>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="Table8">
+<tr valign="top">
+<td  height="5" width="100%"><img src="/images/spacer.gif" width="60" height="10" border="0"></td>
+</tr> 
+</table>
+</td>
+</tr>
+</table>
+					</td>
+				</tr>
+			</table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" width="5"><img src="/images/spacer.gif" border="0" width="5" height="1" alt=""></td>
+					
+
+
+<!--Start.Left.Nav PRODUCT-->	
+          <td valign="top" width="180">
+    
+              <!--SEARCHBOX.start-->
+              <table width="180" border="0" cellpadding="0" cellspacing="0" bgcolor="#666666"><tr><td><table width="180" border="0" cellpadding="0" cellspacing="0" bgcolor="#666666"><tr><td><img src="/images/SideNav_TL_corner.gif" border="0" width="8" height="6" alt=""></td><td><img src="/images/Spacer.gif" border="0" width="164" height="6" alt=""></td><td><img src="/images/SideNav_TR_corner.gif" border="0" width="8" height="6" alt=""></td></tr></table></td></tr><tr><td valign="top" width="180"><table width="180" border="0" cellpadding="0" cellspacing="0" ID="Table3"><tr><td valign="top" width="20"><img src="/images/spacer.gif" border="0" width="5" height="1"></td><td valign="top" width="140"><table border="0" cellpadding="0" cellspacing="0" ID="Table9"><form name="frmSearchBox" id="frmSearchBox" method="get" action="/usen/Home/Search.asp"><tr><td valign="top"><input maxlength="100" type="text" value="" class="smallest2" size="12" name="txtSearchBox" id="txtSearchBox"></td><td valign="top"><img src="/images/spacer.gif" width="4" height="1"></td><td valign="top"><img src="/images/spacer.gif" width="1" height="4"><BR><input type="image" src="/images/go3.gif" border="0" ALT="Product Search" STYLE="z-index:0;"></td></tr><tr><td valign="top" colspan="3"><img src="/images/spacer.gif" border="0" width="1" height="5"></td></tr><tr><td valign="top" colspan="3" class="SearchTitle">Product Search</td></tr></form></table>   </td>		<td valign="top" width="20"><img src="/images/spacer.gif" border="0" width="5" height="1"></td>		</tr>		</table></td></tr><tr><td>   <table width="180" border="0" cellpadding="0" cellspacing="0" bgcolor="#666666"><tr><td><img src="/images/SideNav_BL_corner.gif" border="0" width="8" height="6" alt=""></td><td><img src="/images/Spacer.gif" border="0" width="164" height="6" alt=""></td><td><img src="/images/SideNav_BR_corner.gif" border="0" width="8" height="6" alt=""></td></tr></table></td></tr></table><table width="180" border="0" cellpadding="0" cellspacing="0" ID="Table4"><tr><td valign="top"><img src="/images/spacer.gif" border="0" width="1" height="10"></td></tr></table>
+              <!--SEARCHBOX.end-->
+              
+              <!--NAVSIDE.start-->
+              <table width="180" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_UL.gif" BORDER=0 HEIGHT=5 Width=5></TD>
+<td>
+      <table width="170" border=0 cellpadding=0 cellspacing=0>
+      <TR><TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=2></TD></TR>
+      <TR><TD><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=3></TD></TR>
+      </TABLE>
+</TD>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_UR.gif" BORDER=0 HEIGHT=5 Width=5></TD>
+<TR>
+<TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=2 HEIGHT=10></TD>
+<TD><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=3 HEIGHT=10></TD>
+<TD>
+			      <table width="170" border=0 cellpadding="3" cellspacing="3">
+			      	<tr>
+			      	<td bgcolor="#FFCC00"  width="170" height="18" colspan="3" valign="top">		      		<a class="HNav" href="/usen/products/Fluke+120.htm?catalog_name=FlukeUnitedStates&category=SCM(FlukeProducts)">Product Home</a></td>
+		      		</tr>
+			      	<tr>
+		      		<td bgcolor="#777777"  width="170" height="18" colspan="3" valign="top">		    			<a class="Nav" href="/usen/products/features.htm?cs_id=8221(FlukeProducts)&category=SCM(FlukeProducts)">Features</a></td>
+		      		</tr>
+			      	<tr>
+			      	<td bgcolor="#777777"  width="170" height="18" colspan="3" valign="top">						  <a class="Nav" href="/usen/products/specifications.htm?cs_id=8221(FlukeProducts)&category=SCM(FlukeProducts)">Specifications</a></td>
+				      </tr>
+			      	<tr>
+			      	<td bgcolor="#777777"  width="170" height="18" colspan="3" valign="top">			    		<a class="Nav" href="/usen/products/moa.htm?cs_id=8221(FlukeProducts)&category=SCM(FlukeProducts)">Models, Pricing, Options, Accessories</a></td>
+			      	</tr>
+		    	  </table>
+</TD>
+<TD><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=3 HEIGHT=10></TD>
+<TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=2 HEIGHT=10></TD>
+<tr>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_BL.gif" BORDER=0 Height=5 Width=5></TD>
+<td>
+        <table width="170" border=0 cellpadding=0 cellspacing=0>
+        <TR><TD><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=3></TD></TR>
+        <TR><TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=2></TD></TR>
+        </TABLE>
+</TD>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_BR.gif" BORDER=0 Height=5 Width=5></TD>
+<TR>
+</TABLE>
+<IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=150 HEIGHT=10><table width="180" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_UL.gif" BORDER=0 Height=5 Width=5></TD>
+<td>
+      <table width="170" border=0 cellpadding=0 cellspacing=0>
+      <TR><TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=2></TD></TR>
+      <TR><TD><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=3></TD></TR>
+      </TABLE>
+</TD>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_UR.gif" BORDER=0 Height=5 Width=5></TD>
+<TR>
+<TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=2 HEIGHT=10></TD>
+<TD><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=3 HEIGHT=10></TD>
+<TD>
+			      <table width="170" border=0 cellpadding="3" cellspacing="3">
+	            <tr>	            	<td bgcolor="#777777"  width=170 colspan=3 valign=top height=18><a class="nav" href="/usen/products/ProductManuals.htm?cs_id=8221(FlukeProducts)&category=SCM(FlukeProducts)">Manuals</a></td>	            </tr>	            <tr>	          	  <td bgcolor="#777777" width=170 colspan=3 valign=top height=18><a class="nav" target="_blank"	        		  href="http://register.fluke.com/default.asp?PID=8221">Product Registration</a></td>	            </tr><tr>
+<td bgcolor="#777777" width=170 colspan=3 valign=top height=18><a class="nav" target="_blank" href="http://support.fluke.com/find_it.asp?Document=1629083&src=www&cms_site=usen&cms_path=products, fluke 120">Data Sheet</a></td>
+</tr>
+<tr>
+<td bgcolor="#777777" width=170 colspan=3 valign=top height=18><a class="nav" href="javascript:PopItUp('/VirtualDemos/120_demo.swf','600','590')">Virtual Product Demo</a></td>
+</tr>
+<tr>
+<td bgcolor="#777777" width=170 colspan=3 valign=top height=18><a class="nav" target="_blank" href="http://support.fluke.com/find_it.asp?Document=1629090&src=www&cms_site=usen&cms_path=products, fluke 120">Brochure</a></td>
+</tr>
+		    	  </table>
+</TD>
+<TD><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=3 HEIGHT=10></TD>
+<TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 WIDTH=2 HEIGHT=10></TD>
+<tr>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_BL.gif" BORDER=0 Height=5 Width=5></TD>
+<td>
+        <table width="170" border=0 cellpadding=0 cellspacing=0>
+        <TR><TD><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=3></TD></TR>
+        <TR><TD BGCOLOR="#666666"><IMG SRC="/images/spacer.gif" BORDER=0 Width=10 HEIGHT=2></TD></TR>
+        </TABLE>
+</TD>
+<td COLSPAN=2><IMG SRC="/images/NavSide/crnr_BR.gif" BORDER=0 Height=5 Width=5></TD>
+<TR>
+</TABLE>
+
+              <!--NAVSIDE.end-->
+              						
+              <!--GetEditModeForm().start-->
+							
+              <!--GetEditModeForm().end-->
+              						
+					</td>
+<!--End.Left.Nav PRODUCT-->
+          
+					<td valign="top" width="10"><img src="/images/spacer.gif" border="0" width="10" height="1" alt=""></td>
+					<td valign="top" width="90%">
+          
+          <!--MAIN_BODY.start---------------------------------------------------------------------------------------------------->
+						<table border="0" cellpadding="0" cellspacing="0">
+              <TR>
+                <td valign="top"><a class=smalllink href= "/usen/products/category.htm?category=SCM(FlukeProducts)">Portable Oscilloscopes</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</td>
+              </TR>
+              <TR>
+                <td valign="top"><img src="/images/spacer.gif" border="0" width="5" height="5"></td>
+              </TR>
+              
+              <TR>
+                <td valign="top"></td>
+              </TR>     
+							<tr>
+								<td valign="top" CLASS="BlueHeadline">Fluke ScopeMeter® 120 Series</td>
+							</tr>
+              <TR>
+                <td valign="top"><img src="/images/spacer.gif" border="0" width="5" height="5"></td>
+              </TR>
+              <tr>
+								<td valign="top">
+                <table border=0 cellpadding="0" cellspacing="0">
+                  <TR>
+                  <TD valign="top" width=200>
+                  <img src="/images/Products/industrial/Portable_Oscilloscopes/120_series.jpg" border="0" alt="Fluke ScopeMeter® 120 Series">
+                  <BR>
+                  
+                  </TD>
+                  <td valign="top" width=10><img src="/images/spacer.gif" border="0" width="5" height="1" alt=""></td>
+					        <TD valign="top">
+                  <P><span class="BlackSubHead">ScopeMeter® 120 Series: Three-in-one simplicity</span>
+<P><span class="prdplaintext">The compact ScopeMeter 120 Series is the rugged solution for industrial troubleshooting and installation applications. It’s a truly integrated test tool, with oscilloscope, multimeter and “paperless” recorder in one affordable, easy-to-use instrument. Find fast answers to problems in machinery, instrumentation, control and power systems.</span>
+<P><A HREF="http://us.fluke.com/usen/products/Fluke+125.htm?catalog_name=FlukeUnitedStates&category=SCM(FlukeProducts)"><span class="">The ScopeMeter 125 also features Bus Health Test for industrial bus systems</span></a>
+<span class="PrdPlainText">and has power measurement capabilities.</span>
+<P><img border="0" src="/images/products/tempwtb/en61010-1-600cat3_xx.jpg">
+&nbsp;<img border="0" src="/images/products/tempwtb/true_rms_en.jpg">
+
+                  </TD>
+                  </TR>
+                  <TR>
+                  <TD colspan="3"><img src="/images/spacer.gif" border="0" width="5" height="5"></td>
+                  </tr>
+                    <TR>
+<TD colspan="3"></td>
+  </TR>
+  <TR><TD colspan="3"><img src="/images/spacer.gif" border="0" width="5" height="5"></td></tr>
+                  <TR>
+                  <TD colspan="3">
+                   
+                   </td>
+                  </tr>
+                </TABLE>
+                </td>
+              </tr>
+						</table>
+<!--MAIN_BODY.end---------------------------------------------------------------------------------------------------->
+					</td>
+					<td valign="top" width="10"><img src="/images/spacer.gif" border="0" width="10" height="1" alt=""></td>
+					<td valign="top" width="120">
+
+<!--FEATURED_PRODUCTS.start---------------------------------------------------------------------------------------------------->
+<table width="120" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" width="5"><img src="/images/NavRt/120_bar_crnr_lft.gif" border="0"></td>
+<td valign="top" ALIGN="center" width="110" BGCOLOR="#666666"><DIV ALIGN="center"><img src="/usen/images/Ftrd_prod_120_hdr.gif" border="0"></DIV></td>
+<td valign="top" width="5"><img src="/images/NavRt/120_bar_crnr_rt.gif" border="0"></td>
+</tr>
+<tr>
+<td valign="top" COLSPAN=3 BGCOLOR="#999999"><img src="/images/spacer.gif" border="0" Height="3"></td>
+</tr>
+<tr>
+<td valign="top" width="5" bgColor="#999999"><img src="/images/spacer.gif" border="0" width="5" height="1" alt=""></td>
+<td valign="top" width="110"><table width="110" border="0" cellpadding="0" cellspacing="0" bgColor="#999999">
+<tr align="center">  <td align="center"><a href="/usen/products/AccessoryDetail.htm?cs_id=9319%28FlukeProducts%29&catalog_name=FlukeUnitedStates"><img src="/images/products/accessories/i410_02h_t.gif" border="0"></a></td>
+</tr>
+<tr>
+	 <td class="SmallLink" align="center">&nbsp;<a class="FeaturedLink" href="/usen/products/AccessoryDetail.htm?cs_id=9319%28FlukeProducts%29&catalog_name=FlukeUnitedStates">i410</a></td></tr>
+<tr align="center">  <td align="center"><a href="/usen/products/AccessoryDetail.htm?cs_id=8572%28FlukeProducts%29&catalog_name=FlukeUnitedStates"><img src="/images/products/accessories/80tk_69p.jpg" border="0"></a></td>
+</tr>
+<tr>
+	 <td class="SmallLink" align="center">&nbsp;<a class="FeaturedLink" href="/usen/products/AccessoryDetail.htm?cs_id=8572%28FlukeProducts%29&catalog_name=FlukeUnitedStates">80TK</a></td></tr>
+<tr align="center">  <td align="center"><a href="/usen/products/FlukeView+for+Scopemeter.htm?catalog_name=FlukeUnitedStates"><img src="/images/products/accessories/sw90w_t.gif" border="0"></a></td>
+</tr>
+<tr>
+	 <td class="SmallLink" align="center">&nbsp;<a class="FeaturedLink" href="/usen/products/FlukeView+for+Scopemeter.htm?catalog_name=FlukeUnitedStates">SW90W/034</a></td></tr>
+<tr align="center">  <td align="center"><a href="/usen/products/AccessoryDetail.htm?cs_id=10101%28FlukeProducts%29&catalog_name=FlukeUnitedStates"><img src="/images/products/accessories/pv350_69p.jpg" border="0"></a></td>
+</tr>
+<tr>
+	 <td class="SmallLink" align="center">&nbsp;<a class="FeaturedLink" href="/usen/products/AccessoryDetail.htm?cs_id=10101%28FlukeProducts%29&catalog_name=FlukeUnitedStates">PV350</a></td></tr>
+<tr align="center">  <td align="center"><a href="/usen/products/AccessoryDetail.htm?cs_id=8309%28FlukeProducts%29&catalog_name=FlukeUnitedStates"><img src="/images/products/accessories/C125_01_t.gif" border="0"></a></td>
+</tr>
+<tr>
+	 <td class="SmallLink" align="center">&nbsp;<a class="FeaturedLink" href="/usen/products/AccessoryDetail.htm?cs_id=8309%28FlukeProducts%29&catalog_name=FlukeUnitedStates">C125</a></td></tr>
+</table>
+</td>
+<td valign="top" width="5" bgColor="#999999"><img src="/images/spacer.gif" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="5"><img src="/images/NavRt/Corner_bttm_left.gif" width="5" border="0"></td>
+<td valign="top" width="110" bgColor="#999999"><img src="/images/spacer.gif" border="0" width="110" height="5"></td>
+<td valign="top" width="5"><img src="/images/NavRt/Corner_bttm_rt.gif" width="5" border="0"></td>
+</tr>
+</table>
+
+<!--FEATURED_PRODUCTS.end---------------------------------------------------------------------------------------------------->
+<!--MAIN_BODY_BELOW_FETURED_PRODS.start-->
+
+<!--MAIN_BODY_BELOW_FETURED_PRODS.End-->
+					</td>
+					<td valign="top" width="5"><img src="/images/spacer.gif" border="0" width="5" height="1" alt=""></td>
+				</tr>
+			</table>
+			<table width="1" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" width="1"><img src="/images/spacer.gif" border="0" width="1" height="10" alt=""></td>
+				</tr>
+			</table>
+<!--FOOTER.start---------------------------------------------------------------------------------------------------->
+			
+<SCRIPT language="JavaScript">var s_account="FlukeIndustrialAmericasPROD"</script>
+<!-- SiteCatalyst code version: H.0. Copyright 1997-2005 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" src="/js_scripts/s_code.js"></script>
+<script language="JavaScript"><!--
+s.pageName="Fluke 120 home usen";
+s.channel="usen";
+s.prop1="SCM";
+s.prop2="Fluke";
+s.prop3="8309";
+/* E-commerce Variables */
+s.events="prodView";
+s.products="SCM;Fluke 120";
+s.hier1="usen,products,SCM";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://FlukeIndustrialAmericasPROD.122.2O7.net/b/ss/FlukeIndustrialAmericasPROD/1/H.0--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.0. -->
+
+
+	<table align="center" width="100%" border=0 cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="center" width="100%" class="copyright"><i>© 1995 - 2007 Fluke Corporation</i></td>
+		</tr>
+		<tr>
+			<td align="center" width="100%"><a class="SmallLink" href="/usen/home/privacystatement.htm">Privacy Statement</a></td>
+		</tr>
+		<tr>
+			<td align="center" width="770"><a class="SmallLink" href="/usen/home/disclaimer.htm">Disclaimer</a></td>
+		</tr>
+	</table>
+
+<!--FOOTER.end---------------------------------------------------------------------------------------------------->
+  </TD></TR></TABLE>
+
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+
+  </body>
+<!--BODY.end---------------------------------------------------------------------------------------------------->
+	</html>
+	

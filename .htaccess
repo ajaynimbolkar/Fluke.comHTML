@@ -1,0 +1,6 @@
+#
+# Apache settings:
+#
+
+ErrorDocument 500 /fluke/uken/site/site-maintenance.htm
+ErrorDocument 405 /fluke/uken/site/site-maintenance.htm

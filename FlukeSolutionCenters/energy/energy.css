@@ -1,0 +1,252 @@
+#mapimage {
+	margin-bottom: -80px\9;
+	padding: 0;
+	width: 670px;	
+	height: 420px;
+	/*background: url(http://www.fluke.com/NR/rdonlyres/597F5E57-9F99-49D6-8D67-98A14A2A35CB/0/Energy_Dwg_670px_x_420px_OVERVIEW.jpg) top left no-repeat #fff; removed LF 031413*/
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8pt;
+	position: static;
+	border: #000 solid 0px;
+	height: 380px\9; /*ie 8 and below specific*/
+	max-height: 380px\9; /*ie 8 and below specific*/
+	clear:both\9;/*ie 8 and below specific*/
+}
+#map li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#map ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+#map li a span {
+	display: none;
+	font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+}
+#map li a {
+	position: relative;
+	display: block;
+	/*
+ fixes a bug in older versions of
+ IE that causeses the block to not
+ render at its full dimensions.
+ */
+ background: url(http://www.fluke.com/NR/rdonlyres/4CE8008A-6BD8-47BE-A891-396513F1655D/0/blank.gif) no repeat;
+	text-decoration: none;
+	color: #000;
+}
+#map li a:hover span {
+	position: absolute;
+	display: block;
+	width: 300px;
+	left: 20px;
+	top: 100px;
+	padding: 10px; 
+	border: 1px solid #DDD;
+	background: #FFC20E;
+	text-decoration: none;
+	color: #000;
+	z-index: 1;
+	overflow: hidden; 
+}
+/**--------Top 3 circular icons------***/
+#map a.btn_electrical {
+	float: left;
+	top: -120px;
+	left: 290px;
+	width: 75px;
+	height: 75px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: -150px\9; /*ie 8 and below specific*/
+	left: 290px\9; /*ie 8 and below specific*/
+}
+#map a.btn_production {
+	float: left;
+	/*position: relative;*/
+	top: -120px;
+	left: 455px;
+	width: 75px;
+	height: 75px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	clear: both;
+	/*display: block;*/
+	top: -135px\9; /*ie 8 and below specific*/
+	left: 457px\9; /*ie 8 and below specific*/;
+}
+#map a.btn_building {
+	float: left;
+	position: relative;
+	top: -120px;
+	left: 390px;
+	width: 75px;
+	height: 75px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	display: block;
+	top: -162px\9; /*ie 8 and below specific*/
+	left: 397px\9; /*ie 8 and below specific*/
+}
+
+/**--------Left Electrical subsystem------***/
+#map a.link_elecSubsys {
+	float: left;
+	position: relative;
+	top: 188px;
+	left: -24px;
+	width: 175px;
+	height: 20px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	display: block;
+	top: 200px\9; /*ie 8 and below specific*/
+}
+
+#map a.utility {
+	float: left;
+	top: 210px;
+	left: -200px;
+	width: 120px;
+	height: 90px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	left: -150x\9; /*ie only*/
+	top: 210px\9; /*ie 8 and below specific*/
+	height: 90px\9; /*ie 8 and below specific*/
+
+}	
+
+#map a.electrical {
+	float: left;
+	position: relative;
+	top: 223px;
+	left: -200px;
+	width: 113px;
+	height: 113px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: 210px\9; /*ie 8 and below specific*/
+	left: -193px\9; /*ie 8 and below specific*/	
+
+}
+
+
+
+
+/*--------Top Production Process System------*/
+#map a.link_prodProcSys {
+	float: left;
+	position: relative;
+	top: -36px;
+	left: 11px;
+	width: 370px;
+	height: 20px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	display: block;
+	top: -90px\9; /*ie 8 and below specific*/
+    left: 18px\9; /*ie 8 and below specific*/
+}
+
+#map a.mech {
+	float: left;
+	position: relative;
+	top: -35px;
+	left: 15px;
+	width: 175px;
+	height: 110px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	display: block;
+	top: -90px\9; /*ie 8 and below specific*/
+	left: 20px\9; /*ie 8 and below specific*/
+
+}
+#map a.air {
+	float: left;
+	position: relative;
+	top: -35px;
+	left: 45px;
+	width: 75px;
+	height: 110px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: -105px\9; /*ie 8 and below specific*/
+	left: 55px\9; /*ie 8 and below specific*/
+
+}
+#map a.steam {
+	float: left;
+	position: relative;
+	top: -35px;
+	left: 52px;
+	width: 50px;
+	height: 110px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: -120px\9; /*ie 8 and below specific*/
+	left: 70px\9; /*ie 8 and below specific*/
+
+}
+
+
+/**--------Bottom Building------***/
+#map a.link_buildInf {
+	float: left;
+	position: relative;
+	top: 0;
+	left: 245px;
+	width: 370px;
+	height: 20px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	display: block;
+	top: -85px\9; /*ie 8 and below specific*/
+	left: 242px\9; /*ie 8 and below specific*/
+
+}
+
+
+#map a.vent {
+	float: left;
+	display: block;
+	position: relative;
+	top: -2px;
+	left: 246px;
+	width: 113px;
+	height: 110px; 
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	clear: both; 
+	top: -79px\9; /*ie 8 and below specific*/
+	left: 243px\9; /*ie 8 and below specific*/
+	height: -10px\9; /*ie 8 and below specific*/
+padding: 0\9;/*ie 8 and below specific*/
+margin: 0\9;/*ie 8 and below specific*/
+}
+#map a.build {
+	float: left;
+	display: block;
+	position: relative;
+	top: -2px;
+	left: 254px;
+	width: 113px;
+	height: 110px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: -95px\9; /*ie 8 and below specific*/
+	left: 260px\9; /*ie 8 and below specific*/
+padding: 0\9;/*ie 8 and below specific*/
+margin: 0\9;/*ie 8 and below specific*/
+
+
+}
+#map a.light {
+	float: left;
+	display: block;
+	position: relative;
+	top: -2px;
+	left: 262px;
+	width: 113px;
+	height: 110px;
+	/*border: #000 solid 1px; - uncomment for testing of onhover areas */
+	top: -109px\9;  /*ie 8 and below specific*/
+	left: 275px\9; /*ie 8 and below specific*/
+padding: 0\9;/*ie 8 and below specific*/
+margin: 0\9;/*ie 8 and below specific*/
+
+}
+
+

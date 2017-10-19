@@ -1,0 +1,1477 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fluke Thermography</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+ 
+<!-- Tracking Code Include Starts -->
+<script src="Fluke%20Thermography_files/dc.js" async type="text/javascript"></script><script type="text/javascript" language="JavaScript" src="Fluke%20Thermography_files/eloquatracking.js"></script>
+<!-- Tracking Code Include Endss -->
+ 
+<script type="text/javascript" src="Fluke%20Thermography_files/jquery-1.js"></script>
+<script type="text/javascript"> 
+ 
+jQuery(function($){
+ 
+$("form").submit(function(){
+ 
+     $("input[name=C_DC_Unique_Identifier__email___rep_prod_fam_]").val( $("input[name=C_EmailAddress]").val() + '-306C4BD2-C170-DE11-95B8-02BF0A064B97');
+ 
+   });   });
+ 
+</script>
+ 
+<script type="text/javascript"> 
+var errorSet = null;
+ 
+FieldObj = function() {
+   var Field;
+   this.get_Field = function() { return Field; }
+   this.set_Field = function(val) { Field = val; }
+ 
+   var ErrorMessage;
+   this.get_ErrorMessage = function() { return ErrorMessage; }
+   this.set_ErrorMessage = function(val) { ErrorMessage = val; }
+}
+ 
+ 
+function ResetHighlight() {
+   var field;
+ 
+   if (errorSet != null) {
+      for (var i = 0; i < errorSet.length; i++) {
+         errorSet[i].Field.className = 'elqField'
+      }
+    }
+   errorSet = new Array();
+}
+ 
+ 
+function DisplayErrorSet(ErrorSet) {
+   var element;
+   var ErrorMessage = '';
+ 
+   for (var i = 0; i < ErrorSet.length; i++) {
+      ErrorMessage = ErrorMessage + ErrorSet[i].ErrorMessage + '\n';
+      ErrorSet[i].Field.className = 'elqFieldValidation';
+   }
+ 
+   if (ErrorMessage != '')
+      alert(ErrorMessage);
+}
+ 
+ 
+function ValidateRequiredField(Element, args) {
+   var elementVal=Element.value;
+   var testPass=true;
+   if (Element) {
+      if (args.Type == 'text') {
+         if (Element.value == null || Element.value == "") {
+            return false;
+         }
+      }
+      else if (args.Type == 'singlesel') {
+         if (Element.value == null || Element.value == "") {
+            return false;
+         }
+   }
+      else if (args.Type == 'multisel') {
+         var selCount=0;
+         for (var i=0; i<Element.length; i++) {
+              if (Element[i].selected && Element[i].value !='') {
+                 selCount += 1;
+              }
+         }
+      if (selCount == 0)
+         return false;
+   }
+   }
+   else
+      testPass = false;
+return testPass;
+}
+ 
+ 
+function ValidateEmailAddress(Element) {
+   var varRegExp='^[A-Z0-9!#\\$%&\'\\*\\+\\-/=\\?\\^_`\\{\\|\\}~][A-Z0-9!#\\$%&\'\\*\\+\\-/=\\?\\^_`\\{\\|\\}~\\.]{0,62}@([A-Z0-9](?:[A-Z0-9\\-]{0,61}[A-Z0-9])?(\\.[A-Z0-9](?:[A-Z0-9\\-]{0,61}[A-Z0-9])?)+)$';
+   if ((Element) && (Element.value != '')) {
+      var reg = new RegExp(varRegExp,"i");
+      var match = reg.exec(Element.value);
+         if ((match) && (match.length=3) && (match[1].length<=255) && ((match[2].length>=3) & (match[2].length<=7)))
+            return true;
+   }
+   return false;
+}
+ 
+ 
+function ValidateDataTypeLength(Element, args, ErrorMessage) {
+   var elementVal = Element.value;
+   var testPass = true;
+ 
+   if (Element) {
+      if (args.Type == 'text') {
+         if ((elementVal == '')) {
+            testPass = false;
+         }
+         if ((args.Minimum != '') && (elementVal.length < args.Minimum))
+            testPass = false;
+         if ((args.Maximum != '') && (elementVal.length > args.Maximum))
+            testPass = false;
+      }
+      else if (args.Type == 'numeric') {
+         if ((elementVal == '')) {
+            testPass = false;
+         }
+         if ((elementVal != '') && (elementVal != parseFloat(elementVal)))
+            testPass = false;
+         if (args.Minimum != '') {
+            if ((elementVal == '') || (parseFloat(elementVal) < args.Minimum))
+            testPass = false;
+         }
+         if (args.Maximum != '') {
+            if ((elementVal != '') && (parseFloat(elementVal) > args.Maximum))
+               testPass = false;
+         }
+      }
+   }
+   else
+      testPass = false;
+   return testPass;
+}
+ 
+ 
+function CheckElqForm(elqForm) {
+var args = null;
+var allValid = true;
+ 
+if (elqForm == null) {
+   alert('Unable to execute form validation!\Unable to locate correct form');
+   return false;
+}
+ResetHighlight();
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_FirstName'];
+formField.ErrorMessage ='First Name is a required field'
+args = {'Type': 'text' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_LastName'];
+formField.ErrorMessage ='Last Name is a required field'
+args = {'Type': 'text' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_Job_Role1'];
+formField.ErrorMessage ='Job Role is required'
+args = {'Type': 'singlesel' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_Company'];
+formField.ErrorMessage ='Company is a required field'
+args = {'Type': 'text' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_Title'];
+formField.ErrorMessage ='Designation is required'
+args = {'Type': 'text' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['country'];
+formField.ErrorMessage ='Country is required'
+args = {'Type': 'singlesel' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_State_Prov'];
+formField.ErrorMessage ='Country is required'
+args = {'Type': 'singlesel' };
+if (formField.Field != null) {
+   if (!ValidateRequiredField(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_BusPhone'];
+formField.ErrorMessage ='Phone is a required field'
+ 
+args = {'Type': 'numeric', 'DefaultValue': '' };
+if (formField.Field != null) {
+   if (!ValidateDataTypeLength(formField.Field, args)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+ 
+formField = new FieldObj();
+formField.Field = elqForm.elements['C_EmailAddress'];
+formField.ErrorMessage ='Email Address is a required field'
+if (formField.Field != null) {
+   if (!ValidateEmailAddress(formField.Field)) {
+      errorSet.push(formField);
+      allValid = false;
+   }
+}
+ 
+if (!allValid) {
+   DisplayErrorSet(errorSet);
+   return false;
+}
+ 
+return true;
+}
+ 
+function submitForm(elqForm) {
+   if (CheckElqForm(elqForm)) {
+       prepareSelectsForEloqua(elqForm);
+       fnPrepareCheckboxMatricesForEloqua(elqForm);
+       return true;
+   }
+   else { return false; }
+}
+ 
+function prepareSelectsForEloqua(elqForm) {
+   var selects = elqForm.getElementsByTagName("SELECT");
+   for (var i = 0; i < selects.length; i++) {
+       if (selects[i].multiple) {
+           createEloquaSelectField(elqForm, selects[i]);
+       }
+   }
+   return true;
+}
+ 
+function createEloquaSelectField(elqForm, sel) {
+   var inputName = sel.name;
+   var newInput = document.createElement('INPUT');
+   newInput.style.display = "none";
+   newInput.name = inputName;
+   newInput.value = "";
+ 
+   for (var i = 0; i < sel.options.length; i++) {
+       if (sel.options[i].selected) {
+           newInput.value += sel.options[i].value + "::";
+       }
+   }
+   if (newInput.value.length > 0) {
+       newInput.value = newInput.value.substr(0, newInput.value.length - 2);
+   }
+   sel.disabled = true;
+   newInput.id = inputName;
+   elqForm.insertBefore(newInput, elqForm.firstChild);
+}
+ 
+function fnPrepareCheckboxMatricesForEloqua(elqForm) {
+   var matrices = elqForm.getElementsByTagName('TABLE');
+   for (var i = 0; i < matrices.length; i++) {
+       var tableClassName = matrices[i].className;
+       if (tableClassName.match(/elqMatrix/)) {
+           if (fnDetermineMatrixType(matrices[i]).toLowerCase() == 'checkbox') {
+               if (matrices[i].rows[0].cells[0].childNodes.length == 1) {
+                   if (matrices[i].rows[0].cells[0].childNodes[0].nodeName != '#text') {
+                       fnCreateHorizontalMatrixCheckboxField(elqForm, matrices[i]);
+                   }
+                   else {
+                       fnCreateVerticalMatrixCheckboxField(elqForm, matrices[i]);
+                   }
+               }
+           }
+       }
+   }
+   return true;
+}
+ 
+function fnCreateVerticalMatrixCheckboxField(elqForm, matrix) {
+   var inputName = matrix.id + 'r' + 1;
+   var newInput = document.createElement('INPUT');
+   newInput.style.display = 'none';
+   newInput.name = inputName;
+   newInput.value = '';
+ 
+   var inputs = document.getElementsByName(inputName);
+   for (var i=0; i < inputs.length; i++) {
+       if (inputs[i].nodeName.toLowerCase() == 'input') {
+           if (inputs[i].checked == true) {
+               if (inputs[i].type.toLowerCase() == 'checkbox') {
+                   newInput.value += inputs[i].value + '::';
+                   inputs[i].disabled = true;
+               }
+           }
+       }
+   }
+   if (newInput.value.length > 0) {
+       newInput.value = newInput.value.substr(0, newInput.value.length - 2);
+   }
+ 
+   newInput.id = inputName;
+   elqForm.insertBefore(newInput, elqForm.firstChild);
+   matrix.disabled = true;
+}
+ 
+function fnCreateHorizontalMatrixCheckboxField(elqForm, matrix) {
+   for (var i=1; i < matrix.rows.length; i++) {
+       var inputs = document.getElementsByName(matrix.id + 'r' + i);
+       var oMatrixRow = matrix.rows[i];
+       var inputName = oMatrixRow.id;
+       var newInput = document.createElement('INPUT');
+       newInput.style.display = 'none';
+       newInput.name = inputName;
+       newInput.value = '';
+ 
+       for (var j=0; j < inputs.length; j++) {
+           if (inputs[j].nodeName.toLowerCase() == 'input') {
+               if (inputs[j].checked == true) {
+                   if (inputs[i].type.toLowerCase() == 'checkbox') {
+                       newInput.value += inputs[j].value + '::';
+                       inputs[j].disabled = true;
+                   }
+               }
+           }
+       }
+ 
+       if (newInput.value.length > 0) {
+           newInput.value = newInput.value.substr(0, newInput.value.length - 2);
+       }
+ 
+       newInput.id = inputName;
+       elqForm.insertBefore(newInput, elqForm.firstChild);
+   }
+   matrix.disabled = true;
+}
+ 
+function fnDetermineMatrixType(oTable) {
+   var oFirstMatrixInput = oTable.rows[1].cells[1].childNodes[0];
+   return oFirstMatrixInput.type;
+}
+ 
+</script>
+
+<!--[if gte IE 8]>
+<style type="text/css">
+          #innovations-td{
+               width: 490px;
+          }
+        
+</style>
+<![endif]-->
+
+
+ 
+ 
+<!-- CITY STATE DROPDOWN -->
+<script type="text/javascript">// If you have PHP you can set the post values like this
+//var postState = '<?= $_POST["state"] ?>';
+//var postCountry = '<?= $_POST["country"] ?>';
+var postState = '';
+var postCountry = '';
+ 
+// State table
+//
+// To edit the list, just delete a line or add a line. Order is important.
+// The order displayed here is the order it appears on the drop down.
+//
+var state = '\
+US:AK:Alaska|\
+US:AL:Alabama|\
+US:AR:Arkansas|\
+US:AZ:Arizona|\
+US:CA:California|\
+US:CO:Colorado|\
+US:CT:Connecticut|\
+US:DC:D.C.|\
+US:DE:Delaware|\
+US:FL:Florida|\
+US:GA:Georgia|\
+US:HI:Hawaii|\
+US:IA:Iowa|\
+US:ID:Idaho|\
+US:IL:Illinois|\
+US:IN:Indiana|\
+US:KS:Kansas|\
+US:KY:Kentucky|\
+US:LA:Louisiana|\
+US:MA:Massachusetts|\
+US:MD:Maryland|\
+US:ME:Maine|\
+US:MI:Michigan|\
+US:MN:Minnesota|\
+US:MO:Missouri|\
+US:MS:Mississippi|\
+US:MT:Montana|\
+US:NC:North Carolina|\
+US:ND:North Dakota|\
+US:NE:Nebraska|\
+US:NH:New Hampshire|\
+US:NJ:New Jersey|\
+US:NM:New Mexico|\
+US:NV:Nevada|\
+US:NY:New York|\
+US:OH:Ohio|\
+US:OK:Oklahoma|\
+US:OR:Oregon|\
+US:PA:Pennsylvania|\
+US:RI:Rhode Island|\
+US:SC:South Carolina|\
+US:SD:South Dakota|\
+US:TN:Tennessee|\
+US:TX:Texas|\
+US:UT:Utah|\
+US:VA:Virginia|\
+US:VI:Virgin Islands|\
+US:VT:Vermont|\
+US:WA:Washington|\
+US:WI:Wisconsin|\
+US:WV:West Virginia|\
+US:WY:Wyoming|\
+Canada:AB:Alberta|\
+Canada:MB:Manitoba|\
+Canada:AB:Alberta|\
+Canada:BC:British Columbia|\
+Canada:MB:Manitoba|\
+Canada:NB:New Brunswick|\
+Canada:NL:Newfoundland and Labrador|\
+Canada:NS:Nova Scotia|\
+Canada:NT:Northwest Territories|\
+Canada:NU:Nunavut|\
+Canada:ON:Ontario|\
+Canada:PE:Prince Edward Island|\
+Canada:QC:Quebec|\
+Canada:SK:Saskatchewan|\
+Canada:YT:Yukon Territory|\
+Brazil:Acre:Acre|\
+Brazil:Alagoas:Alagoas|\
+Brazil:Amapá:Amapá|\
+Brazil:Amazonas:Amazonas|\
+Brazil:Bahia:Bahia|\
+Brazil:Ceará:Ceará|\
+Brazil:Goiás:Goiás|\
+Brazil:Espírito Santo:Espírito Santo|\
+Brazil:Maranhão:Maranhão|\
+Brazil:Mato Grosso:Mato Grosso|\
+Brazil:Mato Grosso do Sul:Mato Grosso do Sul|\
+Brazil:Minas Gerais:Minas Gerais|\
+Brazil:Pará:Pará|\
+Brazil:Paraíba:Paraíba|\
+Brazil:Paraná:Paraná|\
+Brazil:Pernambuco:Pernambuco|\
+Brazil:Piauí:Piauí|\
+Brazil:Rio de Janeiro:Rio de Janeiro|\
+Brazil:Rio Grande do Norte:Rio Grande do Norte|\
+Brazil:Rio Grande do Sul:Rio Grande do Sul|\
+Brazil:Rondônia:Rondônia|\
+Brazil:Roraima:Roraima|\
+Brazil:São Paulo:São Paulo|\
+Brazil:Santa Catarina:Santa Catarina|\
+Brazil:Sergipe:Sergipe|\
+Brazil:Tocantins:Tocantins|\
+Brazil:Federal District:Distrito Federal|\
+Argentina:Buenos Aires:Buenos Aires|\
+Argentina:Catamarca:Catamarca|\
+Argentina:Chaco:Chaco|\
+Argentina:Chubut:Chubut|\
+Argentina:Córdoba:Córdoba|\
+Argentina:Corrientes:Corrientes|\
+Argentina:Entre Ríos:Entre Ríos|\
+Argentina:Formosa:Formosa|\
+Argentina:Jujuy:Jujuy|\
+Argentina:La Pampa:La Pampa|\
+Argentina:La Rioja:La Rioja|\
+Argentina:Mendoza:Mendoza|\
+Argentina:Misiones:Misiones|\
+Argentina:Neuquén:Neuquén|\
+Argentina:Rio Negro:Rio Negro|\
+Argentina:Salta:Salta|\
+Argentina:San Juan:San Juan|\
+Argentina:San Luis:San Luis|\
+Argentina:Santa Cruz:Santa Cruz|\
+Argentina:Santa Fe:Santa Fe|\
+Argentina:Santiago del Estero:Santiago del Estero|\
+Argentina:Tierra del Fuego:Tierra del Fuego|\
+Argentina:Tucumán:Tucumán|\
+Bolivia:Beni:Beni|\
+Bolivia:Chuquisaca:Chuquisaca|\
+Bolivia:Cochabamba:Cochabamba|\
+Bolivia:La Paz:La Paz|\
+Bolivia:Oruro:Oruro|\
+Bolivia:Pando:Pando|\
+Bolivia:Potosi:Potosi|\
+Bolivia:Santa Cruz:Santa Cruz|\
+Bolivia:Tarija:Tarija|\
+Chile:Antartica Chilena:Antartica Chilena|\
+Chile:Antofagasta:Antofagasta|\
+Chile:Arauco:Arauco|\
+Chile:Arica:Arica|\
+Chile:Biobío:Biobío|\
+Chile:Cachapoal:Cachapoal|\
+Chile:Capitan Prat:Capitan Prat|\
+Chile:Cardenal Caro:Cardenal Caro|\
+Chile:Cauquenes:Cauquenes|\
+Chile:Cautin:Cautin|\
+Chile:Chacabuco:Chacabuco|\
+Chile:Chañaral:Chañaral|\
+Chile:Chiloe:Chiloe|\
+Chile:Choapa:Choapa|\
+Chile:Coihaique:Coihaique|\
+Chile:Colchagua:Colchagua|\
+Chile:Concepción:Concepción|\
+Chile:Copiapó:Copiapó|\
+Chile:Cordillera:Cordillera|\
+Chile:Curicó:Curicó|\
+Chile:El Loa:El Loa|\
+Chile:Elqui:Elqui|\
+Chile:General Carrera:General Carrera|\
+Chile:Huasco:Huasco|\
+Chile:Iquique:Iquique|\
+Chile:Isla de Pascua:Isla de Pascua|\
+Chile:Limarí:Limarí|\
+Chile:Linares:Linares|\
+Chile:Llanquihue:Llanquihue|\
+Chile:Los Andes:Los Andes|\
+Chile:Magallanes:Magallanes|\
+Chile:Maipo:Maipo|\
+Chile:Malleco:Malleco|\
+Chile:Marga Marga:Marga Marga|\
+Chile:Melipilla:Melipilla|\
+Chile:Ñuble:Ñuble|\
+Chile:Osorno:Osorno|\
+Chile:Palena:Palena|\
+Chile:Parinacota:Parinacota|\
+Chile:Petorca:Petorca|\
+Chile:Puerto Aisén:Puerto Aisén|\
+Chile:Quillota:Quillota|\
+Chile:Ranco:Ranco|\
+Chile:San Antonio:San Antonio|\
+Chile:San Felipe de Aconcagua:San Felipe de Aconcagua|\
+Chile:Santiago:Santiago|\
+Chile:Talagante:Talagante|\
+Chile:Talca:Talca|\
+Chile:Tamarugal:Tamarugal|\
+Chile:Tierra del Fuego:Tierra del Fuego|\
+Chile:Tocopilla:Tocopilla|\
+Chile:Ultima Esperanza:Ultima Esperanza|\
+Chile:Valdivia:Valdivia|\
+Chile:Valparaíso:Valparaíso|\
+Colombia:Antioquia:Antioquia|\
+Colombia:Bolívar:Bolívar|\
+Colombia:Boyacá:Boyacá|\
+Colombia:Caldas:Caldas|\
+Colombia:Cauca:Cauca|\
+Colombia:Cundinamarca:Cundinamarca|\
+Colombia:Huila:Huila|\
+Colombia:La Guajira:La Guajira|\
+Colombia:Meta:Meta|\
+Colombia:Nariño:Nariño|\
+Colombia:Norte de Santander:Norte de Santander|\
+Colombia:Santander:Santander|\
+Colombia:Sucre:Sucre|\
+Colombia:Tolima:Tolima|\
+Colombia:Valle del Cauca:Valle del Cauca|\
+Costa Rica:Alajuela:Alajuela|\
+Costa Rica:Cartago:Cartago:Cartago:Cartago|\
+Costa Rica:Guanacaste:Guanacaste|\
+Costa Rica:Heredia:Heredia|\
+Costa Rica:Limón:Limón|\
+Costa Rica:Puntarenas:Puntarenas|\
+Costa Rica:San José:San José|\
+Dominican Republic:Azua:Azua|\
+Dominican Republic:Baoruco:Baoruco|\
+Dominican Republic:Barahona:Barahona|\
+Dominican Republic:Dajabón:Dajabón|\
+Dominican Republic:Distrito Nacional:Distrito Nacional|\
+Dominican Republic:Duarte:Duarte|\
+Dominican Republic:Elías Piña:Elías Piña|\
+Dominican Republic:El Seibo:El Seibo|\
+Dominican Republic:Espaillat:Espaillat|\
+Dominican Republic:Hato Mayor:Hato Mayor|\
+Dominican Republic:Hermanas Mirabal:Hermanas Mirabal|\
+Dominican Republic:Independencia:Independencia|\
+Dominican Republic:La Altagracia:La Altagracia|\
+Dominican Republic:La Romana:La Romana|\
+Dominican Republic:La Vega:La Vega|\
+Dominican Republic:María Trinidad Sánchez:María Trinidad Sánchez|\
+Dominican Republic:Monseñor Nouel:Monseñor Nouel|\
+Dominican Republic:Monte Cristi:Monte Cristi|\
+Dominican Republic:Monte Plata:Monte Plata|\
+Dominican Republic:Pedernales:Pedernales|\
+Dominican Republic:Peravia:Peravia|\
+Dominican Republic:Puerto Plata:Puerto Plata|\
+Dominican Republic:Samaná:Samaná|\
+Dominican Republic:Sánchez Ramírez:Sánchez Ramírez|\
+Dominican Republic:San Cristóbal:San Cristóbal|\
+Dominican Republic:San José de Ocoa:San José de Ocoa|\
+Dominican Republic:San Juan:San Juan|\
+Dominican Republic:San Pedro de Macorís:San Pedro de Macorís|\
+Dominican Republic:Santiago:Santiago|\
+Dominican Republic:Santiago Rodríguez:Santiago Rodríguez|\
+Dominican Republic:Santo Domingo:Santo Domingo|\
+Dominican Republic:Valverde:Valverde|\
+Ecuador:Azuay:Azuay|\
+Ecuador:Bolívar:Bolívar|\
+Ecuador:Cañar:Cañar|\
+Ecuador:Carchi:Carchi|\
+Ecuador:Chimborazo:Chimborazo|\
+Ecuador:Cotopaxi:Cotopaxi|\
+Ecuador:El Oro:El Oro|\
+Ecuador:Esmeraldas:Esmeraldas|\
+Ecuador:Galápagos:Galápagos|\
+Ecuador:Guayas:Guayas|\
+Ecuador:Imbabura:Imbabura|\
+Ecuador:Loja:Loja|\
+Ecuador:Los Ríos:Los Ríos|\
+Ecuador:Manabí:Manabí|\
+Ecuador:Morona-Santiago:Morona-Santiago|\
+Ecuador:Napo:Napo|\
+Ecuador:Orellana:Orellana|\
+Ecuador:Pastaza:Pastaza|\
+Ecuador:Pichincha:Pichincha|\
+Ecuador:Santa Elena:Santa Elena|\
+Ecuador:Santo Domingo de los Tsáchilas:Santo Domingo de los Tsáchilas|\
+Ecuador:Sucumbíos:Sucumbíos|\
+Ecuador:Tungurahua:Tungurahua|\
+Ecuador:Zamora-Chinchipe:Zamora-Chinchipe|\
+Guatemala:Alta Verapaz:Alta Verapaz|\
+Guatemala:Baja Verapaz:Baja Verapaz|\
+Guatemala:Chimaltenango:Chimaltenango|\
+Guatemala:Chiquimula:Chiquimula|\
+Guatemala:Petén:Petén|\
+Guatemala:El Progreso:El Progreso|\
+Guatemala:El Quiché:El Quiché|\
+Guatemala:Escuintla:Escuintla|\
+Guatemala:Guatemala:Guatemala|\
+Guatemala:Huehuetenango:Huehuetenango|\
+Guatemala:Izabal:Izabal|\
+Guatemala:Jalapa:Jalapa|\
+Guatemala:Jutiapa:Jutiapa|\
+Guatemala:Quetzaltenango:Quetzaltenango|\
+Guatemala:Retalhuleu:Retalhuleu|\
+Guatemala:Sacatepéquez:Sacatepéquez|\
+Guatemala:San Marcos:San Marcos|\
+Guatemala:Santa Rosa:Santa Rosa|\
+Guatemala:Sololá:Sololá|\
+Guatemala:Suchitepéquez:Suchitepéquez|\
+Guatemala:Totonicapán:Totonicapán|\
+Guatemala:Zacapa:Zacapa|\
+Mexico:Aguascalientes:Aguascalientes|\
+Mexico:Baja California Norte:Baja California Norte|\
+Mexico:Baja California Sur:Baja California Sur|\
+Mexico:Campeche:Campeche|\
+Mexico:Chiapas:Chiapas|\
+Mexico:Chihuahua:Chihuahua|\
+Mexico:Coahuila:Coahuila|\
+Mexico:Colima:Colima|\
+Mexico:Distrito Federal:Federal District|\
+Mexico:Durango:Durango|\
+Mexico:Guanajuato:Guanajuato|\
+Mexico:Guerrero:Guerrero|\
+Mexico:Hidalgo:Hidalgo|\
+Mexico:Jalisco:Jalisco|\
+Mexico:México:México|\
+Mexico:Michoacán:Michoacán|\
+Mexico:Morelos:Morelos|\
+Mexico:Nayarit:Nayarit|\
+Mexico:Nuevo León:Nuevo León|\
+Mexico:Oaxaca:Oaxaca|\
+Mexico:Puebla:Puebla|\
+Mexico:Querétaro:Querétaro|\
+Mexico:Quintana Roo:Quintana Roo|\
+Mexico:San Luis Potosí:San Luis Potosí|\
+Mexico:Sinaloa:Sinaloa|\
+Mexico:Sonora:Sonora|\
+Mexico:Tabasco:Tabasco|\
+Mexico:Tamaulipas:Tamaulipas|\
+Mexico:Tlaxcala:Tlaxcala|\
+Mexico:Veracruz:Veracruz|\
+Mexico:Yucatán:Yucatán|\
+Mexico:Zacatecas:Zacatecas|\
+Peru:Amazonas:Amazonas|\
+Peru:Ancash:Ancash|\
+Peru:Apurímac:Apurímac|\
+Peru:Arequipa:Arequipa|\
+Peru:Ayacucho:Ayacucho|\
+Peru:Cajamarca:Cajamarca|\
+Peru:Cusco:Cusco|\
+Peru:Huancavelica:Huancavelica|\
+Peru:Huánuco:Huánuco|\
+Peru:Ica:Ica|\
+Peru:Junín:Junín|\
+Peru:La Libertad:La Libertad|\
+Peru:Lambayeque:Lambayeque|\
+Peru:Lima:Lima|\
+Peru:Loreto:Loreto|\
+Peru:Madre de Dios:Madre de Dios|\
+Peru:Moquegua:Moquegua|\
+Peru:Pasco:Pasco|\
+Peru:Piura:Piura|\
+Peru:Puno:Puno|\
+Peru:San Martin:San Martin|\
+Peru:Tacna:Tacna|\
+Peru:Tumbes:Tumbes|\
+Peru:Ucayali:Ucayali|\
+El Salvador:Ahuachapán:Ahuachapán|\
+El Salvador:Cabañas:Cabañas\
+El Salvador:Chalatenango:Chalatenango|\
+El Salvador:Cuscatlán:Cuscatlán|\
+El Salvador:La Libertad:La Libertad|\
+El Salvador:La Paz:La Paz|\
+El Salvador:La Unión:La Unión|\
+El Salvador:Morazán:Morazán|\
+El Salvador:San Miguel:San Miguel|\
+El Salvador:San Salvador:San Salvador|\
+El Salvador:San Vicente:San Vicente|\
+El Salvador:Santa Ana:Santa Ana|\
+El Salvador:Sonsonate:Sonsonate|\
+El Salvador:Usulután:Usulután|\
+Trinidad:Arima Borough Corporation:Arima Borough Corporation|\
+Trinidad:Chaguanas Borough Corporation:Chaguanas Borough Corporation|\
+Trinidad:Couva-Tabaquite-Talparo Regional Corporation:Couva-Tabaquite-Talparo Regional Corporation|\
+Trinidad:Diego Martin Regional Corporation:Diego Martin Regional Corporation|\
+Trinidad:Penal-Debe Regional Corporation:Penal-Debe Regional Corporation|\
+Trinidad:Point Fortin Borough Corporation:Point Fortin Borough Corporation|\
+Trinidad:Port of Spain City Corporation:Port of Spain City Corporation|\
+Trinidad:Princes Town Regional Corporation:Princes Town Regional Corporation|\
+Trinidad:Rio Claro-Mayaro Regional Corporation:Rio Claro-Mayaro Regional Corporation|\
+Trinidad:San Fernando City Corporation:San Fernando City Corporation|\
+Trinidad:San Juan-Laventille Regional Corporation:San Juan-Laventille Regional Co|\rporation|\
+Trinidad:Sangre Grande Regional Corporation:Sangre Grande Regional Corporation\
+Trinidad:Siparia Regional Corporation:Siparia Regional Corporation|\
+Trinidad:Tunapuna-Piarco Regional Corporation:Tunapuna-Piarco Regional Corporation|\
+Trinidad:Tobago:Tobago|\
+Uruguay:Artigas:Artigas|\
+Uruguay:Canelones:Canelones|\
+Uruguay:Cerro Largo:Cerro Largo|\
+Uruguay:Colonia:Colonia|\
+Uruguay:Durazno:Durazno|\
+Uruguay:Flores:Flores|\
+Uruguay:Florida:Florida|\
+Uruguay:Lavalleja:Lavalleja|\
+Uruguay:Maldonado:Maldonado|\
+Uruguay:Montevideo:Montevideo|\
+Uruguay:Paysandú:Paysandú|\
+Uruguay:Río Negro:Río Negro|\
+Uruguay:Rivera:Rivera|\
+Uruguay:Rocha:Rocha|\
+Uruguay:Salto:Salto|\
+Uruguay:San José:San José|\
+Uruguay:Soriano:Soriano|\
+Uruguay:Tacuarembó:Tacuarembó|\
+Uruguay:Treinta y Tres:Treinta y Tres|\
+Venezuela:Amazonas:Amazonas|\
+Venezuela:Anzoategui:Anzoategui|\
+Venezuela:Apure:Apure|\
+Venezuela:Aragua:Aragua|\
+Venezuela:Barinas:Barinas|\
+Venezuela:Bolivar:Bolivar|\
+Venezuela:Carabobo:Carabobo|\
+Venezuela:Cojedes:Cojedes|\
+Venezuela:Delta Amacuro:Delta Amacuro|\
+Venezuela:Dependencias Fede:Dependencias Fede|\
+Venezuela:Distrito Federal:Distrito Federal|\
+Venezuela:Falcon:Falcon|\
+Venezuela:Guarico:Guarico|\
+Venezuela:Lara:Lara|\
+Venezuela:Merida:Merida|\
+Venezuela:Miranda:Miranda|\
+Venezuela:Monagas:Monagas|\
+Venezuela:Nueva Esparta:Nueva Esparta|\
+Venezuela:Portuguesa:Portuguesa|\
+Venezuela:Sucre:Sucre|\
+Venezuela:Tachira:Tachira|\
+Venezuela:Trujillo:Trujillo|\
+Venezuela:Vargas:Vargas|\
+Venezuela:Yaracuy:Yaracuy|\
+Venezuela:Zulia:Zulia|\
+Australia:Ashmore and Cartier Islands:Ashmore and Cartier Islands|\
+Australia:Australian Antarctic Territory:Australian Antarctic Territory|\
+Australia:Australian Capital Territory:Australian Capital Territory|\
+Australia:Christmas Island:Christmas Island|\
+Australia:Cocos (Keeling) Islands:Cocos (Keeling) Islands|\
+Australia:Coral Sea Islands:Coral Sea Islands|\
+Australia:Heard Island and McDonald Islands:Heard Island and McDonald Islands|\
+Australia:Jervis Bay Territory:Jervis Bay Territory|\
+Australia:New South Wales:New South Wales|\
+Australia:Norfolk Island:Norfolk Island|\
+Australia:Northern Territory:Northern Territory|\
+Australia:Queensland:Queensland|\
+Australia:South Australia:South Australia|\
+Australia:Tasmania:Tasmania|\
+Australia:Victoria:Victoria|\
+Australia:Western Australia:Western Australia|\
+';
+ 
+// Country data table
+//
+// To edit the list, just delete a line or add a line. Order is important.
+// The order displayed here is the order it appears on the drop down.
+//
+var country = '\
+Canada:Canadá|\
+US:United States|\
+Brazil:Brasil|\
+Argentina:Argentina|\
+Bolivia:Bolivia|\
+Chile:Chile|\
+Colombia:Colombia|\
+Costa Rica:Costa Rica|\
+Dominican Republic:Dominican Republic|\
+Ecuador:Ecuador|\
+Guatemala:Guatemala|\
+Mexico:Mexico:|\
+Peru:Peru|\
+El Salvador:El Salvador:|\
+Trinidad:Trinidad|\
+Uruguay:Uruguay|\
+Venezuela:Venezuela|\
+Australia:Australia|\
+';
+ 
+function TrimString(sInString) {
+  if ( sInString ) {
+    sInString = sInString.replace( /^\s+/g, "" );// strip leading
+    return sInString.replace( /\s+$/g, "" );// strip trailing
+  }
+}
+
+// Populates the country selected with the counties from the country list
+function populateCountry(defaultCountry,country) {
+  if ( postCountry != '' ) {
+    defaultCountry = postCountry;
+  }
+  var countryLineArray = country.split('|');  // Split into lines
+  var selObj = document.getElementById(country);
+  selObj.options[0] = new Option('Select Country','');
+  selObj.selectedIndex = 0;
+  for (var loop = 0; loop < countryLineArray.length; loop++) {
+    lineArray = countryLineArray[loop].split(':');
+    countryCode  = TrimString(lineArray[0]);
+    countryName  = TrimString(lineArray[1]);
+    if ( countryCode != '' ) {
+      selObj.options[loop + 1] = new Option(countryName, countryCode);
+    }
+    if ( defaultCountry == countryCode ) {
+      selObj.selectedIndex = loop + 1;
+    }
+  }
+}
+
+function populateState(country, C_State_Prov) {
+  var selObj = document.getElementById(C_State_Prov);
+  var foundState = false;
+  // Empty options just in case new drop down is shorter
+  if ( selObj.type == 'select-one' ) {
+    for (var i = 0; i < selObj.options.length; i++) {
+      selObj.options[i] = null;
+    }
+    selObj.options.length=null;
+    selObj.options[0] = new Option('Select State','');
+    selObj.selectedIndex = 0;
+  }
+  // Populate the drop down with states from the selected country
+  var stateLineArray = state.split("|");  // Split into lines
+  var optionCntr = 1;
+  for (var loop = 0; loop < stateLineArray.length; loop++) {
+    lineArray = stateLineArray[loop].split(":");
+    countryCode  = TrimString(lineArray[0]);
+    stateCode    = TrimString(lineArray[1]);
+    stateName    = TrimString(lineArray[2]);
+  if (document.getElementById(country).value == countryCode && countryCode != '' ) {
+    // If it's a input element, change it to a select
+      if ( selObj.type == 'text' ) {
+        parentObj = document.getElementById('C_State_Prov').parentNode;
+        parentObj.removeChild(selObj);
+        var inputSel = document.createElement("SELECT");
+        inputSel.setAttribute("name","C_State_Prov");
+        inputSel.setAttribute("id","C_State_Prov");
+		inputSel.setAttribute("width",'275px');
+        parentObj.appendChild(inputSel) ;
+        selObj = document.getElementById('C_State_Prov');
+        selObj.options[0] = new Option('Select State','');
+        selObj.selectedIndex = 0;
+      }
+      if ( stateCode != '' ) {
+        selObj.options[optionCntr] = new Option(stateName, stateCode);
+      }
+      // See if it's selected from a previous post
+      if ( stateCode == postState && countryCode == postCountry ) {
+        selObj.selectedIndex = optionCntr;
+      }
+      foundState = true;
+      optionCntr++
+    }
+  }
+  // If the country has no states, change the select to a text box
+  if ( ! foundState ) {
+    parentObj = document.getElementById('C_State_Prov').parentNode;
+    parentObj.removeChild(selObj);
+  // Create the Input Field
+    var inputEl = document.createElement("INPUT");
+    inputEl.setAttribute("id", "C_State_Prov");
+    inputEl.setAttribute("type", "text");
+    inputEl.setAttribute("name", "C_State_Prov");
+    inputEl.setAttribute("width",'275px');
+    inputEl.setAttribute("value", postState);
+    parentObj.appendChild(inputEl) ;
+  }
+}
+
+function initCountry(country,country) {
+  populateCountry(country,country);
+  populateState();
+}
+</script>
+
+<!-- END CITY STATE DROPDOWN -->
+
+ 
+<!-- Start of string variable passing - Place inbtween the head tags -->
+<script type="text/javascript" language="JavaScript">
+function getQueryStringParamValue(strQStrParam) {
+var strURL = document.location.href;
+var strQStrParamValue = '';
+var defaultHiddenFieldNameValue = '';
+if (strURL.indexOf('?') != -1)
+{
+strQStrParamValue = strURL.substr(strURL.indexOf('?') + 1);
+if (strQStrParamValue.indexOf(strQStrParam) != -1)
+{
+strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf(strQStrParam));
+strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf('=') + 1);
+if (strQStrParamValue.indexOf('&') != -1)
+strQStrParamValue = strQStrParamValue.substr(0, strQStrParamValue.indexOf('&'));
+return strQStrParamValue;
+}else{
+strQStrParamValue = defaultHiddenFieldNameValue;
+return strQStrParamValue;
+}
+}else{
+strQStrParamValue = defaultHiddenFieldNameValue;
+return strQStrParamValue;
+}
+}
+</script>
+<!-- End of string variable passing --> 
+<!-- Layout styles-->
+
+ 
+ 
+ 
+ 
+</head>
+<body>
+ 
+<table style="background: #fff url('Fluke Thermography_files/bg.jpg') no-repeat scroll 0 0; position: relative" align="center" border="0" cellpadding="0" cellspacing="0" width="960">
+  <tbody><tr>
+    <td colspan="2">
+    
+      <div id="header">
+                <div id="logo">
+                    <img src="Fluke%20Thermography_files/fluke-logo.png" />
+                   <!-- <p style="font-size:12px; margin:8px 0 0 0;">The Most Trusted Tools in the World</p>-->
+                </div>
+             </div>
+    
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="imgheader"><p>
+    </p><p style="color: #fff; font-family: 'boton_probold';font-size: 42px;">THERMOGRAPHY MADE EASY</p>
+      <p style="color: #fff; font-family: 'boton_probold';font-size: 21px;">Fluke introduces Rugged and Easy to use Thermal Imagers<br /></p>
+      <p style="color: #fff; font-family: 'boton_probold';font-size: 23px; padding: 25px 0; text-align: center">Register Below and Get a Free Demo now!!</p>
+   </td>
+  </tr>
+  
+  <tr style="background-color: #fff;">
+    <td width="410" id="innovations-td">
+    
+     <div id="innovations">
+          <h2><span style="font-size: 30px;">6</span> New Innovations</h2>
+          <ul>
+               <li><img src="Fluke Thermography_files/ir-fusion.jpg" />IR-Fusion® technology</li>
+               <li><img src="Fluke Thermography_files/ir-fusion.jpg" />IR-OptiflexTM focus system</li>
+               <li><img src="Fluke Thermography_files/tm.jpg" />TM IR-PhotoNotes annotation system</li>
+               <li><img src="Fluke Thermography_files/electronic-compas.jpg" />Electronic compass</li>
+               <li><img src="Fluke Thermography_files/video-recording.jpg" />Multi-mode video recording</li>
+               <li><img src="Fluke Thermography_files/cnx.jpg" />CNX™ multi-tool connectivity </li>
+          </ul>
+     </div>
+     <br /><img src="Fluke%20Thermography_files/7a079205-d185-41e4-9466-319266e4cb91_PPC_TI_freeGuide.jpg" alt="" width="420" /><br />    <br />
+    </td>
+    <td valign="top" width="423"><table border="0" cellpadding="0" cellspacing="0" width="423">
+      <tbody><tr>
+        <td class="formbgtop">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="formbgmid">
+        <div style="margin:0 0px 0 0px;">
+  <form name="MULTI-PPC-WEB123-WBF-ASIA-INEN-JUN-12" id="MULTI-PPC-WEB123-WBF-ASIA-INEN-JUN-12" onSubmit="return submitForm(this);" action="http://s1666.t.eloqua.com/e/f2" method="post">
+ 
+<div>
+<input name="elqFormName" value="MULTI-PPC-WEB123-WBF-ASIA-INEN-JUN-12" type="hidden" />
+<input name="elqSiteID" value="1666" type="hidden" />
+</div>
+ <div style="POSITION: relative; background-color:#E1E1E1;width:488px;" class="elqLayout" id="form_div">
+
+
+
+  <label style=" DISPLAY: block; FLOAT: left" class="elqLabel"><br /><strong>All fields required for best localized customer service<br /><br /></strong></label><br />
+<div id="formElement2" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+  <tbody>
+<tr>
+<td class="LayoutTableRowStart">
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">First Name</label>
+</td>
+<td>
+<input id="field1" value="" type="text" name="firstName" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+<div id="formElement3" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="LayoutTableRowStart">
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Last Name</label>
+</td>
+<td>
+<input id="field2" value="" type="text" name="lastName" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+<div id="formElement0" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Email Address</label>
+</td>
+<td>
+<input id="field3" value="" type="text" name="emailAddress" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>  
+  
+  
+  
+  <div id="formElement15" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Country</label>
+</td>
+<td>
+<select id="countryone" name="countryNormalized" class="elqField" style="width: 280px;"><option value="base">Please Select</option><option value="US">United States (Estados Unidos)</option><option value="CA">Canada</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Österreich (Austria)</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgien/Belgique (Belgium)</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brasil (Brazil)</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">中国 (China)</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Democratic Republic of the Congo</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Česká republika (Czech Republic)</option><option value="CI">Côte D'Ivoire</option><option value="DK">Danmark (Denmark)</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">República Dominicana (Dominican Republic)</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Suomi (Finland)</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Deutschland (Germany)</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italia (Italy)</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">South Korea</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">México (Mexico)</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Nederland (Netherlands)</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norge (Norway)</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Perú (Peru)</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Polska (Poland)</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RO">România (Romania)</option><option value="RU">Россия (Russia)</option><option value="RW">Rwanda</option><option value="RE">Réunion</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena, Ascension and Tristan Da Cunha</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="ES">España (Spain)</option><option value="LK">Sri Lanka</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sverige (Sweden)</option><option value="CH">Schweiz (Switzerland)</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Türkiye (Turkey)</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VG">Virgin Islands (British)</option><option value="VI">Virgin Islands (US)</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="AX">Åland Islands</option></select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+<div id="formElement16" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Preferred Language</label>
+</td>
+<td>
+<select id="langSelect" value="" name="preferredLanguage" class="elqField" style="width: 280px;"><option value="">Please choose a Country</option></select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+
+<div id="formElement18" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Zip or Postal Code</label>
+</td>
+<td>
+<input id="field18" value="" type="text" name="zipOrPostalCode" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+<div id="formElement11" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Business Phone</label>
+</td>
+<td>
+<input id="field4" value="" type="text" name="businessPhone" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+
+
+
+<div id="formElement4" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Company</label>
+</td>
+<td>
+<input id="field6" value="" type="text" name="company" class="elqField" />
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>  
+
+
+<div id="formElement6" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Industry</label>
+</td>
+<td>
+<select id="industryone" value="" name="industryLevel1" class="elqField" style="width: 280px;">
+        	<option selected="" value="base"> Please Select</option>
+</select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+<div id="formElement7" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">&nbsp;</label>
+</td>
+<td>
+<select id="industrytwo" name="industryLevel2" class="elqField" style="width: 280px;">
+	<option selected="" value="base"> Please choose from above</option>
+</select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+  
+<div id="formElement9" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Job Role</label>
+</td>
+<td>
+<select id="jobone" name="jobRole" class="elqField" style="width: 280px;">
+	<option value="base">Please Select</option>
+</select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+<div id="formElement53" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">Level of Interest</label>
+</td>
+<td>
+<select id="field53" value="" name="iGLevelOfInterest" class="elqField" style="width: 280px;">
+	<option id="field53" value="" name="iGLevelOfInterest">Please Select</option>
+    <option id="field53" value="1" name="iGLevelOfInterest">Learning about basic applications for this product</option>
+    <option id="field53" value="2" name="iGLevelOfInterest">What are the benefits of this product?</option>
+    <option id="field53" value="3" name="iGLevelOfInterest">Which product meets my needs?</option>
+    <option id="field53" value="4" name="iGLevelOfInterest">How can I justify getting this product?</option>
+    <option id="field53" value="5" name="iGLevelOfInterest">Training for a product we own</option>
+    <option id="field53" value="6" name="iGLevelOfInterest">I already own a product like this, I am looking for another</option><option id="field53" value="7" name="iGLevelOfInterest">None of the above</option>
+</select>
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;</div></td>
+
+</tr></tbody></table>
+
+
+
+<div id="formElement20" class="sc-view form-design-field sc-static-layout sc-regular-size">
+</div><table class="elqLayout" cellspacing="0" cellpadding="0" style="margin-top: 20px;">
+<tbody>
+<tr>
+<td> 
+<label style="WIDTH: 150px; DISPLAY: block; FLOAT: left" class="elqLabel">&nbsp;</label>
+</td>
+<td><input id="submit" value="Submit" src="Fluke%20Thermography_files/2680416e-7662-4cd7-b4e3-99056033ff5d_4156666a_btn-submit.png" type="image" />
+
+</td>
+<td style="WIDTH: 100%"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32"></div></td>
+
+</tr>
+<tr><td colspan="3" class="elqLabel"><p style="padding: 15px 0px;">By submitting your information you agree to the privacy policy</p></td></tr></tbody></table> 
+  
+</div>
+
+ 
+</form>        
+
+<!-- Start of passing string variables into hidden fields - Place just below the /form tag -->
+<script type="text/javascript" language="JavaScript">
+
+document.getElementById('C_Campaign_Name_PPC1').value = getQueryStringParamValue('utm_campaign');
+document.getElementById('C_Campaign_Content1').value = getQueryStringParamValue('utm_content');
+document.getElementById('C_Campaign_Term1').value = getQueryStringParamValue('utm_term');
+document.getElementById('C_Campaign_Medium1').value = getQueryStringParamValue('utm_medium');
+document.getElementById('C_Campaign_Source1').value = getQueryStringParamValue('utm_source');
+document.getElementById('C_Ad_Group1').value = getQueryStringParamValue('utm_adgroup');
+document.getElementById('locale').value = getQueryStringParamValue('locale');
+document.getElementById('C_Market_Model1').value = getQueryStringParamValue('mrkt_mdl');
+document.getElementById('C_Reporting_Product_Family1').value = getQueryStringParamValue('prod_fam');
+document.getElementById('C_MSCRMLastCampaignID').value = getQueryStringParamValue('MSCRM_CampID');
+document.getElementById(' cms_source').value = getQueryStringParamValue(' cms_source');
+
+
+</script>
+<!-- End of passing string variables into hidden fields -->
+        </div>
+        </td>
+       
+      </tr>
+      <tr>
+        <td class="formbgbottom"><p style="color:#464545;font-size:13px;margin-top:15px; margin-left:30px;"><span style="color:#000;font-size:22px;"><br />
+          FLUKE.</span> Keeping your world up and running ®</p></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong class="heading">Quality within your reach, introducing wide range of Thermal Imagers</strong><p></p>
+     <div id="products">
+          <div class="prod">
+               <h3>Ti110</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti110.jpg"/>
+          </div>
+          <div class="prod" style="background: #ececec;">
+               <h3>Ti27</h3>
+               <p>General Use</p>
+               <img src="Fluke Thermography_files/ti27.jpg"/>
+          </div>
+          <div class="prod">
+               <h3>Ti29</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti29.jpg"/>
+          </div>
+          <div class="prod" style="background: #ececec;">
+               <h3>Ti32</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti27.jpg"/>
+          </div>
+          <div class="prod">
+               <h3>Ti100</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti100.jpg"/>
+          </div>
+          <div class="prod" style="background: #ececec;">
+               <h3>Ti105</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti105.jpg"/>
+          </div>
+          <div class="prod last">
+               <h3>Ti125</h3>
+               <p>Industruial Use</p>
+               <img src="Fluke Thermography_files/ti125.jpg"/>
+          </div>
+     </div>
+     <!--<p ><img src="Fluke Thermography_files/PPC_TI_products.jpg" alt="" style="margin: 0 0 40px 0" ></p>-->
+    
+      
+      <!--<p style="font-size:10px">*Kit Consists of:<br>
+AMPROBE 1000 Clamp On Power Quality Meter Model ACD-41PQ &amp; AMPROBE MINI-VANE ANEMOMETER Model : TMAS </p>-->
+      
+</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+     <strong class="why_fluke">Why Fluke</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5"><table border="0" cellpadding="0" cellspacing="0" width="960">
+      <tbody><tr>
+      <td class="box" valign="top" width="190">
+        <img src="Fluke%20Thermography_files/find_problem.jpg" style="margin:0px 0 0 0; width: 150px" alt="" />
+        </td>
+        <td class="box" valign="top" width="190">
+        <img src="Fluke%20Thermography_files/one_touch.jpg" alt="" style="margin:0px 0 0 0; width: 150px" />
+        </td>
+        <td class="box" valign="top" width="190">
+        <img src="Fluke%20Thermography_files/recording.jpg" alt="" style="margin:0px 0 0 0; width: 150px" />
+        </td>
+        <td class="box" valign="top" width="190">
+        <img src="Fluke%20Thermography_files/ultra_ralaible.jpg" style="margin:0px 0 0 0; width: 150px" alt="" />
+        </td>
+         <td class="box" valign="top" width="190">
+        <img src="Fluke%20Thermography_files/battery.jpg" style="margin:0px 0 0 0; width: 150px" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="info"> <p>Thermal Imaging and Thermography 
+detects heat patterns or temperature changes in objects.
+These changes allow the user to discover problems before equipment 
+failure, or follow the development of problems, so maintenance can be 
+scheduled during a planned break or when the budget is available.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+     <strong class="why_fluke">Our Thermal Imaging Application</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+     <img src="Fluke%20Thermography_files/li_bg.jpg" style="margin: 30px 0 0 40px;float: left;" />
+     <ul style="margin: 33px 0 30px 32px;list-style-type: none;width: 500px;float: left;padding: 0;">
+          <li style="">Building Diagnostics</li>
+          <li style="margin-left: 0px;">Electrical Distribution/Power Generation</li>
+          <li style="margin-left: 0px;">Electronics</li>
+          <li style="margin-left: 0px;">In-Plant Electrical</li>
+          <li style="margin-left: 0px;">Mechanical Systems</li>
+          <li style="margin-left: 0px;">Process Monitoring and Installations</li>
+          <li style="margin-left: 0px;">Weatherization</li>
+     </ul>
+    </td>
+  </tr>
+  <tr>
+    <!--<td colspan="2"><p>*Kit Consists of: <br>
+   AMPROBE 1000 A Clamp On Power Quality Meter Model  ACD-41PQ <br>
+   AMPROBE MINI-VANE ANEMOMETER  Model : TMA5</p> 
+</td>-->
+  </tr>
+  <tr>
+    <td colspan="2" class="footer"><p class="footertext">
+     Fluke MEA <br />
+Arjaan Tower - Dubai Media City<br />
+Dubai - United Arab Emirates<br />
+P.O.Box: 71569<br />
+Email: <a href="mailto:info.me.africa@fluke.com" target="_top" style="color: #000; text-decoration: none;">info.me.africa@fluke.com</a><br />
+     
+    </p></td>
+  </tr>
+ 
+</tbody></table>
+<table style="color: black; background-color: #ffc100;" align="center" border="0" width="960"><tbody><tr><td style="padding-left:15px">
+<p style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:12px">
+     <a style="color:#000; text-decoration:none;" href="http://www.fluke.com/fluke/m2en/home/termsconditions.htm">Terms and Conditions </a>
+     | <a style="color:#000; text-decoration:none;" href="http://www.fluke.com/fluke/m2en/home/privacystatement.htm">Privacy Statement  </a>
+     | <a style="color:#000; text-decoration:none;" href="http://www.fluke.com/fluke/m2en/home/disclaimer.htm">Disclaimer</a>
+     </p></td><td style="padding-right:15px" align="right">
+     <p style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:12px">© 1995 - 2013 Fluke Corporation</p></td></tr></tbody></table>
+ 
+
+
+<script type="text/javascript"> 
+<!--
+if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+     document.write('<layer hidden=true><img src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=77005379-8237-4a75-8474-39a8072ec83b&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 ><\/layer>');
+}else{
+     document.write('<img style="display:none" src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=77005379-8237-4a75-8474-39a8072ec83b&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 >');
+}
+-->
+</script><layer hidden="true"><img src="Fluke%20Thermography_files/svrGP.gif" height="1" border="0" width="1" /></layer>
+ 
+ 
+<script type="text/javascript"> 
+<!--
+if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+     document.write('<layer hidden=true><img src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=77005379-8237-4a75-8474-39a8072ec83b&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 ><\/layer>');
+}else{
+     document.write('<img style="display:none" src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=77005379-8237-4a75-8474-39a8072ec83b&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 >');
+}
+-->
+</script><layer hidden="true"><img src="Fluke%20Thermography_files/svrGP.gif" height="1" border="0" width="1" /></layer>
+
+
+<script type="text/javascript">
+<!--
+if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+     document.write('<layer hidden=true><img src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=80362F66312C4231BC1353F9799C9255&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&ref=http%3a%2f%2fsupport.convonix.in%2fissues%2f13008&elq_ck=0" border=0 width=1 height=1 ><\/layer>');
+}else{
+     document.write('<img style="display:none" src="http://s1666.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1666&PURLSiteID=2&optin=disabled&PURLSiteAlternateDNSID=0&UserFormWebPublishID=1772&PURLRecordID=0&PURLGUID=80362F66312C4231BC1353F9799C9255&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&ref=http%3a%2f%2fsupport.convonix.in%2fissues%2f13008&elq_ck=0" border=0 width=1 height=1 >');
+}
+-->
+</script><layer hidden="true"><img src="Fluke%20Thermography_files/svrGP_002.gif" height="1" border="0" width="1" /></layer>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+
+</body></html>

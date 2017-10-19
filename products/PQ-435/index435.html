@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/lightSlider.css">
+	<script src="http://en-us.fluke.com/includes/jquery.js"></script>
+	<script src="js/lightSlider.js"></script>
+	<style>
+	body{background: #fff;
+	</style>
+</head>
+
+<body>
+	<ul id="lightSlider">
+		<li data-thumb="http://media.fluke.com/images/6006342-435-image1-95x63.jpg"><img src="http://media.fluke.com/images/6006342-435-image1-705x470.jpg" alt="" width="504" height="336" /></li>
+		<li data-thumb="http://media.fluke.com/images/6006342-435-image2-95x63.jpg"><img src="http://media.fluke.com/images/6006342-435-image2-705x470.jpg" alt="" width="504" height="336" /></li>
+		<li data-thumb="http://media.fluke.com/images/6006342-435-image3-95x63.jpg"><img src="http://media.fluke.com/images/6006342-435-image3-705x470.jpg" alt="" width="504" height="336" /></li>
+		<li data-thumb="http://media.fluke.com/images/6006342-435-image4-95x63.jpg"><img src="http://media.fluke.com/images/6006342-435-image4-705x470.jpg" alt="" width="504" height="336" /></li>
+	</ul>
+		<script>
+		$('#lightSlider').lightSlider({
+			gallery: true,
+			galleryMargin: 25,
+			item: 1,
+			loop: true,
+			slideMargin: 10,
+			mode: "slide",
+			thumbItem: 6,
+			thumbMargin: 20
+		});
+	</script>
+</body>
+
+</html>
