@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    /*background-attachment: fixed;
+    background-image: url(http://img.en25.com/eloquaimages/clients/FlukeElectronicsCorporation/%7Baffc6c92-ec5e-4ab3-9e94-94443f2d782b%7D_bg_nologo_nohardshadow_500px.jpg);*/
+    background-position: center top;
+    font-family: Helvetica, Arial, sans-serif;
+	background-color:#000000;
+}
+
+h1 {
+    color: #000;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 0 0 0 18px;
+    padding: 0 0 0 0;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+h1 .smallH1{
+    font-size: 22px;
+    line-height: 36px;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
+.featherlight-close-icon {
+    display: none;
+}
+
+img {
+    border: none;
+}
+
+.padding-left {
+    padding-left: 18px;
+}
+
+h2 {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 10px 0 5px 18px;
+    width: 90%;
+}
+
+h2 .smallH2{
+    font-size: 38px;
+    line-height: 41px;
+}
+
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 8px 18px;
+}
+
+h3 .smallH3 {
+	font-size: 14px; 
+	line-height: 24px; 
+	font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+h4 {
+    color: #000;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 20px 0 8px 18px;
+    padding: 0 0 0 0;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 20px 0 8px 18px;
+}
+
+h6 {
+    color: #fff;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 0 0 20px 0;
+    width: 90%;
+}
+
+.cta {
+    background-color: #000;
+    color: #FFC20E;
+    display: inline-block;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 20px 18px;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.ctaSmall {
+    background-color: #000;
+    color: #FFC20E;
+    display: inline-block;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 20px 18px;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.cta-yellow {
+    background-color: #FFC20E;
+    color: #000;
+    display: inline-block;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 10px 20px 0;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.cta-yellowSmall {
+    background-color: #FFC20E;
+    color: #000;
+    display: inline-block;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px 20px 0;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.cta:hover,
+.cta-yellow:hover {
+    color: #fff;
+}
+
+.ctaSmall:hover,
+.ctaSmall-yellow:hover {
+    color: #fff;
+}
+
+
+a {
+    color: #0058b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003b78;
+    text-decoration: none;
+}
+
+#wrapper {
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#row-top {
+    display: block;
+    float: left;
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+    z-index: 300;
+	height: 445px;
+}
+
+.head-prod {
+    float: right;
+    max-width: 430px;
+    width: 100%;
+}
+
+#bg-header {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+#bg-header img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+#bg-footer {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+#bg-footer img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+#row-mid {
+    background-color: #fbfbfb;
+    display: block;
+    float: left;
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+}
+
+#row-mid p {
+    font-size: 17px;
+    line-height: 18px;
+    margin: 0 0 0 18px;
+}
+
+#row-bottom {
+    display: block;
+    float: left;
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+}
+
+#row-bottom p {
+    color: #fff;
+}
+
+.wtb-cta {
+    color: #000 !important;
+}
+
+#footerlp {
+    background-color: #000;
+    display: block;
+    float: left;
+    height: 140px;
+    margin-top: -30px;
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+    z-index: 400;
+}
+
+#footerlp h2 {
+    color: #ffc203;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#footerlp h3 {
+    color: #FFF;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#footerlp a {
+    color: #ffc203;
+    text-decoration: none;
+}
+
+#footerlp a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    float: left;
+    max-width: 1280px;
+    padding: 25px 0 25px 0;
+    position: relative;
+    width: 100%;
+    z-index: 200;
+}
+
+.disclaimer {
+    font-size: 12px;
+}
+
+.leftColumn {
+    display: block;
+    float: left;
+    position: relative;
+    width: 63%;
+    z-index: 300;
+}
+
+.rightColumn {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 37%;
+    z-index: 300;
+}
+
+#leftColumn-fifty {
+    background-color: #797a7a;
+    display: block;
+    float: left;
+    margin: 15px 15px 0 15px;
+    min-height: 300px;
+    padding: 20px;
+    position: relative;
+    width: 43%;
+    z-index: 300;
+}
+
+#rightColumn-fifty {
+    background-color: #797a7a;
+    display: block;
+    float: right;
+    margin: 15px 15px 15px 0;
+    min-height: 300px;
+    padding: 20px;
+    position: relative;
+    width: 43%;
+    z-index: 300;
+}
+
+#leftColumn-bottom-fifty {
+    display: block;
+    float: left;
+    margin: 0 15px 0 15px;
+    min-height: 300px;
+    padding: 0 20px 0 20px;
+    position: relative;
+    width: 43%;
+    z-index: 300;
+}
+
+#rightColumn-bottom-fifty {
+    width: 43%;
+    display: block;
+    position: relative;
+    float: right;
+    margin: 15px 15px 15px 0;
+    padding: 20px;
+    z-index: 300;
+    min-height: 300px;
+}
+
+.greybox-one-left {
+    width: 56%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 300;
+}
+
+.greybox-one-right {
+    width: 43%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 300;
+}
+
+.greybox-two-left {
+    width: 70%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 300;
+}
+
+.greybox-two-right {
+    width: 29%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 300;
+}
+
+.grey-img {
+    width: 100%;
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 910px) {
+    #leftColumn-fifty {
+        width: 100%;
+        background-color: #797a7a;
+        display: block;
+        position: relative;
+        float: left;
+        margin: 15px 0 15px 0;
+        z-index: 300;
+    }
+    #rightColumn-fifty {
+        background-color: #797a7a;
+        display: block;
+        float: left;
+        margin: 15px 0 15px 0;
+        position: relative;
+        width: 100%;
+        z-index: 300;
+    }
+    #leftColumn-bottom-fifty {
+        display: block;
+        float: left;
+        margin: 15px 0 15px 0;
+        position: relative;
+        width: 100%;
+        z-index: 300;
+    }
+    #rightColumn-bottom-fifty {
+        display: block;
+        float: left;
+        margin: 15px 0 15px 0;
+        position: relative;
+        width: 100%;
+        z-index: 300;
+    }
+    .greybox-one-left {
+        display: block;
+        float: left;
+        position: relative;
+        width: 60%;
+        z-index: 300;
+    }
+    .greybox-one-right {
+        display: block;
+        float: right;
+        padding-right: 6%;
+        position: relative;
+        width: 30%;
+        z-index: 300;
+    }
+    .greybox-two-left {
+        display: block;
+        float: left;
+        position: relative;
+        width: 69%;
+        z-index: 300;
+    }
+    .greybox-two-right {
+        display: block;
+        float: right;
+        padding-right: 6%;
+        position: relative;
+        width: 21%;
+        z-index: 300;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .leftColumn {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .rightColumn {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*** Featherlight **/
+
+@media all {
+    .featherlight {
+        background: #333;
+        background: rgba(0, 0, 0, 0);
+        bottom: 0;
+        cursor: pointer;
+        display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        white-space: nowrap;
+        z-index: 2147483647;
+    }
+    .featherlight:last-of-type {
+        background: rgba(0, 0, 0, .8)
+    }
+    .featherlight:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        margin-right: -.25em vertical-align: middle;
+    }
+    .featherlight .featherlight-content {
+        background: #fff;
+        border-bottom: 25px solid transparent;
+        cursor: auto;
+        display: inline-block;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-height: 95%;
+        min-width: 30%;
+        overflow: auto;
+        padding: 25px 25px 0;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+        white-space: normal
+    }
+    .featherlight .featherlight-inner {
+        display: block
+    }
+    .featherlight .featherlight-close-icon {
+        background: #fff;
+        background: rgba(255, 255, 255, .3);
+        color: #000;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        line-height: 25px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 25px;
+        z-index: 9999;
+    }
+    .featherlight .featherlight-image {
+        width: 100%
+    }
+    .featherlight-iframe .featherlight-content {
+        border-bottom: 0;
+        padding: 0
+    }
+    .featherlight iframe {
+        border: 0
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .featherlight .featherlight-content {
+        border-bottom: 10px solid transparent;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-height: 98%;
+        padding: 10px 10px 0;
+    }
+}
+
+@media all {
+    .lightbox {
+        display: none;
+    }
+    .fl-page .jumbotron {
+        margin-top: 2em;
+    }
+    .fl-page .doc {
+        margin: 2em 0;
+    }
+    .fl-page .btn-download {
+        float: right;
+    }
+    .fl-page .btn-default {
+        vertical-align: bottom;
+    }
+    .fl-page .btn-lg span {
+        font-size: 0.7em;
+    }
+    /* override default feather style... */
+    .fixwidth {
+        background: rgba(256, 256, 256, 0.8);
+    }
+    .fixwidth .featherlight-content {
+        background: #111;
+        color: #fff;
+        padding: 25px;
+        width: 500px;
+    }
+    .fixwidth .featherlight-close {
+        background: #333;
+        color: #fff;
+    }
+}
+
+@media(max-width: 768px) {
+    .fl-page .btn-download {
+        float: none;
+        margin-bottom: 1em;
+    }
+}

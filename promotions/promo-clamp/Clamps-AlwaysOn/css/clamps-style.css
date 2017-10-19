@@ -1,0 +1,744 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1 {
+	font-size:40px;
+}
+
+body {
+	background-color:#999999;
+}
+
+h3 {
+	min-height:50px;
+}
+
+#image-container h1 {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    /*transform: translate(-45%, -50%);*/
+   /* width: 90%;*/
+    color: #000;
+	max-width: 600px;
+    font-size: 64px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.imgq {
+	max-width: 286px;
+	margin-top:12px;
+}
+
+#image-container { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   padding:0;
+}
+
+li {
+	margin-bottom:0;
+}
+
+
+	p {
+		color:#000000;
+	}
+	
+	
+	
+	a {
+	color:#000000;
+	text-decoration:none;
+
+}
+	
+	a:hover {
+		text-decoration:underline;
+		color: #003B78;
+	}
+	.btn-primary {
+		color: #000000;
+	}
+	
+#point
+{
+	max-width:285px;
+}
+
+
+.leftcol {
+	background-color:#ffffff; 
+	min-height:350px;
+}
+
+.rightcol {
+	min-height:350px;
+	
+}
+
+.pdfblock {
+	min-height:140px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+ 
+
+
+
+.btn-yellow {
+    color: #000000;
+    background-color: #FFC20E;
+    border-color: #f4b600;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 150%;
+    font-weight: 700;
+	width:100%;
+	margin-bottom:20px;
+	margin-top:10px;
+	padding:20px;
+}
+
+.btn-yellow:hover {
+    color: #6F6F6F;
+    background-color: #daa300;
+    border-color: #b68800;
+}
+
+.navbar-inverse {
+	background-color:#212121;
+}
+
+.btn-privacy {
+	color: #fff;
+    background-color: #336699;
+    
+	position:absolute;
+	left:17px;
+	top:0px;
+	z-index:50;
+	padding-left:25px;
+	height:35px;
+	
+	
+}
+
+
+
+.btn-privacy:hover {
+color: #ccc;
+    background-color: #286090;
+    
+	
+	
+}
+
+button {
+	position:relative;
+	z-index:1;
+}
+
+a.button {
+	z-index:1;
+}
+
+.privacy {
+	position:relative;
+	margin-bottom:20px;
+	
+}
+
+.lock {
+	max-width: 35px;
+	max-height:35px;
+	width:35px;
+	height:35px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin-bottom:20px;
+	z-index:99;
+}
+
+
+
+#image-container2 {
+    position: relative;
+    width: 100%;
+    padding: 0;
+	max-height: 243px;
+	background-color:#fff;
+	z-index:0;
+} 
+
+#mainimg {
+	position:absolute;
+	clip: rect(0, 1260px, 244px, 0);
+	
+}
+
+
+.mainpoint {
+	max-width:285px;
+	border: 2px solid #eaeaea; 
+	
+}
+
+.mainpoint:hover {
+ border: 2px solid  #ffc20e; 
+ -webkit-transition: border .5s ease;
+-moz-transition: border .5s ease;
+
+ 
+}
+
+
+
+.bg-lightgray {
+	background-color:#eaeaea;
+}
+
+.pdf-icon {
+	
+	float:left;
+	
+	margin-right:15px;
+	margin-bottom:20px;
+	display:block;
+	height:111px;
+	background-image:url(http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/Icon-PDF.png);
+	background-repeat: no-repeat;
+	background-size: 85px;
+   
+}
+
+
+.pdf-icon:hover {
+	background-image:url(http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/Icon-PDF-over.png);
+	
+}
+
+.pdfblock {
+	min-height:140px;
+	margin-bottom:10px;
+	margin-top:10px;
+	
+	
+}
+
+
+ .text-pdf {
+	 margin-left:100px;
+	 margin-right:0px;
+	 display:block;
+	
+max-width:220px;
+    font-size: 16px;
+ }
+
+.white {
+	background-color:#fff;
+}
+
+.radiobtn{
+        min-height:34px;
+		padding-left:50px;
+		padding-top:5px;
+		padding-bottom:5px;
+		
+        display: block;
+        position: relative;
+        z-index: 999;
+        top: 5px;
+		text-decoration:none;
+		color:#000;
+        background: url("http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/radiobtton-leeg.png") no-repeat;
+		
+		background-position: 5px 15px;
+		font-size:17px;
+		
+    }
+    .radiobtn:hover{            
+        background: url("http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/radiobtton-over.png") no-repeat;
+text-decoration:none;
+background-position: 5px 15px;
+ -webkit-transition: background .5s ease;
+-moz-transition: background .5s ease;
+	}
+	
+	.radiobtn:active{            
+        background: url("http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/radiobtton-vol.png") no-repeat;
+text-decoration:none;
+background-position: 5px 15px;
+	}
+	
+	.radiobtn-active {
+		min-height:34px;
+		padding-left:50px;
+		padding-top:5px;
+		padding-bottom:5px;
+		
+        display: block;
+        position: relative;
+        z-index: 999;
+        top: 5px;
+		text-decoration:none;
+		color:#000;
+        background: url("http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/radiobtton-vol.png") no-repeat;
+		
+		background-position: 5px 15px;
+		font-size:17px;
+		
+    }
+	
+	.radiobtn:visited{            
+        background: url("http://content.fluke.com/promotions/promo-pq/hidden-power-problems/images/radiobtton-vol.png") no-repeat;
+text-decoration:none;
+background-position: 5px 15px;
+	}
+
+	
+.question {
+	background-color:#ffffff;
+	margin-bottom:10px;
+	display:block;
+	padding:10px;
+	position:relative;
+	
+	/*border: 2px solid #eaeaea;*/
+}
+
+.question:hover {
+	
+	/*border: 2px solid #ffc20e;*/
+	background-color:#d2d3d4;
+	 -webkit-transition: background .5s ease;
+-moz-transition: background .5s ease;
+}
+
+.question:active {
+	
+	/*border: 2px solid #ffc20e;*/
+	background-color:#d2d3d4;
+	 -webkit-transition: background .5s ease;
+-moz-transition: background .5s ease;
+}
+
+.btn-blue {
+
+    color: #fff;
+    background-color: #336699;
+    border-color: #003b78;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 150%;
+    font-weight: 700;
+	width:100%;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding:20px;
+	text-align:center;
+}
+.btn-blue:hover {
+    color: #ccc;
+    background-color: #286090;
+    border-color: #204d74;
+	text-decoration:none;
+	
+}
+
+.seefullspecs {
+	font-size: 16px;
+    background-color: #eec542;
+    padding: 0px;
+    font-weight: bold;
+	color:#000000;
+}
+
+.btn:focus {
+	color:#000000;
+}
+
+.seefullspecs:hover {
+	
+	color:#000000;
+}
+
+.seefullspecs:active {
+	
+	color:#000000;
+}
+
+/*iframe {border:8px solid #333;
+    border-radius: 8px !important;
+	background-color:#333;
+}*/
+
+iframe  {
+
+width:388px;
+height:222px;
+}
+
+
+
+
+.fluke-icon-chevron-left, .carousel-control .fluke-icon-chevron-right{position:absolute;top:50%;margin-top:-10px;z-index:5;display:inline-block}
+
+.carousel-control .icon-prev,.carousel-control .fluke-icon-chevron-left{left:50%;}
+
+
+
+
+.fluke-icon-chevron-left {
+    color: #999999;
+	margin-left:-10px;
+}
+
+.fluke-icon-chevron-right {
+    color: #999999;
+	/*margin-left:-30px;*/
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 0%);
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 0%);
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.carousel-indicators .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #999
+}
+ .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+	
+.center-block {
+	width:auto;
+}
+
+.footnote {
+	color:#ffffff; 
+	padding:20px 10px 30px 10px;
+}
+
+.ctasubmit {
+    display: block;
+    background: url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b6eb56182-a7e4-4ec8-a7c7-3f5f7519eb83%7d_submit.png) no-repeat;
+    color: #000000;
+    font-weight: normal;
+    max-width: 200px;
+    max-height: 45px;
+    height: 100%;
+    padding: 12px 10px 32px 25px;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+.contactme {
+	position:relative;
+	
+}
+
+.headset {
+	max-width: 44px;
+	max-height:47px;
+	width:44px;
+	height:47px;
+	background-color:#555555;
+	position:absolute;
+	top:20px;
+	right:0px;
+	margin-bottom:20px;
+	z-index:99;
+}
+
+.btntop-left 
+{
+	width:49.8%; float:left;
+}
+
+.btntop-right 
+{
+	width:50%; float:right;
+}
+
+ 
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    
+    border-top: 0px solid #ffffff;
+	padding-top:2px;
+	padding-bottom:2px;
+	font-family: "Roboto Slab", Arial, sans-serif;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+
+.table>thead>tr>th {
+    
+    border-bottom: 0px solid #ffffff;
+}
+
+.highlight {
+	
+	border-left: 5px solid #66abea;
+	border-right: 5px solid #66abea;
+	border-bottom: 0px;
+}
+
+.highlight-th {
+	background-image: url("http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/images/bestmatch-bg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 69px;
+	border-left: 5px solid #66abea;
+	border-right: 5px solid #66abea;
+	padding:0px;
+	height:72px;
+	
+}
+
+.highlight-yl {
+	
+	border-left: 5px solid #66abea;
+	border-right: 5px solid #66abea;
+	padding:0px;
+	background-color: #ebd586;
+	
+}
+
+
+.wtb {
+	
+	color:#ffffff; 
+	
+	}
+	
+	
+	.wtb:hover {
+		    color: #ccc;
+			text-decoration:none;
+			
+    
+	}
+.prodimg {
+width:150px;
+text-align:center;	
+	
+}
+
+h4 {
+	font-family: "Roboto Slab", serif;
+	font-size:20px;
+}
+
+
+.tr-hide {
+	display:none;
+	margin-top:0;
+}
+
+form {
+	margin-top:30px;
+	margin-right:20px;
+}
+
+ 
+tr.collapse.in {
+  display:table-row;
+}
+
+.elqLabel {
+color:#fff;	
+}
+
+#mobile-bestmatch {
+	display:none;
+	visibility:hidden;
+}
+
+#desktop-bestmatch {
+display:block;
+	visibility:visible;
+}
+
+@media (max-width: 1032px) {
+#image-container h1 {
+	/*padding-left:15px;*/
+	font-size:40px!Important;
+	max-width:450px;
+}
+
+
+
+
+
+section .container
+{
+	background-color:#fff;
+}
+
+.form-container {
+	margin-top:30px;
+}
+
+
+.leftcol {
+	
+	min-height:0px;
+}
+
+.rightcol {
+	min-height:0px;
+	
+}
+
+#mobile-bestmatch {
+	display:none;
+	visibility:hidden;
+}
+
+#desktop-bestmatch {
+display:block;
+	visibility:visible;
+}
+
+a {
+    color: #336699;
+    text-decoration: underline;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+.btntop-right 
+{
+	width:100%; float:none;
+	margin-bottom:0px;
+}
+
+.btntop-left 
+{
+	width:100%; float:none;
+	margin-top:5px;
+}
+
+#image-container h1 {
+	font-size:40px!Important;
+	max-width:300px;
+	 top: 15%;
+}
+
+/*.mainpoint {
+	width:40%;
+}*/
+.mainpoint-txt {
+	display:block;
+	/*width:40%;*/
+	font-size:15px;
+	
+}
+
+
+.leftcol {
+	
+	min-height:0px;
+}
+
+.rightcol {
+	min-height:0px;
+	
+}
+
+#mobile-bestmatch {
+	display:block;
+	visibility:visible;
+}
+
+#desktop-bestmatch {
+display:none;
+	visibility:hidden;
+}
+
+.table-responsive {
+	width:90%;
+}
+
+a {
+    color: #336699;
+    text-decoration: underline;
+}
+
+}
+
+
+@media (max-width: 376px) {
+
+iframe  {
+
+width:320px;
+padding-left:0px;
+
+}
+
+.table-responsive {
+	width:100%;
+}
+
+a {
+    color: #336699;
+    text-decoration: underline;
+}
+
+
+#mobile-bestmatch {
+	display:block;
+	visibility:visible;
+}
+
+#desktop-bestmatch {
+display:none;
+	visibility:hidden;
+}
+
+
+}

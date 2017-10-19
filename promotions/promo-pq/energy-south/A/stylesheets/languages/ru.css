@@ -1,0 +1,47 @@
+.block-1 .slider {
+	width: 700px;
+}
+
+.block-1 h3,
+.block-1 h1,
+.block-1 li {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.block-1 h1 {
+	font-size: 40px;
+}
+
+.block-1 p {
+	width: 450px;
+}
+
+.ddm-block-1 ul.inline-list li a {
+	font-size: 15px;
+}
+
+.ddm-block-2 {
+	height: auto;
+}
+
+.block-4 a {
+	margin-top: 15px;
+	margin-right: 15px;
+	height: 50px;
+	width: 258px;
+}
+
+.block-4 .wrapper p {
+	margin-bottom: 100px;
+}
+
+.ddm-block-5 a {
+	font-size: 15px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.ddm-block-5 .wrapper p {
+	margin-bottom: 100px;
+}

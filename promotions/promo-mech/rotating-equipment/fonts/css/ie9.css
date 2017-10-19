@@ -1,0 +1,10 @@
+#intro .image {
+  background-size: contain !important;
+  height: 380px !important;
+  top: -25px !important; }
+#intro .logo {
+  margin-top: 125px !important; }
+
+#stories nav {
+  margin-left: -400px !important;
+  width: 800px !important; }

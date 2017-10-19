@@ -1,0 +1,36 @@
+/**
+ *
+ */
+.block-1 .slider {
+	width: 650px;
+}
+
+.block-1 p {
+	width: 400px;
+}
+
+.ddm-block-1 h1 {
+	font-size: 45px;
+}
+
+.ddm-block-1 ul.inline-list li a {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+  font-size: 15px;
+}
+
+.ddm-block-2 {
+	height: auto;
+}
+
+.block-4 h2 {
+	/*font-family: 'botonregular';*/
+}
+
+.block-4 a {
+	font-size: 14px;
+}
+
+.ddm-block-5 a {
+	font-size: 14px;
+}

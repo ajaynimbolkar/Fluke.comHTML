@@ -1,0 +1,112 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/**
+ * Fonts
+ */
+
+@font-face { 
+    font-family: "Boton Bold"; 
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.eot);
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.woff) format('woff');
+}
+	
+
+
+
+
+
+
+	body {
+		
+	background-color: black;
+	margin-top:0px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+	} 
+	
+	#wrapper {
+	width: 970px ;
+	height: auto ;
+	background-color: white;
+	margin-right : auto;
+	margin-left : auto;
+	
+   	position:relative;
+	
+	 /**!!  for legal footer to be visible when aligned to bottom **/
+	}
+		
+	
+	#bodytext {
+		padding:30px;
+	}
+	
+	#header {
+	height:370px;
+	width: 970px;
+	background-image: url('http://content.fluke.com/promotions/promo-scope/942-Tradein-CEE/images/scm-tradein-header.png')  ;
+	background-repeat:no-repeat ; 
+	font-family: "Boton Bold";
+	alignment-baseline:before-edge;
+	
+	
+ 
+	}
+	
+	
+	
+	#headertext {
+		position:absolute;
+		top: 80px;
+		width: 550px;
+		left: 30px;
+		font-family: "Boton Bold";
+		font-size:50px;
+		color:#fff;
+		text-transform:uppercase;
+	}
+	
+	
+		#headline {
+		
+		
+		padding-left: 30px;
+		font-family: "Boton Bold";
+		font-size:36px;
+		color:#000;
+	}
+	
+	#contentbox {
+	/**
+	margin-right: auto;
+	margin-left: auto;
+   	**/
+	margin-top: 5px;
+	position: relative;
+	height:auto;
+	width: 970px;
+	
+	FONT-SIZE: 16px;
+	padding:20px;
+	}
+	
+	
+	
+	
+	#terms {
+		background-color:#dedede;
+		font-size:12px;
+		padding: 30px;
+	}
+	
+	
+
+	
+#footer {
+	font-size:13px;
+	background-color:#FFCe20;
+	padding:10px;
+}
+	
+	

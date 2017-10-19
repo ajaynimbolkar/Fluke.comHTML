@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Flukestrap light Template</title>
+<!--  Flukestrap light is a bootstrap template customiezed for Fluke IG
+      Requires LESS compiler.
+      Origionally compiled by R.Neff on 12-4-15
+      Variables.less has all the Fluke IG Brand Global variables.
+      Custom.less has all the custom css
+    -->
+
+    <!-- Bootstrap -->
+    <link href="css/flukestrap-light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+
+      <style type="text/css">
+      /* this style and selector are unrelated to bootstrap, this doc 
+      its just to make easier to read */
+      .bs-docs-section {
+        border-top: 1px solid gray;
+      }
+      @media (min-width: 1033px) {
+        .custom-collapse #side-menu-collapse {
+          display: block;
+          padding-left: 0px;
+        }
+      }
+  
+      li > span.nav-indicator:before {
+        content: "-";
+
+      }
+       li.collapsed > span.nav-indicator:before {
+        content: "+";
+        -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+      }
+    </style>
+
+    <script>
+      // $(document).ready(function(){    
+      //   $('.side-child-nav').on('shown', function () {
+      //    $(this).parent().find(".side-nav-parent").removeClass("nav-plus").addClass("nav-minus");
+      //  });
+
+      //   $('.side-child-nav').on('hidden', function () {
+      //    $(this).parent().find(".side-nav-parent").removeClass("nav-minus").addClass("nav-plus");
+      //  });
+      // });
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+
+          <div class="custom-collapse">
+            <button class="collapse-toggle btn btn-lg btn-block visible-xs visible-sm" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-collapse">
+              Toggle navigation
+              <span class="caret pull-right">
+              </span>
+            </button>
+            <ul class="list-group collapse" id="side-menu-collapse">
+              <li class="first">
+                <a href="/en/products/digital-multimeters">
+                  Digital Multimeters
+                </a>
+              </li>
+              <li class="collapsed ">
+                <a href="/en/products/electrical-testers">
+                  Electrical Testers
+                </a>
+                <ul class="level-1">
+                  <li class="first ">
+                    <a href="/en/products/electrical-testers/continuity-testers">
+                      Continuity Testers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/junior-set-and-kits">
+                      Junior-Set and Kits
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/lamp-testers">
+                      Lamp Testers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/lan">
+                      LAN
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/non-contact-voltage">
+                      Non-Contact Voltage
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/phase-sequence-meters">
+                      Phase Sequence Meters
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/electrical-testers/voltage-continuity-testers">
+                      Voltage Continuity Testers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="collapsed " data-toggle="collapse" data-target="#appliance-testers">
+                
+                  Appliance Testers
+                <span class="nav-indicator pull-right"></span>
+                <ul class="level-1 collapse" id="appliance-testers">
+                  <li class="first ">
+                    <a href="/en/products/appliance-testers">
+                      Appliance Testers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/appliance-testers/appliance-testers-din-vde-0701-0702-and-0751">
+                      Appliance Testers DIN VDE 0701-0702 and 0751
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="collapsed" data-toggle="collapse" data-target="#hvac-iaq">
+                  HVAC IAQ
+                <span class="nav-indicator pull-right"></span>
+                <ul class="collapse" id="hvac-iaq">
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/anemometers">
+                      Anemometers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/gas-and-leak-detection">
+                      Gas and Leak Detection
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/light-meters">
+                      Light Meters
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/manometers">
+                      Manometers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/sound-meters">
+                      Sound Meters
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/tachometers">
+                      Tachometers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/hvac-iaq/temperature-and-humidity">
+                      Temperature and Humidity
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="/en/products/installation-testers">
+                  Installation Testers
+                </a>
+              </li>
+              <li class="collapsed ">
+                <a href="/en/products/power-and-energy-testers">
+                  Power and Energy Testers
+                </a>
+                <ul class="level-1">
+                  <li class="first ">
+                    <a href="/en/products/power-and-energy-testers/battery-testers">
+                      Battery Testers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/power-and-energy-testers/power-quality-tools">
+                      Power Quality Tools
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="/en/products/wire-tracers-and-locators">
+                  Wire Tracers and Locators
+                </a>
+              </li>
+              <li class="">
+                <a href="/en/products/machine-testers-din-vde-0113">
+                  Machine Testers DIN VDE 0113
+                </a>
+              </li>
+              <li class="">
+                <a href="/en/products/solar---photovoltaics">
+                  Solar - Photovoltaics
+                </a>
+              </li>
+              <li class="">
+                <a href="/en/products/clamp-meters">
+                  Clamp Meters
+                </a>
+              </li>
+              <li class="">
+                <a href="/en/products/test-panels">
+                  Test Panels
+                </a>
+              </li>
+              <li class="collapsed ">
+                <a href="/en/products/accessories">
+                  Accessories
+                </a>
+                <ul class="level-1">
+                  <li class="first ">
+                    <a href="/en/products/accessories/accessories-for-installation%2C-appliance-and-machine-testers">
+                      Accessories for Installation, Appliance and Machine Testers
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/accessories/accessories-for-wire-tracers-and-locators">
+                      Accessories for Wire Tracers and Locators
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/accessories/carrying-cases">
+                      Carrying Cases
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/accessories/fuses">
+                      Fuses
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/en/products/accessories/test-leads">
+                      Test Leads
+                    </a>
+                  </li>
+                </ul>
+              </ul><!-- /#fnp-nav-list -->
+            </div><!-- /.custom-collapse -->
+
+
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      </html>

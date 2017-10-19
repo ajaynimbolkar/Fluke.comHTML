@@ -1,0 +1,551 @@
+@charset "utf-8";
+/*@font-face {
+    font-family: 'Roboto Slab';
+} is already be implemented on flukestrap-light.css*/
+
+body {
+    padding: 0px;
+}
+
+#header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+#page1 h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.2em;
+    background-color: #FFC20E;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+#page4 h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.2em;
+    background-color: #FFC20E;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+#page2-1 h2 {
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #999999;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+#page2-1 h4 {
+    min-height: 3.5em;
+}
+
+#page2-2 h2 {
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #999999;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+#page3-1 h4 {
+    min-height: 3.5em;
+}
+
+#page3-1 h2 {
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-size: 1.2em;
+    background-color: #c9dceb;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+#page2-2 h4 {
+    min-height: 3.5em;
+}
+
+.page2blocks {
+    background-color: #ffffff;
+    margin: 0 7px 0 13px;
+    max-width: 30%;
+    min-height: 300px;
+}
+
+.page3blocks {
+    background-color: #d7d7d7;
+    margin: 5px;
+    max-width: 30%;
+    min-height: 150px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px #9b9b9b;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.page3blocks a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.page3blocks:hover {
+    text-decoration: none;
+    box-shadow: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.page3blocks:hover a {
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.page3blocks:active {
+    box-shadow: 3px 3px 4px #FFC20E;
+}
+
+.page4blocks {
+    margin-top: 30px;
+}
+
+.page4blocks ul {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.page4blocks li {
+    padding: 10px;
+}
+
+.page4blocks p {
+    margin-left: 30px;
+    padding-bottom: 50px;
+}
+
+.btn-yellow {
+    background: #FFC20E;
+    padding: 20px 50px 20px 50px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    max-width: 250px;
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    color: #000000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.btn-yellow a {
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    text-decoration: none;
+    background-color: #f69f0d;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.greybg {
+    height: 7px;
+    min-width: 0px;
+    background-color: #999999;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+}
+
+.selectiongroup {
+    line-height: 2em;
+}
+
+.seltext {
+    padding-left: 10px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bluebg {
+    height: 7px;
+    min-width: 0px;
+    background-color: #c9dceb;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+}
+
+.chkbox {
+    border-width: 1px;
+    border-color: #C9C6C6;
+}
+
+#linkbar {
+    min-height: 1em;
+    background-color: #E1E1E1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    font-size: 1em;
+    margin: 0px;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 1200px;
+    text-decoration: none;
+}
+
+.links {
+    float: right;
+}
+
+#linkbar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#linkbar a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a {
+    color: #336699;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #DBDBDC;
+}
+
+#wrapper {
+    max-width: 1200px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    height: auto;
+}
+
+#header-bg-img{
+    width: 100%;
+}
+
+
+.container-fluid {
+    padding: 0px;
+    height: auto;
+}
+
+.yellow-arrow {
+    float: right;
+}
+
+.blue-arrow {
+    float: left;
+}
+
+.stepback {
+    position: absolute;
+    text-align: center;
+    max-width: 128px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: bold;
+    left: 130px;
+    top: 13px;
+}
+
+.nextstep {
+    position: absolute;
+    text-align: center;
+    max-width: 128px;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: bold;
+    right: 140px;
+    top: 13px;
+    -moz-box-shadow: 0px;
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px;
+    background-color: #ffce20;
+    border: 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.leftcolumn-top {
+    background-color: #F0F0F1;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 0px;
+    /*	min-height:500px;*/
+}
+
+.leftcolumn-bottom {
+    background-color: #F0F0F1;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.rightcolumn-top {
+    margin: 0px -15px 0px 0px;
+    padding: 0px 30px 50px 20px;
+    /*min-height:500px;*/
+}
+
+.rightcolumn-top img {
+    float: right;
+    /*min-height:500px;*/
+}
+
+.rightcolumn-bottom {
+    margin-right: -15px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.navbar.navbar-default {
+    min-height: 1em;
+    max-height: 2em;
+    background-color: #E1E1E1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    font-size: 1em;
+    margin: 0px;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 1200px;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    margin: 0px;
+}
+
+/*.nextstep input {}*/
+
+.glyphicon.glyphicon-chevron-left {
+    color: #999999;
+}
+
+.glyphicon.glyphicon-chevron-right {
+    color: #999999;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 0%);
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 0%);
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.carousel-indicators .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #999
+}
+
+@media (max-width:649px) {
+    #linkbar {
+        padding-right: 15px;
+    }
+    h3 {
+        padding-left: 5px;
+        font-size: 1.1em;
+    }
+    h4 {
+        padding-left: 5px;
+        font-size: 1em;
+        min-height: 1em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .stepback {
+        font-size: 0.9em;
+        left: 50px;
+        top: 33px;
+    }
+    .nextstep {
+        font-size: 0.9em;
+        right: 70px;
+        top: 33px;
+    }
+    .selectiongroup {
+        padding-left: 5px;
+    }
+    .rightcolumn-bottom {
+        margin: 0px;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+    .leftcolumn-bottom {
+        margin: 0px;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+    .leftcolumn-top {
+        padding-left: 10px;
+        padding-right: 20px;
+        background-color: #FFFFFF;
+        padding-bottom: 5px;
+    }
+    .leftcolumn-top p {
+        padding-right: 30px;
+    }
+    #linkbar a {
+        font-size: 0.8em;
+    }
+    .rightcolumn-top {
+        padding-bottom: 5px;
+    }
+    .rightcolumn-top p {
+        padding-left: 5px;
+    }
+    .page2blocks {
+        background-color: #ffffff;
+        margin: 3px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:959px) {
+    .leftcolumn-top {
+        padding-left: 10px;
+        padding-right: 20px;
+        background-color: #FFFFFF;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .leftcolumn-top p {
+        padding-right: 30px;
+    }
+    .rightcolumn-top {
+        padding-bottom: 5px;
+        margin-left: 5px;
+    }
+    .selectiongroup {
+        padding-left: 5px;
+    }
+    .rightcolumn-bottom {
+        margin: 0px;
+        padding: 10px 100px 5px 0px;
+        background-color: #ffffff;
+    }
+    .leftcolumn-bottom {
+        margin: 0px;
+        padding: 10px 0px 5px 100px;
+        background-color: #ffffff;
+    }
+    .stepback {
+        font-size: 1em;
+        left: 130px;
+        top: 25px;
+    }
+    .nextstep {
+        font-size: 1em;
+        right: 150px;
+        top: 25px;
+    }
+    .page2blocks {
+        background-color: #ffffff;
+        margin: 3px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+    .page4blocks ul {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    h4 {
+        padding-left: 5px;
+        font-size: 1em;
+        min-height: 1em;
+    }
+    h3 {
+        padding-left: 5px;
+        font-size: 1.1em;
+    }
+}

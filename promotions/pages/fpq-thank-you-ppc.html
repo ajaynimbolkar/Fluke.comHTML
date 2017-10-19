@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Your information has been submitted successfully.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="opco" content="IG">
+     <!-- **************************************************************************************************
+      TABLE OF CONTENTS
+    - BEGIN STYLE INFO
+        - BEGIN STYLES
+        - BEGIN JAVASCRIPT
+        - BEGIN FORM HEADER
+        - Hidden Variables
+        - URL Variables
+        - Editable IX Variables
+        - IX Variables for EUR Lit Fulfilment
+        - BEGIN FORM FOOTER
+        - Prepopulate Checkbox Fields
+        - Google UTM Variables
+        - Custom URL Variables
+        -----------------------------
+        SUMMARY:
+        Landing page template for awareness
+     
+        
+        AUTHOR: 
+        CREATION DATE: 09/16/16
+        ------------------------------
+        REVISION INFO
+        1.0.0.0 - Randy Verduzco 07/01/16
+        Landing page template for awareness
+       
+
+    <!-- Styles : BEGIN -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/flukestrap-light.css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/eloqua-custom.css">
+ <link rel="stylesheet" href="http://content.fluke.com/promotions/promo-pq/hidden-power-problems/css/hpp-style.css">
+   
+
+    <!-- Styles : END -->
+
+    <!-- JAVASCRIPT : BEGIN -->
+
+    <!--JQUERY LIBRARY INCLUDE-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap & Custom Scripts : BEGIN -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/bootstrap.min.js"></script>
+    <!-- Bootstrap & Custom  Scripts : END -->
+
+    <!--JavaScript LIBRARY FOR ELOQUA DATA PROCESSING-->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/elqForm.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script>
+
+    <!--JavaScript Validation : WARNING!!! WARNING!!! WARNING!!! WARNING!!! Do not use this code outside of this landing page template -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/validate.js"></script>
+
+<!-- Passing url variables file --><script src="http://download.fluke.com/Fluke/eloqua/scripts/passUrlVariables.js"></script>
+
+<!-- -->
+
+<!-- Google Async Code starts -->
+<script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-1']); 
+       _gaq.push(['_setDomainName', 'content.fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script>
+<!-- Google Async Code ends -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P7RWZ5');</script>
+<!-- End Google Tag Manager -->
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<!--<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>-->
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<!--<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>-->
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+
+    <!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment-->
+    <script type="text/javascript">
+       var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+            console.log(el);
+            }
+        }
+        );
+
+
+ jQuery(function($) {
+
+            $("form").submit(function() {
+
+                $("input[name=dcUniqueID]").val($("input[name=emailAddress]").val() + $.now());
+                if ($("input[name=iGBulkEmailOptIn]").prop("checked")) {
+                    $("input[name=iGBulkEmailOptOut]").val("False");
+                } else {
+                    $("input[name=iGBulkEmailOptOut]").val("True");
+                }
+
+                $("input[name=ixFirstName]").val($("input[name=firstName]").val());
+                $("input[name=ixCountry]").val($("#countryone").val());
+               
+               
+            });
+        });
+
+        function setFields() {
+           
+                $("input[name=firstName]").val(localStorage.firstName);
+                $("input[name=emailAddress]").val(localStorage.emailAddress);
+                setTimeout(function() {
+                    $("#countryone").val(localStorage.countryNormalized).change();
+                }, 500);  
+            
+        }
+
+        function setLocalStore() {
+            if (typeof(Storage) !== "undefined") {
+                localStorage.firstName = $("input[name=firstName]").val();
+                localStorage.emailAddress = $("input[name=emailAddress]").val();
+                localStorage.countryNormalized = $("#countryone option:selected").val();
+            }
+        }
+
+
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+
+    <!--JavaScript LIBRARY INCLUDES FOR DYNAMIC DROPDOWNS-->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/dropdown-v3.js"></script>
+    <!--ISSUES WITH CACHE ON DOWNLOAD-->
+
+
+    <!-- JavaScript : END -->
+</head>
+
+<body onload="setFields();" id="t1-awareness">
+    <!-- Corp Header : BEGIN -->
+    <nav class="navbar navbar-inverse">
+        <div id="header" class="container">
+            <div class="row">
+                <div id="nav-branding" class="col-xs-8 col-md-8">
+                    <a href="http://en-us.fluke.com/" target="_blank"><img src="http://content.fluke.com/Eloqua/lptemplates/images/fluke-logo.gif" alt="Fluke Corporation"></a>
+                    <span id="tagline" class="hidden-xs">Keeping your world up and running<sup>&reg;</sup></span>
+                </div>
+                <div id="nav-cta" class="col-xs-4 col-md-4">
+                   
+                 
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Corp Header : END -->
+
+    <!-- MAIN : BEGIN -->
+    <main>
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </main>
+    <!-- MAIN : END -->
+
+
+    <!-- SECTION : BEGIN -->
+    <section>
+        <div class="container no-padding">
+            <div class="row no-margin">
+              <div class="col-md-12" style="background-color:#ffffff">
+
+                <h2>Your information has been submitted successfully.</h2>
+                  <p><br>
+
+Your free in-depth guide on Fluke's power quality and energy tools can be accessed using the link below.</p>
+                <p><a href="http://support.fluke.com/find_it.asp?Document=6008486" type="button" class="btn btn-primary" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOLS-729-PPC-THANKYOUPAGE', 'Download_asset', 'application_note']);">Download now</a></p>
+              </div>
+
+                
+
+            </div> 
+        </div>
+       
+    </section>
+    <!-- SECTION : END -->
+
+
+   <!-- Footer : BEGIN -->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+
+                <ul>
+                    <li><a href="http://en-us.fluke.com/customer-service/safety-notices" target="_blank">Safety Notices</a></li>
+                    <li><a href="http://en-us.fluke.com/site/fluke-sitemap" target="_blank">Site Map</a></li>
+                    <li><a href="http://en-us.fluke.com/site/privacy" target="_blank">Privacy Policy</a></li>
+                    <li><a href="http://en-us.fluke.com/site/terms" target="_blank">Fluke Terms of Use</a></li>
+                    <li><a href="http://en-us.fluke.com/site/terms-conditions" target="_blank">Fluke Terms &amp; Conditions of Sale</a></li>
+                </ul>
+                <p>Copyright ©1995-<script type="text/javascript">document.write(new Date().getFullYear());</script> Fluke Corporation</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer : END -->
+
+
+
+    <!-- Form Variables : BEGIN -->
+    <script>
+        <!-- Google UTM Variables DO NOT TOUCH -->
+        document.getElementById('utmCampaign').value = getQueryStringParamValue('utm_campaign');
+        document.getElementById('utmKW').value = getQueryStringParamValue('utm_kw');
+        document.getElementById('utmMedium').value = getQueryStringParamValue('utm_medium');
+        document.getElementById('utmSource').value = getQueryStringParamValue('utm_source');
+        document.getElementById('utmDomain').value = getQueryStringParamValue('utm_domain');
+        document.getElementById('utmSize').value = getQueryStringParamValue('utm_size');
+        document.getElementById('utmAdName').value = getQueryStringParamValue('utm_adname');
+        document.getElementById('utmLP').value = getQueryStringParamValue('utm_lp');
+        document.getElementById('utmAdGroup').value = getQueryStringParamValue('utm_adgroup');
+        document.getElementById('utmTerm').value = getQueryStringParamValue('utm_term');
+        document.getElementById('utmContent').value = getQueryStringParamValue('utm_content');
+
+        <!-- Custom URL Variables DO NOT TOUCH-->
+        if (getQueryStringParamValue('PID')) {
+
+            document.getElementById('redir').value = "http://www.fluke.com/fluke/" +
+                getQueryStringParamValue('locale') + "/?PID=" + getQueryStringParamValue('PID'); + " &utm_source=Eloqua"
+        } else if (getQueryStringParamValue('Document')) {
+            document.getElementById('redir').value = "http://support.fluke.com/find_it.asp?Document=" + getQueryStringParamValue('Document');
+        } else if (getQueryStringParamValue('publication')) {
+            document.getElementById('redir').value = " http://fluke.informationstore.net/efulfillment.asp?publication=" + getQueryStringParamValue('publication');
+        } else {
+            document.getElementById('redir').value = getQueryStringParamValue('redir');
+        }
+        document.getElementById('emlConfirm').value = getQueryStringParamValue('emlConfirm');
+        document.getElementById('iGLastMSCRMCampaignID').value = getQueryStringParamValue('lcid');
+        document.getElementById('productLineType').value = getQueryStringParamValue('plt');
+        document.getElementById('elqCampaignId').value = getQueryStringParamValue('ecid');
+        document.getElementById('ixMarcom').value = getQueryStringParamValue('ixmar');
+        document.getElementById('ixKitCodes').value = getQueryStringParamValue('ixkc');
+        document.getElementById('sharedContactList').value = getQueryStringParamValue('scl');
+        document.getElementById('CampaignResponseActivity').value = getQueryStringParamValue('cra');
+
+
+
+        switch (getQueryStringParamValue('lrpf')) {
+
+            case "ACC":
+                document.getElementById('iGLastReportingProductFamily').value = "286C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "DMMS":
+                document.getElementById('iGLastReportingProductFamily').value = "2B6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "EPROD":
+                document.getElementById('iGLastReportingProductFamily').value = "2C6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "IAD":
+                document.getElementById('iGLastReportingProductFamily').value = "F4E98626-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "IRW":
+                document.getElementById('iGLastReportingProductFamily').value = "D92D1D4A-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "MECH":
+                document.getElementById('iGLastReportingProductFamily').value = "6549A90B-BC15-DF11-A94F-0015C5FDF7E6";
+                break;
+            case "MULTI":
+                document.getElementById('iGLastReportingProductFamily').value = "DF2C273B-D270-DE11-BCC9-001E0B46B5F4";
+                break;
+            case "FBT":
+                document.getElementById('iGLastReportingProductFamily').value = "AA20900E-12F8-E311-AB56-BC305B2A71D8";
+                break;
+            case "FPQ":
+                document.getElementById('iGLastReportingProductFamily').value = "2E6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "PTOOLS":
+                document.getElementById('iGLastReportingProductFamily').value = "F624B332-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "SAAS":
+                document.getElementById('iGLastReportingProductFamily').value = "3714FA10-4ECA-E311-BF9F-A4BADB1DDEB4";
+                break;
+            case "SCM":
+                document.getElementById('iGLastReportingProductFamily').value = "68BB9E41-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "TEMP":
+                document.getElementById('iGLastReportingProductFamily').value = "316C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "TI":
+                document.getElementById('iGLastReportingProductFamily').value = "306C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "VIRT":
+                document.getElementById('iGLastReportingProductFamily').value = "1D73815F-601D-E211-8DDC-BC305B2A7226";
+                break;
+            default:
+                break;
+        }
+    </script>
+    <!-- Form Variables : END -->
+
+
+    <!--[if lt IE 7]>
+        <script src='http://images.a.fluke.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+    <![endif]-->
+</body>
+
+</html>

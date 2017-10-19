@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+
+
+    <title>Selection Tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="opco" content="IG">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/flukestrap-light.css">
+   
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/eloqua-custom.css">
+    <link rel="stylesheet" href="http://content.fluke.com/promotions/promo-clamp/Clamps-AlwaysON/css/clamps-style.css">
+
+    <!-- Styles : END -->
+<style type="text/css">
+
+
+
+	
+	
+
+
+
+    </style>
+    <!-- JAVASCRIPT : BEGIN -->
+
+    <!--JQUERY LIBRARY INCLUDE-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap & Custom Scripts : BEGIN -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/bootstrap.min.js"></script>
+    <!-- Bootstrap & Custom  Scripts : END -->
+
+   
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script>
+
+  <!-- Passing url variables file --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script src="http://download.fluke.com/Fluke/eloqua/scripts/passUrlVariables.js"></script>
+
+<!-- -->
+
+<!-- Google Async Code starts -->
+<!--<script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-1']); 
+       _gaq.push(['_setDomainName', 'content.fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script>-->
+<!-- Google Async Code ends -->
+
+<script>
+  dataLayer = [{
+    'event': 'landingpage',
+    'productGroup': 'SIT',
+   'productFamily': 'EPROD',
+    'campaign': 'CLAMPS-ALWAYS-ON',
+   'locale': 'UKEN'
+  }];
+</script>
+<!-- Google Tag Manager HEAD -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N37LJ6');</script>
+<!-- End Google Tag Manager -->
+
+ 
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+
+
+    <!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment-->
+    <script type="text/javascript">
+       var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+            console.log(el);
+            }
+        }
+        );
+
+
+ 
+
+
+
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+
+    
+
+
+    <!-- JavaScript : END -->
+</head>
+
+<body><!-- Google Tag Manager (noscript) BODY -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N37LJ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Corp Header : BEGIN -->
+    <nav class="navbar navbar-inverse">
+        <div id="header" class="container">
+            <div class="row">
+                <div id="nav-branding" class="col-xs-8 col-md-8">
+                    <a href="http://www.fluke.co.uk" target="_blank"><img src="http://content.fluke.com/Eloqua/lptemplates/images/fluke-logo.gif" alt="Fluke Corporation"></a>
+                    <span id="tagline" class="hidden-xs">Keeping your world up and running<sup>&reg;</sup></span>
+                </div>
+                <div id="nav-cta" class="col-xs-4 col-md-4">
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Corp Header : END -->
+
+    <!-- MAIN : BEGIN -->
+    <main>
+        <div class="container">
+            <div class="row" style="background-color:#ffffff">
+                <div id="image-container2" class="col-xs-12" >
+                    <img src="http://content.fluke.com/promotions/promo-clamp/Clamps-AlwaysOn/images/clamps-header2.jpg" alt="Fluke Corporation Sample Image">
+                   
+                </div>
+                
+               <a type="button" href="http://www.fluke.com/Fluke/uken/WhereToBuy/default.htm?product=CLMP" target="_blank" class="btn btntop-left btn-primary no-margin-top"  >Where to buy?</a>
+                    <a type="button" class="btn btn-primary btntop-right no-margin-top" href="http://www.flukepartnerportal.com/efulfillment/3272127f-en"  >See the full range</a>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN : END -->
+
+
+    <!-- SECTION : BEGIN -->
+    <section>
+        <div class="container ">
+            <div class="row no-margin">
+              <div class="col-md-12" style="background-color:#ffffff; padding-bottom:20px">
+<h1> How to choose the best clamp meter for your
+job</h1>
+               
+              
+                   
+
+                   
+                </div>
+
+
+            </div> 
+        </div>
+       
+    </section>
+    <!-- SECTION : END -->
+
+ <!-- SECTION : BEGIN -->
+    <section>
+ <!-- Content Header : BEGIN -->
+            
+            <!-- Content Header : END -->
+
+ 
+
+                <div class="container bg-lightgray" >
+                    <section  class="row">
+                        
+                        <div class="col-md-11 col-xs-12 col-md-offset-1">
+                          
+                            <!-- question 1 -->
+                            <div id="question1">
+                             <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 ">
+                                <h2>1. What is your basic need?</h2>
+                                
+                             
+
+                                        <a  class="radiobtn" id="q1-a" href="javascript:void(0)"  ><span class="question">General/Universal testing
+</span></a>
+
+
+
+                                       <a class="radiobtn" 
+  id="q1-b" href="javascript:void(0)" ><span class="question">Industrial testing</span>
+</a> 
+
+                                   
+
+                                       <a class="radiobtn"
+ id="q1-c" href="javascript:void(0)" ><span class="question">Testing in utility or heavy industry environment</span>
+</a>
+
+</div>
+
+</div>
+<!--
+                                    </div>
+                                </div>-->
+
+                            </div>
+                            <!-- end question 1 -->
+
+
+                            <!-- question 2.1 -->
+                            <div id="question2-1">
+                             <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-1">   <h2>2. Please describe your work environment, based on measurement category: </h2>
+                                
+
+                                        <a class="radiobtn" 
+ id="q2-1-a" href="javascript:void(0)"><span class="question">Measurement category for residential/ commercial or light industrial areas (CAT III 600 V, CAT IV 300 V)</span></a>
+
+
+                                 
+
+                                        <a class="radiobtn"
+ id="q2-1-b" href="javascript:void(0)"><span class="question">Measurement category for industrial or utility areas (CAT III 1000 V, CAT IV 600 V)</span></a> 
+
+                                   
+
+
+                                </div>
+                                
+                                
+                                
+                                
+</div>
+                            </div>
+                            <!-- end question 2.1 -->
+
+                            <!-- question 2.2 -->
+                            <div id="question2-2">
+                               <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-1">  <h2>2. Please select the feature you find most important for your application:
+</h2>
+                               
+
+                                      <a class="radiobtn" 
+id="q2-2-a"  href="374FC_325_365_381.html"><span class="question">	AC & DC current</span></a>
+
+
+                                  
+
+                                        <a class="radiobtn"
+id="q2-2-b" href="376FC_355_381_a3001FC.html"><span class="question">Low pass filter for measuring on VFC drives</span></a>
+
+                                   
+
+                                        <a class="radiobtn" 
+id="q2-2-c" href="355_353_a3001FC_369FC.html"><span class="question">	Measurements on cables with higher cross sections (opening &gt; 40 mm)</span></a>
+
+                                   
+
+                                        <a class="radiobtn" 
+id="q2-2-d" href="1630-2FC.html"><span class="question">Earth loop resistance </span></a>
+
+
+                                     <a class="radiobtn" 
+id="q2-2-e"  href="368FC_369FC.html"><span class="question">Leakage current measurement</span></a>
+
+
+                                  
+
+                                        <a class="radiobtn"
+id="q2-2-f" href="376FC_355_381_a3001FC.html"><span class="question">Measurement &gt; 1000 A</span></a>
+
+                                   
+
+                                        <a class="radiobtn" 
+id="q2-2-g" href="376FC_374FC_381_a3001FC.html"><span class="question">Flexible current transducer (flex clamp)</span></a>
+
+                                   
+
+                                        <a class="radiobtn" 
+id="q2-2-h" href="376FC_369FC_902FC_a3001FC.html"><span class="question">Wireless </span></a>
+
+  <a class="radiobtn" 
+id="q2-2-i" href="a3001FC_369FC_a3000FC_a3002FC.html"><span class="question">Data logger module</span></a>
+
+                                   
+
+                                        <a class="radiobtn" 
+id="q2-2-j" href="773_772_771.html"><span class="question">Process Automation 4-20 mA </span></a>
+
+                                    </div>
+                                    
+                                  
+
+
+                                </div>
+
+                            </div>
+                            <!-- end question 2.2 -->
+                            
+                            
+ 
+                            <!-- question 2.3 -->
+                            <div id="question2-3">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-1">
+                                       <h2>2. Please select the feature you find most important for your application:
+</h2>
+                                
+
+                                       <a class="radiobtn"  id="q2-3-a" href="353.html"  ><span class="question">Current measurement
+</span>
+</a>
+
+
+
+                                       <a class="radiobtn" 
+  id="q2-3-b" href="355_381_376FC.html" ><span class="question">Current and voltage measurement</span>
+
+</a> 
+
+                                    </div>
+  
+                                   
+                                </div>
+
+                            </div>
+                            <!-- end question 2.3 -->
+
+                           
+         <!-- question 3-1 -->
+                            <div id="question3-1"> 
+                            <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+                                <h2>3. Please select your main application:
+</h2>
+                           
+
+                                        <a  id="q3-1-a" class="radiobtn"
+  href="324_323_325.html"><span class="question">Basic testing - Residential/commercial environment</span></a>
+
+
+                                  
+
+                                       <a id="q3-1-b" class="radiobtn" 
+ href="365_373.html"><span class="question">Maintenance, troubleshooting</span></a> 
+
+
+                                        <a id="q3-1-c" class="radiobtn" 
+  href="365_373.html"><span class="question">HVAC</span></a>
+
+
+
+                                       <a id="q3-1-d" class="radiobtn" 
+ href="375FC_376FC_381.html"><span class="question">Motor drives with VFC</span></a> 
+
+                                   
+
+                                       <a id="q3-1-e" class="radiobtn" 
+ href="368FC_369FC.html"><span class="question">Leakage current</span></a> 
+
+                                    </div>
+ 
+                                   
+
+                                </div>
+
+                            </div>
+                          
+
+                     <!-- end question 3-1-->      
+                                               
+<!-- question 3-2 -->
+                           
+                            <div id="question3-2">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">   <h2>3. Please select your main application:
+</h2>
+                             
+
+                                       <a id="q3-2-a" class="radiobtn" 
+  href="374FC.html"><span class="question">Basic industrial testing</span>
+</a>
+
+
+                                 
+
+                                        <a id="q3-2-b" class="radiobtn" 
+ href="375FC_374FC_376FC_381.html"><span class="question">Maintenance, troubleshooting</span>
+</a> 
+
+
+                                        <a id="q3-2-c"  class="radiobtn"
+ href="375FC_376FC_381.html"><span class="question">Motor drives with VFC</span>
+
+</a> 
+
+ <a id="q3-2-d" class="radiobtn" 
+ href="368FC_369FC.html"><span class="question">Leakage current</span>
+</a> 
+
+
+                                        <a id="q3-2-e" class="radiobtn"
+ href="355_353.html"><span class="question">High-powered measurements (&gt; 1000 A AC/DC)</span>
+
+</a> 
+
+                                    </div>    
+                                                                    
+                                    
+
+
+                                </div>
+
+                            </div>
+                            <!-- end question 3-2 -->
+
+                     </div>
+
+                    </section>
+                </div>
+             
+    </section>
+    
+    
+    
+    <!-- SECTION : END -->
+
+
+    <!-- Footer : BEGIN -->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+
+                <ul>
+                    <li><a href="http://www.fluke.com/fluke/uken/support/safety/default.htm" target="_blank">Safety Notices</a></li>
+                    <li><a href="http://www.fluke.com/fluke/uken/home/sitemap.htm" target="_blank">Site Map</a></li>
+                    <li><a href="http://www.fluke.com/fluke/uken/home/privacystatement.htm" target="_blank">Privacy Policy</a></li>
+                    <li><a href="http://www.fluke.com/fluke/uken/home/Terms-and-Conditions-of-Use.htm" target="_blank">Fluke Terms of Use</a></li>
+                    <li><a href="http://www.fluke.com/fluke/uken/home/termsconditions.htm" target="_blank">Fluke Terms &amp; Conditions of Sale</a></li>
+                </ul>
+                <p>Copyright ©1995-<script type="text/javascript">document.write(new Date().getFullYear());</script> Fluke Corporation</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer : END -->
+
+
+    
+
+
+    <!--[if lt IE 7]>
+        <script src='http://images.a.fluke.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+    <![endif]-->
+    
+    
+  <!--<script>
+    $("section a").on("click", function() {
+  
+  
+  $(this).addClass("radiobtn-active");
+})
+    
+    </script>-->
+
+    <script src="http://content.fluke.com/promotions/promo-clamp/Clamps-AlwaysON/js/bootstrap.js"></script>
+
+    <script src="http://content.fluke.com/promotions/promo-clamp/Clamps-AlwaysON/js/jquery-1.11.3.min.js"></script>
+ <script type="text/javascript" src="http://content.fluke.com/promotions/promo-clamp/Clamps-AlwaysON/js/script.js"></script>
+</body>
+
+</html>

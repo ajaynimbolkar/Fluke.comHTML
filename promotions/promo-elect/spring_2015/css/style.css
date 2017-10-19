@@ -1,0 +1,697 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { 
+    font-family: "Boton Bold"; 
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.eot);
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.woff) format('woff');
+	font-weight:normal;font-style:normal;
+}
+
+@font-face { 
+    font-family: "Boton Regular"; 
+    src: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/fonts/boton-regular.eot);
+    src: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/fonts/boton-regular.woff) format('woff');
+	font-weight:normal;font-style:normal;
+}
+
+html, body {margin: 0; padding: 0; font-family:  "Lucida Sans Unicode", "Lucida Sans"; background-color:#000;}
+
+img{border: none; margin: 0; padding: 0;}
+
+p{line-height:1.1; color:#000; font-size:18px; padding-top:15px}
+
+h1, h2, h3{font-family: "Boton Bold"; color:#000;}
+
+h1{font-size: 30px; line-height:1.0; text-transform:uppercase; padding:0; margin:0;}
+h2{font-size: 24px; line-height:1.0; text-transform:uppercase; padding:0; margin:0;}
+h3{font-size: 18px; line-height:1.0; text-transform:uppercase; padding:0; margin:0;}
+
+.free{font-family: "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; color: #e22d37; text-transform:uppercase; font-weight:bold;}
+
+
+
+a:link    {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover   {text-decoration:none;}
+a:active  {text-decoration:none;}
+
+
+
+.link{
+	color:#fff; 
+}
+
+
+.cta_big {
+	position:relative;
+	top:20px;
+	width:250px;
+	display:block;
+	background-color:#000;
+	color:#fff;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:24px;
+	padding:20px 20px 20px 20px;
+	text-align:center;
+	border: none;
+	cursor:pointer;
+	margin-bottom: 50px;
+	height:auto;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+.cta_big:hover {
+	background-color:#525252;
+}
+
+
+.cta_small {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:145px;
+	display:block;
+	background-color:#000;
+	color:#fff;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:16px;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	border: none;
+	cursor:pointer;
+	height:auto;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+.cta_small:hover {
+	background-color:#525252;
+}
+
+
+.cta_medium {
+	position:relative;
+	top:10px;
+	width:250px;
+	display:block;
+	background-color:#000;
+	color:#fff;
+	font-family: "Boton Bold", "Lucida Sans Unicode";
+	font-size:18px;
+	padding:20px 20px 20px 20px;
+	text-align:center;
+	border: none;
+	cursor:pointer;
+	margin-bottom: 50px;
+	height:auto;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+.cta_medium:hover {
+	background-color:#525252;
+}
+
+.price {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:145px;
+	display:block;
+	background-color:#fff;
+	color:#000;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:18px;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	border: none;
+	margin-bottom: 7px;
+	margin-top:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+
+.price_yellow {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:145px;
+	display:block;
+	background-color:#fcc400;
+	color:#000;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:18px;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	border: none;
+	margin-bottom: 7px;
+	margin-top:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+.table_price {
+	background-color:#ffffff;
+	font-family:"Lucida Sans Unicode", "Lucida Sans";
+	
+	font-size:10px;
+	text-align:center;
+}
+
+.price_yellow_small {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:70px;
+	display:block;
+	background-color:#fcc400;
+	color:#000;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:14px;
+	padding:3px 3px 3px 3px;
+	text-align:center;
+	border: none;
+	margin-bottom: 2px;
+	margin-top:5px;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+}
+
+.get_free_item {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:350px;
+	display:block;
+	background-color:#000;
+	color:#fff;
+	font-family:Boton Bold, Lucida Sans Unicode;
+	font-size:16px;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	border: none;
+	margin-bottom: 20px;
+	margin-top:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	clear:both;
+	cursor:pointer;
+}
+
+
+.get_free_item:hover {
+	background-color:#525252;
+}
+
+.currency_sign{
+	font-family: "Arial";
+}
+
+
+
+
+
+
+#header{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;	
+    height: 700px; 
+	width: 970px; 
+	background-image: url('http://content.fluke.com/promotions/promo-elect/spring_2015/images/header.png');
+	background-repeat: no-repeat;
+	float: center;
+	display: block;  
+}
+
+.logo{
+	padding:25px 0px 0px 0px;
+	float: left;
+	width:220px;
+	height:72px;
+}
+
+.fluke_specials{
+	position: absolute;
+	top: 133px;
+	left: 50px;
+	height: 133px;
+	width: 400px;
+}
+
+
+.subtitle{
+	font-family: "Boton Bold";
+	text-align:left;
+	float:left;
+	font-size:17px;
+}
+	
+	
+.leaflet{
+	position: absolute;
+	top: 310px;
+	left: 50px;
+	height: 355px;
+	width: 300px;
+}
+
+.download_link{
+	position: absolute;
+	top: 361px;
+	
+	margin-left: 4px;
+	text-align: left;
+	float: left;
+	font-size: 16px;
+	color: #000;
+	
+}
+
+
+
+
+
+
+
+
+
+
+#section_1{
+	position:relative;
+	width:970px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_left.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#fff;
+	top:0px;
+	padding-bottom:12px;
+}
+
+
+.dmm{
+	position:relative;
+	top: 0px;
+	left:500px;
+	width:500px;
+	height:500px;
+	display:block;
+}
+
+.stickybeat{
+	position:absolute;
+	top:280px;
+	left:0px;
+	height:160px;
+	width:260px;
+}
+
+.section_1_text{
+	position:absolute;
+	top:50px;
+	left:50px;
+	width:470px;
+	height:auto;
+}
+
+
+
+.small_text {
+	font-size:10px;
+	position:absolute;
+	width: 450 px;
+	
+	height: auto;
+}
+
+
+
+#section_2{
+	position:relative;
+	width:970px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_right.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-color:#b3d5e0;
+	top:0px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+
+.container{
+	width:870px;
+	min-height:430px;
+	top:0px;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+
+.column_3row{
+	float:left;
+	bottom: 0px;
+	width: 255px; 
+	height:auto; 
+	text-align:center; 	
+	display:block;
+	padding-right:17px;
+	padding-left:17px;
+}
+
+.clampkits{
+	margin-top:25px;
+}
+
+.clampkits_text{
+	text-align:center;
+	margin-top:20px;
+	font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section_puck_light{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+width: 970px; 
+background-color: #ffffff;
+top:0px;
+height:auto;
+}
+
+
+#container_puck{
+width: 870px;
+min-height:100px;
+margin: 0px 0px 0px 0px; /* top right bottom left */
+padding-left: 100px;
+}
+
+ #container_puck #col1 {
+ width: 80px;
+ float: left;
+ }
+ #container_puck #col2outer {
+ width: 650px;
+ float: left;
+ margin: 0;
+ padding-left: 50px;
+ }
+ #col2outer #col2mid {
+ width: 510px;
+ float: left;
+ text-align:center;
+ }
+ #col2outer #col2side {
+ width: 80px;
+ float: right;
+ }
+
+
+
+
+
+
+.puck_light_image{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:970px;
+	height: 150px;
+	top:0px;
+	padding-bottom:5px;
+	background-color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+#section_3{
+	position:relative;
+	width:970px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_left.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#fff;
+	top:0px;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+
+
+.container_2{
+	width:870px;
+	height:680px;
+	top:0px;
+	margin-left:50px;
+}
+
+
+.column_4row{
+	float: left; 
+	bottom: 0px;
+	width: 217px; 
+	height:auto; 
+	text-align:center; 	
+	display:block;
+}
+
+.clampmeter{
+	margin-top:25px;
+	width:175px;
+	height:480px;
+	bottom:0px;
+	padding-left:9px;
+}
+
+
+
+
+#section_cabinet_key{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+width: 970px; 
+background-color: #b3d5e0;
+top:0px;
+height:230px;
+}
+
+
+#container_puck{
+width: 870px;
+min-height:120px;
+margin: 0px 0px 0px 0px; /* top right bottom left */
+padding-left: 100px;
+}
+
+#container_puck #col1 {
+width: 80px;
+float: left;
+}
+
+#container_puck #col2outer {
+width: 650px;
+float: left;
+margin: 0;
+padding-left: 50px;
+}
+
+#col2outer #col2mid {
+width: 510px;
+float: left;
+text-align:center;
+}
+
+#col2outer #col2side {
+width: 80px;
+float: right;
+}
+
+
+.cabinet_key{
+	position:relative;
+	float:right;
+	margin-right:140px;
+	margin-top:-80px;
+	height:132px;
+	width:170px;
+}
+
+
+
+#section_fluke_1621{
+	position:relative;
+	width:970px;
+	height:464px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_right.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-color:#b3d5e0;
+	top:0px;
+	padding-top:50px;
+}
+
+
+.fluke_1621{
+	position:relative;
+	top: -83px;
+	left:50px;
+	width:420px;
+	height:487px;
+	display:block;
+}
+
+
+.section_fluke_1621_text{
+	position:absolute;
+	top:50px;
+	right:50px;
+	width:420px;
+	height:auto;
+}
+
+#section_test_guide{
+	position:relative;
+	width:970px;
+	min-height:388px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_right.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-color:#fcc400;
+	top:0px;
+	padding-top:50px;
+}
+
+
+.test_guide_phone{
+	position:relative;
+	bottom: 0px;
+	float:right;
+	margin-right:50px;
+	width:256px;
+	height:388px;
+	display:block;
+	padding-bottom:0px;
+}
+
+.qr_code{
+	position:absolute;
+	top:299px;
+	left:526px;
+	height:120px;
+	width:119px;
+}
+
+
+.test_guide_text{
+	position:absolute;
+	top:50px;
+	left:50px;
+	width:420px;
+	height:auto;
+	font-size: 16px;
+}
+
+
+
+#section_electrician_game{
+	position:relative;
+	width:970px;
+	height:382px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_right.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-color:#fcc400;
+	top:0px;
+	padding-bottom:30px;
+}
+
+
+.game_image{
+	position:relative;
+	top: 50px;
+	left:50px;
+	width:534px;
+	height:319px;
+	display:block;
+	margin-bottom:50px;
+}
+
+.game_text{
+	position:absolute;
+	top:80px;
+	right:50px;
+	width:310px;
+	height:auto;
+	font-size: 16px;
+}
+
+
+
+#footer_text{
+	position:relative;
+	width:970px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(http://content.fluke.com/promotions/promo-elect/autumn_2014/images/shadow_left.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#b3d5e0;
+	top:0px;
+	text-align:center;
+	font-size:11px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.link_footer{
+	text-decoration:underline;
+	color:#000;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Komplexn&iacute; měřen&iacute; kvality a&nbsp;rozbory měřen&iacute; elektrick&eacute; energie tř&iacute;f&aacute;zov&yacute;mi analyz&aacute;tory v&yacute;konu Fluke Power Logger 1736 a 1738</title>
+<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" type="text/css">
+<link href="styles/styles-eu.css" rel="stylesheet" type="text/css">
+
+<!-- Google Async Code starts --><script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-47']); 
+       _gaq.push(['_setDomainName', 'fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script><!-- Google Async Code ends -->
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7RWZ5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+
+
+<!-- ClickTale Bottom part --> 
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki pagehttp://wiki.clicktale.com/Article/Customizing_code_version_2
+ 
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js":
+"http://cdn.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- ClickTale end of Bottom part -->
+
+
+
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+<!-- Youtube tracking code -->
+<script>
+for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;)
+	if (/youtube.com\/embed/.test(e[x].src))
+		if(e[x].src.indexOf('enablejsapi=') === -1)
+			e[x].src += (e[x].src.indexOf('?') ===-1 ? '?':'&') + 'enablejsapi=1';
+
+var YTListeners = []; // support multiple players on the same page
+// attach our YT listener once the API is loaded
+function onYouTubeIframeAPIReady() {
+	for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;) {
+		if (/youtube.com\/embed/.test(e[x].src)) {
+			YTListeners.push(new YT.Player(e[x], {
+				events: {
+					onStateChange: onPlayerStateChange,
+				}
+			}));
+			YT.LastAction = false;
+		}
+	}
+}
+//Fill in the description of the page, according to the instructions for 'category' in the standard work document for Event tracking 
+var LandingpageGA = 'LP - TI - TI - Connect';
+
+
+// report the the type of interaction with the video
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING && setTimeout(onPlayerPercent, 1000, event.target)) {
+		lastAction = true;
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video play', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}
+	if (event.data == YT.PlayerState.ENDED){
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video end', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}        
+	if (event.data == YT.PlayerState.PAUSED && lastAction){
+		lastAction = false; 
+		_gaq.push(['_trackEvent',LandingpageGA, 'Video paused', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	} 
+}
+
+// report the % played if it matches 0%, 25%, 50%, 75% or completed
+function onPlayerPercent(player) {
+	if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+	var t = player.getDuration() - player.getCurrentTime() <= 1.5 ? 1 : (Math.floor(player.getCurrentTime() / player.getDuration() * 4) / 4).toFixed(2); 
+	
+	if (!player.lastP || t > player.lastP) {
+		player.lastP = t;
+		
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video ' + t * 100 + '%', player.getVideoData().video_id + ' | ' + player.getVideoData().title]);
+	}
+	
+	player.lastP != 1 && setTimeout(onPlayerPercent, 1000, player);
+	}
+}
+
+// load the Youtube JS api and get going
+var j = document.createElement("script"),
+	f = document.getElementsByTagName("script")[0];
+j.src = "//www.youtube.com/iframe_api";
+j.async = true;
+f.parentNode.insertBefore(j, f);
+</script>
+<!-- End Youtube tracking -->
+
+
+
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="row-top">
+ 	    	<div  id="bg-header">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg">
+        	</div>
+
+            <div class="leftColumn">
+            <div class="logo">
+            <a href="http://www.fluke.com" target="_blank"><img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-logo.jpg"></a>  
+       		</div>
+            <h1 style="font-size: 26px;">Tř&iacute;f&aacute;zov&eacute; analyz&aacute;tory v&yacute;konu Fluke Power Logger 1736 a 1738</h1>
+            <h2 style="font-size: 42px;">Komplexn&iacute; měřen&iacute; kvality a&nbsp;rozbory měřen&iacute; elektrick&eacute; energie</h2>
+            <h3 style="padding-bottom:5px;">Tř&iacute;f&aacute;zov&eacute; analyz&aacute;tory v&yacute;konu Fluke Power Logger 1736 a 1738 jsou kompatibiln&iacute; s&nbsp;mobiln&iacute; aplikac&iacute; nebo poč&iacute;tačov&yacute;m softwarem Fluke Connect<sup>&reg;</sup>. S&nbsp;těmito zař&iacute;zen&iacute;mi z&iacute;sk&aacute;te data, kter&aacute; potřebujete k&nbsp;přij&iacute;m&aacute;n&iacute; důležit&yacute;ch rozhodnut&iacute; o&nbsp;kvalitě a&nbsp;spotřebě elektrick&eacute; energie v&nbsp;re&aacute;ln&eacute;m čase.</h3>
+			<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Request_a_Demo', '1736_Request_a_Demo']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-CZCS-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/czcs/wheretobuy/akce/promo-multi/thankyou-demo-contact&scl=3614" class="ctaSmall padding-left" target="_blank">Pož&aacute;dejte o&nbsp;předveden&iacute;</a>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Download_asset', '1736_Datasheet']);" href="http://www.flukepartnerportal.com/efulfillment/13485-cze" class="ctaSmall padding-left" target="_blank">St&aacute;hnout specifikace př&iacute;stroje</a>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Watch_video_1', '1736_Watch_Video_1']);" href="#" data-featherlight="#fl2" class="ctaSmall padding-left">Přehr&aacute;t video</a>
+            </div>
+        
+            <div class="rightColumn">
+            
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430.png" class="head-prod">   	
+            
+            </div>
+    </div>
+    
+    
+    <div id="row-mid">
+    
+     <div class="leftColumn-2" style="height:520px">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430-mid.png" >
+      </div>    
+    
+    
+                <div class="rightColumn-2">
+            
+            <h4>Optimalizujte spolehlivost syst&eacute;mů a&nbsp;&uacute;spory</h4>
+            <h5>Lepš&iacute; přehled</h5>
+			<p>Automatick&eacute; zaznamen&aacute;v&aacute;n&iacute; a protokolov&aacute;n&iacute; v&iacute;ce než 500&nbsp;parametrů kvality elektrick&eacute; energie.</p>
+
+			<h5>Omezen&iacute; vlivu chyb</h5>
+			<p>Zjednodušen&aacute; instalace a&nbsp;omezen&iacute; vlivu chyb inteligentn&iacute; funkc&iacute; ověřov&aacute;n&iacute;.</p>
+
+			<h5>Lepš&iacute; rozhodov&aacute;n&iacute;</h5>
+			<p class="padding-bottom">K&nbsp;datům lze z&iacute;skat př&iacute;stup a&nbsp;sd&iacute;let je na d&aacute;lku pomoc&iacute; aplikace Fluke Connect<sup>&reg;</sup>, d&iacute;ky n&iacute;ž můžete pracovat v&nbsp;bezpečn&eacute; vzd&aacute;lenosti, přij&iacute;mat důležit&aacute; rozhodnut&iacute; v&nbsp;re&aacute;ln&eacute;m čase, sn&iacute;žit n&aacute;klady na ochrann&eacute; pomůcky a&nbsp;omezit nutnost n&aacute;vštěv pracoviště a&nbsp;kontrol na m&iacute;stě.</p>
+            
+            <p><a href="#" id="table-pop" data-featherlight="#mylightbox" style="cursor:pointer;">Kter&yacute; tř&iacute;f&aacute;zov&yacute; z&aacute;znamn&iacute;k/analyz&aacute;tor v&yacute;konu je pro v&aacute;s ten prav&yacute;?</a></p>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Request_Quote', '1736_Request_a_Quote']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-CZCS-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/czcs/wheretobuy/akce/promo-multi/thankyou-demo-contact&scl=3614" class="cta" target="_blank">Pož&aacute;dat o&nbsp;cenovou nab&iacute;dku</a>
+            </div>
+        
+          
+    </div>
+    
+    <!---------- Features Table : BEGIN ---------->
+
+        <div id="mylightbox" class="padding-left padding-bottom lightbox">
+
+
+            <h6 style="padding: 0; margin: 0;">&nbsp;</h6>
+            <!--- do not remove <h6> (it will break) --->
+             
+            <!-- Table : BEGIN -->
+            <table width="100%" bordercolor="#c5cdd2" border="1" cellspacing="0" cellpadding="4">
+        <tbody>
+            <tr>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 60%; text-align: center;"><strong>Funkce</strong></td>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 20%; text-align: center;"><strong>1736</strong></td>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 20%; text-align: center;"><strong>1738</strong></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Studie zat&iacute;žen&iacute;</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Energetick&aacute; hodnocen&iacute;</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Měřen&iacute; harmonick&yacute;ch kmitů</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Zaznamen&aacute;v&aacute;n&iacute; napěťov&yacute;ch jevů v&nbsp;s&iacute;ti</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Pokročil&aacute; anal&yacute;za:
+                    <br> křivky a&nbsp;zaznamen&aacute;v&aacute;n&iacute; n&aacute;běhov&yacute;ch proudů
+                    <br> Stav kvality elektrick&eacute; energie (EN51060)</td>
+                <td valign="center" align="center">Bal&iacute;ček upgradu*</td>
+                <td valign="center" align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">IEEE519 měřen&iacute; celkov&eacute;ho harmonick&eacute;ho zkreslen&iacute;</td>
+                <td valign="top" align="center">Voliteln&eacute;</td>
+                <td valign="top" align="center">Voliteln&eacute;</td>
+            </tr>
+
+            <tr>
+                <td valign="top">Plně integrovan&yacute; z&aacute;znam dat pomoc&iacute; aplikace Fluke Connect<sup>&reg;</sup></td>
+                <td valign="top" align="center">Bal&iacute;ček upgradu*</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">S&iacute;ť Wi-Fi / Bluetooth</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Sada magnetick&yacute;ch sond</td>
+                <td valign="top" align="center">Voliteln&eacute;</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Magnetick&yacute; z&aacute;věsn&yacute; drž&aacute;k</td>
+                <td valign="top" align="center">Voliteln&eacute;</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Připojen&iacute; prostřednictv&iacute;m směrovače WiFi</td>
+                <td colspan="2">Vyžaduje softwarovou licenci ZDARMA dostupnou po registraci produktu.</td>
+            </tr>
+            <tr>
+                <td colspan="3">*Nyn&iacute; je k&nbsp;dispozici bal&iacute;ček upgradu pro st&aacute;vaj&iacute;c&iacute; z&aacute;znamn&iacute;k/analyz&aacute;tor
+                    v&yacute;konu 1736 se stejn&yacute;mi funkcemi, jako m&aacute; pokročil&yacute; z&aacute;znamn&iacute;k/analyz&aacute;tor
+                    v&yacute;konu 1738. Dalš&iacute; informace o&nbsp;bal&iacute;čku upgradu z&iacute;sk&aacute;te od&nbsp;sv&eacute;ho
+                    distributora.</td>
+            </tr>
+        </tbody>
+    </table>
+            
+            <!-- Table : END-->
+            
+
+          
+        </div>
+        
+        
+<!---------- Features Table : BEGIN ---------->
+    
+    <div id="row-bottom">
+ 	    	<div  id="bg-footer">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg">
+        	</div>
+
+            <div id="leftColumn-fifty">
+            <div class="greybox-one-left">
+            <h6>Sezn&aacute;men&iacute; s&nbsp;př&iacute;strojem Fluke 1736 a 1738</h6>
+            <p class="padding-bottom">V&nbsp;představen&iacute; produktu se dozv&iacute;te, jak konstrukce a design př&iacute;stroje Fluke 1736 a 1738 čin&iacute; instalaci a měřen&iacute; kvality a&nbsp;rozborů měřen&iacute; elektrick&eacute; energie snazš&iacute; než kdykoli dř&iacute;ve.<br /><br /></p>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Watch_video_2', '1736_Watch_Video_2']);" href="#" data-featherlight="#fl3" class="cta-yellow">Přehr&aacute;t video</a>
+            </div>
+            <div class="greybox-one-right">
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Watch_video_2', '1736_Watch_Video_2']);" href="#" data-featherlight="#fl3"><img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pg-video.png" class="grey-img" style="max-width:218px; max-height:290px;"></a>
+            </div>
+        	</div>
+
+            <div id="rightColumn-fifty">
+            <div class="greybox-two-left">
+            <h6>Průvodce 30denn&iacute;m rozborem z&aacute;těže s&nbsp;analyz&aacute;tory v&yacute;konu Fluke Power Logger a Energy Logger</h6>
+            <p class="padding-bottom">Když přid&aacute;te nov&eacute; z&aacute;těže ke st&aacute;vaj&iacute;c&iacute; elektrosoustavě nebo nap&aacute;jec&iacute;mu veden&iacute;, pak prvn&iacute;, co mus&iacute;te určit, je to, zda současn&yacute; syst&eacute;m zvl&aacute;dne tyto nov&eacute; z&aacute;těže.</p>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Download_asset', '1736_Download_Assets']);" href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-CZCS-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900982&scl=3614" class="cta-yellow" target="_blank">St&aacute;hněte si tip pro použit&iacute;</a>
+            </div>
+            <div class="greybox-two-right">
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Download_asset', '1736_Download_Assets']);" href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-CZCS-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900982&scl=3614" target="_blank"><img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pq-appnote.png" class="grey-img" style="max-width:218px; max-height:290px;"> </a>
+            </div>
+        	</div>
+</div><div id="wtb">
+            <div id="leftColumn-bottom-fifty">
+
+                         <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-bottom-small.png" class="grey-img" style="max-height:275px; max-width:156px">
+
+        	</div>
+        	
+            <div id="rightColumn-bottom-fifty" style="padding-left:0px; margin-left:0px">
+
+            <h4 style="margin-left:0;">Možnosti&nbsp; n&aacute;kupu</h4>
+            <p class="padding-bottom wtb-cta">Můžete se vždy obr&aacute;tit na naše distributory a m&iacute;stn&iacute; servisn&iacute; střediska. Pomohou v&aacute;m se sledovatelnost&iacute;, kalibrac&iacute;, opravami a vlastn&iacute; &uacute;držbou.</p>
+            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'WTB', '1736_Where_to_Buy']);" class="btn btn-default cta" href="http://www.fluke.com/fluke/czcs/WhereToBuy/default.htm?product=PHASE3&pid=80077" style="margin-left:0;" target="_blank">Vyhledejte sv&eacute;ho distributora</a>
+        	</div>
+    
+    </div>
+    
+  <!--Video 1-->
+<iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=c51d94ab27af4924b583af9d855d36f8&width=640&height=360&playerForm=00b6b88210b64421985a66202a26e862" width="660" height="380" id="fl2" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <!--Video 2-->
+<iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=212a13d64aaf4327804ed191f55dfa49&width=640&height=360&playerForm=7a9ee93f70ee43efb3bfb19be1f8fcb" width="660" height="380" id="fl3" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div id="footerlp">
+    
+    <h2>
+<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Footer_Fluke_Corp', '1736_Footer_Fluke_Corp']);" href="http://www.fluke.com/" target="_blank">Fluke Corporation</a> | 
+<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Footer_Terms_Sale', '1736_Footer_Terms_of_Sale']);" href="http://www.fluke.com/fluke/czcs/home/podm%C3%ADnky.htm" target="_blank">Podm&iacute;nky</a> | 
+<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Footer_Privacy', '1736_Footer_Privacy']);"  href="http://www.fluke.com/fluke/czcs/home/prohlaseni-o-ochrane-osobnich-dat.htm" target="_blank">Prohl&aacute;šen&iacute; o&nbsp;ochraně osobn&iacute;ch dat</a> | 
+<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-CZCS', 'Footer_Terms_Use', '1736_Footer_Terms_of_Use']);"  href="http://www.fluke.com/fluke/czcs/home/Podminky-pouziti-spolecnosti-Fluke.htm" target="_blank">Podm&iacute;nky použit&iacute;</a></h2>
+    <h3>&copy;<script language="JavaScript">document.write(new Date().getFullYear());</script> Fluke Corporation. Všechny ochrann&eacute; zn&aacute;mky jsou vlastnictv&iacute;m jejich př&iacute;slušn&yacute;ch vlastn&iacute;ků. 2/2015 6004413a-en</h3>
+    
+    </div>
+
+</div>
+
+
+    <script src="js/jquery-1.7.0.min.js"></script>
+    <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <!--[if lt IE 7]>
+<script src='http://img.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+
+</body>
+</html>

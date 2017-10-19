@@ -1,0 +1,237 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+/* line 15, reset.scss */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 25, reset.scss */
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 30, reset.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+/* line 37, reset.scss */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+/* line 40, reset.scss */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+/* line 44, reset.scss */
+ul {
+  list-style: none; }
+
+/* line 46, reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 51, reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 53, reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 55, reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 57, reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+/* line 60, reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 61, reset.scss */
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+/* line 62, reset.scss */
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+/* line 64, reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 66, reset.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 68, reset.scss */
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+/* line 75, reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+/* line 76, reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+/* line 77, reset.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+/* line 78, reset.scss */
+.ie6 input {
+  vertical-align: text-bottom; }
+
+/* line 80, reset.scss */
+select, input, textarea {
+  font: 99% sans-serif; }
+
+/* line 82, reset.scss */
+table {
+  font-size: inherit;
+  font: 100%; }
+
+/* line 84, reset.scss */
+small {
+  font-size: 85%; }
+
+/* line 86, reset.scss */
+strong {
+  font-weight: bold; }
+
+/* line 88, reset.scss */
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+/* line 91, reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+/* line 92, reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 93, reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+/* line 96, reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+/* line 104, reset.scss */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+/* line 107, reset.scss */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+/* line 111, reset.scss */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+/* line 114, reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover 
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 131, reset.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 136, reset.scss */
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 144, reset.scss */
+.cf {
+  *zoom: 1; }

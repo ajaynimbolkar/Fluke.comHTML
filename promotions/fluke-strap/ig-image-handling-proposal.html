@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Flukestrap light Template</title>
+<!--  Flukestrap light is a bootstrap template customiezed for Fluke IG
+      Requires LESS compiler.
+      Origionally compiled by R.Neff on 12-4-15
+      Variables.less has all the Fluke IG Brand Global variables.
+      Custom.less has all the custom css
+    -->
+
+    <!-- Bootstrap -->
+    <link href="css/flukestrap-light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+
+      <style>
+
+        figure {
+          display: block;
+        }
+        figcaption {
+          background-color: red;
+          display: block;
+        }
+        figure img {
+          /*makes the image the width of the parent figure container*/
+          width: 100%; 
+          /* Keeps the image height proportional to the width */ 
+          height: auto;  
+          /*Must be display block to work with width 100%*/
+          display: block;
+          /* Centers the image in the figcaption */
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media (min-width: 768px) {
+          figure {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          figure.fig-right {
+            float: right;
+            width: 50%;
+          }
+          figure.fig-left {
+            float: left;
+            width: 50%;
+          }
+          figcaption {
+            display: table-caption;
+            caption-side: bottom;
+            background: #ffffff;
+            padding: 0 5px 5px;
+          }
+        }
+        
+      </style>
+
+    </head>
+    <body>
+
+      <nav>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="../" class="navbar-brand"><img alt="" src="images/fluke-logo.gif"></a>
+            </div><!-- /.navbar-header -->
+          </div><!-- /.container -->
+        </div><!-- /.navbar -->
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <h1>Fluke IG Article Image Styling Guidelines</h1>
+            <hr>
+            <h2><strong>Centered image.</strong> On desktop and Tablet image is the size of the actual image. snaps to 100% only on mobile</h2>
+            <div class="panel panel-default">
+            <div class="panel-heading">This is what the code looks like. Note this is standard <code>&lt;figure&gt;</code>syntax, nothing atypical.</div>
+              <div class="panel-body">
+                <code>
+              &lt;figure&gt;<br>
+
+              &nbsp;&nbsp;&lt;img src=&quot;http://lorempixel.com/400/400/cats/1&quot; alt=&quot;alt goes here&quot;&gt;<br>
+
+              &nbsp;&nbsp;&lt;figcaption&gt;<br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;Image Caption goes here<br>
+
+              &nbsp;&nbsp;&lt;/figcaption&gt;<br>
+
+              &lt;/figure&gt;<br>
+            </code>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit at a eveniet optio, delectus qui consequuntur, dolor cumque debitis fuga recusandae repudiandae sed blanditiis in magni vitae obcaecati. Voluptate, totam?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!
+            </p>
+            <figure>
+              <img src="http://lorempixel.com/400/400/cats/1" alt="alt goes here">
+              <figcaption>This figure only has the class "center-block" applied to it. If you have an image without a caption, the class will be applied to the image itself, rather than the parent figure container.</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit at a eveniet optio, delectus qui consequuntur, dolor cumque debitis fuga recusandae repudiandae sed blanditiis in magni vitae obcaecati. Voluptate, totam?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!
+            </p>
+            <hr>
+            <h2><strong>Right aligned image.</strong> On Desktop and tablet, 50% width. Snaps to 100% only on mobile</h2>
+            <div class="panel panel-default">
+            <div class="panel-heading">This is what the code looks like. Note the addition of the class<code>&lt;fig-right&gt;</code> to the <code>&lt;figure&gt;</code> tag.</div>
+              <div class="panel-body">
+                <code>
+              &lt;figure <strong>class="fig-right"</strong>&gt;<br>
+
+              &nbsp;&nbsp;&lt;img src=&quot;http://lorempixel.com/400/400/cats/1&quot; alt=&quot;alt goes here&quot;&gt;<br>
+
+              &nbsp;&nbsp;&lt;figcaption&gt;<br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;Image Caption goes here<br>
+
+              &nbsp;&nbsp;&lt;/figcaption&gt;<br>
+
+              &lt;/figure&gt;<br>
+            </code>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <figure class="fig-right">
+              <img src="http://lorempixel.com/400/400/cats/1" alt="alt goes here">
+              <figcaption>This figure only has the class "center-block" applied to it. If you have an image without a caption, the class will be applied to the image itself, rather than the parent figure container.</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit at a eveniet optio, delectus qui consequuntur, dolor cumque debitis fuga recusandae repudiandae sed blanditiis in magni vitae obcaecati. Voluptate, totam?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+<hr>
+            <h2><strong>Left aligned image.</strong> On Desktop and tablet, 50% width. Snaps to 100% only on mobile</h2>
+            <div class="panel panel-default">
+            <div class="panel-heading">This is what the code looks like. Note the addition of the class<code>&lt;fig-left&gt;</code> to the <code>&lt;figure&gt;</code> tag.</div>
+              <div class="panel-body">
+                <code>
+              &lt;figure <strong>class="fig-left"</strong>&gt;<br>
+
+              &nbsp;&nbsp;&lt;img src=&quot;http://lorempixel.com/400/400/cats/1&quot; alt=&quot;alt goes here&quot;&gt;<br>
+
+              &nbsp;&nbsp;&lt;figcaption&gt;<br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;Image Caption goes here<br>
+
+              &nbsp;&nbsp;&lt;/figcaption&gt;<br>
+
+              &lt;/figure&gt;<br>
+            </code>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <figure class="fig-left">
+              <img src="http://lorempixel.com/400/400/cats/1" alt="alt goes here">
+              <figcaption>This figure only has the class "center-block" applied to it. If you have an image without a caption, the class will be applied to the image itself, rather than the parent figure container.</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit at a eveniet optio, delectus qui consequuntur, dolor cumque debitis fuga recusandae repudiandae sed blanditiis in magni vitae obcaecati. Voluptate, totam?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsam tempora reprehenderit, mollitia dicta, eligendi temporibus praesentium inventore, fugiat illum, nesciunt iure. Sit facere veritatis sunt accusantium, tempore nobis modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam voluptate reiciendis ullam beatae. Quas ut voluptatum officiis placeat voluptates magni nemo ad corporis reprehenderit incidunt illo, dolore sint dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, vitae deleniti neque. Rem deserunt blanditiis aliquid, nulla. Itaque accusantium, delectus molestiae sit maxime porro ipsum, aut impedit. Explicabo, quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sit vero porro exercitationem earum hic cupiditate in quibusdam enim molestias laudantium temporibus. Earum hic ipsa doloremque sed, provident vitae vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero nam ullam, consequatur doloribus. Doloribus dolorum laudantium aliquam magni non. Asperiores alias repellendus unde qui aperiam hic voluptatem animi tenetur!</p>
+
+          </div>
+        </div><!-- .row -->
+      </div><!-- /.container -->
+
+
+      <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="col-xs-12">
+            <p class="text-muted">Place sticky footer content here.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </html>

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+
+
+    <title>Fluke 87V</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="opco" content="IG">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/flukestrap-light.css">
+   
+    <link rel="stylesheet" href="http://content.fluke.com/Eloqua/lptemplates/css/eloqua-custom.css">
+    <link rel="stylesheet" href="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/css/dmm-style.css">
+    
+    <link rel="stylesheet" href="https://i.icomoon.io/public/43e3ca846b/FWW/style.css">
+
+    <!-- Styles : END -->
+    
+    <!-- Custom CSS goes here: BEGIN -->
+    <style type="text/css">
+
+
+#optin {
+	visibility:visible;
+	display:inline;
+}
+
+
+
+    </style>
+    <!-- Custom CSS goes here: END -->
+
+    <!-- JAVASCRIPT : BEGIN -->
+
+    <!--JQUERY LIBRARY INCLUDE-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap & Custom Scripts : BEGIN -->
+    <script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/bootstrap.min.js"></script>
+    <!-- Bootstrap & Custom  Scripts : END -->
+
+   
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script>
+
+  <!-- Passing url variables file --><script src="http://download.fluke.com/Fluke/eloqua/scripts/passUrlVariables.js"></script>
+
+<script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/validate.js"></script>
+
+<!-- Google Async Code starts -->
+<script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-1']); 
+       _gaq.push(['_setDomainName', 'content.fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script>
+<!-- Google Async Code ends -->
+
+<script>
+  dataLayer = [{
+    'event': 'landingpage',
+    'productGroup': 'SIT',
+    'productFamiliy': 'DMM',
+    'campaign': 'DMM-ALWAYS-ON',
+   'locale': 'M3EN'
+  }];
+</script>
+<!-- Google Tag Manager HEAD -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N37LJ6');</script>
+<!-- End Google Tag Manager -->
+
+ 
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+
+    <!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment-->
+    <script type="text/javascript">
+       var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+            console.log(el);
+            }
+        }
+        );
+
+
+ 
+
+
+
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+
+
+
+<script type="text/javascript"> 
+
+jQuery(function($){
+
+$("form").submit(function(){
+
+    $("input[name=dcUniqueID]").val( $("input[name=emailAddress]").val() + $.now());
+	
+	if( $("input[name=sendMarketingMaterials]").prop("checked")){
+		$("input[name=doNotSendMarketingMaterials]").val("False");
+	}
+	else{
+		$("input[name=doNotSendMarketingMaterials]").val("True");
+	}
+	
+	if( $("input[name=iGBulkEmailOptIn]").prop("checked")){
+		$("input[name=iGBulkEmailOptOut]").val("False");
+	}
+	else{
+		$("input[name=iGBulkEmailOptOut]").val("True");
+	}
+	
+}
+
+function setFields(){  
+  $("input[name=emailAddress]").val(localStorage.emailAddress);
+ 
+ 
+}
+
+function setLocalStore() {
+  if(typeof(Storage)!=="undefined")
+  {
+
+  localStorage.emailAddress=$("input[name=emailAddress]").val();
+  
+  
+ 
+  
+  }
+
+  
+  }    
+  
+</script>
+    
+    
+
+
+    <!-- Validation Script BEGIN -->
+<script type="text/javascript" src="http://content.fluke.com/Eloqua/lptemplates/js/validate.js"></script>
+<!-- Validation Script END -->
+
+<!-- JavaScript : END -->
+</head>
+
+<body onload="setFields();"><!-- Google Tag Manager (noscript) BODY -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N37LJ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Corp Header : BEGIN -->
+    <nav class="navbar navbar-inverse">
+        <div id="header" class="container">
+            <div class="row">
+                <div id="nav-branding" class="col-xs-8 col-md-8">
+                    <a href="http://http://www.fluke.com/fluke/m3en/home/default.htm" target="_blank"><img src="http://content.fluke.com/Eloqua/lptemplates/images/fluke-logo.gif" alt="Fluke Corporation"></a>
+                    <span id="tagline" class="hidden-xs">Keeping your world up and running<sup>&reg;</sup></span>
+                </div>
+                <div id="nav-cta" class="col-xs-4 col-md-4">
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Corp Header : END -->
+
+    <!-- MAIN : BEGIN -->
+    <main>
+        <div class="container">
+            <div class="row" style="background-color:#ffffff">
+                
+                
+             
+            </div>
+        </div>
+    </main>
+    <!-- MAIN : END -->
+
+
+    <!-- SECTION : BEGIN -->
+    <section>
+        <div class="container ">
+            <div class="row no-margin">
+              <div class="col-md-12" style="background-color:#ffffff; padding-bottom:20px">
+<h1>It looks like one of our advanced meters will be right for you!</h1>
+               
+              
+                   
+
+                   
+                </div>
+
+
+            </div> 
+        </div>
+       
+    </section>
+    <!-- SECTION : END -->
+
+ <!-- SECTION : BEGIN comparison table -->
+    <section>
+ <!-- Content Header : BEGIN -->
+            
+            <!-- Content Header : END -->
+
+                
+      
+
+                <div class="container" style="background-color:#ffffff; ">
+                    <div  class="row">
+                        
+                        <div class="col-md-12 col-xs-12 ">
+                        
+ <div id="mobile-bestmatch">
+                      <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr >
+        <th  style="vertical-align:top" class="highlight-th"><h4>Best match</h4></th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td style="vertical-align:bottom" class="highlight"><img class="prodimg" src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/images/87v.png"  alt=""/></td>
+        </tr>
+      
+       <tr >
+        <td  class="highlight"><h4>Fluke 87 V</h4></td>
+        </tr>
+        
+         
+         
+         <tr><td class="highlight"  style="border-bottom:5px solid #66abea; padding-top:10px; padding-bottom:10px;background-color:#336699; color:#ffffff;"><strong><a onclick="_gaq.push(['_trackEvent', 'LP-SIT-DMM-AO-ADVICE-87V-M3EN', 'Visit_website', 'wtb-87V]);" class="wtb" href="http://www.fluke.com/fluke/m3en/WhereToBuy/default.htm?product=HMA&pid=56135" target="_blank">Where to buy</a></strong></td></tr>
+        </tbody></table>
+                        
+             
+
+                        
+                 </div>   
+                 </div>
+                 
+                 
+                 
+                 <div id="desktop-bestmatch">                       
+                        
+                        
+                <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr >
+        <th width="33%">&nbsp;</th>
+        <th  style="vertical-align:top" class="highlight-th"><h4>Best match</h4></th>
+        <th  style="vertical-align:top">&nbsp;</th>
+        <th  style="vertical-align:top">&nbsp;</th>
+        <th  style="vertical-align:top">&nbsp;</th>
+        <th  style="vertical-align:top">&nbsp;</th>
+        <th  style="vertical-align:top">&nbsp;</th>
+        <th   style="vertical-align:top">&nbsp;</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>&nbsp;</td>
+        <td style="vertical-align:bottom" class="highlight"><img class="prodimg" src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/images/87v.png"  alt=""/></td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        <td style="vertical-align:bottom">&nbsp;</td>
+        </tr>
+      
+       <tr >
+        <td>&nbsp;</td>
+        <td  class="highlight"><h4>Fluke 87V</h4></td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        </tr>
+       <tr style="background-color:#d2d3d4" >
+         <td style="text-align:left" >DC voltage</td>
+         <td class="highlight">Range and resolution: 600.0 mV, 6.000 V, 60.00 V, 600.0 V, 1000 V<br>
+           Basic accuracy: 0.05 % </td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr  style="background-color:#e6e7e8">
+         <td style="text-align:left">AC voltage</td>
+         <td class="highlight-yl" >Range and resolution: 600.0 mV, 6.000 V, 60.00 V, 600.0 V, 1000 V<br>
+           Basic accuracy: 0.7 % (true-rms)             </td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr  style="background-color:#d2d3d4">
+         <td style="text-align:left">DC current</td>
+         <td class="highlight">Range and resolution: 
+          600.0 µA, 6000 µA, 60.00  µA, 600.O mA, 6.000 A,
+10.00 A<br>
+
+           Basic accuracy: 0.2 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr  style="background-color:#e6e7e8">
+         <td style="text-align:left">AC current</td>
+         <td class="highlight-yl">Range and resolution: 600.0 µA, 6000 µA, 60.00 µA, 600.O mA, 6.000 A,
+10.00 A
+ <br>
+Basic accuracy: 1.0 % (true-rms)</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr  style="background-color:#d2d3d4">
+         <td style="text-align:left">Temperature (excluding probe)</td>
+         <td class="highlight">Range and resolution: -200 °C to 1090 °C (-328 °F to 1994 °F)<br>
+Basic accuracy: 1.0 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Temperature probe</td>
+         <td class="highlight-yl">Range and resolution: -40  °C to 260 °C (-40 °F to 500 °F)<br>
+Basic accuracy: 2.2 °C or 2 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr  class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Resistance</td>
+         <td class="highlight">Range and resolution: 
+          600.0 Ω, 6.000 kΩ, 60.00 kΩ, 600.0 kΩ, 6.000 MΩ, 
+50.00 MΩ<br>
+Basic accuracy: 0.2 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Capacitance</td>
+         <td class="highlight-yl">Range and resolution: 10.00 nF, 100.0 nF, 1.000 µF, 10.00 µF, 100.0 µF,
+9,999 µF
+<br>
+Basic accuracy: 1.0 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       
+    
+       <tr  class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Frequency</td>
+         <td class="highlight">Range and resolution: 199.99 Hz, 1.9999 kHz, 19.999 kHz, 199.99 kHz<br>
+Basic accuracy: 0.005 %</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Battery life</td>
+         <td class="highlight-yl">400 hours typical with backlight off</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Dimensions (LxWxD)/Weight</td>
+         <td class="highlight">201 mm x 98 mm x 52 mm (7.9 in x 3.8 in x 2 in)/355 g (22 oz)</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+  <!--     <tr  class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Resistance</td>
+         <td class="highlight-yl">Range and resolution</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Frequency</td>
+         <td class="highlight">200 kHz</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Capacitance</td>
+         <td class="highlight-yl">Range and resolution</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Temperature</td>
+         <td class="highlight">(+) 1090 °C</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Conductance / dB</td>
+         <td class="highlight-yl">60 nS / -</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Duty cycle  / pulse width</td>
+         <td class="highlight">&bull; / -</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+      <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">Continuity / diode  test</td>
+         <td class="highlight-yl">&bull;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+      <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Motor Drive (ASD) </td>
+         <td class="highlight">&bull;</td>
+         <td ></td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+        <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">VoltAlert™, Non-contact voltage detection</td>
+         <td class="highlight-yl">&nbsp;</td>
+         <td >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+        <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">VCHEK™</td>
+         <td class="highlight">&nbsp;</td>
+         <td >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+        <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left">LoZ: low input  impedance</td>
+         <td class="highlight-yl">&nbsp;</td>
+         <td >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+        <tr class="collapse rest" style="background-color:#d2d3d4">
+         <td style="text-align:left">Lo ohms</td>
+         <td class="highlight">&nbsp;</td>
+         <td >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+        <tr class="collapse rest" style="background-color:#e6e7e8">
+         <td style="text-align:left" >Microamps</td>
+         <td class="highlight-yl">&bull;</td>
+         <td  >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td> <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr class="collapse rest" style="background-color:#d2d3d4">
+      
+         <td style="text-align:left" ><strong>Downloads</strong></td>
+         <td class="highlight" >&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       
+       <tr class="collapse rest" style="background-color:#e6e7e8">
+      
+         <td style="text-align:left" >Datasheet</td>
+         <td class="highlight" ><strong><a onclick="_gaq.push(['_trackEvent', 'LP-SIT-DMM-AO-ADVICE-87V-M3EN', 'Download_asset', 'datasheet-87V']);" href="http://www.flukepartnerportal.com/efulfillment/10826-eng">Download</a></strong></td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>-->
+     
+       <tr style="background-color:#eec542">
+        <!--<tr  data-toggle="collapse" data-target=".rest" style="background-color:#eec542">-->
+         <td style="text-align:left;">
+           
+           <button id="more" class="btn seefullspecs" type="button" data-toggle="collapse" data-target=".rest"  aria-expanded="false" aria-controls="rest"><span class="fluke-icon fluke-icon-caret-right"></span> See full specs
+             </button>
+           
+           
+           <!-- <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>   --> 
+           
+           <!--<br>
+<strong>
+         <span  class="seefullspecs"><span class="fluke-icon fluke-icon-caret-right"></span>&nbsp;See full specs</span></strong>--></td>
+         <td class="highlight">&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         </tr>
+       <tr style="background-color:#ffffff">
+         <td style="text-align:left" ></td>
+         <td class="highlight" style="border-bottom:5px solid #66abea; padding-top:10px; padding-bottom:10px;background-color:#336699; color:#ffffff;"><strong><a onclick="_gaq.push(['_trackEvent', 'LP-SIT-DMM-AO-ADVICE-87V-M3EN', 'Visit_website', 'wtb-87V']);" class="wtb" href="http://www.fluke.com/fluke/m3en/WhereToBuy/default.htm?product=HMA&pid=56135" target="_blank">Where to buy</a></strong></td>
+         <td style="padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         <td style=" padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         <td style=" padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         <td style=" padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         <td style=" padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         <td style=" padding-top:10px; padding-bottom:10px;background-color:#ffffff">&nbsp;</td>
+         </tr>
+       
+    </tbody>
+  </table>
+  
+  
+   
+  </div>          
+</div>
+
+                        </div>
+
+                    </div>
+                </div>
+             
+    </section>
+    
+    <!-- end comparison tables -->
+    
+    <!-- video + product text -->
+    
+    <section>
+    <div class="container">
+    <div class="row no-margin white">
+    
+    <!-- video embed -->
+    <div class="col-md-4 col-xs-12">
+    
+   <iframe width="388" height="222" src="https://www.youtube.com/embed/BiHvDsmfXQY?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- end video embed -->
+    
+    <!-- product text -->
+    <div class="col-md-8 col-xs-12 bg-lightgray">
+      <h2>Fluke 87V Industrial Multimeter is designed to identify complex signal problems fast</h2>
+       <p> When productivity is on the line and you need to solve problems fast, the Fluke 87V delivers the accuracy and advanced troubleshooting capabilities you need.  </p>
+      <ul >
+          <li>Unique       function for accurate voltage and frequency measurements on adjustable       speed motor drives and other electrically noisy equipment</li>
+           <li>Built-in       thermometer conveniently allows you to take temperature readings without       having to carry a separate instrument</li>
+           <li>Optional       magnetic hanger for easy set-up and viewing while freeing your hands for       other tasks</li>
+           <li>True       RMS AC voltage and current for accurate measurements on nonlinear signals</li>
+           <li>Selectable       filter for accurate voltage and frequency measurements on motor drives</li>
+           <li>All inputs are updated to the 3rd edition of  ANSI/ISA S82.01 and EN61010-1 CAT IV 600V and CAT III, 1000 V. They can  withstand impulses in excess of 8.000 V and reduce risks related to surges and  spikes. </li>
+      </ul>
+<p></p>
+    </div>
+    <!-- end product text -->
+    
+    </div>
+    
+    </div>
+    
+  
+    
+    </section>
+    
+    <!-- SECTION : END -->
+
+
+ <section>
+    <div class="container">
+    <div class="row no-margin " style="background-color:#58585a">
+    
+    <h1 style="color:#fff;margin-left:20px">Request your <font color="#ff0000">FREE</font>* Volt Alert!</h1>
+    
+    <div class="col-md-7">
+    <img  src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/images/voltalert2.png"  alt=""/>
+    </div>
+    
+    <div class="col-md-5">
+   
+    <!-- FORM : BEGIN -->
+                  <!-- Form Fields : BEGIN -->
+                    <form method="post" name="everything" id="form25" onsubmit="return submitForm(this);" action="https://s1182545284.t.eloqua.com/e/f2">
+
+                        <input value="everything" type="hidden" name="elqFormName">
+                        <input value="1182545284" type="hidden" name="elqSiteId">
+
+                        <!-- Hidden Variables -->
+                        <input type="hidden" name="eloquaStatus" id="eloquaStatus">
+                        <input type="hidden" name="iGLastMSCRMAssetID" id="iGLastMSCRMAssetID">
+                        <input type="hidden" name="emlReciptAddress" id="emlReciptAddress">
+                        <input type="hidden" name="emlSubLine" id="emlSubLine">
+                        <input type="hidden" name="addToCampaign" id="addToCampaign">
+                        <input type="hidden" name="iGLastMSCRMDistributorAccountGUID" id="iGLastMSCRMDistributorAccountGUID">
+                        
+                        <input type="hidden" name="iGLastMSCRMProductGUID" id="iGLastMSCRMProductGUID">
+                       
+                       
+
+
+                        <!-- URL Variables DO NOT TOUCH-->
+                        <input type="hidden" name="utmAdGroup" id="utmAdGroup">
+                        <input type="hidden" name="utmAdName" id="utmAdName">
+                        <input type="hidden" name="utmCampaign" id="utmCampaign">
+                        <input type="hidden" name="utmContent" id="utmContent">
+                        <input type="hidden" name="utmDomain" id="utmDomain">
+                        <input type="hidden" name="utmKW" id="utmKW">
+                        <input type="hidden" name="utmLP" id="utmLP">
+                        <input type="hidden" name="utmMedium" id="utmMedium">
+                        <input type="hidden" name="utmSize" id="utmSize">
+                        <input type="hidden" name="utmSource" id="utmSource">
+                        <input type="hidden" name="utmTerm" id="utmTerm">
+                      
+                        <input type="hidden" name="dcUniqueID" id="dcUniqueID">
+                        <input type="hidden" name="elqCampaignId" id="elqCampaignId">
+                        <input type="hidden" name="ixMarcom" id="ixMarcom">
+                        <input type="hidden" name="ixKitCodes" id="ixKitCodes">
+                        <input type="hidden" name="iGLastMSCRMCampaignID" id="iGLastMSCRMCampaignID" value="7bbbce08-9410-e711-80c6-00155d0265b6">
+                       
+                        
+                        
+                         
+                         
+ <!-- hard coded values -->
+                         <input type="hidden" name="iGLastReportingProductFamily" id="iGLastReportingProductFamily" value="2B6C4BD2-C170-DE11-95B8-02BF0A064B97">
+                        <input type="hidden" name="redir" id="redir" value="http://content.fluke.com/promotions/promo-Dmm/DMM-AlwaysOn/m3en/voltalert-thankyou.html">
+                        <input type="hidden" name="preferredLanguage" id="langSelect" value="eng">
+                        <input type="hidden" name="productLineType" id="productLineType" value="200000001">
+                        <input type="hidden" name="sharedContactList" id="sharedContactList" value="4935">
+
+ <input type="hidden" name="emlConfirm" id="emlConfirm" value="10075">
+ 
+  <input type="hidden" name="CampaignResponseActivity" id="CampaignResponseActivity" value="100000006">
+  
+   <input type="hidden" id="countryone" name="countryNormalized"  value="GB">
+ 
+ <!-- end hard coded values --> 
+ 
+
+
+
+                        <!-- Editable IX Variables -->
+                        <input type="hidden" name="ixDear" id="ixDear" value="Dear Mr./Mrs.">
+                        <input type="hidden" name="ixAccountNo" id="ixAccountNo" value="Account Default Value">
+                        <input type="hidden" name="ixGender" id="ixGender">
+                        <input type="hidden" anme="ixMailOk" id="ixMailOk">
+
+                        <!-- IX Variables for EUR Lit Fulfilment - DO NOT TOUCH -->
+                        <input type="hidden" name="ixCompany1" id="ixCompany1">
+                        <input type="hidden" name="ixFirstName" id="ixFirstName">
+                        <input type="hidden" name="ixLastName" id="ixLastName">
+                        <input type="hidden" name="ixAddress1" id="ixAddress1">
+                        <input type="hidden" name="ixAddress2" id="ixAddress2">
+                        <input type="hidden" name="ixZip" id="ixZip">
+                        <input type="hidden" name="ixCity" id="ixCity">
+                        <input type="hidden" name="ixCountry" id="ixCountry">
+                        <input type="hidden" name="ixLanguage" id="ixLanguage">
+                        <input type="hidden" name="ixState" id="ixState">
+                        <input type="hidden" name="ixTitle" id="ixTitle">
+                        <!-- Variables for Reverse Logic - DO NOT TOUCH -->
+                        <input type="hidden" name="iGBulkEmailOptOut" id="iGBulkEmailOptOut">
+
+
+
+                        <!-- Form Fields : BEGIN -->
+                       
+                       
+
+                     
+
+                       
+
+                        <div class="form-group">
+                            <label class="elqLabel">Email address*</label>
+                            <input id="emailAddress" value="" type="text" name="emailAddress" class="elqField form-control">
+                            <span class="require-block">This is a required field</span>
+                        </div>
+
+                      
+
+                        
+
+                      
+                            <div class="form-group">
+                            <div>
+                                <div>
+                                    <input id="field43"  name="iGBulkEmailOptIn" type="checkbox" >
+                                    <label class="elqLabel" for="field43">Yes, I would like to receive offers and updates from Fluke.</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+<div class="contactme">
+
+                        <input id="submit" type="submit" class="elqSubmit CTA btn btn-primary btn-lg btn-block" value="Request your FREE* Volt Alert!" onclick="setLocalStore();_gaq.push(['_trackEvent', 'LP-SIT-DMM-AO-ADVICE-87V-M3EN', 'Submit_form', 'Request_VoltAlert']);">
+                        
+             </div>
+
+                         <div class="privacy">
+                        
+                       <img src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/images/lock.png" class="lock" width="35" height="35" alt=""/>
+                      <a type="button" class="btn btn-privacy" target="_blank"  href="http://www.fluke.com/fluke/m3en/home/privacystatement.htm">100% Secure</a> <br>
+<br>
+
+                      </div>
+
+                        <!-- Form Group : END -->
+
+                      <!-- Form Fields : END -->
+
+                    </form>
+
+                    <!-- Form Fields : END -->
+                    <!-- FORM : END -->
+   
+   
+    </div>
+ <div class="footnote" >  &nbsp; * after purchase of a Fluke Digital Multimeter. Purchase must be made between 27th of March 2017 and 31st of August 2017. All Fluke Digital Multimeter models are included within this promotion.</div>
+    </div>
+    
+    </div></section>
+
+    <!-- Footer : BEGIN -->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+
+                <ul>
+                    <li><a href="http://www.fluke.com/fluke/m3en/support/safety/default.htm" target="_blank">Safety Notices</a></li>
+                    <li><a href="http://www.fluke.com/fluke/m3en/home/sitemap.htm" target="_blank">Site Map</a></li>
+                    <li><a href="http://www.fluke.com/fluke/m3en/home/privacystatement.htm" target="_blank">Privacy Policy</a></li>
+                    <li><a href="http://www.fluke.com/fluke/m3en/home/Terms-and-Conditions-of-Use.htm" target="_blank">Fluke Terms of Use</a></li>
+                    <li><a href="http://www.fluke.com/fluke/m3en/home/termsconditions.htm" target="_blank">Fluke Terms &amp; Conditions of Sale</a></li>
+                </ul>
+                <p>Copyright ©1995-<script type="text/javascript">document.write(new Date().getFullYear());</script> Fluke Corporation</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer : END -->
+
+<!-- Form Variables : BEGIN -->
+    <script>
+        <!-- Google UTM Variables DO NOT TOUCH -->
+        document.getElementById('utmCampaign').value = getQueryStringParamValue('utm_campaign');
+        document.getElementById('utmKW').value = getQueryStringParamValue('utm_kw');
+        document.getElementById('utmMedium').value = getQueryStringParamValue('utm_medium');
+        document.getElementById('utmSource').value = getQueryStringParamValue('utm_source');
+        document.getElementById('utmDomain').value = getQueryStringParamValue('utm_domain');
+        document.getElementById('utmSize').value = getQueryStringParamValue('utm_size');
+        document.getElementById('utmAdName').value = getQueryStringParamValue('utm_adname');
+        document.getElementById('utmLP').value = getQueryStringParamValue('utm_lp');
+        document.getElementById('utmAdGroup').value = getQueryStringParamValue('utm_adgroup');
+        document.getElementById('utmTerm').value = getQueryStringParamValue('utm_term');
+        document.getElementById('utmContent').value = getQueryStringParamValue('utm_content');
+
+        <!-- Custom URL Variables DO NOT TOUCH-->
+        
+            document.getElementById('redir').value = getQueryStringParamValue('redir');
+        
+        document.getElementById('emlConfirm').value = getQueryStringParamValue('emlConfirm');
+        document.getElementById('iGLastMSCRMCampaignID').value = getQueryStringParamValue('lcid');
+        document.getElementById('productLineType').value = getQueryStringParamValue('plt');
+        document.getElementById('elqCampaignId').value = getQueryStringParamValue('ecid');
+        document.getElementById('ixMarcom').value = getQueryStringParamValue('ixmar');
+        document.getElementById('ixKitCodes').value = getQueryStringParamValue('ixkc');
+        document.getElementById('sharedContactList').value = getQueryStringParamValue('scl');
+        document.getElementById('CampaignResponseActivity').value = getQueryStringParamValue('cra');
+
+
+
+        switch (getQueryStringParamValue('lrpf')) {
+
+            case "ACC":
+                document.getElementById('iGLastReportingProductFamily').value = "286C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "DMMS":
+                document.getElementById('iGLastReportingProductFamily').value = "2B6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "EPROD":
+                document.getElementById('iGLastReportingProductFamily').value = "2C6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "IAD":
+                document.getElementById('iGLastReportingProductFamily').value = "F4E98626-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "IRW":
+                document.getElementById('iGLastReportingProductFamily').value = "D92D1D4A-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "MECH":
+                document.getElementById('iGLastReportingProductFamily').value = "6549A90B-BC15-DF11-A94F-0015C5FDF7E6";
+                break;
+            case "MULTI":
+                document.getElementById('iGLastReportingProductFamily').value = "DF2C273B-D270-DE11-BCC9-001E0B46B5F4";
+                break;
+            case "FBT":
+                document.getElementById('iGLastReportingProductFamily').value = "AA20900E-12F8-E311-AB56-BC305B2A71D8";
+                break;
+            case "FPQ":
+                document.getElementById('iGLastReportingProductFamily').value = "2E6C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "PTOOLS":
+                document.getElementById('iGLastReportingProductFamily').value = "F624B332-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "SAAS":
+                document.getElementById('iGLastReportingProductFamily').value = "3714FA10-4ECA-E311-BF9F-A4BADB1DDEB4";
+                break;
+            case "SCM":
+                document.getElementById('iGLastReportingProductFamily').value = "68BB9E41-3676-DE11-A28C-001E0B4616F4";
+                break;
+            case "TEMP":
+                document.getElementById('iGLastReportingProductFamily').value = "316C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "TI":
+                document.getElementById('iGLastReportingProductFamily').value = "306C4BD2-C170-DE11-95B8-02BF0A064B97";
+                break;
+            case "VIRT":
+                document.getElementById('iGLastReportingProductFamily').value = "1D73815F-601D-E211-8DDC-BC305B2A7226";
+                break;
+            default:
+                break;
+        }
+    </script>
+    <!-- Form Variables : END -->
+    
+
+
+    <!--[if lt IE 7]>
+        <script src='http://images.a.fluke.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+    <![endif]-->
+    
+   <!-- <script>
+$(document).ready(function(){
+  $(".rest").on("hide.bs.collapse", function(){
+    $(".seefullspecs").html('<span class="fluke-icon fluke-icon-caret-right"></span> See full specs');
+  });
+  $(".rest").on("show.bs.collapse", function(){
+    $(".seefullspecs").html('<span class="fluke-icon fluke-icon-caret-down"></span> Hide full specs');
+  });
+});
+</script>-->
+
+ 
+  <script>
+$('#more').click(function () {
+if($('button span').hasClass('fluke-icon-caret-right'))
+{
+    $('#more').html('<span class="fluke-icon fluke-icon-caret-up"></span> See less specs'); 
+}
+else
+{      
+    $('#more').html('<span class="fluke-icon fluke-icon-caret-right"></span> See full specs'); 
+}
+}); 
+</script>   
+
+    <script src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/js/bootstrap.js"></script>
+
+    <script src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/js/jquery-1.11.3.min.js"></script>
+ <script type="text/javascript" src="http://content.fluke.com/promotions/promo-dmm/DMM-AlwaysOn/js/script.js"></script>
+ 
+ 
+ 
+ 
+</body>
+
+</html>

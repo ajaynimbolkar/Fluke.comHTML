@@ -1,0 +1,716 @@
+/* ----------------------------------- */
+
+
+body {
+    padding-top: 0;
+	background-color: #fff;
+}
+
+
+
+p {
+	font-size:17px;
+	line-height: 22px;
+}
+
+
+
+
+li { margin-bottom: 0em;
+font-size:17px;
+	line-height: 1.2; }
+	
+	
+
+.row-no-margin {
+   margin-left: -30px;
+   margin-right: -30px;
+}
+
+.no-margin {
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.no-padding {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.row-no-margin-left {
+   margin-left: -30px;
+}
+
+.row-no-margin-right {
+   margin-right: -30px;
+}
+
+.no-margin-right {
+   margin-right: 0;
+} 
+
+.no-margin-top{
+  margin-top: 0px !important;
+}
+
+
+
+.roboto-slab {
+  font-family: "Roboto Slab","Arial Black",serif;
+}
+
+h2, h3, h4, h5 {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight:bold;
+}
+
+h3 { 
+  font-size: 17px;
+  margin-top:0px;
+}
+
+.bg-dark-gray {
+	background-color:#a9aaae;
+	margin-bottom:20px;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+.bg-999 {
+	background-color:#999;
+	margin: 0 0 20px 0;
+	
+	
+	
+}
+
+.light-gray{
+	background-color:#EAEAEA;
+}
+
+.white {
+  background-color: #fff;
+  }
+
+.padding-right {
+	padding-right: 30px
+}
+
+figure img {
+  margin-bottom: 0;
+}
+/* ----------------------------------- */
+/* NAV */
+/* ----------------------------------- */
+
+nav { 
+	color:#fff;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#nav-branding img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  line-height: 0;
+  padding-left: 0;
+}
+
+#nav-cta {
+  height: 100%;
+  padding: 15px;
+  display: inline-block;
+}
+
+#nav-cta span, .btn-primary {
+	display: inline-block;
+	vertical-align: middle;
+	font-size:17px;
+	line-height: 150%;
+	font-weight:700;
+}
+
+#nav-cta span, .btn-secondary {
+	display: inline-block;
+	vertical-align: middle;
+	font-size:17px;
+	line-height: 150%;
+	font-weight:700;
+}
+
+#tagline { 
+	font: italic normal 700 1.1em/100% "Roboto Slab", "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+/* BUTTON */
+/* ----------------------------------- */
+
+
+
+#fluke-specials .btn-primary {
+   
+
+
+    color: #6F6F6F;
+    background-color: #FFC20E;
+    border-color: #f4b600;
+	position: absolute;
+    top: 67%;
+    right: 10%;
+	width:20%;
+}
+
+
+
+#fluke-specials .btn-primary:hover {
+    color: #6F6F6F;
+    background-color: #daa300;
+    border-color: #b68800;
+
+}
+
+.btn-primary {
+  margin-bottom: 30px;
+}
+
+nav .btn-primary {
+  margin-bottom: 0;
+}
+/* over ride Fluke yellow primary button color for fluke-specials */
+section .btn-secondary {
+	
+	display:block;
+	width:100%;
+  color: #fff;
+  background-color: #336699;
+  border-color: #003b78;
+  margin-bottom: 30px;
+  margin-top: 5px;
+ 
+  
+}
+
+section .btn-secondary:hover {
+  color: #ccc;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+#fluke-specials nav .btn-primary, #t3-research-justification nav .btn-primary {
+  height: 50px;
+  width:auto;
+}
+
+.btn-wrapper {
+	margin-top: auto;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #fff;
+  
+}
+
+
+
+/* ----------------------------------- */
+/* MAIN */
+/* ----------------------------------- */
+
+H2 {
+	font-size:40px;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 0px;
+	margin-bottom:5px;
+	
+}
+
+.mainarticle h2 {
+	margin-top: 15px;
+	margin-bottom:10px;
+}
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main #main-overlay-image{
+  width: 33%;
+  max-width: 265px;
+  height: auto;
+  position: absolute; 
+  top: 15%;
+  right: 30px;
+}
+
+#fluke-specials #image-container { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   padding:0;
+}
+
+#fluke-specials main h1 { 
+  position: absolute; 
+  top: 50%;
+  left: 30%;
+  transform: translate(-45%, -50%);
+  width: 60%;
+  color: #fff;
+  font-size: 50px;
+  font-weight:normal;
+ 
+  
+}
+
+#fluke-specials main .leaflet { 
+  position: absolute; 
+  top: 10%;
+  right: 10%;
+  
+  width: 25%;
+  
+}
+
+
+
+
+
+#awards-container {
+  padding:30px; 
+  margin-top: -5px;
+}
+
+figure {
+  padding-top:20px;	
+}
+
+figcaption {
+  text-align:center;
+  padding-top:10px;	
+}
+/* ----------------------------------- */
+/* SECTION */
+/* ----------------------------------- */
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+section .col-md-6 { 
+  padding-left:0;
+}
+
+.row1 {
+	margin-right:0px;
+}
+
+section p, section li{ 
+  padding-bottom:0px;
+  font-size:15px;
+}
+
+
+
+h3 {
+	font-size: 20px;
+	  font-family: "Roboto Slab","Arial Black", serif;
+	 
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+
+h4 {
+	font-size: 20px;
+	  font-family: "Roboto Slab","Arial Black", serif;
+	  color: #b14037;
+	  margin-top:0px;
+}
+
+.savings {
+	
+	background-color:#ffc20e;
+	font-family: "Roboto Slab","Arial Black", serif;
+	font-size: 22px;
+	font-weight:bold;
+	line-height:1.1;
+	margin-left:-15px;
+	margin-right:-15px;
+	padding-left:15px;
+	padding-right:15px;
+	min-height:40px;
+	vertical-align:central;
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+
+.mainarticle {
+	margin: 20px 0px 20px 0px;
+}
+
+.prod {
+	margin: 20px 0 0 0;
+	
+}
+
+.col-height-row1 {
+	height:220px;
+}
+.col-height-row2{
+	height:180px;
+}
+
+.col-height-row3{
+	height:180px;
+}
+
+.col-height-row4{
+	height:160px;
+}
+
+.col-height-row5{
+	height:260px;
+}
+
+#pricetag {
+	text-align:right; 
+	position:relative; 
+	top:-80px; 
+	line-height:1.5;
+	font-family:'Roboto Slab', serif; 
+font-weight:bold; 
+font-size:14px;
+	
+}
+
+
+.pricetag-save {
+	font-size: 20px;
+	color:#cc3333;
+	line-height:1.1;
+	
+}
+
+.pricetag-price {
+background-color:#ffce20; 
+padding:2px 5px 2px 50px;
+font-size:20px;
+font-weight: 900;
+
+}
+
+.col-content-row1 {
+	margin-top:-60px;
+	min-height:250px;
+	
+}
+
+.col-content-row2 {
+	margin-top:-60px;
+	min-height:250px;
+	
+}
+
+.col-content-row3 {
+	margin-top:-60px;
+	min-height:280px;
+	
+}
+
+.col-content-row4 {
+	margin-top:-60px;
+	min-height:300px;
+	
+}
+
+.col-content-row5 {
+	margin-top:-60px;
+	min-height:250px;
+	
+}
+
+.btn-wrapper {
+	
+}
+
+/* ----------------------------------- */
+/* FORM */
+/* ----------------------------------- */
+
+#fluke-specials .form-container {
+  background-color: #ffc20e;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.require-block {
+  color:#e03d3d!important;
+  font-size:14px;
+  display: none;
+}
+
+#optin{
+  display: none;
+}
+
+#optin label, #optin fiedl{
+  display: inline;
+}
+
+/* Privacy link */
+
+form p a {
+  color: #336699!important;
+  font-size: 14px;
+  
+}
+
+label {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight:normal;
+  font-size:17px;
+}
+
+ .btn-primary {
+	margin-top:20px;
+}
+
+nav .btn-primary {
+	margin-top:0;
+}
+/* ----------------------------------- */
+/* FOOTER */
+/* ----------------------------------- */
+
+.sticky-footer {
+    width: 100%;
+    min-height: 60px;
+    background-color: #333;
+    border-color: #1a1a1a;
+	color: #fff;
+}
+
+.sticky-footer ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sticky-footer ul li {
+	display: inline-block;
+	text-align: left;
+	color: #fff;
+}
+
+.sticky-footer ul li a, .sticky-footer p {
+	 display: block;
+	 padding: 15px 10px;
+	 text-decoration: none;
+	 font-size: 11px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.sticky-footer ul li a:hover {
+	text-decoration: underline;
+}
+
+.sticky-footer p {
+  font-size: 11px!Important;
+}
+
+/* ----------------------------------- */
+/* MEDIA QUERIES */
+/* ----------------------------------- */
+
+
+
+@media (max-width: 1280px) { 
+	/* At first breakpoint, the form then becomes taller than the image, so let's kill the background */
+
+  
+
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1032px) {
+	
+
+
+#fluke-specials main h1 { 
+  font-size: 30px!Important;
+  line-height:1.1;
+  
+  }
+  
+  
+  
+
+h2 {
+	font-size: 24px;
+	
+}
+
+#pricetag {
+	text-align:left; 
+	position:relative; 
+	top:10px; 
+	line-height:1.5;
+	font-family:'Roboto Slab', serif; 
+font-weight:bold; 
+font-size:18px;
+border: 1px #ED1519 solid;
+padding:10px 20px;
+	
+}
+
+.col-content-row1, .col-content-row2, .col-content-row3, .col-content-row4, .col-content-row5 {
+margin-top:20px;
+min-height:10px;	
+	
+}
+
+ 
+
+
+}
+
+@media (min-width: 1033px) and (max-width: 1260px) { 
+
+
+
+section {
+	display:table;
+    width: 100%;
+    /*margin-top: -50px;
+    padding-top: 50px;*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section .container {
+	padding: 0;	
+}
+
+#fluke-specials section .row  {
+    height: 100%;
+    display: table-row;
+	margin: auto 0 auto 0;
+}
+
+#fluke-specials section .col-md-4 {
+
+  display: table-cell;
+  background-color: #ffffff;
+  float: none;
+  }
+
+
+#fluke-specials section .col-md-8 {
+  display: table-cell;
+  float: none;
+  }
+
+section img {
+  width: 100%;
+  height: auto;
+  }
+  
+  
+   .col-content-row1 {
+	margin-top:-60px;
+	min-height:300px;
+	
+}
+
+.col-content-row2 {
+	margin-top:-60px;
+	min-height:330px;
+	
+}
+
+.col-content-row3 {
+	margin-top:-60px;
+	min-height:330px;
+	
+}
+
+.col-content-row4 {
+	margin-top:-60px;
+	min-height:350px;
+	
+}
+
+.col-content-row5 {
+	margin-top:-60px;
+	min-height:450px;
+	
+}
+  
+  
+}
+
+
+@media (max-width: 768px) {
+  #fluke-specials main h1 { 
+  font-size: 28px!Important;
+  line-height:1.1;
+  top:40px;
+  position: relative; 
+  left: 48%;
+ 
+  
+  width: 100%;
+  color: #000;
+ 
+  
+  }
+  
+  
+  #fluke-specials .btn-primary {
+position: relative; 
+  left: 10px;
+    top: 10%;
+    width: 90%; 
+  
+  
+}
+
+h2 {
+	font-size: 24px;
+	
+}
+
+#pricetag {
+	text-align:left; 
+	position:relative; 
+	top:10px; 
+	line-height:1.5;
+	font-family:'Roboto Slab', serif; 
+font-weight:bold; 
+font-size:14px;
+	
+}
+
+.col-content-row1, .col-content-row2, .col-content-row3, .col-content-row4, .col-content-row5 {
+margin-top:20px;
+min-height:10px;	
+	
+}
+
+}
+

@@ -1,0 +1,1680 @@
+@import url("../fonts/sanchezcondensed_bold/stylesheet.css");
+@import url("../fonts/icomoon/style.css");
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover 
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  overflow: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a {
+  border: none;
+  display: block;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "sanchez_condensed_boldbold", "Times New Roman", Georgia, serif;
+  text-transform: uppercase; }
+  h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+    text-transform: uppercase; }
+
+h1, h2 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2; }
+
+h3, h4 {
+  font-size: 1.9rem;
+  line-height: 1.2; }
+
+html {
+  font-size: 10px;
+  height: 100%; }
+
+img {
+  height: auto; }
+
+p {
+  clear: left;
+  margin: 1.5em 0; }
+  p.highlight {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.375; }
+
+section {
+  margin-bottom: 100px; }
+  section nav {
+    clear: both; }
+  section .wrapper {
+    max-width: 600px;
+    padding: 30px 0; }
+  section.tool .image, section .tool-window .image {
+    float: none;
+    margin: 0 0 2em !important; }
+    section.tool .image img, section .tool-window .image img {
+      display: block;
+      margin: 0 auto; }
+
+footer.site {
+  background: #292929;
+  color: #828282;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center; }
+  footer.site nav {
+    border-top: 1px solid #4f4f4f;
+    font-size: 15px;
+    margin: 30px -30px; }
+    footer.site nav a {
+      border-bottom: 1px solid #4f4f4f;
+      height: 45px;
+      line-height: 45px; }
+  footer.site .developer {
+    border-bottom: none;
+    display: block; }
+    footer.site .developer:hover {
+      text-decoration: underline; }
+  footer.site .highlight {
+    color: #b5b5b5;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 1em auto;
+    width: 285px; }
+  footer.site .stuck {
+    background: #4f4f4f;
+    color: #b5b5b5;
+    font-size: 14px;
+    padding-bottom: 1em; }
+    footer.site .stuck nav {
+      border-top: none;
+      margin: 20px auto;
+      width: 235px; }
+      footer.site .stuck nav a {
+        background: no-repeat 50% 0;
+        height: 35px;
+        text-indent: -999em; }
+        footer.site .stuck nav a.apple {
+          background-image: url(../img/icon-app-store-ES-ES.png);
+          width: 117px; }
+        footer.site .stuck nav a.google {
+          background-image: url(../img/icon-google-play-ES-ES.png);
+          width: 98px; }
+      footer.site .stuck nav li {
+        float: left;
+        margin-right: 10px; }
+        footer.site .stuck nav li:last-child {
+          margin-right: 0; }
+    footer.site .stuck p {
+      margin: 0; }
+    footer.site .stuck .btn {
+      margin: 1.5em auto;
+      max-width: 300px; }
+  footer.site .wrapper {
+    clear: both;
+    padding: 20px 0 0; }
+
+header.site {
+  background: black;
+  color: white;
+  height: 60px;
+  line-height: 95px;
+  position: relative;
+  width: 100%;
+  z-index: 999; }
+  header.site a {
+    border: none; }
+  header.site h3 {
+    background: url(../img-new/logo-r.jpg) no-repeat;
+    background-size: contain;
+    /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+    height: 40px;
+    margin: 10px 0 0 25px;
+    text-indent: -999em;
+    width: 136px; }
+  header.site nav {
+    background: #292929;
+    border: 1px solid #4f4f4f;
+    line-height: 45px;
+    margin: 0 -25px; }
+    header.site nav a {
+      border-bottom: 1px solid #4f4f4f;
+      padding: 0 15px; }
+  header.site .wrapper {
+    margin: 0;
+    width: auto; }
+
+#intro {
+  background: url(../img/intro-back.png) no-repeat 50% 0;
+  padding-top: 60px; }
+  #intro h1 {
+    text-transform: none; }
+  #intro .image {
+    background: url(../img-new/intro-image-desktop-ie.png) no-repeat 50% 0;
+    background-size: cover;
+    /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+    padding-top: 76.68%; }
+  #intro .next {
+    margin-left: -50px;
+    text-align: center;
+    width: 100px; }
+    #intro .next:before {
+      position: relative;
+      top: 25px; }
+    #intro .next small {
+      display: block;
+      font-size: 12px;
+      position: relative;
+      top: -60px; }
+
+#how-it-works .image, #why-fluke-connect .image, #why-fluke-connect-2 .image, #why-fluke-connect-3 .image, #why-fluke-connect-4 .image, #security .image {
+  background: no-repeat 50% 0;
+  background-size: cover;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  padding-top: 219%; }
+
+#how-it-works .image {
+  background-image: url(../img-new/how-it-works-phone-r.png); }
+
+#why-fluke-connect .image {
+  background-image: url(../img-new/why-fluke-connect-phone.png); }
+
+#why-fluke-connect-2 .image {
+  background-image: url(../img-new/why-fluke-connect-2-phone.png); }
+
+#why-fluke-connect-3 .image {
+  background-image: url(../img-new/why-fluke-connect-3-phone.png); }
+
+#why-fluke-connect-4 .image {
+  background-image: url(../img-new/why-fluke-connect-4-phone.png); }
+
+#security .image {
+  background-image: url(../img-new/security-phone.png); }
+#security .stuck-wrapper {
+  display: none; }
+
+#see-the-tools h1 {
+  font-family: "sanchez_condensed_boldbold", "Times New Roman", Georgia, serif;
+  font-size: 19px; }
+  #see-the-tools h1:before {
+    display: none;
+    font-family: 'icomoon'; }
+#see-the-tools hr {
+  display: none; }
+#see-the-tools .wrapper {
+  position: relative; }
+
+#stories {
+  background: url(../img/intro-back.png) no-repeat 50% 0;
+  margin-bottom: 0; }
+
+.bold-yellow {
+  color: #fec52e;
+  font-weight: bold; }
+
+.btn {
+  background: black;
+  border: none;
+  color: #fec52e;
+  display: block;
+  font-family: "sanchez_condensed_boldbold", "Times New Roman", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 20px;
+  text-align: center; }
+  .btn span {
+    background: #fec52e;
+    border-radius: 12px;
+    color: black;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 10px;
+    text-indent: 3px;
+    width: 23px; }
+  .btn.invert {
+    background-color: #fec52e;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 1.5em 0; }
+    .btn.invert:hover {
+      color: black !important; }
+  .btn:hover {
+    color: #fec52e !important; }
+.text a.btn_sta {
+    color: #fff;
+}
+.btn_sta {
+    background: none repeat scroll 0 0 #04a44b;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    font-family: "sanchez_condensed_boldbold","Times New Roman",Georgia,serif;
+    font-size: 2.2rem;
+    height: 63px;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 265px;
+}
+.categories {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center; }
+  .categories img {
+    display: block;
+    margin: 0 auto 1em; }
+  .categories li {
+    float: left;
+    margin: 10% 10% 10% 0;
+    width: 45%; }
+    .categories li:nth-child(2n) {
+      margin-right: 0; }
+    .categories li:nth-child(2n+1) {
+      clear: both; }
+  .categories p {
+    clear: none;
+    float: none;
+    margin: 0;
+    padding: 20px 0;
+    width: auto; }
+  .categories .controls {
+    display: none; }
+    .categories .controls span {
+      cursor: pointer;
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+      left: 0;
+      position: absolute;
+      top: 60px;
+      z-index: 1; }
+      .categories .controls span.next {
+        left: auto;
+        right: 0; }
+      .categories .controls span.disabled {
+        cursor: default;
+        color: rgba(0, 0, 0, 0); }
+  .categories.js {
+    position: relative; }
+    .categories.js li {
+      margin: 0;
+      width: 130px; }
+      .categories.js li:nth-child(2n+1) {
+        clear: none; }
+    .categories.js p {
+      border: 1px solid #cfcfcf;
+      border-left: none;
+      border-right: none;
+      border-top-color: black; }
+    .categories.js .conceal {
+      height: 207px;
+      margin: 30px auto;
+      overflow: hidden;
+      position: relative;
+      width: 260px; }
+    .categories.js .controls {
+      display: block; }
+
+.close, .control {
+  background: #292929;
+  cursor: pointer;
+  display: none;
+  float: right;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 60px; }
+
+.close {
+  border-left: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
+  float: none;
+  font-size: 30px;
+  left: -60px;
+  position: absolute;
+  top: -2px; }
+
+.gradient {
+  padding-top: 60px;
+  position: relative; }
+
+.gray-box {
+  background: #dadada;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #dadada 0%, white 44%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dadada), color-stop(44%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dadada 0%, white 44%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dadada 0%, white 44%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dadada 0%, white 44%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dadada 0%, white 44%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dadada', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #cccccc;
+  clear: left;
+  margin: 0 0 1.5em 0;
+  padding: 15px 30px;
+  text-align: center; }
+  .gray-box .btn {
+    background-color: #fec52e;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px; }
+
+.image-desktop {
+  display: none; }
+
+.logo {
+  background: url(../img-new/intro-logo.gif) no-repeat;
+  height: 62px;
+  position: relative;
+  text-indent: -999em;
+  width: 196px;
+  z-index: 0; }
+
+.next {
+  border: none;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.6);
+  display: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  left: 50%;
+  margin: 0 0 0 -20px;
+  position: absolute; }
+  .next:before {
+    font-family: 'icomoon'; }
+
+.next-prev {
+  display: none;
+  font-size: 30px;
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  width: 100%; }
+  .next-prev .next, .next-prev .previous {
+    color: black;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    left: -50px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100px;
+    z-index: 9; }
+    .next-prev .next.disabled, .next-prev .previous.disabled {
+      color: rgba(0, 0, 0, 0);
+      cursor: default; }
+    .next-prev .next:before, .next-prev .previous:before {
+      font-family: 'icomoon';
+      position: relative;
+      top: 23px; }
+    .next-prev .next small, .next-prev .previous small {
+      display: block;
+      font-size: 12px;
+      position: relative;
+      top: -40px; }
+  .next-prev .next {
+    font-size: 30px;
+    left: auto;
+    right: -50px; }
+
+.sticky-phone {
+  display: none; }
+  .sticky-phone .screen-window {
+    background: black url(../img-new/sticky-phone-back-horizontal-ie-r-ES-ES.jpg) no-repeat 0 0;
+    background-size: cover;
+    /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+    height: 301px;
+    left: 17px;
+    position: absolute;
+    top: 61px;
+    width: 172px; }
+
+.stuck-header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.stories img {
+  display: block; }
+.stories li {
+  margin: 30px 0; }
+.stories .btn {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left; }
+
+.story .portrait {
+  background: black;
+  border: 5px solid #fec52e;
+  border-radius: 110px;
+  overflow: hidden;
+  height: 211px;
+  margin: 0 auto 1em;
+  width: 211px; }
+
+.story-overlay {
+  background: url(../img-new/80-black-ie.png);
+  	background-repeat:repeat;
+	 	  background-size:cover;
+  color: white;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .story-overlay h1 {
+    color: #fec52e;
+    font-size: 20px;
+    line-height: 1.2; }
+  .story-overlay .story-close {
+    background: url(../img-new/overlay-close.png) no-repeat 0 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    height: 61px;
+    position: absolute;
+    right: 6%;
+    top: 12%;
+    width: 61px; }
+  .story-overlay .portrait {
+    background: black;
+    border: 5px solid #fec52e;
+    border-radius: 110px;
+    overflow: hidden;
+    height: 211px;
+    margin: 0 auto 1em;
+    width: 211px; }
+  .story-overlay .story-frame {
+    padding: 30px; }
+    .story-overlay .story-frame .back {
+      display: none; 
+	    background: url(../img-new/80-black-ie.png);
+  	background-repeat:repeat;
+	 	  background-size:cover;
+	  }
+
+.story-window h1, .story-window h2, .story-frame h1, .story-frame h2 {
+  text-transform: none; }
+.story-window h1, .story-window p, .story-frame h1, .story-frame p {
+  float: none;
+  width: auto; }
+.story-window ul, .story-frame ul {
+  list-style: disc;
+  margin: 1.5em 0;
+  padding: 0 0 0 1.5em; }
+
+.text a {
+  color: #00F; }
+  .text a:hover {
+    text-decoration: underline; }
+  .text a.btn {
+    color: #fec52e; }
+    .text a.btn:hover {
+      text-decoration: none; }
+    .text a.btn.inverted {
+      color: black; }
+.text .gray-box .btn {
+  color: black; }
+  .text .gray-box .btn:hover {
+    color: black !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.tool h1 {
+  text-transform: none; }
+
+.tool-window h1 {
+  text-transform: none; }
+.tool-window .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0; }
+.tool-window .start {
+  text-align: center; }
+  .tool-window .start p {
+    float: none;
+    width: auto !important; }
+  .tool-window .start .billboard {
+    font-family: "sanchez_condensed_boldbold", "Times New Roman", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.2; }
+
+.tool-wrapper {
+  position: relative; }
+  .tool-wrapper .breadcrumb {
+    display: none;
+    margin: 1em 0;
+    text-align: center; }
+    .tool-wrapper .breadcrumb li {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 20px; }
+      .tool-wrapper .breadcrumb li.active {
+        cursor: default;
+        font-weight: bold;
+        text-decoration: underline; }
+
+.video-overlay {
+  background: url(../img-new/80-black-ie.png);
+  	background-repeat:repeat;
+	 	  background-size:cover;
+  color: white;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+  .video-overlay .video-close {
+    background: url(../img-new/overlay-close.png) no-repeat 0 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    height: 61px;
+    position: absolute;
+    right: -4%;
+    top: -6%;
+    width: 61px; }
+  .video-overlay .video-embed {
+    background: black;
+    left: 14.2%;
+    padding-top: 39.7%;
+    position: absolute;
+    top: 7.5%;
+    width: 71%; }
+    .video-overlay .video-embed embed, .video-overlay .video-embed iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  .video-overlay .video-frame {
+    background: url(../img-new/video-phone-case.png) no-repeat 0 0;
+    background-size: contain;
+    left: 50%;
+    margin-left: -42.8%;
+    margin-top: -23.5%;
+    padding-top: 47.6%;
+    position: absolute;
+    top: 50%;
+    width: 85.6%; }
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 90%; }
+
+/* JS Supported Only */
+body.js header.site nav {
+  margin: 0;
+  position: fixed;
+  right: -353px;
+  top: -1px;
+  width: 226px; }
+  body.js header.site nav.active {
+    right: 0; }
+body.js .close, body.js .control {
+  display: block; }
+
+#how-it-works .image, #how-it-works .stuck, #why-fluke-connect .image, #why-fluke-connect .stuck, #why-fluke-connect-2 .image, #why-fluke-connect-2 .stuck, #why-fluke-connect-3 .image, #why-fluke-connect-3 .stuck, #why-fluke-connect-4 .image, #why-fluke-connect-4 .stuck, #security .image, #security .stuck {
+  height: 486px;
+  margin: 0 auto;
+  padding: 0;
+  width: 215px; }
+
+body {
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a000000', endColorstr='#1a000000',GradientType=1 );
+  /* IE6-9 */ }
+
+h1, h2 {
+  font-size: 35px;
+  line-height: 1.1; }
+
+section .image {
+  float: right;
+  margin: 0 0 2em 2em !important; }
+section .gray-box {
+  float: left; }
+section .tool-window .image {
+  float: left; }
+
+footer.site {
+  text-align: left; }
+  footer.site nav.secondary {
+    border-bottom: 1px solid #4f4f4f;
+    padding: 0 30px; }
+    footer.site nav.secondary a {
+      border: none;
+      border-bottom: 1px solid;
+      display: inline; }
+    footer.site nav.secondary li {
+      float: left;
+      margin-right: 30px; }
+  footer.site .developer {
+    display: block;
+    margin: 0 0 0.5em 0; }
+  footer.site .highlight {
+    width: auto; }
+  footer.site .stuck {
+    padding: 0; }
+    footer.site .stuck nav, footer.site .stuck p {
+      float: right; }
+    footer.site .stuck nav {
+      clear: right;
+      margin: 5px 0 0; }
+    footer.site .stuck .btn {
+      float: left;
+      margin: 0;
+      margin-top: -11px;
+      padding: 10px 20px; }
+    footer.site .stuck .wrapper {
+      padding: 10px 0;
+      width: 90%; }
+  footer.site .wrapper {
+    padding: 30px;
+    width: auto; }
+
+#intro h1 {
+  font-size: 32px;
+  text-align: center; }
+#intro .image {
+  float: none;
+  margin: 0 auto !important; }
+
+#how-it-works .image, #why-fluke-connect .image, #why-fluke-connect-2 .image, #why-fluke-connect-3 .image, #why-fluke-connect-4 .image, #security .image {
+  height: 450px;
+  width: 200px; }
+
+#why-fluke-connect-2 h1, #why-fluke-connect-4 h1 {
+  font-size: 35px;
+  line-height: 1.2; }
+
+#stories {
+  margin-bottom: 0; }
+  #stories nav img {
+    margin: 0 auto; }
+  #stories nav .btn {
+    display: block;
+    text-align: center; }
+
+#stories {
+  overflow: hidden; }
+  #stories h1, #stories p {
+    float: none;
+    width: auto; }
+  #stories h1 {
+    margin-bottom: 10px; }
+  #stories p {
+    margin-top: 10px; }
+  #stories nav {
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+    #stories nav li {
+      bottom: 25%;
+      left: -5%;
+      position: absolute;
+      width: 37.75%;
+      z-index: 3; }
+      #stories nav li.second {
+        left: 31%;
+        width: 40.66%;
+        z-index: 2; }
+      #stories nav li.third {
+        left: 70%;
+        width: 32.83%;
+        z-index: 1; }
+        #stories nav li.third .btn {
+          margin-top: -140px; }
+    #stories nav .btn {
+      font-size: 1.6rem;
+      margin-top: -165px;
+      padding: 10px 15px;
+      position: relative;
+      text-align: left;
+      width: 215px;
+      z-index: 1; }
+  #stories .wrapper {
+    height: 420px; }
+
+.btn {
+  display: inline-block;
+  margin: 0 auto; }
+
+.categories a:hover p, .categories li.active p {
+  background: #cccccc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #cccccc 0%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cccccc 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cccccc 0%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cccccc 0%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #cccccc 0%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+.categories li {
+  width: 8.3%; }
+  .categories li:nth-child(2n) {
+    margin-right: 10%; }
+  .categories li:nth-child(2n+1) {
+    clear: none; }
+  .categories li:nth-child(6n) {
+    margin-right: 0; }
+  .categories li:nth-child(6n+1) {
+    clear: left; }
+.categories .controls span {
+  top: 50px; }
+.categories.js li {
+  width: 90px; }
+  .categories.js li:nth-child(2n) {
+    margin-right: 0; }
+  .categories.js li:nth-child(6n+1) {
+    clear: none; }
+.categories.js .conceal {
+  width: 540px; }
+
+.faq {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+
+.gradient {
+  height: 100%; }
+
+.story-overlay h1, .story-overlay p {
+  float: none;
+  width: auto; }
+.story-overlay ul {
+  list-style: disc;
+  margin: 1.5em 0;
+  padding: 0 0 0 3em; }
+.story-overlay .story-window {
+  height: 400px;
+  overflow: auto;
+  padding-right: 2em; }
+
+.tool img, .tool-window img {
+  display: block;
+  margin: 1.5em auto; }
+
+.tool .gradient {
+  padding-top: 0; }
+.tool .wrapper {
+  width: 1008px; }
+
+.tool-window {
+  display: block;
+  position: relative; }
+  .tool-window .overlay {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 255, 0.6)), color-stop(90%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+    .tool-window .overlay .loading {
+      background: url(../img-new/ajax-loader.gif) no-repeat 50% 50%;
+      height: 100%;
+      width: 100%; }
+
+.tool-wrapper .breadcrumb {
+  display: block; }
+
+.tool img, .tool-window img {
+  float: left;
+  max-width: 41.35%; }
+.tool h1, .tool-window h1 {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 1.2 !important; }
+.tool p, .tool-window p {
+  font-size: 16px;
+  line-height: 1.375;
+  margin-top: 1.5em; }
+.tool .btn, .tool-window .btn {
+  padding: 10px 13px;
+  position: relative;
+  z-index: 10; }
+.tool .frame, .tool-window .frame {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+.tool .image, .tool-window .image {
+  float: left;
+  margin: 0;
+  width: 35%; }
+  .tool .image img, .tool-window .image img {
+    float: none;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto; }
+.tool .text-center, .tool-window .text-center {
+  text-align: left !important; }
+.tool .text, .tool-window .text {
+  float: right;
+  margin: 0 12% 0 0;
+  width: 50%; }
+  .tool .text h1, .tool .text p, .tool-window .text h1, .tool-window .text p {
+    float: none;
+    width: auto !important; }
+		  .tool-window .text h1 {
+      width: 70% !important; }
+
+.tool .image {
+  float: left !important; }
+.tool .panel {
+  clear: both;
+  margin-bottom: 2em; }
+.tool .text {
+  margin-top: 0; }
+
+.tool-window {
+  display: block;
+  height: 400px;
+  overflow: hidden; }
+  .tool-window .back {
+    display: none; }
+  .tool-window .panel {
+    float: left;
+    height: 400px;
+    width: 600px; }
+  .tool-window .start .billboard {
+    font-size: 40px;
+    line-height: 1.2; }
+  .tool-window .text h1 {
+    padding-right: 100px; }
+
+/* JS Supported Only */
+h1, h2 {
+  font-size: 35px;
+  line-height: 1.1; }
+
+footer.site nav.secondary {
+  border: none;
+  margin: 0;
+  padding: 0; }
+  footer.site nav.secondary a {
+    border-bottom: none; }
+footer.site p, footer.site p.highlight {
+  margin: 0.35em auto; }
+footer.site .developer {
+  display: inline-block; }
+footer.site .stuck {
+  line-height: 35px !important; }
+  footer.site .stuck.fixed {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99; }
+  footer.site .stuck nav {
+    clear: none;
+    margin: 0;
+    position: relative;
+    right: -145px; }
+  footer.site .stuck p {
+    left: -365px;
+    position: relative; }
+  footer.site .stuck .btn {
+    margin-top: -11px; }
+  footer.site .stuck .developer {
+    margin: 0 30px 0 0; }
+  footer.site .stuck .realign {
+    display: inline; }
+
+header.site {
+  height: auto;
+  z-index: 99; }
+  header.site h3 {
+    float: left;
+    height: 51px;
+    margin-top: 22px;
+    width: 173px; }  header.site nav {
+    border: none;
+    float: right;
+    font-size: 14px;
+    height: auto !important;
+    line-height: 95px;
+    padding: 0 20px 0 10px; }
+    header.site nav a {
+      border: none;
+      border-bottom: 4px solid #292929;
+      line-height: 35px;
+      margin-top: 30px;
+      padding: 0 0 10px; }
+      header.site nav a:hover, header.site nav a.active {
+        border-color: #fec52e;
+        padding-bottom: 0; }
+    header.site nav li {
+      float: left;
+      margin-left: 30px; }
+    header.site nav .mobile {
+      display: none; }
+
+section {
+	height:850px;
+  background-size: cover;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */ }
+  section h1, section p, section .gray-box {
+    width: 340px; }
+  section h1 {
+    float: left;
+    width: 360px; }
+  section p, section .gray-box {
+    float: right;
+    margin: 0 0 0.75em 0;
+    clear: right; }
+  section .wrapper {
+    left: 50%;
+    margin-left: -520px;
+    margin-top: -360px;
+    max-width: none;
+    top: 50%;
+    padding-top: 14%;
+    position: absolute;
+    width: 1040px; }
+  section.story .portrait, section .story-frame .portrait {
+    clear: both;
+    float: left; }
+  section.story .story-window .text, section .story-frame .story-window .text {
+    float: right;
+    margin: 0;
+    width: 75%; }
+  section .story-frame .story-window .text {
+    width: 70%; }
+  section.tool img, section.tool .portrait {
+    float: left; }
+  section.tool h1, section.tool p {
+    float: right;
+    clear: right;
+    width: 50%; }
+  section .tool-window .image {
+    float: left;
+    height: 300px;
+    margin: 20px 0 0 7% !important;
+    width: 33%; }
+
+#intro {
+  background-size: cover;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  padding-top: 0; }
+  #intro h1 {
+    font-size: 35px;
+    text-align: left; }
+  #intro .image {
+    background-image: url(../img-new/intro-image-desktop-ie.png);
+    height: 420px;
+    float: left;
+    padding: 0;
+    position: relative;
+    top: -45px;
+    width: 386px; }
+  #intro .logo {
+    margin-top: 170px; }
+  #intro .text {
+    float: right;
+    width: 340px; }
+  #intro .wrapper {
+    padding-top: 220px; }
+
+#how-it-works .image, #how-it-works .stuck-wrapper, #why-fluke-connect .image, #why-fluke-connect .stuck-wrapper, #why-fluke-connect-2 .image, #why-fluke-connect-2 .stuck-wrapper, #why-fluke-connect-3 .image, #why-fluke-connect-3 .stuck-wrapper, #why-fluke-connect-4 .image, #why-fluke-connect-4 .stuck-wrapper, #security .image, #security .stuck-wrapper {
+  float: none;
+  height: 626px;
+  left: 50%;
+  margin-left: -102px !important;
+  position: absolute;
+  top: 90px;
+  width: 286px;
+  z-index: 1; }
+#how-it-works .stuck-wrapper, #why-fluke-connect .stuck-wrapper, #why-fluke-connect-2 .stuck-wrapper, #why-fluke-connect-3 .stuck-wrapper, #why-fluke-connect-4 .stuck-wrapper, #security .stuck-wrapper {
+  height: 422px;
+  margin-top: -180px;
+  top: 53%;
+  width: 205px; }
+
+#how-it-works .wrapper {
+  background: url(../img-new/how-it-works-back-2x4.png) no-repeat left bottom;
+  padding-bottom: 210px; }
+#how-it-works .anim {
+  bottom: 13px;
+  position: absolute; }
+#how-it-works .devices {
+  background: url(../img-new/how-it-works-devices-ie.png) no-repeat center center;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  height: 141px;
+  width: 170px;
+  left: 80px; }
+#how-it-works .network {
+  background: url(../img-new/how-it-works-network-ie.png) no-repeat center center;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: -34px;
+  height: 236px;
+  width: 275px;
+  left: 755px; }
+
+#security .stuck-wrapper {
+  display: block; }
+#security .tool-1 {
+  background: url(../img-new/security-tools-1.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: 150px;
+  height: 261px;
+  position: absolute;
+  width: 81px;
+  z-index: 2;
+  left: 230px; }
+#security .tool-2 {
+  background: url(../img-new/security-tools-2-ie.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: 150px;
+  height: 237px;
+  position: absolute;
+  width: 115px;
+  z-index: 1;
+  left: 140px; }
+#security .tool-3 {
+  background: url(../img-new/security-tools-3-ie.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: 175px;
+  height: 335px;
+  position: absolute;
+  width: 139px;
+  left: 40px; }
+
+#see-the-tools h1 {
+  margin-top: 1em;
+  width: 10%; }
+  #see-the-tools h1:before {
+    color: #9c9c9c;
+    display: block;
+    float: right;
+    margin: 11px 0 0 5px; }
+#see-the-tools hr {
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  position: relative;
+  top: -100px; }
+#see-the-tools nav {
+  clear: none; }
+#see-the-tools .wrapper {
+  left: auto;
+  margin: 0 auto;
+  padding-top: 95px;
+  position: relative;
+  top: auto; }
+
+#security .wrapper {
+  padding-bottom: 200px; }
+#security h1 {
+  width: 300px; }
+
+#stories {
+  background-size: cover;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  position: relative;
+  z-index: 98; }
+  #stories nav, #stories .wrapper {
+    position: static; }
+  #stories nav {
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0px -400px;
+    position: absolute;
+    width: 800px; }
+    #stories nav li {
+      bottom: 40px; }
+  #stories .gradient {
+    padding-top: 95px; }
+  #stories .wrapper {
+    left: auto;
+    margin: 0 auto;
+    position: static;
+    padding: 0;
+    top: auto; }
+
+#why-fluke-connect .anim-block {
+  bottom: 40px;
+  height: 275px;
+  left: 0;
+  position: absolute;
+  width: 275px; }
+#why-fluke-connect .center {
+  background: url(../img-new/collaborate-circle-logo.png) no-repeat;
+  height: 60px;
+  left: 50%;
+  margin: -23px 0 0 -25px;
+  position: absolute;
+  top: 50%;
+  width: 50px; }
+#why-fluke-connect .upper-left {
+  background: url(../img-new/collaborate-circle-1.png) no-repeat;
+  height: 111px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 116px; }
+#why-fluke-connect .upper-right {
+  background: url(../img-new/collaborate-circle-2.png) no-repeat;
+  height: 111px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 116px; }
+#why-fluke-connect .lower-right {
+  background: url(../img-new/collaborate-circle-3.png) no-repeat;
+  bottom: 0;
+  height: 111px;
+  right: 0;
+  position: absolute;
+  width: 116px; }
+#why-fluke-connect .lower-left {
+  background: url(../img-new/collaborate-circle-4.png) no-repeat;
+  bottom: 0;
+  height: 111px;
+  left: 0;
+  position: absolute;
+  width: 116px; }
+#why-fluke-connect .wrapper {
+  padding-bottom: 105px; }
+
+#why-fluke-connect-2 .wrapper {
+  padding-bottom: 160px; }
+#why-fluke-connect-2 .background-tools {
+    bottom: 20px; /*120px; 070315LF */
+  background: url(../img-new/why-fluke-connect-2-back-ie.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  left: 0;
+  height: 282px;
+  position: absolute;
+  width: 207px;
+  z-index: 1; }
+#why-fluke-connect-2 .cloud {
+  background: url(../img-new/cloud.png) no-repeat;
+  height: 114px;
+  left: 130px;
+  position: absolute;
+  width: 222px;
+  bottom: 155px; /*290px; 070315LF */ }
+
+#why-fluke-connect-3 .background-tools {
+  background: url(../img-new/why-fluke-connect-3-back-ie.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: 125px;
+  height: 330px;
+  left: 130px;
+  position: absolute;
+  width: 170px;
+  z-index: 1; }
+#why-fluke-connect-3 .clock {
+  background: url(../img-new/clock.png) no-repeat;
+  bottom: 320px;
+  height: 141px;
+  left: 0;
+  position: absolute;
+  width: 153px; }
+#why-fluke-connect-3 .wrapper {
+  padding-bottom: 70px; }
+
+#why-fluke-connect-4 .wrapper {
+  padding-bottom: 120px; }
+#why-fluke-connect-4 .background-tools {
+  background: url(../img-new/why-fluke-connect-4-back-ie.png) no-repeat;
+  background-size: contain;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  bottom: 15px;
+  height: 365px;
+  position: absolute;
+  width: 279px;
+  z-index: 1;
+  left: 130px; }
+#why-fluke-connect-4 .graph {
+  background: url(../img-new/graph.png) no-repeat;
+  bottom: 130px;
+  height: 124px;
+  position: absolute;
+  width: 165px;
+  left: 0; }
+
+.anim {
+  display: block; }
+
+.categories {
+  margin-top: 1em; }
+  .categories img {
+    margin-bottom: 20px; }
+  .categories li {
+    margin: 0;
+    width: auto; }
+    .categories li:last-child p {
+      border: 0; }
+    .categories li:nth-child(2n) {
+      margin-right: 0; }
+    .categories li:nth-child(6n+1) {
+      clear: none; }
+  .categories p {
+    *zoom: 1;
+    border-right: 1px solid;
+    padding: 20px 18px;
+    text-align: left; }
+    .categories p:before, .categories p:after {
+      content: ' ';
+      display: table; }
+    .categories p:after {
+      clear: both; }
+  .categories.js img {
+    margin-bottom: 20px; }
+  .categories.js li {
+    margin: 0;
+    width: auto; }
+    .categories.js li:last-child p {
+      border: 0; }
+    .categories.js li:nth-child(2n) {
+      margin-right: 0; }
+    .categories.js li:nth-child(6n+1) {
+      clear: none; }
+  .categories.js p {
+    *zoom: 1;
+    border: none;
+    border-right: 1px solid;
+    padding: 20px 8px;
+    text-align: left; }
+    .categories.js p:before, .categories.js p:after {
+      content: ' ';
+      display: table; }
+    .categories.js p:after {
+      clear: both; }
+  .categories.js ul {
+    width: auto !important; }
+  .categories.js .conceal {
+    display: inline;
+    margin: 10% 0;
+    width: auto; }
+  .categories.js .controls {
+    display: none; }
+
+.close, .control {
+  display: none; }
+
+.faq {
+  top: 69px; }
+  
+.faq-top {
+  top: -12px;
+}
+
+.gradient {
+  padding-top: 0; }
+
+.image-desktop {
+  background: url(../img-new/how-it-works-phone-r.png) no-repeat 50% 0;
+  background-size: cover;
+  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  display: block;
+  height: 626px;
+  left: 50%;
+  margin-left: -143px;
+  position: absolute;
+  top: -80px;
+  width: 286px;
+  z-index: 1; }
+
+.next {
+  bottom: 100px;
+  display: block; }
+
+.stories li {
+  margin: 0; }
+
+.story-overlay .story-frame {
+	background: #000000;
+	background-repeat:repeat;
+	 	  background-size:cover;
+	  /* -ms-behavior: url(http://download.fluke.com/fluke-connect/js/backgroundsize.min.htc); */
+  /*background-color:#000000;*/
+  margin: 150px auto !important;
+  padding: 0;
+  width: 870px; }
+  .story-overlay .story-frame h1, .story-overlay .story-frame p {
+    width: 75%; }
+
+.stuck-wrapper {
+  display: block; }
+
+.tool .text, .tool-window .text {
+  width: 45%; }
+
+.tool-window {
+  height: 400px;
+  padding-top: 32%; }
+  .tool-window .panel {
+    height: auto;
+    width: 1120px; }
+  .tool-window .start {
+    margin: 0 auto;
+    width: 900px; }
+    .tool-window .start .billboard {
+      font-size: 40px;
+      line-height: 1.2; }
+
+.video-overlay .video-embed {
+  padding-top: 39.8%;
+  top: 8.7%; }
+.video-overlay .video-frame {
+  height: 489px;
+  margin-left: -523px;
+  margin-top: -244px;
+  padding: 0;
+  width: 1027px; }
+
+/* JS Supported Only */
+body.js header.site nav {
+  float: right;
+  position: static;
+  right: auto;
+  top: auto;
+  width: auto; }
+body.js section .image, body.js section .image-desktop {
+  display: none; }
+body.js section.tool .image, body.js section .tool-window .image {
+  display: block; }
+body.js #intro .image {
+  display: block; }
+body.js #security .sticky-phone {
+  background-image: url(../img-new/phone-bg-ie.png);
+  display: block;
+  height: 422px;
+  top: 0;
+  width: 205px; }
+  body.js #security .sticky-phone.fixed {
+    left: 50%;
+    margin: -211px 0 0 -102px !important;/* -211px 0 0 -102px !important; */
+    position: fixed;
+    top: 53%; }
+body.js #security .stuck-wrapper {
+  display: block; }
+body.js .close, body.js .control {
+  display: none; }

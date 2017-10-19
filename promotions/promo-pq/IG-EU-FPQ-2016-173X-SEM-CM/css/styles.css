@@ -1,0 +1,490 @@
+body {
+	background-color:#ffffff;
+	padding-top:0px;
+}
+
+h1 {
+	font-size: 40px;
+	font-family:"Roboto Slab", serif;
+	padding: 0px 10px 0px 5px;
+	margin-left: 5px;
+}
+
+h2 {
+	font-size: 26px;
+	font-family:"Roboto Slab", serif;
+	padding: 0px 10px 0px 5px;
+	margin-left: 5px;
+}
+
+h3 {
+	font-size: 18px;
+	font-family:"Roboto Slab", serif;
+	padding: 0px 10px 0px 5px;
+	margin-left: 5px;
+}
+
+
+
+p {
+	padding: 0px 10px 0px 5px;
+	margin-left: 5px;
+}
+
+#row1 p, #row2 p{
+	margin-left: 0px;
+	padding: 0px ;
+}
+
+ol { 
+line-height:1.1;
+}
+
+#head {
+	background-color:#000;
+	padding: 10px 0 10px 0;
+	 max-width: 1200px;
+	 display:block;
+	 height: 112px;
+	
+}
+
+
+.logo {
+	margin-top:10px;
+	margin-bottom:10px;
+	float:left;
+	display: block;
+	position:relative;
+	
+}
+
+.logo img {
+	float:left;
+	margin-right: 40px;
+}
+
+.tag {
+	margin-top:15px;
+	font-family:"Roboto Slab", serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #fff;
+	
+	z-index:200;
+}
+
+
+
+
+#head  .contact {
+            color: #666;
+            
+            font-size: 14px;
+            padding: 8px 15px;
+            border-radius: 1px;
+            position: relative;
+            float: right;
+			margin-right:40px;
+            
+        }
+
+
+
+#head .contact  a {
+	color:#666666;
+	background-color:#333333;
+	text-decoration: none;
+	
+}
+
+#head  a:hover {
+	color:#dedede;
+	background-color:#333333;
+	text-decoration: none;
+	
+}	
+
+
+
+
+
+#wrapper {
+    max-width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: auto;
+	width:100%
+}
+
+.container {
+	
+    max-width: 1200px;
+
+	margin: 0 auto;
+    height: auto;
+	width:100%
+}
+
+
+
+form {
+    background-color: #d1d2d4;
+	background-size: contain;
+	height:785px;
+	
+	
+    
+}
+
+
+.formcol {
+	min-width:430px; 
+	margin-left:-20px;
+	
+	
+}
+
+
+.elqField {
+    width: 304px;
+	height: 37px;
+	border: 1px solid #999;
+	margin-bottom:5px;
+	padding-left:5px;
+}
+
+.elqLayout {
+	padding-left:35px;
+	padding-right: 15px;
+}
+
+.elqLabel {
+	
+	font-weight: normal;
+	width: 200px;
+	margin-bottom:0px;
+}
+
+.main-img {
+	
+	width:800px;
+	
+
+}
+
+#footer{
+	
+
+	background-color: #000;
+	margin-top:10px;
+	padding:20px;
+	color: #ffffff;
+	line-height:2;
+	
+}
+
+#footer a {
+	
+color: #ffce20;
+text-decoration: none;
+}
+
+#footer a:hover {
+	
+color: #ffce20;
+text-decoration: underline;
+}
+
+
+
+.col img {
+	/*max-width:320px;
+	max-height:175px;*/
+	margin: 40px 0 20px 0;
+	
+}
+
+.bg999 {
+	background-color:#999999;
+	padding:20px;
+	font-family: "Roboto Slab", serif;
+	font-size:30px;
+	font-weight: bold;
+	
+}
+
+.bgccc {
+	background-color:#cccccc;
+	padding:20px;
+	
+	font-size:30px;
+	font-weight: bold;
+	text-align:center;
+	margin: 10px 0 20px 0;
+	position:relative;
+	
+}
+
+.yellow-btn .bgccc {
+	text-align:center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin: 0 auto;
+}
+
+.smalltext {
+	font-size:11px;
+}
+
+.yellow-btn {
+	background-color:#ffce20;
+	padding:10px;
+	font-size:18px;
+	font-weight: bold;
+	width:304px;
+	border:0;
+	
+	
+    color: #000;
+    display: block;
+    
+   
+    line-height: 30px;
+    min-height: 30px;
+   
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.col a {
+	color:#ffffff;
+	text-decoration: none;
+}
+
+.col a:hover {
+	color:#ffffff;
+	text-decoration: none;
+}
+
+.col {
+	position:relative;
+	height:600px;
+}
+
+
+.col span a {
+	color:#003B78;
+	text-decoration: none;
+}
+
+.col span a:hover {
+	color:#003B78;
+	text-decoration: underline;
+}
+
+.img-responsive {
+	    max-width: 800px;
+}
+
+.blue-btn {
+	background-color:#336699;
+	padding:10px;
+	font-size:14px;
+	font-weight: bold;
+	width:369px;
+	border:0;
+	margin-top:10px;
+	position:absolute;
+	bottom:15px;
+    color: #fff;
+    display: block;
+    
+   
+    line-height: 30px;
+    min-height: 30px;
+   
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.formcol {
+	min-width:430px; 
+	margin-left:-20px;
+	
+	
+}
+
+@media only screen and (max-width: 767px)
+
+{
+
+
+	
+#wrapper {
+	width: 100%;
+	max-width: 767px;
+}
+
+
+.main-img {
+	
+	width:100%;
+	
+
+}
+
+.formcol {
+	width:100%;
+	margin-left:0px;
+	
+}
+
+
+
+.bg999 {
+	font-size:22px;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+
+.col {
+	position:relative;
+	height:100%;
+}
+
+
+.blue-btn {
+	
+	position:relative;
+	margin-top: 25px;
+}
+
+/*#head {
+	background-color:#000;
+	padding: 10px 0 10px 0;
+	 width: 100%;
+	 max-height: 100px;
+	 
+	 
+	
+}
+
+.logo {
+	width: 80%;
+}
+
+h1 {
+	
+	width:100%;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:10px;
+	font-size:22px;
+	
+}
+p {
+	width: 100%;
+}
+
+.tag {
+	float:left;
+	margin-top: 10px;
+}*/
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1031px)
+
+{
+	
+#wrapper {
+	width: 100%;
+	max-width: 1031px;
+}
+	
+	
+	.formcol {
+	
+	
+	margin-left:-30px;
+	margin-right:0px;
+	width:40%;
+	min-width: 350px;
+	padding-right:0px;
+	
+}
+
+.elqField {
+    width: 250px;
+}
+
+.main-img {
+	width:100%
+}
+
+.bg999 {
+	font-size:22px;
+}
+
+h1 {
+	font-size: 22px;
+	margin-left:20px;
+}
+
+p {
+	margin-left: 20px;
+	
+}
+
+
+.col {
+	position:relative;
+	height:520px;
+}
+
+.yellow-btn {
+	
+	width:250px;
+}
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1032px) and (max-width: 1200px)
+
+{
+	.formcol {
+	
+	
+	margin-left:-30px;
+	margin-right:0px;
+	width:33%;
+	min-width: 350px;
+	padding-right:0px;
+	
+}
+
+.elqField {
+    width: 250px;
+}
+
+.main-img {
+	width:100%
+}	
+
+
+#row1 p, #row2 p {
+	padding: 0 10px 0 0;
+	margin-right:10px;
+}
+	
+}

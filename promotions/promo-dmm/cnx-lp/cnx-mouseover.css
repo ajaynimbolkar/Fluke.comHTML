@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+	span.dropt {border-bottom: thin dotted; background: #ffeedd;}
+	span.dropt:hover {text-decoration: none; background: #ffffff; z-index: 6; }
+	span.dropt span {position: absolute; left: -1999px;
+  	margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  	border-style:solid; border-color:white; border-width:1px; z-index: 6;}
+	span.dropt:hover span {left: 1%; background: #ffffff;} 
+	span.dropt span {position: absolute; left: -1999px;
+  	margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
+  	border-style:solid; border-color:white; border-width:1px;}
+	span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; 			z-index:6;} 

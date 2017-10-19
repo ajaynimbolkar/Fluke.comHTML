@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="opco" content="IG"><!-- **************************************************************************************************
+		TABLE OF CONTENTS
+		- BEGIN STYLE INFO
+        - GOOGLE ASYNC
+        - GOOGLE TAG MANAGER
+        - CLICKTALE
+        - ELOQUA CODE
+        - YOUTUBE TRACKING
+        - BEGIN JAVASCRIPT
+        - BEGIN FORM HEADER
+        - Hidden Variables
+        - URL Variables
+        - Editable IX Variables
+        - IX Variables for EUR Lit Fulfilment    
+        - BEGIN FORM FOOTER
+        - Google UTM Variables
+        - Custom URL Variables
+        - Lightbox
+*****************************************************************************************************--><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"><!-- BEGIN STYLE INFO--> <!-- FORM STYLESHEET--> <!--[if lt IE 9]>
+<style type="text/css">
+#wrapper {
+	width: 100%;	
+	max-width: 1020px;
+    min-width: 1020px;
+	min-height:1000px;
+	margin: auto;
+	background-color:#FFF;
+	position:relative;
+	overflow:hidden;
+	} 
+</style>
+<![endif]--><style type="text/css">
+@font-face { 
+    font-family: "Boton Bold"; 
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.eot);
+    src: url(http://eupromo.fluke.com/connect/fonts/boton-bold.woff) format('woff');
+}
+
+
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { 	
+font-family:Helvetica, Arial, sans-serif;}
+p h3 {
+	font-family:Helvetica, Arial, sans-serif;
+}
+p{
+	font-size:14px;
+	line-height:18px;
+	padding-bottom:10px;
+}
+
+ul{display:inline-block;
+padding-left:16px;
+}
+
+ul li{
+	padding-left:5px;
+	padding-bottom: 10px;
+	line-height:1.3;
+	font-size:14px;
+}
+
+.wtb_button {
+	font-family: "Boton Bold", serif !important;
+    background-color: #231f20;
+    color: #fbca3d !important;
+    padding: 15px 15px 15px 15px;
+    max-width: 160px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    display: block;
+}
+
+	.wtb_button:hover {
+    color: #fff !important;
+}
+
+.enlarge{
+	padding-left: 37px;
+}
+
+
+.comment{
+	font-size: 10px;
+	line-height:1.4;
+}
+
+
+.headstyle{
+	font-family: "Boton Bold", Helvetica, Arial, sans-serif;
+	font-size:27px;
+	color:#333;
+	line-height:29px;
+	margin:20px 0 10px 0;
+	display:block;
+}
+
+.headstyle_small{
+font-family: "Boton Bold", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	color:#333;
+	line-height:29px;
+	margin:15px 0 10px 0;
+	display:block;
+}
+
+h3{
+	font-size:14px;
+	font-weight:bold;
+	margin:8px 0 8px 0;
+}
+
+a{
+	  text-decoration: none !important;
+      color: #0058b3;
+	  font-weight:bold;
+	  transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+    
+a:hover{
+      text-decoration: none !important;
+      color: #006B78;
+	  transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+
+#background{
+	background-size: cover;
+ 	overflow: hidden;
+ 	position: relative;
+}
+
+#wrapper {
+	max-width: 1020px;
+	min-height:600px;
+	margin: auto;
+	position:relative;
+	overflow:hidden;
+}
+
+#header_banner{
+	background: url('http://content.fluke.com/htm/PtoolsDisti2015/header_image.jpg');
+	background-size:cover;
+	overflow:hidden;
+	height:200px;
+	background-position:top center;
+}
+
+#header{
+	width: 100%;	
+	background-color:rgba(51,51,51,1);
+	height:80px;
+	z-index:999;
+}
+
+
+#header .header_content{
+	padding-top:16px;
+	position:relative;
+	width:1020px;
+	margin:auto;
+	z-index:999;
+}
+
+#header .header_content .logo{
+	display:block;
+	height:48px;
+	position:relative;
+	float:left;
+	z-index:999;
+}
+
+#header .header_content .talk_to_specialist_desktop{
+	color: #fff;
+	background-color: #444444;
+	font-size:14px;
+	padding: 8px 15px;
+	border-radius: 1px;
+	position:relative;
+	float:right;
+	margin-top:8px;
+}
+
+.talk_to_specialist_mobile{
+	display:none;
+}
+
+
+
+#footer{
+	width: 100%;	
+	background-color:#333;
+	height:60px;
+	margin-top:40px;	
+}
+
+#footer .footer_content{
+	position:relative;
+	width:1020px;
+	margin:auto;
+	display:block;
+}
+
+
+#footer h2{
+	color:#ffc203;
+	font-size:12px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:24px;
+	display:block;
+	float:right;
+}
+#footer h3{
+	color:#FFF;
+	font-size:12px;	
+	margin-top:24px;
+	margin-left:0px;
+	margin-right:50px;
+	display:block;
+	float:left;
+}
+#footer a{
+	color:#fff;
+	text-decoration:none;
+	font-weight: normal;
+	padding-left:5px;
+	padding-right:5px;
+}
+#footer a:hover{
+	color:#ffc203;
+	text-decoration:none;
+}
+
+.disclaimer{
+	font-size:12px;
+}
+.columnsContainer, { position: relative; margin: .5em;}
+
+
+.leftColumn { 
+	display:block; 
+	float:left; 
+	margin-right: 25.5em; 
+	margin-top:25px;
+	width:46%;
+}	
+
+.rightColumn {
+	display:block;
+	float:right;
+	margin-top:25px;
+	margin-right:3%;
+	position:absolute;
+	top: 110;
+	right: -5px;
+	width:46%;
+}
+
+.leftcoltext{
+	width:55%; 
+	display:block; 
+	float:left;
+	margin-right:20px;
+}
+
+.leftcolimage{
+	width:40%; 
+	display:block; 
+	float:left;
+	margin-top:80px;
+}
+
+.rightcoltext{
+	width:55%; 
+	display:block; 
+	float:left;
+	margin-right:20px;
+}
+
+.rightcolimage{
+	width:40%; 
+	display:block; 
+	float:left;
+	margin-top:80px;
+}
+
+
+.label{
+font-size:12px;
+font-weight:bold;
+margin:0 0 0 0;
+}
+input{
+width:95%;
+padding:4px;
+border:1px solid #ccc;
+margin-left:5%;
+margin-right:5%;
+}
+
+select{
+width:95%;
+margin-left:5%;
+margin-right:5%;
+padding:4px;
+border:1px solid #ccc;
+background-color:#FFF;
+-ms-box-sizing:content-box;
+-moz-box-sizing:content-box;
+-webkit-box-sizing:content-box; 
+box-sizing:content-box;
+}
+h1{
+	font-size:16px;
+	font-weight:bold;
+	background-color:#FC0;
+	display:block;
+	width:94%;
+	padding:3%;
+}
+#btnsubmit{
+	position:absolute;
+	left: -16px;
+	top: 164px;
+}	  
+
+
+.header_container{
+	margin-top:40px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 50em ) {
+.leftColumn {  
+margin-left:4%; 
+position: relative; 
+float:left;
+width:90%;
+}
+  .rightColumn {
+	display:block;
+	float:left;
+	margin-left:4%;
+	position:relative;
+	top: 0;
+	right: 0;
+	width: 90%;
+}	
+.leftcoltext{
+	width:90%; 
+	display:block; 
+	float:left;
+	margin-right:20px;
+}
+.leftcolimage{
+	margin-top:20px;
+	margin-bottom:40px;
+	width:90%; 
+	display:block; 
+	float:left;
+}
+
+
+.rightcoltext{
+	width:90%; 
+	display:block; 
+	float:left;
+	margin-right:20px;
+}
+.rightcolimage{
+	margin-top:20px;
+	margin-bottom:40px;
+	width:90%; 
+	display:block; 
+	float:left;
+}
+
+
+.header_container{
+	margin-left:10px;
+	width:95%;
+}
+
+.headstyle{
+	font-family: "Boton Bold", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:27px;
+	color:#333;
+	line-height:29px;
+	margin:20px 0 10px 0;
+	display:block;
+}
+
+
+#header .header_content .talk_to_specialist_desktop{
+	display:none;
+}
+
+
+#header_banner{
+	background: url('http://content.fluke.com/htm/PtoolsDisti2015/header_image.jpg');
+	background-size:cover;
+	overflow:hidden;
+	height:80px;
+	background-position:top center;
+}
+
+
+#footer .footer_content{
+	width: 100%;	
+	max-width: 1280px;
+	display:block;
+	background-color:#000;
+	height:140px;
+	float:left;
+	display:block;
+	margin-top:0px;
+}
+#footer .footer_content h2{
+	color:#ffc203;
+	font-size:12px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:10px;
+	display:block;
+	float:left;
+}
+
+#footer .footer_content h3{
+	color:#FFF;
+	font-size:12px;	
+	margin-top:20px;
+	margin-left:50px;
+	margin-right:50px;
+	display:block;
+	float:left;
+}
+
+.talk_to_specialist_mobile{
+	display:block;
+}
+
+
+@media screen and (max-width: 30em ) {
+.leftcoltext{
+	width:100%; 
+	display:block; 
+	float:left;
+	margin-right:20px;
+}
+.leftcolimage{
+	width:100%; 
+	display:block; 
+	float:left;
+}
+
+
+  
+    </style><!-- STYLESHEET FOR VAILIDATION--><link rel="stylesheet" href="http://download.fluke.com/eloqua/css/jquery-bubble-popup-v3.css" type="text/css"><!-- END STYLE INFO--> <!-- Google Async Code starts --><script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-1']); 
+       _gaq.push(['_setDomainName', 'fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script><!-- Google Async Code ends --> <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7RWZ5');</script><!-- End Google Tag Manager --> <!-- ClickTale Top part --><script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script><!-- ClickTale end of Top part --> <!-- ClickTale Bottom part --><script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki pagehttp://wiki.clicktale.com/Article/Customizing_code_version_2
+ 
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js":
+"http://cdn.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script><!-- ClickTale end of Bottom part --> <!-- Eloqua Code starts --> <!-- BEGIN Eloqua Tracking script --><SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT><!-- END Eloqua Tracking script --> <!-- BEGIN E10 Tracking Code starts --><SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT><!-- END E10 Tracking Code end --> <!-- Eloqua Code end --> <!-- Passing UTM variables from URL --> <!-- jQuery library (served from Google) --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- Passing url variables file --><script src="http://download.fluke.com/Fluke/eloqua/scripts/passUrlVariables.js"></script><!-- Add class="pass-url-variables" to any <iframe> or <a> that you would like the variables to be passed. --> <!-- End UTM --> <!-- Youtube tracking code --><script>
+for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;)
+	if (/youtube.com\/embed/.test(e[x].src))
+		if(e[x].src.indexOf('enablejsapi=') === -1)
+			e[x].src += (e[x].src.indexOf('?') ===-1 ? '?':'&') + 'enablejsapi=1';
+
+var YTListeners = []; // support multiple players on the same page
+// attach our YT listener once the API is loaded
+function onYouTubeIframeAPIReady() {
+	for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;) {
+		if (/youtube.com\/embed/.test(e[x].src)) {
+			YTListeners.push(new YT.Player(e[x], {
+				events: {
+					onStateChange: onPlayerStateChange,
+				}
+			}));
+			YT.LastAction = false;
+		}
+	}
+}
+//Fill in the description of the page, according to the instructions for 'category' in the standard work document for Event tracking 
+var LandingpageGA = 'LP - TI - TI - Connect';
+
+
+// report the the type of interaction with the video
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING && setTimeout(onPlayerPercent, 1000, event.target)) {
+		lastAction = true;
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video play', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}
+	if (event.data == YT.PlayerState.ENDED){
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video end', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}        
+	if (event.data == YT.PlayerState.PAUSED && lastAction){
+		lastAction = false; 
+		_gaq.push(['_trackEvent',LandingpageGA, 'Video paused', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	} 
+}
+
+// report the % played if it matches 0%, 25%, 50%, 75% or completed
+function onPlayerPercent(player) {
+	if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+	var t = player.getDuration() - player.getCurrentTime() <= 1.5 ? 1 : (Math.floor(player.getCurrentTime() / player.getDuration() * 4) / 4).toFixed(2); 
+	
+	if (!player.lastP || t > player.lastP) {
+		player.lastP = t;
+		
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video ' + t * 100 + '%', player.getVideoData().video_id + ' | ' + player.getVideoData().title]);
+	}
+	
+	player.lastP != 1 && setTimeout(onPlayerPercent, 1000, player);
+	}
+}
+
+// load the Youtube JS api and get going
+var j = document.createElement("script"),
+	f = document.getElementsByTagName("script")[0];
+j.src = "//www.youtube.com/iframe_api";
+j.async = true;
+f.parentNode.insertBefore(j, f);
+</script><!-- End Youtube tracking --> <!--BEGIN JAVASCRIPT --> <!--JQUERY LIBRARY INCLUDE--><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!--JavaScript LIBRARY FOR ELOQUA DATA PROCESSING--><script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/elqForm.js"></script><!-- Google Analytics --><script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script><!--JavaScript LIBRARY INCLUDES FOR VALIDATION--><script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/jquery-bubble-popup-v3.min.js"> </script>
+<script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/Validate-en.js"> </script><!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment--><script type="text/javascript"> 
+ 
+jQuery(function($){
+ 
+$("form").submit(function(){
+	
+	
+	
+    $("input[name=dcUniqueID]").val( $("input[name=emailAddress]").val() + $.now());
+
+/*	if( $("input[name=iGBulkEmailOptIn]").prop("checked")){
+		$("input[name=iGBulkEmailOptOut]").val("False");
+	}
+	else{
+		$("input[name=iGBulkEmailOptOut]").val("True");
+	}*/
+	
+	$("input[name=ixCompany1]").val($("input[name=company]").val());
+	$("input[name=ixFirstName]").val($("input[name=firstName]").val());
+	$("input[name=ixLastName]").val($("input[name=lastName]").val());
+	$("input[name=ixAddress1]").val($("input[name=address1]").val());
+	$("input[name=ixAddress2]").val($("input[name=address2]").val());
+	$("input[name=ixZip]").val($("input[name=zipOrPostalCode]").val());
+	$("input[name=ixCity]").val($("input[name=city]").val());
+	$("input[name=ixCountry]").val($("#countryone").val());
+	$("input[name=ixLanguage]").val($("#langSelect").val());
+	$("input[name=ixState]").val($("#countrytwo").val());
+	$("input[name=ixTitle]").val($("input[name=title]").val());
+   });   
+});
+ 
+function setFields(){  
+  $("input[name=emailAddress]").val(localStorage.emailAddress); 
+  $("input[name=firstName]").val(localStorage.firstName);  
+  $("input[name=lastName]").val(localStorage.lastName); 
+ /* $("input[name=zipOrPostalCode]").val(localStorage.zipOrPostalCode);*/
+  $("input[name=company]").val(localStorage.company);
+ /* $("input[name=businessPhone]").val(localStorage.businessPhone);*/
+  
+  setTimeout(function() {
+  $("#countryone").val(localStorage.countryNormalized).change();
+  	 
+
+      setTimeout(function() {
+          $("#industry1").val(localStorage.industryLevel1).change();
+  
+      }, 500);
+  
+   }, 500);
+
+  <!-- end -->
+}
+ 
+ 
+function setLocalStore() {
+  if(typeof(Storage)!=="undefined")
+  {
+ 
+  localStorage.emailAddress=$("input[name=emailAddress]").val();
+  localStorage.firstName = $("input[name=firstName]").val();
+  localStorage.lastName = $("input[name=lastName]").val(); 
+ /* localStorage.zipOrPostalCode = $("input[name=zipOrPostalCode]").val();*/
+  localStorage.countryNormalized = $("#countryone option:selected").val();
+  localStorage.company=$("input[name=company]").val();
+ /* localStorage.businessPhone = $("input[name=businessPhone]").val();*/
+  localStorage.preferredLanguage = $("#langSelect option:selected").val();
+  localStorage.industryLevel1 = $("#industry1 option:selected").val();
+  }
+ 
+  
+  }    
+  
+</script><!--JavaScript LIBRARY INCLUDES FOR DYNAMIC DROPDOWNS--><script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/dropdown-v3.js"> </script> <!--ISSUES WITH CACHE ON DOWNLOAD--> <!--Lightbox--><script src="http://content.fluke.com/htm/PtoolsDisti2015/lightbox/js/lightbox.js"></script>
+<link href="http://content.fluke.com/htm/PtoolsDisti2015/lightbox/css/lightbox.css" rel="stylesheet">
+
+</head>
+
+<body onload="setFields();">
+
+
+<div id="background">
+
+
+<div id="header">
+<div class="header_content"><a href="http://www.fluke.com/fluke/benl/home/default" target="_blank"><img class="logo" src="http://content.fluke.com/htm/newsletter_landingpages/assets/images/fluke_logo_retina.jpg"></a></div>
+</div>
+
+<div id="header_banner"></div>
+<div id="wrapper">
+
+<div class="header_container">
+<h2 class="headstyle">15% korting op instrumenten voor proceskalibratie en storingzoeken</h2>
+    <p>Begin tijd te besparen en word zelfs nóg effectiever in uw werk met deze twee unieke sets. De sets gelden tot eind 2015.</p>
+</div>
+
+
+
+<div class="columnsContainer">
+
+
+
+  	<div class="leftColumn">
+	<div class="leftcoltext">
+	<h2 class="headstyle_small">Kalibratieset</h2>
+    <p>
+	<ul>
+	<li>Kalibreer en test drukapparatuur snel en eenvoudig met één hand.</li>
+	<li>De <a href="http://www.fluke.com/fluke/benl/proceskalibratie/drukkalibratoren/fluke-719pro-150g.htm?PID=77201" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'fluke_719']);">Fluke 719Pro</a> kalibreert drukken met een ingebouwde elektrische pomp, met programmeerbare limietinstellingen om overdruk te voorkomen. De meetwaarden zijn nauwkeurig tot slechts 0,025%.</li>
+	<li>De <a href="http://www.fluke.com/fluke/benl/stroomtangen/fluke-771-milliamp-process-clamp-meter.htm?PID=69415" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'fluke_771']);">Fluke 771</a> mA-stroomtang bespaart u tijd  door uitgangssignalen van 4-20 mA te meten zonder de lus te onderbreken.</li>
+	</ul><a class="wtb_button" href="http://www.fluke.com/Fluke/benl/WhereToBuy/default.htm?product=PRESSCAL&pid=77201
+" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'wtb_719Pro']);">Bestel nu!</a></p>
+	</div>
+
+
+	<div class="leftcolimage"><a class="preview_image_full" href="http://content.fluke.com/htm/PtoolsDisti2015/calibration_kit.png" data-lightbox="preview" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'preview_image']);"><img class="preview_image_thumb" src="http://content.fluke.com/htm/PtoolsDisti2015/calibration_kit.png" style="width:100%; max-width:300px; max-height:auto;"/><p class="enlarge">Klik om te vergroten</p></a></div>
+	</div>
+    
+    
+    
+
+<div class="rightColumn">  
+       <div class="rightcoltext">
+	<h2 class="headstyle_small">Storingzoekset</h2>
+    <p>
+	<ul>
+	<li>De ideale starterset voor storingzoeken in industriële processen en het delen van wireless data.</li>
+	<li>De <a href="http://www.fluke.com/fluke/benl/luskalibratoren/proceskalibratie/fluke-789.htm?PID=56133" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'fluke_789']);">Fluke 789 ProcessMeter</a> combineert een luskalibrator, een DMM, een 24V-lusvoeding en een selecteerbare Hart&reg;-weerstand van 250 ohm.</li>
+    <li>Verbinding met het <a href="http://content.fluke.com/comx/fluke-connect/NL/benl/index.html" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'fluke_connect']);">Fluke Connect&trade; wireless netwerk</a> door middel van de <a href="http://www.fluke.com/fluke/benl/accessoires/wireless-accessories/fluke-ir3000-fc.htm?PID=78550" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'ir3000_fc_connector']);">Ir3000 FC-connector</a>.</li>
+	<li>De <a href="http://www.fluke.com/fluke/benl/elektrische-test--en-meetinstrumenten/stroomtangen/fluke-a3004-fc.htm?PID=79674" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'fluke_a3004']);">Fluke A3004 FC 4-20mA-DC-stroomtang</a> bespaart u tijd  door uitgangssignalen van 4-20 mA te meten zonder de lus te onderbreken.</li>
+	</ul><a class="wtb_button" href="http://www.fluke.com/fluke/benl/WhereToBuy/default.htm?product=LOOPCAL&pid=56133" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'wtb_789']);">Bestel nu!</a></p>
+	</div>
+
+
+	<div class="rightcolimage"><a class="preview_image_full" href="http://content.fluke.com/htm/PtoolsDisti2015/troubleshooting_kit.png" data-lightbox="preview" onclick="_gaq.push(['_trackEvent', 'LP-ADT-PTOOL-PTOOL-DISTI-NLNL', 'Visit_website', 'preview_image']);"><img class="preview_image_thumb" src="http://content.fluke.com/htm/PtoolsDisti2015/troubleshooting_kit.png" style="width:100%; max-width:300px; max-height:auto;"/><p class="enlarge">Klik om te vergroten</p></a></div>     
+  </div>
+
+
+
+
+</div>
+
+  	
+
+
+
+  </div>
+    
+    <div id="footer">
+    <div class="footer_content">
+    <h3>© 1995 - <script language="JavaScript">document.write(new Date().getFullYear());</script> Fluke Corporation 		</h3>
+    <h2><a href="http://www.fluke.com/fluke/benl/about/corp/default.htm" target="_blank">Fluke Corporation</a> | <a href="http://www.fluke.com/fluke/benl/home/termsconditions.htm" target="_blank">Voorwaarden</a> | <a href="http://www.fluke.com/fluke/benl/home/privacystatement.htm" target="_blank">Privacyverklaring</a> | <a href="http://www.fluke.com/fluke/benl/home/Terms-and-Conditions-of-Use.htm" target="_blank">Gebruiksvoorwaarden</a></h2>
+	</div>
+    </div>
+
+</div>
+</body>
+</html>

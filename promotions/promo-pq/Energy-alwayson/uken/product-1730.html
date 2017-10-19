@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3 simple steps to optimize your energy management - 1730</title>
+    <!-- Bootstrap -->
+    <link href="css/flukestrap-light.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
+
+<!-- Google Async Code starts -->
+<script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-1']); 
+       _gaq.push(['_setDomainName', 'content.fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script>
+<!-- Google Async Code ends -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P7RWZ5');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+<!-- Passing UTM variables from URL -->
+
+<!-- jQuery library (served from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- Passing url variables file --><script src="http://download.fluke.com/Fluke/eloqua/scripts/passUrlVariables.js"></script>
+
+<!-- -->
+
+<!-- End UTM -->
+
+
+<!--JQUERY LIBRARY INCLUDE-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!--JavaScript LIBRARY FOR ELOQUA DATA PROCESSING-->
+  <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/elqForm.js"></script> 
+  
+  <!-- Google Analytics -->
+<script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/GA.js"></script> 
+
+<!--JavaScript LIBRARY INCLUDES FOR VALIDATION-->
+  <script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/jquery-bubble-popup-v3.min.js"> </script>
+<script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/Validate-en.js"> </script>
+
+
+<!-- JavaScript FOR DC_UNIQUE_ID and IX Euro Lit Fulfillment-->
+<script type="text/javascript"> 
+
+jQuery(function($){
+
+$("form").submit(function(){
+
+    $("input[name=dcUniqueID]").val( $("input[name=emailAddress]").val() + $.now());
+	
+	if( $("input[name=sendMarketingMaterials]").prop("checked")){
+		$("input[name=doNotSendMarketingMaterials]").val("False");
+	}
+	else{
+		$("input[name=doNotSendMarketingMaterials]").val("True");
+	}
+	
+	if( $("input[name=iGBulkEmailOptIn]").prop("checked")){
+		$("input[name=iGBulkEmailOptOut]").val("False");
+	}
+	else{
+		$("input[name=iGBulkEmailOptOut]").val("True");
+	}
+	
+	$("input[name=ixCompany1]").val($("input[name=company]").val());
+	$("input[name=ixFirstName]").val($("input[name=firstName]").val());
+	$("input[name=ixLastName]").val($("input[name=lastName]").val());
+	$("input[name=ixAddress1]").val($("input[name=address1]").val());
+	$("input[name=ixAddress2]").val($("input[name=address2]").val());
+	$("input[name=ixZip]").val($("input[name=zipOrPostalCode]").val());
+	$("input[name=ixCity]").val($("input[name=city]").val());
+	$("input[name=ixCountry]").val($("#countryone").val());
+	$("input[name=ixLanguage]").val($("#langSelect").val());
+	$("input[name=ixState]").val($("#countrytwo").val());
+	$("input[name=ixTitle]").val($("input[name=title]").val());
+   });   
+});
+
+function setFields(){  
+  $("input[name=emailAddress]").val(localStorage.emailAddress);
+  $("input[name=firstName]").val(localStorage.firstName);  
+  $("input[name=lastName]").val(localStorage.lastName); 
+ 
+  $("input[name=zipOrPostalCode]").val(localStorage.zipOrPostalCode);
+ 
+  $("input[name=company]").val(localStorage.company);
+ 
+  $("input[name=businessPhone]").val(localStorage.businessPhone);
+
+  
+  setTimeout(function() {
+                    $("#countryone").val(localStorage.countryNormalized).change();
+               
+				
+				
+ }, 500);  
+}
+
+
+function setLocalStore() {
+  if(typeof(Storage)!=="undefined")
+  {
+
+  localStorage.emailAddress=$("input[name=emailAddress]").val();
+  localStorage.firstName = $("input[name=firstName]").val();
+  localStorage.lastName = $("input[name=lastName]").val(); 
+  
+  localStorage.zipOrPostalCode = $("input[name=zipOrPostalCode]").val();
+ 
+  localStorage.countryNormalized = $("#countryone option:selected").val();
+ 
+
+  localStorage.company=$("input[name=company]").val();
+
+  localStorage.businessPhone = $("input[name=businessPhone]").val();
+ 
+  
+  }
+
+  
+  }    
+  
+</script>
+
+
+<!--JavaScript LIBRARY INCLUDES FOR DYNAMIC DROPDOWNS-->
+<script type="text/javascript" src="http://download.fluke.com/eloqua/scripts/dropdown-v3.js"> </script> <!--ISSUES WITH CACHE ON DOWNLOAD-->
+
+<!-- END JavaScript -->
+
+
+
+</head>
+
+<body onload="setFields();">
+    
+        <div id="wrapper">
+
+            <div class="container">
+
+
+                <section id="header">
+                    <img id="header-bg-img" src="images/Header.png" alt="Header">
+
+                    <div class="logo">
+                        <a href="http://www.fluke.com/fluke/uken/home/default" target="_blank"><img src="images/fluke-logo.gif" class="img-responsive" alt="Fluke"></a>
+                    </div>
+                </section>
+            </div>
+
+ 
+  
+            <!-- begin page4 1730 -->
+            <div id="page4-1">
+                <div class="container">
+                    <section id="linkbar" class="row">
+                        <div class="col-md-12 links col-xs-12">
+                           <!-- <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Submit_form', 'quote']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-UKEN-LP-Generic?lcid=d271b0f5-9cea-e511-a393-bc305b2a71dc&lrpf=FPQ&plt=200000000&cra=100000002&scl=4119&redir=http://content.fluke.com/promotions/promo-pq/Energy-alwayson/uken/thankyoupage-uken.html" target="_blank">Request a quote</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+                            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Submit_form', 'talk_to_specialist']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-UKEN-LP-Generic?lcid=d271b0f5-9cea-e511-a393-bc305b2a71dc&lrpf=FPQ&plt=200000000&cra=100000000&scl=4119&redir=http://content.fluke.com/promotions/promo-pq/Energy-alwayson/uken/thankyoupage-uken.html" target="_blank">Prefer to talk to a Fluke Specialist?</a>                            &nbsp;&nbsp;|&nbsp;&nbsp;--><a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Download_asset', 'datasheet']);"  href="http://www.flukepartnerportal.com/efulfillment/12028-eng" target="_blank">Download datasheet</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Visit_website', 'wtb_1730']);" href="http://www.fluke.com/Fluke/uken/WhereToBuy/default.htm?product=PHASE3&pid=77038" target="_blank">Where to buy</a>
+
+                        </div>
+
+
+
+
+                    </section>
+                </div>
+
+                <div class="container">
+                    <section  class="row main">
+                        <div class="col-md-4 leftcolumn-top col-xs-12">
+                            <h1>The Fluke 1730 Energy logger best fits your needs!</h1>
+                            <!-- image carousell -->
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <!--<ol class="carousel-indicators">
+                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1" data-slide-to="1"></li>
+                                <li data-target="#carousel1" data-slide-to="2"></li>
+                                </ol>-->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active"><img src="images/1730-c-1.png" alt="1730" class="center-block">
+                                        <!--<div class="carousel-caption">
+                                        <h3>First slide Heading</h3>
+                                        <p>First slide Caption</p>
+                                        </div>-->
+                                    </div>
+                                    <div class="item"><img src="images/1730-c-2.png" alt="1730" class="center-block">
+
+                                    </div>
+
+
+
+                                    <div class="item"><img src="images/1730-c-3.png" alt="1730" class="center-block">
+
+                                    </div>
+                                    
+                                    
+                                     <div class="item"><img src="images/1730-c-4.png" alt="1730" class="center-block">
+
+                                    </div>
+                                    
+                                </div>
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                            </div>
+
+
+
+                            
+                            <!-- end image caroussel -->
+                            
+  <img src="images/blue-arrow.png" class="img-responsive blue-arrow2" alt="Step back"><div class="stepback2"><a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Step_back', 'Step3']);" href="step3.html">Step back</a>      
+          
+          </div>                            
+                            
+                        </div>
+                        <div class="col-md-8 rightcolumn-top col-xs-12">
+                             <h2>The Fluke 1730 Energy Logger</h2>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 page4blocks">
+                                     <ul>
+                                        <li>
+                                            Easily discover when and where energy is being consumed in your facility, from the service entrance to the individual circuits.
+
+                                        </li>
+                                        <li>Compare multiple data points over time and build the complete picture of energy usage
+                                            with Fluke Energy Analyze software package. </li>
+                                        <li>Quickly understand specific points of energy loss, reduce energy bills more easily
+                                            than ever. </li>
+                                    </ul>
+                                    <p> <strong>The Fluke 1730 is the best choice when looking for a dedicated energy logger for performing energy surveys and load studies. </strong>                                        </p>
+                                    <!--<a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Submit_form', 'free_demo']);" target="_blank" class="btn-yellow" href="http://a.fluke.com/IG-EU-MULTI-2016-DemoContactRequest-UKEN-LP-Generic?lcid=d271b0f5-9cea-e511-a393-bc305b2a71dc&lrpf=FPQ&plt=200000000&cra=100000001&scl=4119&redir=http://content.fluke.com/promotions/promo-pq/Energy-alwayson/uken/thankyoupage-uken.html">Interested in a free demo?</a>-->
+</div>
+
+ <div class="col-md-6 col-sm-12 col-xs-12 formcol" >
+ <!-- embedded form -->                               
+      <!-- START FORM -->
+<form method="post" name="everything" id="form25" onsubmit="return submitForm(this);" action="https://s1182545284.t.eloqua.com/e/f2" >
+
+<!--BEGIN FORM HEADER-->
+<table style="background-color:#cccccc" ><tbody id="tableBody"><tr style="WIDTH: 100%; HEIGHT: 100%" id="PageRow"><td id="pageData" height="100%" width="100%" valign="top">
+<!--END FORM HEADER-->
+
+<input value="everything" type="hidden" name="elqFormName">
+<input value="1182545284" type="hidden" name="elqSiteId">
+
+
+<!-- Hidden Variables -->
+<input type="hidden" name="eloquaStatus" id="eloquaStatus">
+<input type="hidden" name="iGLastMSCRMAssetID" id="iGLastMSCRMAssetID">
+<input type="hidden" name="emlSubGroup" id="emlSubGroup">
+<input type="hidden" name="emlReciptAddress" id="emlReciptAddress">
+<input type="hidden" name="emlSubLine" id="emlSubLine">
+<input type="hidden" name="addToCampaign" id="addToCampaign">
+<input type="hidden" name="iGLastMSCRMDistributorAccountGUID" id="iGLastMSCRMDistributorAccountGUID">
+ 
+  
+<!-- URL Variables DO NOT TOUCH-->
+
+<input type="hidden" name="iGLastMSCRMCampaignID" id="iGLastMSCRMCampaignID" value="d271b0f5-9cea-e511-a393-bc305b2a71dc">
+
+<input type="hidden" name="iGLastReportingProductFamily" id="iGLastReportingProductFamily" value="2E6C4BD2-C170-DE11-95B8-02BF0A064B97">
+<input type="hidden" name="utmAdGroup" id="utmAdGroup">
+<input type="hidden" name="utmAdName" id="utmAdName">
+<input type="hidden" name="utmCampaign" id="utmCampaign">
+<input type="hidden" name="utmContent" id="utmContent">
+<input type="hidden" name="utmDomain" id="utmDomain">
+<input type="hidden" name="utmKW" id="utmKW">
+<input type="hidden" name="utmLP" id="utmLP">
+<input type="hidden" name="utmMedium" id="utmMedium">
+<input type="hidden" name="utmSize" id="utmSize">
+<input type="hidden" name="utmSource" id="utmSource">
+<input type="hidden" name="utmTerm" id="utmTerm">
+<input type="hidden" name="emlConfirm" id="emlConfirm">
+<input type="hidden" name="redir" id="redir" value="http://content.fluke.com/promotions/promo-pq/Energy-alwayson/uken/thankyoupage-uken.html">
+<input type="hidden" name="dcUniqueID" id="dcUniqueID">
+<input type="hidden" name="elqCampaignId" id="elqCampaignId">
+<input type="hidden" name="ixMarcom" id="ixMarcom">
+<input type="hidden" name="ixKitCodes" id="ixKitCodes"> 
+<input type="hidden" name="iGLastMSCRMLeadRating" id="iGLastMSCRMLeadRating">
+<input type="hidden" name="productLineType" id="productLineType" value="200000000">
+<input type="hidden" name="sharedContactList" id="sharedContactList" value="4119">
+ <input type="hidden" name="campaignresponseactivity" id="campaignresponseactivity" value="100000000">
+
+<!-- Editable IX Variables -->
+<input type="hidden" name="ixDear" id="ixDear" value="Dear Mr./Mrs.">
+<input type="hidden" name="ixAccountNo" id="ixAccountNo" value="Account Default Value">
+<input type="hidden" name="ixGender" id="ixGender">
+<input type="hidden" anme="ixMailOk" id="ixMailOk">
+
+<!-- IX Variables for EUR Lit Fulfillment - DO NOT TOUCH -->
+<input type="hidden" name="ixCompany1" id="ixCompany1"><input type="hidden" name="ixFirstName" id="ixFirstName"><input type="hidden" name="ixLastName" id="ixLastName"><input type="hidden" name="ixAddress1" id="ixAddress1"><input type="hidden" name="ixAddress2" id="ixAddress2"><input type="hidden" name="ixZip" id="ixZip"><input type="hidden" name="ixCity" id="ixCity"><input type="hidden" name="ixCountry" id="ixCountry"><input type="hidden" name="ixLanguage" id="ixLanguage"><input type="hidden" name="ixState" id="ixState"><input type="hidden" name="ixTitle" id="ixTitle">
+
+<!-- Variables for Reverse Logic - DO NOT TOUCH -->
+<input type="hidden" name="iGBulkEmailOptOut" id="iGBulkEmailOptOut">
+
+<div style="POSITION: relative; padding-bottom:20px" class="elqLayout"><br><span style="font-family: 'Roboto Slab', serif; font-size: 16px; font-weight: bold;"> We are here to help</span><br>
+
+please fill in the form and our team of Fluke experts will contact you.<br><br>
+
+<div id="formElement1" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">First Name</label></td></tr><tr><td><input id="field1" value="" type="text" name="firstName"  class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement2" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Last Name</label></td></tr><tr><td><input id="field2" value="" type="text" name="lastName"  class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block;" id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement3" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Email Address</label></td></tr><tr><td><input id="field3" value="" type="text" name="emailAddress" class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement4" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Company</label></td></tr><tr><td><input id="field6" value="" type="text" name="company" class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement5" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Country</label></td></tr><tr><td><select id="countryone" name="countryNormalized"   class="elqField"><option  value="base">Please Select</option>
+                                                                    </select></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement7" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Postcode</label></td></tr><tr><td><input id="field18" value="" type="text" name="zipOrPostalCode" class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement8" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2"><label style="DISPLAY: block; FLOAT: left" class="elqLabel">Business Phone</label></td></tr><tr><td><input id="field4" value="" type="text" name="businessPhone" class="elqField"></td><td style="WIDTH: 16px;"><div style="WIDTH: 16px; DISPLAY: block; " id="LabelTwo32" for="LabelTwo32">&nbsp;*</div></td></tr></tbody></table></div>
+
+<div id="formElement9" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top"><br><input id="field43" name="iGBulkEmailOptIn" type="checkbox"></td><td valign="top"><label style="WIDTH: 260px; margin-left:5px; DISPLAY: block; FLOAT: left" class="elqLabel"><p style="font-size: 12px;"><br>Yes, I would like to receive offers and<br>updates from Fluke.</p></label></td></tr></tbody></table></div>
+<br>
+<div id="formElement10" class="sc-view form-design-field sc-static-layout sc-regular-size"><table class="elqLayout" cellspacing="0" cellpadding="0"><tbody><tr><td>
+
+
+
+<!--<input id="field20" value="Contact me" type="submit" class="elqSubmit" onclick="setLocalStore();_gaq.push(['_trackEvent', 'LP-ADT-MECH-20160-LP-UKEN', 'Submit_form', 'download_guide']);">-->
+
+
+<button type="submit" class="elqSubmit" value="Submit" onclick="setLocalStore();_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Submit_form', 'contact_me']);">contact me</button>
+</td></tr></tbody></table>
+
+</div>
+
+
+</div>
+
+    
+ 
+
+
+</td></tr></tbody></table>
+
+</form>
+
+ <script type='text/javascript'>
+<!-- Google UTM Variables DO NOT TOUCH -->
+document.getElementById('utmCampaign').value = getQueryStringParamValue('utm_campaign');
+document.getElementById('utmKW').value = getQueryStringParamValue('utm_kw');
+document.getElementById('utmMedium').value = getQueryStringParamValue('utm_medium');
+document.getElementById('utmSource').value = getQueryStringParamValue('utm_source');
+document.getElementById('utmDomain').value = getQueryStringParamValue('utm_domain');
+document.getElementById('utmSize').value = getQueryStringParamValue('utm_size');
+document.getElementById('utmAdName').value = getQueryStringParamValue('utm_adname');
+document.getElementById('utmLP').value = getQueryStringParamValue('utm_lp');
+document.getElementById('utmAdGroup').value = getQueryStringParamValue('utm_adgroup');
+document.getElementById('utmTerm').value = getQueryStringParamValue('utm_term');
+document.getElementById('utmContent').value = getQueryStringParamValue('utm_content');
+  
+<!-- Custom URL Variables DO NOT TOUCH-->
+
+	
+
+
+</script>
+
+
+<!-- END OF FORM -->                           
+                                
+                                
+                                
+                                    </div>
+                                    
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+                <!--<div class="container">
+                    <section id="arrows" class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-6 leftcolumn-bottom"><img src="images/blue-arrow.png" class="img-responsive blue-arrow" alt="Step back">
+                       <div class="stepback"><a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1730-UKEN', 'Step_back', 'Step3']);" href="step3.html">Step back</a></div> </div>
+                        
+                        <!--<div class="col-xs-6 col-sm-6 rightcolumn-bottom  col-md-8"><img src="images/yellow-arrow.png" class="img-reponsive yellow-arrow" alt="Next-step"><div class="nextstep">Next step</div></div> -->
+                      <!--  <div class="clearfix visible-md-block"></div>
+                    </section>
+                </div>
+                -->
+                
+                
+                
+                
+            </div>
+            <!--end page4-1 1730 -->
+ <div id="footer">
+<div class="footer_content">
+                &#169; 1995 - <script language="JavaScript">document.write(new Date().getFullYear());</script> 	<a href="http://www.fluke.com/fluke/uken/about/corp/default.htm" target="_blank">Fluke Corporation</a>	&nbsp;|&nbsp;
+               
+                
+                <a href="http://www.fluke.com/fluke/uken/home/privacystatement.htm" target="_blank">Privacy Statement</a> &nbsp;|&nbsp;
+                <a href="http://www.fluke.com/fluke/uken/home/Terms-and-Conditions-of-Use.htm" target="_blank">Terms of Use</a>
+            </div>
+</div>
+
+        </div>
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+ <script type="text/javascript" src="js/script2.js"></script>
+</body>
+
+</html>

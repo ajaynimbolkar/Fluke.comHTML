@@ -1,0 +1,37 @@
+/**
+ *
+ */
+.block-1 .slider {
+	width: 600px;
+}
+
+.block-1 p {
+	width: 400px;
+}
+
+.block-1 h3,
+.block-1 h1 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.ddm-block-1 h1 {
+	font-size: 45px;
+  font-weight: bold;
+}
+
+.ddm-block-2 {
+	height: auto;
+}
+
+.block-3 a {
+	font-size: 16px;
+}
+
+.block-4 a {
+	font-size: 13px;
+}
+
+.ddm-block-5 a {
+	font-size: 13px;
+}

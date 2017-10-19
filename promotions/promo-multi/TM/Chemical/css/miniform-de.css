@@ -1,0 +1,340 @@
+html{
+    background-color: #ffffff;
+	
+	-webkit-text-size-adjust:none
+}
+
+.main-content {
+	background-color:#ffffff;
+	max-width:260px;
+	/*box-sizing:border-box;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);*/
+	margin: 0 auto;
+}
+
+.header {
+	max-width: 247px;
+    margin: 0 auto;
+	max-height:20px;
+	
+}
+.content {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+
+	
+}
+
+.header h1{
+   display: inline-block;
+    /*box-sizing: border-box;*/
+    color:  #000000;
+    font-size: 1.1em;
+    margin: 5px 5px 0px 15px;
+	font-family:"Roboto Slab", serif;
+	font-weight:bold;
+	
+}
+
+
+p {
+	font-size: 13px;
+	
+    margin: 5px ;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+	
+
+.header p{
+    display: inline-block;
+    text-align:left;
+    color:  #000000;
+    font-size: 15px;
+	
+   
+    
+    margin: 5px 10px 0px 38px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+
+::-webkit-input-placeholder {
+   font-weight:normal; opacity:100;
+    
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight:normal;  opacity:100;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight:normal;   opacity:100;
+}
+
+:-ms-input-placeholder {  
+   font-weight:normal;  opacity:100;
+}
+
+	
+.form-basic {
+    max-width: 247px;
+    margin: 0 auto;
+	
+    padding: 55px;
+    box-sizing: border-box;
+
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+#form-content {
+	margin-top:5px;
+	margin-left:20px;
+	
+}
+
+
+
+
+.form-row{
+    text-align: left;
+    margin-bottom: 2px;
+	
+	position:relative;
+}
+
+
+
+
+
+
+input{
+    color:  #333333;
+    box-sizing: border-box;
+    width: 205px;
+    /*box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);*/
+    padding: 2px 5px 2px 5px;
+    border: 1px solid #d7d7d7;
+		background-color:#ebebeb;
+		font-family:"Roboto Slab", serif;
+		font-size:1em;
+		font-weight:bold;
+		
+}
+
+.form-basic placeholder {
+	color:  #000000;
+	font-family:"Roboto Slab", serif;
+		font-size:1em;
+		font-weight:normal;
+		
+}
+	
+
+.form-basic input[type=radio],
+.form-basic input[type=checkbox]{
+    box-shadow: none;
+	box-sizing: border-box;
+	border: 1px solid #d7d7d7;
+    width: 15px;
+	float: left;
+	margin-left: 73px;
+}
+
+/**
+ * Start by hiding the checkboxes
+ */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+
+.checkbox1 {
+	width: 25px;
+	margin: 10px;
+	position: relative;
+}
+
+
+.checkbox1 label {
+	    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -5px;
+    left: -10px;
+    background: #ebebeb;
+    border: 1px solid #d7d7d7;
+}
+
+.checkbox1 label:after {
+	opacity: 0.1;
+	content: "\2714";
+	
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	background: transparent;
+	top: -3px;
+	left: 1px;
+	/*border: 3px solid #333;
+	border-top: none;
+	border-right: none; */
+     
+
+	/*transform: rotate(-45deg);*/
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkbox1 label:hover::after {
+	opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkbox1 input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+
+.form-basic input[type=checkbox]{
+    margin-top: 13px;
+}
+
+.optin-txt {
+	    top: -30px;
+    left: 10px;
+    font-size: 11px;
+    position: relative;
+    float: left;
+    min-width: 180px;
+	
+}
+
+.form-basic select{
+    background-color:#ebebeb;
+    color:  #a9a9a9;
+    box-sizing: border-box;
+    max-width: 312px;
+	min-width:312px;
+ /*   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);*/
+    padding: 2px 5px 2px 5px;
+    border: 1px solid #d7d7d7;
+	
+	font-family:"Roboto Slab", serif;
+	font-size:1em; 
+	font-weight:normal;	
+		
+		
+	background: url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b9de5a2a0-abaa-4d35-9fbe-b52b0d207220%7d_dropdown-arrow.png)   no-repeat right #ebebeb;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+   
+		
+	
+}
+
+
+
+
+
+
+
+
+
+button {
+    display: block;
+    float: right;
+    background-color: #ffc20e;
+    color: #000000;
+    font-weight: bold;
+    max-width: 134px;
+    max-height: 40px;
+    height: 100%;
+    padding: 5px 2px 5px 2px;
+    border: 0;
+    margin: -40px 22px 20px 20px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.85em;
+	
+}
+
+button:hover{
+    
+    color: #ffffff;
+	border:1 #ffc20e;
+}
+
+
+.yellow-btn{
+    display: block;
+    text-decoration:none;
+	
+    background-color: #ffc20e;
+    color: #000000;
+    font-weight: bold;
+    max-width:134px;
+	max-height: 30px;
+	height:100%;
+    padding: 8px;
+    border: 0;
+    margin: 10px 35px 10px 20px;
+	
+	width:100%;
+	cursor: pointer;
+	
+	text-align: center;
+	font-family:"Roboto Slab", serif;
+	font-size:0.9em;
+	
+}
+.yellow-btn:hover{
+    
+    color: #ffffff;
+	border:1 #ffc20e;
+	text-decoration:none;
+}
+
+
+
+
+input:required:invalid, input:focus:invalid {
+  /* insert your own styles for invalid form input */
+  -moz-box-shadow: none;
+  
+ 
+  color: #0C2C96;
+}
+
+
+label.error {
+    color: #336699;
+  display: block;
+    margin-left: 2px;
+/*margin-bottom:-50px;*/
+    padding:0px;
+    text-align: left;
+    width: 310px;
+	position:absolute;
+	top:-17px;
+	z-index:999;
+	font-weight:normal;
+	font-size:12px;
+}
+
+
+
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+

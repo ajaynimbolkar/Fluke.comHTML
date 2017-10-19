@@ -1,0 +1,64 @@
+/**
+ *
+ */
+.block-1 .slider {
+	width: 600px;
+}
+
+.block-1 h3,
+.block-1 h1 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.block-1 p {
+	width: 400px;
+}
+
+.ddm-block-1 h1 {
+	font-size: 45px;
+}
+
+.ddm-block-1 ul.inline-list li a {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.ddm-block-2 {
+	height: auto;
+}
+
+.ddm-block-2 h3 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.block-3 h3,
+.ddm-block-3 h4 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.block-4 h2 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.block-4 a {
+	font-size: 15px;
+}
+
+.block-5 h3,
+.ddm-block-5 h2 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}
+
+.ddm-block-5 a {
+	font-size: 15px;
+}
+
+.ddm-block-7 h2 {
+	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Arial;
+	font-weight: bold;
+}

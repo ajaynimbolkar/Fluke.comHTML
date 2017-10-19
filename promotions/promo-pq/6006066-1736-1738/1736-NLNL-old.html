@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Fluke 1736 en 1738 driefasen-Power Loggers Uitgebreide netvoedingskwaliteit- en energiestudies</title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" type="text/css">
+  <link href="styles/styles-eu.css" rel="stylesheet" type="text/css">
+<!-- Google Async Code starts --><script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-47']); 
+       _gaq.push(['_setDomainName', 'fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script><!-- Google Async Code ends -->
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7RWZ5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+
+
+<!-- ClickTale Bottom part --> 
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki pagehttp://wiki.clicktale.com/Article/Customizing_code_version_2
+ 
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js":
+"http://cdn.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- ClickTale end of Bottom part -->
+
+
+
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+<!-- Youtube tracking code -->
+<script>
+for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;)
+	if (/youtube.com\/embed/.test(e[x].src))
+		if(e[x].src.indexOf('enablejsapi=') === -1)
+			e[x].src += (e[x].src.indexOf('?') ===-1 ? '?':'&') + 'enablejsapi=1';
+
+var YTListeners = []; // support multiple players on the same page
+// attach our YT listener once the API is loaded
+function onYouTubeIframeAPIReady() {
+	for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;) {
+		if (/youtube.com\/embed/.test(e[x].src)) {
+			YTListeners.push(new YT.Player(e[x], {
+				events: {
+					onStateChange: onPlayerStateChange,
+				}
+			}));
+			YT.LastAction = false;
+		}
+	}
+}
+//Fill in the description of the page, according to the instructions for 'category' in the standard work document for Event tracking 
+var LandingpageGA = 'LP - TI - TI - Connect';
+
+
+// report the the type of interaction with the video
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING && setTimeout(onPlayerPercent, 1000, event.target)) {
+		lastAction = true;
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video play', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}
+	if (event.data == YT.PlayerState.ENDED){
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video end', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}        
+	if (event.data == YT.PlayerState.PAUSED && lastAction){
+		lastAction = false; 
+		_gaq.push(['_trackEvent',LandingpageGA, 'Video paused', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	} 
+}
+
+// report the % played if it matches 0%, 25%, 50%, 75% or completed
+function onPlayerPercent(player) {
+	if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+	var t = player.getDuration() - player.getCurrentTime() <= 1.5 ? 1 : (Math.floor(player.getCurrentTime() / player.getDuration() * 4) / 4).toFixed(2); 
+	
+	if (!player.lastP || t > player.lastP) {
+		player.lastP = t;
+		
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video ' + t * 100 + '%', player.getVideoData().video_id + ' | ' + player.getVideoData().title]);
+	}
+	
+	player.lastP != 1 && setTimeout(onPlayerPercent, 1000, player);
+	}
+}
+
+// load the Youtube JS api and get going
+var j = document.createElement("script"),
+	f = document.getElementsByTagName("script")[0];
+j.src = "//www.youtube.com/iframe_api";
+j.async = true;
+f.parentNode.insertBefore(j, f);
+</script>
+<!-- End Youtube tracking -->
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    
+    <div id="row-top">
+      <div id="bg-header">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg">
+      </div>
+
+      <div class="leftColumn">
+        <div class="logo">
+          <a href="http://www.fluke.com" target="_blank">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-logo.jpg">
+          </a>
+        </div>
+        <h1 class="smallH1">Fluke 1736 en 1738 driefasen-Power Loggers</h1>
+        <h2 class="smallH2">Uitgebreide&nbsp;netvoedingskwaliteit-en energiestudies</h2>
+        <h3 class="smallH3">De nieuwe Fluke 1736 en 1738 driefasen-Power Loggers zijn compatibel met de Fluke Connect<sup>&reg;</sup> Mobile App en desktopsoftware, waardoor u beschikt over de gegevens die u nodig heeft om in real-time kritische beslissingen te nemen over
+          de netvoedingskwaliteit en het energieverbruik.</h3>
+        <a href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-NLNL-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/nlnl/wheretobuy/acties/promo-multi/thankyou-demo-contact&scl=3614"
+        class="ctaSmall padding-left" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Request_a_Demo', '1736_Request_a_Demo']);">Demonstratie aanvragen</a>
+        <a href="http://www.flukepartnerportal.com/efulfillment/13485-dut" class="ctaSmall padding-left" target="_blank" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Download_asset', '1736_Datasheet']);">Productspecificaties downloaden</a>
+        <a href="#" data-featherlight="#fl2" class="ctaSmall padding-left" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Watch_video_1', '1736_Watch_Video_1']);">Video bekijken</a>
+      </div>
+
+      <div class="rightColumn">
+
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430.png" class="head-prod">
+
+      </div>
+    </div>
+
+    <div id="row-mid">
+    
+    
+      <div class="leftColumn-2" style="height:520px">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430-mid.png" >
+      </div>    
+    
+      <div class="rightColumn-2">
+        <h4>Systeembetrouwbaarheid en besparingen optimaliseren</h4>
+        <h5>Meer inzicht</h5>
+        <p>Automatisch registreren en loggen van meer dan 500 parameters van de netvoedingskwaliteit.</p>
+        <h5>Minder onzekerheid</h5>
+        <p>Vereenvoudig het opstellen en instellen en reduceer fouten met een intelligente controlefunctie voor de aansluitingen.</p>
+        <h5>Betere beslissingen</h5>
+        <p class="padding-bottom">Toegang tot en delen van gegevens van op afstand via de Fluke Connect<sup>&reg;</sup>-app zodat u veiligere werkafstanden kunt aanhouden en in real-time belangrijke beslissingen kunt nemen. Hierdoor bestaat er minder noodzaak tot beschermende
+          uitrusting, locatiebezoeken en controles.</p>
+          
+          <p><a href="#" id="table-pop" data-featherlight="#mylightbox" style="cursor:pointer;">Welke driefasen-Power Logger is geschikt voor u?</a></p>
+        <a href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-NLNL-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/nlnl/wheretobuy/acties/promo-multi/thankyou-demo-contact&scl=3614"
+        class="cta" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Request_Quote', '1736_Request_a_Quote']);" target="_blank">Offerte aanvragen</a>
+      </div>
+
+      
+    </div>
+    
+    <!---------- Features Table : BEGIN ---------->
+
+        <div id="mylightbox" class="padding-left padding-bottom lightbox">
+
+
+            <h6 style="padding: 0; margin: 0;">&nbsp;</h6>
+            <!--- do not remove <h6> (it will break) --->
+             
+            <!-- Table : BEGIN -->
+            <table width="100%" bordercolor="#c5cdd2" border="1" cellspacing="0" cellpadding="4">
+        <tbody>
+            <tr>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 60%; text-align: center;"><strong>Kenmerken</strong></td>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 20%; text-align: center;"><strong>1736</strong></td>
+                <td class="bodybold" valign="top" style="padding-bottom: 3px; padding-top: 3px; padding-left: 3px; padding-right: 3px; background-color: #dde6ed; width: 20%; text-align: center;"><strong>1738</strong></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Belastingsstudies</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Energieanalyses</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Meten van harmonischen</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Registratie van spanningsverschijnselen</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Geavanceerde analyse:
+                    <br> Registratie van golfvorm- en inschakelstroomverschijnselen
+                    <br> PQ-status (EN51060)</td>
+                <td valign="center" align="center">Upgradepakket*</td>
+                <td valign="center" align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Metingen van totale harmonische spanningsvervorming (IEEE519)</td>
+                <td valign="top" align="center">Optioneel</td>
+                <td valign="top" align="center">Optioneel</td>
+            </tr>
+
+            <tr>
+                <td valign="top">Volledig ge&iuml;ntegreerd loggen met Fluke Connect<sup>&reg;</sup></td>
+                <td valign="top" align="center">Upgradepakket*</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Wi-Fi / Bluetooth</td>
+                <td align="center">&bull;</div>
+                </td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Magnetische probeset</td>
+                <td valign="top" align="center">Optioneel</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Magnetische hangclip</td>
+                <td valign="top" align="center">Optioneel</td>
+                <td align="center">&bull;</div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Verbinding via WiFi-router</td>
+                <td colspan="2">Vereist GRATIS softwarelicentie die beschikbaar is bij de productregistratie.</td>
+            </tr>
+            <tr>
+                <td colspan="3">*Er is nu een upgradepakket beschikbaar voor het upgraden van de bestaande 1736 Power Logger naar een instrument
+                    met dezelfde functies en mogelijkheden als die van de 1738 geavanceerde Power Logger. Vraag uw distributeur
+                    om meer informatie over het upgrade-pakket.</td>
+            </tr>
+        </tbody>
+    </table>
+            
+            <!-- Table : END-->
+            
+
+          
+        </div>
+        
+        
+<!---------- Features Table : BEGIN ---------->
+
+
+    <div id="row-bottom">
+      <div id="bg-footer">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg"> </div>
+      <div id="leftColumn-fifty">
+        <div class="greybox-one-left">
+          <h6>Kennismaking met de Fluke 1736 en 1738</h6>
+          <p class="padding-bottom">Deze producttour laat zien hoe het ontwerp en de lay-out van de Fluke 1736 en 1738 het op- en instellen en het loggen voor netvoedingskwaliteit- en energiestudies makkelijker maken dan ooit tevoren.<br /><br /><br /><br /></p> <a href="#" data-featherlight="#fl3" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Watch_video_2', '1736_Watch_Video_2']);"
+          class="cta-yellow">Video bekijken</a> </div>
+        <div class="greybox-one-right">
+          <a href="#" data-featherlight="#fl3" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Watch_video_2', '1736_Watch_Video_2']);">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pg-video.png" class="grey-img" style="max-width:218px; max-height:290px;">
+          </a>
+        </div>
+      </div>
+
+      <div id="rightColumn-fifty">
+        <div class="greybox-two-left">
+          <h6>Een handleiding voor belastingstudies van 30 dagen met Fluke Power Logger en Energy Loggers</h6>
+          <p class="padding-bottom">Wanneer u nieuwe belastingen wilt toevoegen aan een bestaande elektrische installatie of aan voedingsleidingen, moet u eerst bepalen of het bestaande systeem bestand is tegen deze nieuwe belastingen.</p> <a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-NLNL-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900990&scl=3614"
+          onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Download_asset', '1736_Download_Assets']);" class="cta-yellow" target="_blank">Download het toepassingsadvies</a> </div>
+        <div class="greybox-two-right">
+          <a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-NLNL-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900990&scl=3614"
+          onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Download_asset', '1736_Download_Assets']);" target="_blank">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pq-appnote.png" class="grey-img" style="max-width:218px; max-height:290px;"> </a>
+        </div>
+      </div>
+</div>   <div id="wtb">
+      <div id="leftColumn-bottom-fifty">
+
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-bottom-small.png" class="grey-img" style="max-height:275px; max-width:156px">
+
+      </div>
+
+      <div id="rightColumn-bottom-fifty">
+
+        <h4 style="margin-left:0;">Verkoopadressen</h4>
+        <p class="padding-bottom wtb-cta">U kunt voor ondersteuning ter plaatse altijd contact opnemen met onze distributeurs en servicecentra. Zij zullen u helpen op het gebied van traceerbaarheid, kalibratie, reparatie en het zelf uitvoeren van onderhoud.</p>
+        <a class="btn btn-default cta" href="http://www.fluke.com/fluke/nlnl/WhereToBuy/default.htm?product=PHASE3&pid=80077" onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'WTB', '1736_Where_to_Buy']);" style="margin-left:0;" target="_blank">Vind uw distributeur</a>
+      </div>
+
+    </div>
+
+    <!--Video 1-->
+    <iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=8016457b7b86490c9ab91b4b0efd1ff0&width=640&height=360&playerForm=7a9ee93f70ee43efb3bfb19be1f8fcb2" width="660" height="380" id="fl2" style="border:none;" webkitallowfullscreen
+    mozallowfullscreen allowfullscreen></iframe>
+    <!--Video 2-->
+    <iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=639dc5f08cf647b8863fd0e7b4c2c020&width=640&height=360&playerForm=7a9ee93f70ee43efb3bfb19be1f8fcb2" width="660" height="380" id="fl3" style="border:none;" webkitallowfullscreen
+    mozallowfullscreen allowfullscreen></iframe>
+
+    <div id="footerlp">
+      <h2><a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Footer_Fluke_Corp', '1736_Footer_Fluke_Corp']);" href="http://www.fluke.com/" target="_blank">Fluke Corporation</a>&nbsp;|&nbsp;
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Footer_Terms_Sale', '1736_Footer_Terms_of_Sale']);" href="http://www.fluke.com/fluke/nlnl/home/Gebruiksvoorwaarden-van-Fluke" target="_blank">Voorwaarden</a>&nbsp;|&nbsp;
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Footer_Privacy', '1736_Footer_Privacy']);" href="http://www.fluke.com/fluke/nlnl/home/privacyverklaring.htm" target="_blank">Privacyverklaring</a>&nbsp;|&nbsp;
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-NLNL', 'Footer_Terms_Use', '1736_Footer_Terms_of_Use']);" href="http://www.fluke.com/fluke/nlnl/home/voorwaarden.htm" target="_blank">Gebruiksvoorwaarden</a></h2>
+      <h3>&copy;
+        <script language="JavaScript">
+          document.write(new Date().getFullYear());
+        </script> Fluke Corporation. Alle handelsmerken zijn het eigendom van hun respectieve eigenaars. 2/2015 6004413a-nl</h3>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.7.0.min.js"></script>
+  <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <!--[if lt IE 7]>
+<script src='http://img.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+
+</body>
+
+</html>

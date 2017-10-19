@@ -1,0 +1,458 @@
+html{
+    background-color: #cccccc;
+	
+	-webkit-text-size-adjust:none
+}
+
+.main-content {
+	background-color:#cccccc;
+}
+
+.header {
+	max-width: 568px;
+    margin: 0 auto;
+	background-color:#dbdbdc;
+	height:155px;
+	
+	
+}
+
+.header h1{
+   display: inline-block;
+    /*box-sizing: border-box;*/
+    color:  #000000;
+    font-size: 24px;
+    margin: 0px 150px 0px 38px;
+	font-family:"Roboto Slab", serif;
+	font-weight:bold;
+	
+}
+
+.header p{
+    display: inline-block;
+    text-align:left;
+    color:  #000000;
+    font-size: 15px;
+	
+   
+    
+    margin: 5px 10px 0px 38px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+
+
+	
+
+
+.form-typage{
+    max-width: 568px;
+    margin: 0 auto;
+    padding: 30px 30px 20px 38px;
+    box-sizing: border-box;
+	
+
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font-size:14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+	height:100%;
+	min-height:320px;
+	
+}
+
+
+
+
+.form-basic h1, .form-typage h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #000000;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    
+    margin: 20px;
+	font-family:"Roboto Slab", serif;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+	
+	display: block;
+    background: url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b4dd9c227-c0f7-409c-ad50-1acd067563b5%7d_cta-btn.png) ;
+    color: #000000;
+    font-weight: normal;
+    max-width: 200px;
+    max-height: 43px;
+    height: 100%;
+    padding: 11px 0px 33px 0px;
+    border: 0;
+    margin-top: 30px;
+	margin-right: 10px;
+    /* margin-left: 195px; */
+    width: 100%;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+	text-decoration:none;
+	
+	
+}
+
+
+
+.button:hover{
+    
+    text-decoration:none;
+    background:url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b54066ca7-2848-41d7-9d62-f9aed4fccd20%7d_cta-btn-hover.png) ;
+	color:#fff;
+}
+
+.button a {
+	text-decoration:none;
+	background:url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b54066ca7-2848-41d7-9d62-f9aed4fccd20%7d_cta-btn-hover.png) ;
+	color:#333;
+}
+
+.button:active {
+	text-decoration:none;
+	background:url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b54066ca7-2848-41d7-9d62-f9aed4fccd20%7d_cta-btn-hover.png) ;
+	color:#333;
+}
+
+.left {
+	float:left;
+	max-width: 300px;
+	width:100%;
+}
+
+.right {
+	float:right;
+	max-width: 195px;
+	width:100%;
+	margin-top:0px;
+	position:relative;
+	top:0px;
+	vertical-align:top;
+	
+}
+
+.img-resp {
+	
+	margin-top:20px; 
+	max-width:100%;
+	height:auto;
+	display:block;
+	float:right;
+	
+}
+
+
+.footer{
+
+max-width: 568px;
+margin: auto;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 10px;
+background-color: #dbdbdc;
+max-height:40px;
+height:40px;
+display:block;
+text-align: right;
+padding-top: 15px;
+padding-right: 10px;
+}
+
+.footer a {
+	
+color: #000000;
+text-decoration: none;
+}
+
+.footer a:hover {
+	
+
+text-decoration: underline;
+}
+
+.form-typage .img-resp {
+	
+	margin-top:0px; 
+	max-width:100%;
+	height:auto;
+	display:block;
+	float:right;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+
+@media only screen and (max-width: 380px) {
+/*@media (max-width:380px)*/ 
+	
+	
+.html {
+	background-color:#ffffff;
+}
+
+.main-content {
+	background-color:#ffffff;
+	max-height:480px;
+}
+	
+.header {
+	
+	height:80px;
+	background-color:#ffffff;
+	margin-bottom:25px;
+	
+}
+
+
+.img-resp {
+	
+	margin-top:10px; 
+	
+	max-width:28%;
+	height:auto;
+	display:block;
+	
+}	
+
+.header h1{
+   display: inline-block;
+    /*box-sizing: border-box;*/
+    color:  #000000;
+    font-size: 18px;
+    margin: 15px 20px 0px 30px;
+	font-family:"Roboto Slab", serif;
+	
+}
+
+
+.header p{
+   font-size:1em;
+   line-height:1.1em;
+   max-width:380px;
+   margin: 15px 20px 0px 30px;
+	
+}
+
+
+
+
+
+
+.form-typage {
+	min-height:300px;
+	padding: 30px 10px 0px 30px;
+}
+
+.bodytext {
+	font-size:0.9em;
+	margin: 10px 30px 10px 0px;
+}
+
+
+li {
+	
+	
+	position: relative;
+	left:-2px;
+}
+
+ul {
+	position:relative;
+	left:-20px;
+}
+	
+.bodytext .img-resp {
+	display:none;
+}
+
+
+
+
+.button {
+	
+
+	float:left;
+	margin-right:15px;
+	margin-top:10px;
+	font-size:1em;
+	
+	
+}
+	
+.right {
+	float:left;
+	max-width:375px;
+}
+
+.left {
+	max-width:375px;
+	
+
+}
+
+.footer {
+	padding-top:5px;
+
+}
+
+}
+
+
+@media screen and (min-width:380px) and (max-width: 449px) {
+
+html{
+	background-color:#ffffff;
+	
+}
+.main-content {
+	background-color:#ffffff;
+	
+}
+
+.header {
+	
+	height:80px;
+	background-color:#ffffff;
+	margin-bottom:20px;
+	
+}
+
+.bodytext .img-resp {
+	display:none;
+}
+.img-resp {
+	
+	margin-top:10px; 
+	margin-left:10px;
+	max-width:30%;
+	height:auto;
+	display:block;
+	
+}	
+.header h1{
+   display: inline-block;
+    /*box-sizing: border-box;*/
+    color:  #000000;
+    font-size: 20px;
+    margin: 25px 20px 0px 30px;
+	font-family:"Roboto Slab", serif;
+	
+}
+
+
+.header p{
+   font-size:1em;
+   line-height:1.1em;
+   max-width:380px;
+   margin-left:30px;
+   
+	
+}
+
+.form-typage {
+	min-height:350px;
+	padding: 30px 10px 0px 30px;
+}
+
+.bodytext {
+	font-size:0.9em;
+}
+
+
+li {
+	
+	
+	position: relative;
+	left:-2px;
+}
+
+ul {
+	position:relative;
+	left:-20px;
+}
+	
+	
+
+
+
+.button {
+	
+
+	float:left;
+	margin-right:15px;
+	margin-top:10px;
+	
+}
+
+
+.button:hover{
+    
+    text-decoration:none;
+    background:url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b54066ca7-2848-41d7-9d62-f9aed4fccd20%7d_cta-btn-hover.png) no-repeat;
+	color:#fff;
+}
+
+
+
+.right {
+	float:left;
+	max-width:380px;
+}
+
+.left {
+	max-width:380px;
+	
+
+}
+
+.footer {
+	padding-top:5px;
+
+}
+
+
+@media screen and (min-width:450px) and (max-width:600px) {
+
+html{
+	background-color:#ffffff;
+	
+}
+
+.main-content {
+	background-color:#ffffff;
+}
+
+	
+}

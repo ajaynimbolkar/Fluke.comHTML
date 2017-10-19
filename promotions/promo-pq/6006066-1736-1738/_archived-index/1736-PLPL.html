@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Kompleksowe badania jakości zasilania i poboru energii z użyciem tr&oacute;jfazowych rejestrator&oacute;w energii Fluke 1736 i 1738</title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" type="text/css">
+  <link href="http://content.fluke.com/Promotions/promo-pq/6006066-1736-1738/styles/styles.css" rel="stylesheet" type="text/css">
+
+
+<!-- Google Async Code starts --><script type="text/javascript"> 
+       var _gaq = _gaq || []; 
+       _gaq.push(['_setAccount', 'UA-3420170-47']); 
+       _gaq.push(['_setDomainName', 'fluke.com']); 
+       _gaq.push(['_setAllowLinker', true]);
+       _gaq.push(['_trackPageview']); 
+                    
+(function() { 
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; 
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+})();
+</script><!-- Google Async Code ends -->
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7RWZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7RWZ5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+
+
+<!-- ClickTale Bottom part --> 
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki pagehttp://wiki.clicktale.com/Article/Customizing_code_version_2
+ 
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js":
+"http://cdn.clicktale.net/www09/ptc/69787e6c-9d37-49e5-9bae-58c0b78ecf13.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- ClickTale end of Bottom part -->
+
+
+
+
+<!-- Eloqua Code starts -->
+<!-- BEGIN Eloqua Tracking script -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqCfg.js'></SCRIPT>
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://www.fluke.com/Fluke_www/elqNow/elqImg.js'></SCRIPT>
+
+<!-- END Eloqua Tracking script -->
+<!-- BEGIN E10 Tracking Code starts -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://download.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+
+<!-- END E10 Tracking Code end -->
+<!-- Eloqua Code end -->
+
+
+<!-- Youtube tracking code -->
+<script>
+for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;)
+	if (/youtube.com\/embed/.test(e[x].src))
+		if(e[x].src.indexOf('enablejsapi=') === -1)
+			e[x].src += (e[x].src.indexOf('?') ===-1 ? '?':'&') + 'enablejsapi=1';
+
+var YTListeners = []; // support multiple players on the same page
+// attach our YT listener once the API is loaded
+function onYouTubeIframeAPIReady() {
+	for (var e = document.getElementsByTagName("iframe"), x = e.length; x--;) {
+		if (/youtube.com\/embed/.test(e[x].src)) {
+			YTListeners.push(new YT.Player(e[x], {
+				events: {
+					onStateChange: onPlayerStateChange,
+				}
+			}));
+			YT.LastAction = false;
+		}
+	}
+}
+//Fill in the description of the page, according to the instructions for 'category' in the standard work document for Event tracking 
+var LandingpageGA = 'LP - TI - TI - Connect';
+
+
+// report the the type of interaction with the video
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING && setTimeout(onPlayerPercent, 1000, event.target)) {
+		lastAction = true;
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video play', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}
+	if (event.data == YT.PlayerState.ENDED){
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video end', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	}        
+	if (event.data == YT.PlayerState.PAUSED && lastAction){
+		lastAction = false; 
+		_gaq.push(['_trackEvent',LandingpageGA, 'Video paused', event.target.getVideoData().video_id + ' | ' + event.target.getVideoData().title]);
+	} 
+}
+
+// report the % played if it matches 0%, 25%, 50%, 75% or completed
+function onPlayerPercent(player) {
+	if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+	var t = player.getDuration() - player.getCurrentTime() <= 1.5 ? 1 : (Math.floor(player.getCurrentTime() / player.getDuration() * 4) / 4).toFixed(2); 
+	
+	if (!player.lastP || t > player.lastP) {
+		player.lastP = t;
+		
+		_gaq.push(['_trackEvent', LandingpageGA, 'Video ' + t * 100 + '%', player.getVideoData().video_id + ' | ' + player.getVideoData().title]);
+	}
+	
+	player.lastP != 1 && setTimeout(onPlayerPercent, 1000, player);
+	}
+}
+
+// load the Youtube JS api and get going
+var j = document.createElement("script"),
+	f = document.getElementsByTagName("script")[0];
+j.src = "//www.youtube.com/iframe_api";
+j.async = true;
+f.parentNode.insertBefore(j, f);
+</script>
+<!-- End Youtube tracking -->
+
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+   
+    <div id="row-top">
+      <div id="bg-header">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg">
+      </div>
+
+      <div class="leftColumn">
+        <div class="logo">
+          <a href="http://www.fluke.com" target="_blank">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-logo.jpg">
+          </a>
+        </div>
+        <h1>Tr&oacute;jfazowe rejestratory energii Fluke 1736 i 1738</h1>
+        <h2>Kompleksowe badania jakości zasilania i poboru energii</h2>
+        <h3 style="padding-bottom:0;">Nowe tr&oacute;jfazowe rejestratory energii Fluke 1736 i 1738 z aplikacją mobilną Fluke Connect<sup>&reg;</sup> i oprogramowaniem komputerowym dostarczają wszelkich potrzebnych danych do podejmowania kluczowych decyzji dotyczących jakości zasilania
+          i poboru energii w czasie rzeczywistym.</h3>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Request_a_Demo', '1736_Request_a_Demo']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-PLPL-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/plpl/wheretobuy/promocje/promo-multi/thankyou-demo-contact&scl=3614"
+        class="cta padding-left" target="_blank">Zam&oacute;w demonstrację</a>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Download_asset', '1736_Datasheet']);" href="http://www.flukepartnerportal.com/efulfillment/13485-pol" class="cta padding-left" target="_blank">Pobierz specyfikację produktu</a>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Watch_video_1', '1736_Watch_Video_1']);" href="#" data-featherlight="#fl2" class="cta padding-left">Obejrzyj film</a>
+      </div>
+      <div class="rightColumn">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430.png" class="head-prod">
+      </div>
+    </div>
+    <div id="row-mid">
+    
+     <div class="leftColumn-2" style="height:520px">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-430-mid.png" >
+      </div>    
+    
+    
+      <div class="rightColumn-2">
+        <h4>Optymalizacja niezawodności systemu i oszczędności</h4>
+        <h5>Szersza perspektywa</h5>
+        <p>Automatyczna rejestracja ponad 500&nbsp;parametr&oacute;w jakości zasilania.</p>
+
+        <h5>Większa pewność</h5>
+        <p>Uproszczona konfiguracja i eliminacja błęd&oacute;w dzięki inteligentnej funkcji weryfikacji połączeń.</p>
+
+        <h5>Trafniejsze decyzje</h5>
+        <p class="padding-bottom">Aplikacja Fluke Connect<sup>&reg;</sup> zapewnia zdalny dostęp i wymianę danych, co umożliwia zachowanie bezpiecznej odległości podczas pracy i pozwala podejmować krytyczne decyzje w czasie rzeczywistym, zmniejszając zapotrzebowanie na wyposażenie
+          ochronne oraz wizyty terenowe i kontrolne.</p>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Request_Quote', '1736_Request_a_Quote']);" href="http://a.fluke.com/IG-GLOBAL-MULTI-2015-DemoContactRequest-PLPL-LP-Generic?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=FPQ&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000000&redir=http://www.fluke.com/fluke/plpl/wheretobuy/promocje/promo-multi/thankyou-demo-contact&scl=3614"
+        class="cta" target="_blank">Zapytaj o cenę</a>
+      </div>
+      
+    </div>
+
+    <div id="row-bottom">
+      <div id="bg-footer">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-bg-header.jpg">
+      </div>
+
+      <div id="leftColumn-fifty">
+        <div class="greybox-one-left">
+          <h6>Poznawanie rejestrator&oacute;w Fluke 1736 i 1738</h6>
+          <p class="padding-bottom">Niniejszy przewodnik po produkcie pokazuje, jak konstrukcja i układ rejestrator&oacute;w Fluke 1736 i 1738 ułatwiają konfigurację i rejestrację danych w badaniach jakości zasilania i poboru energii.</p>
+          <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Watch_video_2', '1736_Watch_Video_2']);" href="#" data-featherlight="#fl3" class="cta-yellow">Obejrzyj film</a>
+        </div>
+        <div class="greybox-one-right">
+          <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Watch_video_2', '1736_Watch_Video_2']);" href="#" data-featherlight="#fl3">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pg-video.png" class="grey-img" style="max-width:218px; max-height:290px;">
+          </a>
+        </div>
+      </div>
+
+      <div id="rightColumn-fifty">
+        <div class="greybox-two-left">
+          <h6>Przewodnik po 30-dniowych badaniach obciążenia z użyciem rejestrator&oacute;w zasilania i poboru energii Fluke</h6>
+          <p class="padding-bottom">Przy dodawaniu nowych obciążeń do istniejącej sieci elektrycznej i źr&oacute;deł zasilania pierwszą rzeczą, kt&oacute;rą należy ustalić, jest to, czy istniejący system jest w stanie poradzić sobie z dodatkowymi obciążeniami.</p>
+          <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Download_asset', '1736_Download_Assets']);" href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-PLPL-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900992&scl=3614"
+          class="cta-yellow" target="_blank">Pobierz opis zastosowań</a>
+        </div>
+        <div class="greybox-two-right">
+          <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Download_asset', '1736_Download_Assets']);" href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-PLPL-LP-PROGRESSIVEMV?lcid=82d86a9c-5156-e511-a41d-a4badb1ddeb8&lls=200013&lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&lpid=8A5824ED-A252-E511-A41D-A4BADB1DDEB8&llr=1&plt=100000004&redir=http://support.fluke.com/find_it.asp?Document=9900992&scl=3614"
+          target="_blank">
+            <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/pq-appnote.png" class="grey-img" style="max-width:218px; max-height:290px;"> </a>
+        </div>
+      </div></div>   <div id="wtb">
+      <div id="leftColumn-bottom-fifty">
+        <img src="http://content.fluke.com/promotions/promo-pq/6006066-1736-1738/images/6006066-prod-bottom-small.png" class="grey-img" style="max-height:275px; max-width:156px">
+      </div>
+      <div id="rightColumn-bottom-fifty">
+        <h4 style="margin-left:0;">Gdzie kupić</h4>
+        <p class="padding-bottom wtb-cta">W celu uzyskania pomocy należy się zwr&oacute;cić do naszych lokalnych dystrybutor&oacute;w i centr&oacute;w serwisowych. Udzielą oni wsparcia w zakresie sp&oacute;jności pomiarowej, kalibracji, naprawy i samodzielnej konserwacji.</p>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'WTB', '1736_Where_to_Buy']);" class="btn btn-default cta" href="http://www.fluke.com/fluke/plpl/WhereToBuy/default.htm?product=PHASE3&pid=80077" style="margin-left:0;" target="_blank">Znajdź dystrybutora</a>
+      </div>
+
+    </div>
+
+    <!--Video 1-->
+    <iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=1e13e50f998846ffa57718990967d579&width=640&height=360&playerForm=7a9ee93f70ee43efb3bfb19be1f8fcb2" width="660" height="380" id="fl2" style="border:none;" webkitallowfullscreen
+    mozallowfullscreen allowfullscreen></iframe>
+    <!--Video 2-->
+    <iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=52b7f60dda3f4c77b92af2a50d32c762&width=640&height=360&playerForm=7a9ee93f70ee43efb3bfb19be1f8fcb2" width="660" height="380" id="fl3" style="border:none;" webkitallowfullscreen
+    mozallowfullscreen allowfullscreen></iframe>
+    <div id="footerlp">
+
+      <h2>
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Footer_Fluke_Corp', '1736_Footer_Fluke_Corp']);" href="http://www.fluke.com/" target="_blank">Fluke Corporation</a> |
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Footer_Terms_Sale', '1736_Footer_Terms_of_Sale']);" href="http://www.fluke.com/fluke/plpl/home/termsconditions.htm" target="_blank">Warunki</a> |
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Footer_Privacy', '1736_Footer_Privacy']);" href="http://www.fluke.com/fluke/plpl/home/privacystatement.htm" target="_blank">Polityka prywatności</a> |
+        <a onclick="_gaq.push(['_trackEvent', 'LP-ADT-FPQ-1736NPI-PLPL', 'Footer_Terms_Use', '1736_Footer_Terms_of_Use']);" href="http://www.fluke.com/fluke/plpl/home/Terms-and-Conditions-of-Use " target="_blank">Warunki korzystania</a></h2>
+      <h3>&copy;
+        <script language="JavaScript">
+          document.write(new Date().getFullYear());
+        </script> Fluke Corporation. Wszystkie znaki towarowe są własnością ich właścicieli. 2/2015 6004413a-pl</h3>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-1.7.0.min.js"></script>
+  <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <!--[if lt IE 7]>
+<script src='http://img.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+
+</body>
+
+</html>

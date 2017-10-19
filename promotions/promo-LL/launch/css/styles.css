@@ -1,0 +1,106 @@
+body {
+    background-color: #000000;
+    padding-top: 0px !important;
+}
+
+.heading {
+    background-image: url("../img/bg-no-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.laser-levels {
+    width: 100%;
+}
+
+.btn-default {
+    border: 1px solid #336699;
+    color: #336699;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.logo{
+    margin: 30px 0px;
+}
+
+.LimelightEmbeddedPlayer object {
+    height: 75%;
+    width: 75%;
+}
+
+
+@media (max-width: 768px) {
+    /*Expand video at 768px*/
+    .LimelightEmbeddedPlayer object {
+    height: 100%;
+    width: 100%;
+    }
+
+    .pull-right {
+        float: left !important;
+    }
+
+    .btn-default {
+        margin: 0px;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.content iframe {
+    width: 100%;
+}
+
+.prod-details {
+    background-color: #ebebeb;
+    padding: 10px 0px 30px 0px;
+}
+
+.btn-blue {
+    width: 80%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #ffc20e;
+    padding: 8px 15px 30px 15px;
+}
+
+.footer a{
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #222;
+}
+

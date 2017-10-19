@@ -1,0 +1,246 @@
+body {
+    background-color: #ffffff;
+    padding-top: 115px !important;
+}
+
+.navbar-default {
+    background-color: #2B2E34;
+    border: none;
+}
+
+.slogan-fca {
+    margin-top: 45px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Roboto slab';
+    padding-left: 0px;
+}
+
+.btn-nav {
+    margin-top: 35px !important;
+}
+
+.heading-a {
+    background-image: url("../img/bg-no-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading-b {
+    background-image: url("../img/bg-no-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.laser-levels {
+    width: 100%;
+}
+
+.btn-default {
+    border: 1px solid #336699;
+    color: #336699;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.logo{
+    margin: 30px 0px;
+}
+
+.LimelightEmbeddedPlayer object {
+    height: 85%;
+    width: 85%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.content iframe {
+    width: 100%;
+}
+
+.prod-details {
+    background-color: #ebebeb;
+    padding: 10px 0px 30px 0px;
+}
+
+.feature p {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.btn-blue {
+    width: 80%;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.specs-container {
+    background-color: #E9E9E9;
+    padding: 20px;
+}
+
+.specs-container img {
+    max-height: 200px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #ffc20e;
+    padding: 10px;
+}
+
+.specs-row {
+    padding: 5px 0;
+}
+
+.specs-row:nth-child(even) {
+    background-color: #E2E2E3;
+}
+
+.specs-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.learn-more {
+    font-weight: bold;
+    padding: 10px;
+}
+
+#customers {
+    background-color: #43454B;
+    padding: 10px 0;
+}
+
+#customers h1 {
+    color: #ffc20e;
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.customers-content h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.customers-content h3 {
+    color: #ffffff;
+    padding: 0;
+    font-weight: 500;
+    font-family: "Roboto Slab","Arial Black",serif;
+    font-size: 16px;
+}
+
+.customers-content h4 {
+    color: #7A7B80;
+    font-weight: 500;
+    font-family: "Roboto Slab","Arial Black",serif;
+
+}
+
+
+.footer {
+    background-color: #ffc20e;
+    padding: 8px 15px 30px 15px;
+}
+
+.footer a{
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #222;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Expand video at 768px*/
+    .LimelightEmbeddedPlayer object {
+    height: 100%;
+    width: 100%;
+    }
+
+    .btn-default {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    /*Mobile size at 425 */
+    .heading-a {
+        background-image: none ;
+    }
+
+    body {
+        padding-top: 100px !important; 
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-top: 5px;
+        font-size: 14px;
+    }
+
+    .btn-blue {
+        width: 100%;
+    }
+
+    .embed-responsive-4by3 {
+    padding-bottom: 75%;
+    }
+
+    .embed-responsive-bottom {
+    padding-bottom: 55%;
+    }
+
+    .embed-responsive-bottom-b {
+    padding-bottom: auto;
+    }
+
+    .hidden-title {
+        display: none;
+    }
+
+}

@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fluke 1736 and 1738 Three-Phase Power Loggers Comprehensive power quality
+and energy studies</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { 	
+background-attachment: fixed; 
+background-position: center top; 
+background-image:url(http://img.en25.com/eloquaimages/clients/FlukeElectronicsCorporation/%7Baffc6c92-ec5e-4ab3-9e94-94443f2d782b%7D_bg_nologo_nohardshadow_500px.jpg);
+font-family:Helvetica, Arial, sans-serif;}
+h1, h4{
+	padding-bottom:4px;
+	font-family: "Roboto Slab",  Helvetica, Arial, sans-serif;
+	color:#000;
+	font-size: 34px;
+	font-weight: normal;
+	margin: 0 0 0 18px;
+	padding:0 0 0 0;
+	line-height: 38px;
+	text-align:left;
+}
+p h3 {
+	font-family:Helvetica, Arial, sans-serif;
+}
+.featherlight-close-icon
+{
+  display: none;
+}
+img{
+  border: none;
+}
+p{
+	font-size:17px;
+	line-height:18px;
+}
+.padding-bottom{
+padding-bottom: 20px; 
+}
+.padding-left{
+padding-left: 18px; 
+}
+h2{
+	font-weight:bold;
+	font-family: "Roboto Slab",  Helvetica, Arial, sans-serif;
+	font-size:47px;
+	line-height:50px;
+	margin:10px 0 5px 18px;
+	width: 90%;
+}
+h3{
+	font-size:20px;
+	font-weight:bold;
+	margin:20px 0 8px 18px;
+	line-height: 26px;
+	font-weight: normal;
+}
+h4{
+	margin:20px 0 8px 18px;
+}
+h5{
+	font-size:20px;
+	font-weight:bold;
+	margin:20px 0 8px 18px;
+	line-height: 26px;
+	font-weight: bold;
+}
+h6{
+	font-weight:bold;
+	font-family: "Roboto Slab",  Helvetica, Arial, sans-serif;
+	font-size:18px;
+	line-height:22px;
+	width: 90%;
+	color: #fff;
+	padding: 0 0 20px 0;
+}
+.cta{
+ms-text-size-adjsut: 100%;
+-webkit-text-size-adjust: 100%;
+text-decoration: none;
+color: #FFC20E;
+font-family: "Roboto Slab",  Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 19px;
+display: inline-block;
+padding: 10px 15px 10px 15px;
+margin: 0px 0 20px 18px;
+background-color: #000;
+text-align: left;
+
+}
+.cta-yellow{
+ms-text-size-adjsut: 100%;
+-webkit-text-size-adjust: 100%;
+text-decoration: none;
+color: #000;
+font-family: "Roboto Slab",  Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 19px;
+display: inline-block;
+padding: 10px 15px 10px 15px;
+margin: 0px 10px 20px 0;
+background-color: #FFC20E;
+text-align: left;
+
+}
+.cta:hover, .cta-yellow:hover{
+
+color: #fff;
+
+
+}
+a{
+	color:#0058b3;
+	text-decoration:none;
+}
+a:hover{
+	color:#003b78;
+	text-decoration:none;
+}
+#wrapper {
+	width: 100%;	
+	max-width: 1280px;
+	margin: 0 auto;
+	background-color:#fbfbfb;
+	position:relative;
+	overflow:hidden;
+	} 
+
+#row-top{
+	width: 100%;	
+	max-width: 1280px;
+	position:relative;
+	display:block;
+	float: left;
+	z-index: 300;
+	
+}
+.head-prod{
+max-width: 430px;
+width: 100%;
+float: right;
+}
+#bg-header{
+width:100%; 
+height:100%; 
+position:absolute; 
+z-index:100; 
+}
+#bg-header img{
+width:100%; 
+height:100%; 
+position:absolute; 
+z-index:100; 
+}
+#row-mid{
+	width: 100%;	
+	max-width: 1280px;
+	position:relative;
+	display:block;
+	float: left;
+	background-color:#fbfbfb;
+	
+}
+#row-mid p{
+	font-size:17px;
+	line-height:18px;
+		margin: 0 0 0 18px;
+}
+#row-bottom{
+	width: 100%;	
+	max-width: 1280px;
+	position:relative;
+	display:block;
+	float: left;
+	
+}
+#row-bottom p{
+color:#fff;
+	
+}
+.wtb-cta{
+	color: #000 !important;
+}
+
+#footerlp{
+	width: 100%;	
+	max-width: 1280px;
+	display:block;
+	background-color:#000;
+	height:140px;
+	float:left;
+	position: relative;
+	margin-top:-30px;	
+	z-index: 400;
+}
+
+#footerlp h2{
+	font-family: Helvetica, Arial, sans-serif;
+	color:#ffc203;
+	font-size:12px;
+	margin-left:50px;
+	margin-right:50px;
+}
+#footerlp h3{
+	color:#FFF;
+	font-size:12px;	
+	margin-left:50px;
+	margin-right:50px;
+}
+#footerlp a{
+	color:#ffc203;
+	text-decoration:none;
+}
+#footerlp a:hover{
+	color:#FFF;
+	text-decoration:none;
+}
+.logo{
+	display:block;
+	position:relative;
+	float:left;
+	z-index:200;
+	width: 100%;
+	max-width: 1280px;
+	padding:25px 0 25px 0;
+	
+}
+
+.disclaimer{
+	font-size:12px;
+}
+
+   .leftColumn { 
+  width:63%;
+  display:block; 
+  position: relative;
+  float:left; 
+  z-index: 300;
+  }	
+  .rightColumn {
+	width:37%;
+	display:block;
+	position: relative;
+	float:left;
+	margin: 0;
+	padding: 0;
+  	z-index: 300;
+}	
+
+   #leftColumn-fifty { 
+  width:43%;
+  background-color: #797a7a;
+  display:block; 
+  position: relative;
+  float:left; 
+  margin: 15px 15px 0 15px;
+  padding: 20px; 
+  z-index: 300;
+  min-height: 300px;
+  }	
+
+  #rightColumn-fifty {
+	width:43%;
+	background-color: #797a7a;
+	display:block;
+	position: relative;
+	float:right;
+  	margin: 15px 15px 15px 0;
+  	padding: 20px; 
+  	z-index: 300;
+  	min-height: 300px;
+}
+   #leftColumn-bottom-fifty { 
+  width:43%;
+  display:block; 
+  position: relative;
+  float:left; 
+  margin: 0 15px 0 15px;
+  padding: 0 20px 0 20px; 
+  z-index: 300;
+  min-height: 300px;
+  }	
+
+  #rightColumn-bottom-fifty {
+	width:43%;
+	display:block;
+	position: relative;
+	float:right;
+  	margin: 15px 15px 15px 0;
+  	padding: 20px; 
+  	z-index: 300;
+  	min-height: 300px;
+}
+   .greybox-one-left { 
+  width:56%;
+  display:block; 
+  position: relative;
+  float:left;
+
+
+  z-index: 300;
+  }	
+  .greybox-one-right {
+	width:43%;
+	display:block;
+	position: relative;
+	float:left;
+  	z-index: 300;
+}
+   .greybox-two-left { 
+  width:70%;
+  display:block; 
+  position: relative;
+  float:left;
+
+
+  z-index: 300;
+  }	
+  .greybox-two-right {
+	width:29%;
+	display:block;
+	position: relative;
+	float:left;
+  	z-index: 300;
+}
+.grey-img{
+	width: 100%;
+}		
+
+   /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+ 
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 910px) {
+   #leftColumn-fifty { 
+  width:100%;
+  background-color: #797a7a;
+  display:block; 
+  position: relative;
+  float:left; 
+  margin: 15px 0 15px 0;
+
+  z-index: 300;
+  }	
+  #rightColumn-fifty {
+	width:100%;
+	background-color: #797a7a;
+	display:block;
+	position: relative;
+	float:left;
+  	margin: 15px 0 15px 0;
+  	z-index: 300;
+}	
+   #leftColumn-bottom-fifty { 
+  width:100%;
+  display:block; 
+  position: relative;
+  float:left; 
+  margin: 15px 0 15px 0;
+
+  z-index: 300;
+  }	
+  #rightColumn-bottom-fifty {
+	width:100%;
+	display:block;
+	position: relative;
+	float:left;
+  	margin: 15px 0 15px 0;
+  	z-index: 300;
+}	
+   .greybox-one-left { 
+  width:60%;
+  display:block; 
+  position: relative;
+  float:left;
+
+
+  z-index: 300;
+  }	
+  .greybox-one-right {
+	width:30%;
+	display:block;
+	position: relative;
+	float:right;
+  	z-index: 300;
+  	padding-right:6%;
+}
+   .greybox-two-left { 
+  width:69%;
+  display:block; 
+  position: relative;
+  float:left;
+
+
+  z-index: 300;
+  }	
+  .greybox-two-right {
+	width:21%;
+	display:block;
+	position: relative;
+	float:right;
+  	z-index: 300;
+  	padding-right:6%;
+}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+  .leftColumn { 
+  width:100%;
+  display:block; 
+  float:left; 
+  }	
+  .rightColumn {
+	width:100%;
+	display:block;
+	float:left;
+}	
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
+
+/*** Featherlight **/
+@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:rgba(0,0,0,0)}.featherlight:last-of-type{background:rgba(0,0,0,.8)}.featherlight:before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-.25em}.featherlight .featherlight-content{position:relative;text-align:left;vertical-align:middle;display:inline-block;overflow:auto;padding:25px 25px 0;border-bottom:25px solid transparent;min-width:30%;margin-left:5%;margin-right:5%;max-height:95%;background:#fff;cursor:auto;white-space:normal}.featherlight .featherlight-inner{display:block}.featherlight .featherlight-close-icon{position:absolute;z-index:9999;top:0;right:0;line-height:25px;width:25px;cursor:pointer;text-align:center;font-family:Arial,sans-serif;background:#fff;background:rgba(255,255,255,.3);color:#000}.featherlight .featherlight-image{width:100%}.featherlight-iframe .featherlight-content{border-bottom:0;padding:0}.featherlight iframe{border:0}}@media only screen and (max-width:1024px){.featherlight .featherlight-content{margin-left:10px;margin-right:10px;max-height:98%;padding:10px 10px 0;border-bottom:10px solid transparent}}
+
+      @media all {
+        .lightbox { display: none; }
+        .fl-page .jumbotron { margin-top: 2em; }
+        .fl-page .doc { margin: 2em 0;}
+        .fl-page .btn-download { float: right; }
+        .fl-page .btn-default { vertical-align: bottom; }
+
+        .fl-page .btn-lg span { font-size: 0.7em; }
+
+        /* override default feather style... */
+        .fixwidth {
+          background: rgba(256,256,256, 0.8);
+        }
+        .fixwidth .featherlight-content {
+          width: 500px;
+          padding: 25px;
+          color: #fff;
+          background: #111;
+        }
+        .fixwidth .featherlight-close {
+          color: #fff;
+          background: #333;
+        }
+
+      }
+      @media(max-width: 768px){
+        .fl-page .btn-download { float: none; margin-bottom: 1em; }
+      }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="row-top">
+ 	    	<div  id="bg-header">
+            <img src="images/6006066-bg-header.jpg">
+        	</div>
+
+            <div class="leftColumn">
+            <div class="logo">
+            <img src="images/6006066-bg-logo.jpg">  
+       		</div>
+            <h1>Fluke 1736 and 1738 Three-Phase Power Loggers</h1>
+            <h2>Comprehensive power quality and energy studies</h2>
+            <h3 class="padding-bottom">The new Fluke 1736 and 1738 Three-Phase Power Loggers built with Fluke Connect® mobile app and desktop software compatibility give you the data you need to make critical power quality and energy decisions in real-time.</h3>
+			<a href="http://a.fluke.com/" class="cta padding-left" target="_blank">Request a demo</a>
+            <a href="http://support.fluke.com/find_it.asp?Document=replaceid" class="cta padding-left" target="_blank">Download product specs</a>
+            <a href="#" data-featherlight="#fl3" class="cta padding-left">Watch video</a>
+            </div>
+        
+            <div class="rightColumn">
+            
+            <img src="images/6006066-prod-header-430.png" class="head-prod">   	
+            
+            </div>
+    </div>
+    
+    
+    <div id="row-mid">
+    
+                <div class="leftColumn">
+            
+            <h4>Optimize system reliability and savings</h4>
+            <h5>More Visibility</h5>
+			<p>Automatically capture and log over 500 power quality parameters.</p>
+
+			<h5>Reduced Uncertainty</h5>
+			<p>Simplify setup and reduce errors with an intelligent connection verification function.</p>
+
+			<h5>Better Decisions</h5>
+			<p class="padding-bottom">Access and share data remotely via the Fluke Connect® app so you can maintain safer working distances and make critical decisions in real-time, reducing the need for protective equipment, site visits and check-ins.</p>
+            <a href="http://a.fluke.com" class="cta" target="_blank">Request a quote</a>
+            </div>
+        
+            <div class="rightColumn">
+            
+            <img src="images/6006066-prod-mid.jpg" class="head-prod">   
+            
+            </div>
+    
+    </div>
+    
+    <div id="row-bottom">
+ 	    	<div  id="bg-header">
+            <img src="images/6006066-bg-header.jpg">
+        	</div>
+
+            <div id="leftColumn-fifty">
+            <div class="greybox-one-left">
+            <h6>Getting to know the Fluke 1736 and 1738</h6>
+            <p class="padding-bottom">This product tour shows you how the design and layout of the Fluke 1736 and 1738 make setting up and logging for power quality and energy studies easier than ever.</p>
+            <a href="#" data-featherlight="#fl3" class="cta-yellow">Watch video</a>
+            </div>
+            <div class="greybox-one-right">
+            <a href="#" data-featherlight="#fl3"><img src="images/6006066-video.jpg" class="grey-img" style="max-width:237px; max-height:158px;"></a>
+            </div>
+        	</div>
+
+            <div id="rightColumn-fifty">
+            <div class="greybox-two-left">
+            <h6>A guide to 30 day load studies with Fluke Power Logger and Energy Loggers</h6>
+            <p class="padding-bottom">When adding new loads to an existing electrical service or set of feeders, the first thing to determine is whether the existing system is capable of supporting the new loads.</p>
+            <a href="http://support.fluke.com/find_it.asp?Document=replaceid" class="cta-yellow" target="_blank">Download the application note</a>
+            </div>
+            <div class="greybox-two-right">
+            <a href="http://support.fluke.com/find_it.asp?Document=replaceid" target="_blank"><img src="images/6006066-app-note.jpg" class="grey-img" style="max-width:151px; max-height:198px;"> </a>
+            </div>
+        	</div>
+
+            <div id="leftColumn-bottom-fifty">
+
+                        <img src="images/6006066-prod-bottom.png" class="grey-img" style="max-width:618px; max-height:439px;">  
+
+        	</div>
+        	
+            <div id="rightColumn-bottom-fifty">
+
+            <h4 style="margin-left:0;">Where to buy</h4>
+            <p class="padding-bottom wtb-cta">You can always turn to our Distributors and Service Centers for local assistance.They’ll help you with traceability, calibration, repair and self-maintenance.</p>
+            <a class="btn btn-default cta" href="http://en-us.fluke.com/where-to-buy/" style="margin-left:0;" target="_blank">Find your distributor</a>
+        	</div>
+    
+    </div>
+    
+  <!--Video 1-->
+<iframe class="lightbox" src="http://link.videoplatform.limelight.com/media/?mediaId=29e8d0b9458d4e629b5669e0810f219d&width=640&height=514&playerForm=f3bbf57f85b34cee844f650c30c82968" width="660" height="534" id="fl3" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    <div id="footerlp">
+    
+    <h2><a onclick="_gaq.push(['_trackEvent', '1736NPI-USEN', 'Click', 'Footer Fluke Corporation']);" href="http://en-us.fluke.com/" target="_blank">Fluke Corporation</a>     |     <a onclick="_gaq.push(['_trackEvent', '1736NPI-USEN', 'Click', 'Footer Terms and Conditions']);" href="http://en-us.fluke.com/site/terms-conditions/" target="_blank">Terms and Conditions</a>     |     <a onclick="_gaq.push(['_trackEvent', '1736NPI-USEN', 'Click', 'Footer Privacy Statement']);" href="http://en-us.fluke.com/site/privacy/" target="_blank">Privacy Statement</a> |      <a onclick="_gaq.push(['_trackEvent', '1736NPI-USEN', 'Click', 'Footer Terms of Use']);" href="http://en-us.fluke.com/site/terms/" target="_blank">Terms of Use</a></h2>
+    <h3>&copy;2015 Fluke Corporation. All trademarks are the property of their respective owners.  2/2015 6004413a-en</h3>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    <script src="js/jquery-1.7.0.min.js"></script>
+    <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.gallery').featherlightGallery({
+          gallery: {
+            fadeIn: 300,
+            fadeOut: 300
+          },
+          openSpeed:    300,
+          closeSpeed:   300
+        });
+        $('.gallery2').featherlightGallery({
+          gallery: {
+            next: 'next »',
+            previous: '« previous'
+          },
+          variant: 'featherlight-gallery2'
+        });
+      });
+    </script>
+  <!--[if lt IE 7]>
+<script src='http://img.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+
+</body>
+</html>

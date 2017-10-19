@@ -1,0 +1,206 @@
+body {
+    background-color: #000000;
+    padding-top: 0px !important;
+}
+
+.heading {
+    background-image: url("../img/bg-no-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.btn-default {
+    border: 1px solid #336699;
+    color: #336699;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.btn-blue {
+    border: 1px solid #336699;
+    background-color: #336699;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+
+.logo{
+    margin: 30px 0px 30px -15px;
+}
+
+.LimelightEmbeddedPlayer object {
+    height: 75%;
+    width: 75%;
+}
+
+
+h1 {
+    font-size: 46px;
+	margin-left:25px;
+	font-weight:bold;
+}
+
+h2 {
+    font-size: 32px;
+	margin-left:25px;
+}
+
+
+
+
+
+h3 {
+    font-size: 20px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial,   sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content iframe {
+    width: 100%;
+}
+
+.prod-details {
+    background-color: #ebebeb;
+    padding: 10px 0px 30px 0px;
+}
+
+.btn-blue {
+    width: 80%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #ffc20e;
+    padding: 8px 15px 30px 15px;
+}
+
+.footer a{
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #222;
+}
+
+
+#foot {
+	background-color: #000000;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 14px;
+	margin: 0 auto -30px;
+	max-width: 1254px;
+	min-height: 200px;
+	padding-left: 35px;
+	padding-top: 10px;
+}
+#foot a {
+	color: #337ab7;
+	font-family: 'Helvetica', Arial, san-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+#foot a:hover {
+	color: #ffc20e;
+	text-decoration: none;
+}
+#foot p {
+	font-family: 'Helvetica', Arial, san-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 10px 0;
+}
+#foot ul {
+	margin-left: -30px;
+}
+#foot ul li {
+	color: #ffc20e;
+	float: left;
+	list-style: none;
+	margin: 15px 0;
+	padding-right: 10px;
+}
+#foot ul li a {
+	color: #ffc20e;
+}
+#foot li:nth-child(even) {
+color: #fff;
+}
+#foot ul li a:hover {
+	color: #ffc20e;
+	text-decoration: none;
+}
+
+.foot-banner {
+	background-image: url(http://images.a.fluke.com/EloquaImages/clients/FlukeCorporation/%7b1200268b-2e35-47ab-9cf3-bedd0810cf43%7d_fc-logo-footer.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 0;
+	color: #000;
+	display: block;
+	height: 100px;
+	margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    /*Expand video at 768px*/
+    .LimelightEmbeddedPlayer object {
+    height: 100%;
+    width: 100%;
+    }
+
+    .pull-right {
+        float: left !important;
+    }
+
+    .btn-default {
+        margin: 0px;
+    }
+	
+	
+	#foot {
+list-style: none;
+margin: 0 0 -20px 0;
+overflow: hidden;
+padding: 0;
+}
+#foot li {
+color: #ffc20e;
+float: left;
+margin: 15px auto;
+padding: 0;
+}
+#foot li:nth-child(even) {
+display: none;
+}
+#foot li:nth-child(odd) {
+display: block;
+text-align: center;
+width: 100%;
+}
+	
+}

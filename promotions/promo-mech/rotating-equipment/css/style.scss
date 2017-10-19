@@ -1,0 +1,2299 @@
+@import 'reset';
+
+$black: #000;
+$gray: #292929;
+$gray_light: #4f4f4f;
+$yellow: #fec52e;
+$white: #fff;
+
+@import url('../fonts/sanchezcondensed_bold/stylesheet.css');
+@import url('../fonts/icomoon/style.css');
+$serif: 'sanchez_condensed_boldbold', 'Times New Roman', Georgia, serif;
+$sans: Helvetica, Arial, sans-serif;
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+body {
+	font-family: $sans;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	overflow: hidden;
+	width: 100%;
+	
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6, nav {
+	a {
+		border: none;
+		display: block;
+		height: 100%;
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $serif;
+	text-transform: uppercase;
+	
+	strong {
+		text-transform: uppercase;
+	}
+}
+h1, h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	line-height: 1.2;
+}
+h3, h4 {
+	font-size: 1.9rem;
+	line-height: 1.2;
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+img {
+	height: auto;
+}
+p {
+	clear: left;
+	margin: 1.5em 0;
+	
+	&.highlight {
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 1.375;
+	}
+}
+section {
+	margin-bottom: 100px;
+	
+	nav {
+		clear: both;
+	}
+
+	.wrapper {
+		max-width: 600px;
+		padding: 30px 0;
+	}
+	
+	&.tool, .tool-window {
+		.image {
+			float: none;
+			margin: 0 0 2em !important;
+			
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+footer.site {
+	background: $gray;
+	color: lighten($gray_light, 20%);
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	
+	nav {
+		border-top: 1px solid $gray_light;
+		font-size: 1.5rem;
+		margin: 30px -30px;
+		
+		a {
+			border-bottom: 1px solid $gray_light;
+			height: 45px;
+			line-height: 45px;
+		}
+	}
+	
+	.developer {
+		border-bottom: none;
+		display: block;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.highlight {
+		color: lighten($gray_light, 40%);
+		font-size: 1.8rem;
+		line-height: 1.5;
+		margin: 1em auto;
+		width: 285px;
+	}
+	.stuck {
+		background: $gray_light;
+		color: lighten($gray_light, 40%);
+		font-size: 1.4rem;
+		padding-bottom: 1em;
+		
+		nav {
+			border-top: none;
+			margin: 20px auto;
+			width: 225px;
+			
+			a {
+				background: no-repeat 50% 0;
+				height: 35px;
+				text-indent: -999em;
+				
+				&.apple {
+					background-image: url(../img/icon-app-store.png);
+					width: 117px;
+				}
+				&.google {
+					background-image: url(../img/icon-google-play.png);
+					width: 98px;
+				}
+			}
+			li {
+				float: left;
+				margin-right: 10px;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		p {
+			margin: 0;
+		}
+		
+		.btn {
+			margin: 1.5em auto;
+			max-width: 300px;
+		}
+	}
+	.wrapper {
+		clear: both;
+		padding: 20px 0 0;
+	}
+}
+header.site {
+	background: $black;
+	color: $white;
+	height: 60px;
+	line-height: 95px;
+	position: relative;
+	width: 100%;
+	z-index: 999;
+	
+	a {
+		border: none;
+	}
+	h3 {
+		background: url(../img-new/logo.png) no-repeat;
+		background-size: contain;
+		height: 40px;
+		margin: 10px 0 0 25px;
+		text-indent: -999em;
+		width: 136px;
+	}
+	nav {
+		background: $gray;
+		border: 1px solid $gray_light;
+		line-height: 45px;
+		margin: 0 -25px;
+		
+		a {
+			border-bottom: 1px solid $gray_light;
+			padding: 0 15px;
+		}
+	}
+	
+	.wrapper {
+		margin: 0;
+		width: auto;
+	}
+}
+
+#intro {
+	background: url(../img/intro-back.png) no-repeat 50% 0;
+	padding-top: 60px;
+	
+	h1 {
+		text-transform: none;
+	}
+	
+	.image {
+		background: url(../img-new/intro-group-mobile.png) no-repeat 50% 0;
+		background-size: cover;
+		padding-top: 76.68%
+	}
+	.next {
+		margin-left: -50px;
+		text-align: center;
+		width: 100px;
+		
+		&:before {
+			position: relative;
+			top: 25px;
+		}
+		
+		small {
+			display: block;
+			font-size: 12px;
+			position: relative;
+			top: -40px;
+		}
+	}
+}
+#how-it-works, #why-fluke-connect, #why-fluke-connect-2, #why-fluke-connect-3, #why-fluke-connect-4, #security {
+	.image {
+		background: no-repeat 50% 0;
+		background-size: cover;
+		padding-top: 219%;
+	}
+}
+#how-it-works {
+	.image {
+		background-image: url(../img-new/how-it-works-phone.png);
+	}
+}
+#why-fluke-connect {	
+	.image {
+		background-image: url(../img-new/why-fluke-connect-phone.png);
+	}
+}
+#why-fluke-connect-2 {	
+	.image {
+		background-image: url(../img-new/why-fluke-connect-2-phone.png);
+	}
+}
+#why-fluke-connect-3 {	
+	.image {
+		background-image: url(../img-new/why-fluke-connect-3-phone.png);
+	}
+}
+#why-fluke-connect-4 {	
+	.image {
+		background-image: url(../img-new/why-fluke-connect-4-phone.png);
+	}
+}
+#security {	
+	.image {
+		background-image: url(../img-new/security-phone.png);
+	}
+	.stuck-wrapper {
+		display: none;
+	}
+}
+#see-the-tools {
+	h1 {
+		font-family: $serif;
+		font-size: 1.9rem;
+		
+		&:before {
+			display: none;
+			font-family: 'icomoon';
+		}
+	}
+	hr {
+		display: none;
+	}
+	
+	.wrapper {
+		position: relative;
+	}
+}
+#stories {
+	background: url(../img/intro-back.png) no-repeat 50% 0;
+	margin-bottom: 0;
+}
+
+.bold-yellow {
+	color: $yellow;
+	font-weight: bold;
+}
+.btn {
+	background: $black;
+	border: none;
+	color: $yellow;
+	display: block;
+	font-family: $serif;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	padding: 20px;
+	text-align: center;
+	
+	span {
+		background: $yellow;
+		border-radius: 12px;
+		color: $black;
+		display: inline-block;
+		height: 23px;
+		line-height: 23px;
+		margin-right: 10px;
+		text-indent: 3px;
+		width: 23px;
+	}
+	
+	&.invert {
+		background-color: $yellow;
+		color: $black;
+		font-family: $sans;
+		font-size: 1.7rem;
+		font-weight: 700;
+		margin: 1.5em 0;
+		
+		&:hover {
+			color: $black !important;
+		}
+	}
+	&:hover {
+		color: $yellow !important;
+	}
+}
+.categories {
+	color: rgba($black, 0.4);
+	text-align: center;
+	
+	img {
+		display: block;
+		margin:  0 auto 1em;
+	}
+	li {
+		float: left;
+		margin: 10% 10% 10% 0;
+		width: 45%;
+		
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-child(2n+1) {
+			clear: both;
+		}
+	}
+	p {
+		clear: none;
+		float: none;
+		margin: 0;
+		padding: 20px 0;
+		width: auto;
+	}
+	
+	.conceal {
+		
+	}
+	.controls {
+		display: none;
+		
+		span {
+			cursor: pointer;
+			display: block;
+			font-size: 2.2rem;
+			line-height: 1;
+			left: 0;
+			position: absolute;
+			top: 60px;
+			z-index: 1;
+			
+			&.next {
+				left: auto;
+				right: 0;
+			}
+			&.disabled {
+				cursor: default;
+				color: rgba($black, 0);
+			}
+		}
+	}
+	
+	&.js {
+		position: relative;
+		
+		li {
+			margin: 0;
+			width: 130px;
+		
+			&:nth-child(2n+1) {
+				clear: none;
+			}
+		}
+		p {
+			border: 1px solid lighten($gray_light, 50%);
+			border-left: none;
+			border-right: none;
+			border-top-color: $black;
+		}
+		
+		.conceal {
+			height: 207px;
+			margin: 30px auto;
+			overflow: hidden;
+			position: relative;
+			width: 260px;
+		}
+		.controls {
+			display: block;
+		}
+	}
+}
+.close, .control {
+	background: $gray;
+	cursor: pointer;
+	display: none;
+	float: right;
+	font-size: 4rem;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	width: 60px;
+}
+.close {
+	border-left: 1px solid $gray_light;
+	border-right: 1px solid $gray_light;
+	float: none;
+	font-size: 3rem;
+	left: -60px;
+	position: absolute;
+	top: -2px;
+}
+.gradient {
+	padding-top: 60px;
+	position: relative;
+}
+.gray-box {
+	background: rgb(218,218,218); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(218,218,218,1) 0%, rgba(255,255,255,1) 44%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(218,218,218,1)), color-stop(44%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(218,218,218,1) 0%,rgba(255,255,255,1) 44%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(218,218,218,1) 0%,rgba(255,255,255,1) 44%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(218,218,218,1) 0%,rgba(255,255,255,1) 44%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(218,218,218,1) 0%,rgba(255,255,255,1) 44%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	border: 1px solid darken($white, 20%);
+	clear: left;
+	margin: 0 0 1.5em 0;
+	padding: 15px 30px;
+	text-align: center;
+	
+	.btn {
+		background-color: $yellow;
+		color: $black;
+		font-family: $sans;
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin-top: 10px;
+		padding: 10px;
+	}
+}
+@-moz-document url-prefix() {
+    .gray-box {
+	    padding: 15px 0;
+    }
+}
+.image-desktop {
+	display: none;
+}
+.logo {
+	background: url(../img-new/intro-logo.gif) no-repeat;
+	height: 62px;
+	position: relative;
+	text-indent: -999em;
+	width: 196px;
+	z-index: 1;
+}
+.next {
+	border: none;
+	bottom: 0;
+	color: rgba($black, 0.6);
+	display: none;
+	font-family: $sans;
+	font-size: 4rem;
+	left: 50%;
+	margin: 0 0 0 -20px;
+	position: absolute;
+	
+	&:before {
+		font-family: 'icomoon';
+	}
+}
+.next-prev {
+	display: none;
+	font-size: 3rem;
+	left: 0;
+	line-height: 1;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	
+	.next, .previous {
+		color: $black;
+		cursor: pointer;
+		font-family: $sans;
+		left: -50px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100px;
+		z-index: 9;
+
+		&.disabled {
+			color: rgba($black, 0);
+			cursor: default;
+		}
+		&:before {
+			font-family: 'icomoon';
+			position: relative;
+			top: 5px;
+		}
+		
+		small {
+			display: block;
+			font-size: 12px;
+			position: relative;
+			top: -40px;
+		}
+	}
+	.next {
+		font-size: 3rem;
+		left: auto;
+		right: -50px;
+	}
+}
+.sticky-phone {
+	display: none;
+	
+	.screen-window {
+		background: $black url(../img-new/sticky-phone-back-horizontal.jpg) no-repeat 0 0;
+		background-size: cover;
+		height: 301px;
+		left: 17px;
+		position: absolute;
+		-webkit-transition: all 250ms ease-in-out;
+-moz-transition: all 250ms ease-in-out;
+transition: all 250ms ease-in-out;
+		top: 61px;
+		width: 172px;
+	}
+}
+.stuck-header {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.stories {
+	img {
+		display: block;
+	}
+	li {
+		margin: 30px 0;
+	}
+	
+	.btn {
+		font-size: 2rem;
+		line-height: 1.2;
+		text-align: left;
+	}
+}
+.story {
+	.portrait {
+		background: $black;
+		border: 5px solid $yellow;
+		border-radius: 110px;
+		overflow: hidden;
+		height: 211px;
+		margin: 0 auto 1em;
+		width: 211px;
+	}
+}
+.story-overlay {
+	background: rgba($black, 0.8);
+	color: $white;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	
+	h1 {
+		color: $yellow;
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+	
+	.story-close {
+		background: url(../img-new/overlay-close.png) no-repeat 0 0;
+		color: $white;
+		cursor: pointer;
+		font-size: 2rem;
+		height: 61px;
+		position: absolute;
+		right: 6%;
+		top: 12%;
+		width: 61px;
+	}
+	.portrait {
+		background: $black;
+		border: 5px solid $yellow;
+		border-radius: 110px;
+		overflow: hidden;
+		height: 211px;
+		margin: 0 auto 1em;
+		width: 211px;
+	}
+	.story-frame {
+		padding: 30px;
+		
+		.back {
+			display: none;
+		}
+	}
+}
+.story-window, .story-frame {
+	h1, h2 {
+		text-transform: none;
+	}
+	h1, p {
+		float: none;
+		width: auto;
+	}
+	ul {
+		list-style: disc;
+		margin: 1.5em 0;
+		padding: 0 0 0 1.5em;
+	}
+}
+.text {
+	a {
+		color: #00F;
+
+		&:hover {
+			text-decoration: underline;
+		}
+		&.btn {
+			color: $yellow;
+			
+			&:hover {
+				text-decoration: none;
+			}
+			&.inverted {
+				color: $black;
+			}
+		}
+	}
+	
+	.gray-box .btn {
+		color: $black;
+		
+		&:hover {
+			color: $black !important;
+		}
+	}
+}
+.text-center {
+	text-align: center !important;
+}
+.tool {
+	h1 {
+		text-transform: none;
+	}
+}
+.tool-window {
+//	display: none;
+	
+	h1 {
+		text-transform: none;
+	}
+	
+	.overlay {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+	}
+	.start {
+		text-align: center;
+		
+		p {
+			float: none;
+			width: auto !important;
+		}
+		
+		.billboard {
+			font-family: $serif;
+			font-size: 1.8rem;
+			line-height: 1.2;
+		}
+	}
+}
+.tool-wrapper {
+	position: relative;
+	
+	.breadcrumb {
+		display: none;
+		margin: 1em 0;
+		text-align: center;
+		
+		li {
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 20px;
+			
+			&.active {
+				cursor: default;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.video-overlay {
+	background: rgba($black, 0.8);
+	color: $white;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	
+	.video-close {
+		background: url(../img-new/overlay-close.png) no-repeat 0 0;
+		color: $white;
+		cursor: pointer;
+		font-size: 2rem;
+		height: 61px;
+		position: absolute;
+		right: -4%;
+		top: -6%;
+		width: 61px;
+	}
+	.video-embed {
+		background: $black;
+		left: 14.2%;
+		padding-top: 39.7%;
+		position: absolute;
+		top: 7.5%;
+		width: 71%;
+		
+		embed, iframe {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+	.video-frame {
+		background: url(../img-new/video-phone-case.png) no-repeat 0 0;
+		background-size: contain;
+		left: 50%;
+		margin-left: -42.8%;
+		margin-top: -23.5%;
+		padding-top: 47.6%;
+		position: absolute;
+		top: 50%;
+		width: 85.6%;
+	}
+}
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 90%;
+}
+
+/* JS Supported Only */
+body.js {
+	header.site {
+		nav {
+			margin: 0;
+			position: fixed;
+			right: -353px;
+			top: -1px;
+			-webkit-transition: right 250ms ease-in-out;
+-moz-transition: right 250ms ease-in-out;
+transition: right 250ms ease-in-out;
+			width: 226px;
+			
+			&.active {
+				right: 0;
+			}
+		}
+	}
+	
+	.close, .control {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 300px) {
+	#how-it-works, #why-fluke-connect, #why-fluke-connect-2, #why-fluke-connect-3, #why-fluke-connect-4, #security {
+		.image, .stuck {
+			height: 486px;
+			margin: 0 auto;
+			padding: 0;
+			width: 215px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+
+		background: -moz-linear-gradient(left,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.1)), color-stop(20%,rgba(0,0,0,0)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=1 ); /* IE6-9 */
+
+	}
+	h1, h2 {
+		font-size: 3.5rem;
+		line-height: 1.1;
+	}
+	section {
+		.image {
+			float: right;
+			margin: 0 0 2em 2em !important;
+		}
+		.gray-box {
+			float: left;
+		}
+		.tool-window {
+			.image {
+				float: left;
+			}
+		}
+	}
+	
+	footer.site {
+		text-align: left;
+		
+		nav.secondary {
+			border-bottom: 1px solid $gray_light;
+			padding: 0 30px;
+			
+			a {
+				border: none;
+				border-bottom: 1px solid;
+				display: inline;
+			}
+			li {
+				float: left;
+				margin-right: 30px;
+			}
+		}
+		
+		.developer {
+			display: block;
+			margin: 0 0 0.5em 0;
+		}
+		.highlight {
+			width: auto;
+		}
+		.stuck {
+			padding: 0;
+			
+			nav, p {
+				float: right;
+			}
+			nav {
+				clear: right;
+				margin: 5px 0 0;
+			}
+			
+			.btn {
+				float: left;
+				margin: 0;
+				margin-top: -11px;
+				padding: 10px 20px;
+			}
+			.wrapper {
+				padding: 10px 0;
+				width: 90%;
+			}
+		}
+		.wrapper {
+			padding: 30px;
+			width: auto;
+		}
+	}
+	
+	#intro {
+		h1 {
+			font-size: 3.2rem;
+			text-align: center;
+		}
+		
+		.image {
+			float: none;
+			margin: 0 auto !important;
+		}
+	}
+	#how-it-works, #why-fluke-connect, #why-fluke-connect-2, #why-fluke-connect-3, #why-fluke-connect-4, #security {
+		.image {
+			height: 450px;
+			width: 200px;
+		}
+	}
+	#why-fluke-connect-2, #why-fluke-connect-4 {
+		h1 {
+			font-size: 3.5rem;
+			line-height: 1.2;
+		}
+	}
+	#stories {
+		margin-bottom: 0;
+		
+		nav {
+			img {
+				margin: 0 auto;
+			}
+			
+			.btn {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+	#stories {
+		overflow: hidden;
+		
+		h1, p {
+			float: none;
+			width: auto;
+		}
+		h1 {
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 10px;
+		}
+		nav {
+			bottom: 0;
+			position: absolute;
+			width: 100%;
+			
+			li {
+				bottom: 25%;
+				left: -5%;
+				position: absolute;
+				width: 37.75%;
+				z-index: 3;
+				
+				&:nth-child(2) {
+					left: 31%;
+					width: 40.66%;
+					z-index: 2;
+				}
+				&:nth-child(3) {
+					left: 70%;
+					width: 32.83%;
+					z-index: 1;
+				}
+			}
+
+			.btn {
+				font-size: 1.6rem;
+				margin-top: -165px;
+				padding: 10px 15px;
+				position: relative;
+				text-align: left;
+				width: 215px;
+				z-index: 1;
+			}
+		}
+		
+		.wrapper {
+			height: 420px;
+		}
+	}	
+
+	.btn {
+		display: inline-block;
+		margin:  0 auto;
+	}
+	.categories {
+		a:hover, li.active {
+			p {
+				background: rgb(204,204,204); /* Old browsers */
+				background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			}
+		}
+		li {
+			width: 8.3%;
+			
+			&:nth-child(2n) {
+				margin-right: 10%;
+			}
+			&:nth-child(2n+1) {
+				clear: none;
+			}
+			&:nth-child(6n) {
+				margin-right: 0;
+			}
+			&:nth-child(6n+1) {
+				clear: left;
+			}
+		}
+		
+		.controls span {
+			top: 50px;
+		}
+		
+		&.js {
+			li {
+				width: 90px;
+				
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+				&:nth-child(6n+1) {
+					clear: none;
+				}
+			}
+			
+			.conceal {
+				width: 540px;
+			}
+		}
+	}
+	.faq {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+	}
+	.gradient {
+/*
+		background: -moz-linear-gradient(left,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.1) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.1)), color-stop(20%,rgba(0,0,0,0)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
+		background: -webkit-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%);
+		background: -o-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%);
+		background: -ms-linear-gradient(left,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%);
+		background: linear-gradient(to right,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=1 );
+*/
+		height: 100%;
+	}
+	.next {
+		display: block;
+	}
+	.story-overlay {
+		h1, p {
+			float: none;
+			width: auto;
+		}
+		ul {
+			list-style: disc;
+			margin: 1.5em 0;
+			padding: 0 0 0 3em;
+		}
+		
+		.story-window {
+			height: 400px;
+			overflow: auto;
+			padding-right: 2em;
+		}
+	}
+	.tool, .tool-window {
+		img {
+			display: block;
+			margin: 1.5em auto;
+		}
+	}
+	.tool {
+		.gradient {
+			padding-top: 0;
+		}
+		.wrapper {
+			width: 1008px;
+		}
+	}
+	.tool-window {
+		display: block;
+		position: relative;
+		
+		.overlay {
+			background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 10%, rgba(255,255,255,0.6) 90%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(10%,rgba(255,255,255,0.6)), color-stop(90%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 10%,rgba(255,255,255,0.6) 90%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 10%,rgba(255,255,255,0.6) 90%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 10%,rgba(255,255,255,0.6) 90%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 10%,rgba(255,255,255,0.6) 90%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			opacity: 0;
+			filter:alpha(opacity=0);
+			
+			.loading {
+				background: url(../img-new/ajax-loader.gif) no-repeat 50% 50%;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.tool-wrapper {
+		.breadcrumb {
+			display: block;
+		}
+	}
+	.tool, .tool-window {
+		img {
+			float: left;
+			max-width: 41.35%;
+		}
+		h1 {
+			font-family: $sans !important;
+			font-size: 2rem !important;
+			font-weight: 700;
+			line-height: 1.2 !important;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 1.375;
+			margin-top: 1.5em;
+		}
+
+		.btn {
+			padding: 10px 13px;
+			position: relative;
+			z-index: 10;
+		}
+		.frame {
+			left: 0;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			-webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+			width: 100%;
+		}
+		.image {
+			float: left;
+			margin: 0;
+			width: 35%;
+			
+			img {
+				float: none;
+				max-height: 100%;
+				max-width: 100%;
+				width: auto;
+			}
+		}
+		.text-center {
+			text-align: left !important;
+		}
+		.text {
+			float: right;
+			margin: 0 7% 0 0;
+			width: 55%;
+			
+			h1, p {
+				float: none;
+				width: auto !important;
+			}
+		}
+	}
+	.tool {
+		.image {
+			float: left !important;
+		}
+		.panel {
+			clear: both;
+			margin-bottom: 2em;
+		}
+		.text {
+			margin-top: 0;
+		}
+	}
+	.tool-window {
+		display: block;
+		height: 400px;
+		overflow: hidden;
+
+		.back {
+			display: none;
+		}
+		.panel {
+			float: left;
+			height: 400px;
+			width: 600px;
+		}
+		.start {
+			.billboard {
+				font-size: 4rem;
+				line-height: 1.2;
+			}
+		}
+		.text h1 {
+			padding-right: 100px;
+		}
+	}
+	
+	/* JS Supported Only */
+	body.js {
+
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	h1, h2 {
+		font-size: 3.5rem;
+		line-height: 1.1;
+	}
+
+	footer.site {
+		nav.secondary {
+			border: none;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				border-bottom: none;
+			}
+		}
+		
+		p, p.highlight {
+			margin: 0.35em auto;
+		}
+		
+		.developer {
+			display: inline-block;
+		}
+		.stuck {
+			line-height: 35px !important;
+			
+			&.fixed {
+				bottom: 0;
+				left: 0;
+				position: fixed;
+				width: 100%;
+				z-index: 99;
+			}
+			
+			nav {
+				clear: none;
+				margin: 0;
+				position: relative;
+				right: -145px;
+			}
+			p {
+				left: -255px;
+				position: relative;
+			}
+			
+			.btn {
+				margin-top: -11px;
+			}
+			.developer {
+				margin: 0 30px 0 0;
+			}
+			.realign {
+				display: inline;
+			}
+		}
+	}
+	header.site {
+		height: 95px;
+		z-index: 99;
+		
+		h3 {
+			float: left;
+			height: 51px;
+			margin-top: 22px;
+			width: 173px;
+		}
+		nav {
+			border: none;
+			float: right;
+			font-size: 1.4rem;
+			height: 95px !important;
+			line-height: 95px;
+			padding: 0 30px;
+			
+			a {
+				border: none;
+				border-bottom: 4px solid $gray;
+				line-height: 35px;
+				margin-top: 30px;
+				-webkit-transition: all 0.25s ease-in-out;
+				-moz-transition: all 0.25s ease-in-out;
+				transition: all 0.25s ease-in-out;
+				padding: 0 0 10px;
+				
+				&:hover, &.active {
+					border-color: $yellow;
+					padding-bottom: 0;
+				}
+			}
+			li {
+				float: left;
+				margin-left: 30px;
+			}
+			
+			.mobile {
+				display: none;
+			}
+		}
+	}
+	section {
+		background-size: cover;
+		
+		h1, p, .gray-box {
+			width: 340px;
+		}
+		h1 {
+			float: left;
+			width: 360px;
+		}
+		p, .gray-box {
+			float: right;
+			margin: 0 0 0.75em 0;
+			clear: right;
+		}
+		
+		.wrapper {
+			left: 50%;
+			margin-left: -520px;
+			margin-top: -360px;
+			max-width: none;
+			top: 50%;
+			padding-top: 14%;
+			position: absolute;
+			width: 1040px;
+		}
+		
+		&.story, .story-frame {
+			.portrait {
+				clear: both;
+				float: left;
+			}
+			.story-window .text {
+				float: right;
+				margin: 0;
+				width: 75%;
+			}
+		}
+		.story-frame {
+			.story-window .text {
+				width: 70%;
+			}
+		}
+		&.tool {
+			img, .portrait {
+				float: left;
+			}
+			h1, p {
+				float: right;
+				clear: right;
+				width: 50%;
+			}
+		}
+		.tool-window {
+			.image {
+				float: left;
+				height: 300px;
+				margin: 20px 0 0 7% !important;
+				width: 33%;
+			}
+		}
+	}
+	
+	#intro {
+		background-size: cover;
+		padding-top: 0;
+		
+		h1 {
+			font-size: 3.5rem;
+			text-align: left;
+		}
+		
+		.image {
+			background-image: url(../img-new/intro-image-desktop.png);
+			height: 420px;
+			float: left;
+			padding: 0;
+			position: relative;
+			top: -45px;
+			width: 386px;
+		}
+		.logo {
+			margin-top: 150px;
+		}
+		.next {
+
+		}
+		.text {
+			float: right;
+			width: 340px;
+		}
+		.wrapper {
+			padding-top: 220px;
+		}
+	}
+	#how-it-works, #why-fluke-connect, #why-fluke-connect-2, #why-fluke-connect-3, #why-fluke-connect-4, #security {
+		.image, .stuck-wrapper {
+			float: none;
+			height: 626px;
+			left: 50%;
+			margin-left: -102px !important;
+			position: absolute;
+			top: 90px;
+			width: 286px;
+			z-index: 1;
+		}
+		.stuck-wrapper {
+			height: 422px;
+			margin-top: -180px;
+			top: 53%;
+			width: 205px;
+		}
+	}
+	#how-it-works {
+		.wrapper {
+			background: url(../img-new/how-it-works-back-2x4.png) no-repeat left bottom;
+			padding-bottom: 210px;
+		}
+		
+		.anim {
+			bottom: 13px;
+			left: 0;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			position: absolute;
+			-webkit-transition: all 750ms ease-in-out;
+			-moz-transition: all 750ms ease-in-out;
+			transition: all 750ms ease-in-out;
+			
+			&.active {
+				opacity: 1;
+			}
+		}
+		.devices {
+			background: url(../img-new/how-it-works-devices.png) no-repeat center center;
+			background-size: contain;
+			height: 141px;
+			width: 170px;
+			
+			&.active {
+				left: 80px;
+			}
+		}
+		.network {
+			background: url(../img-new/how-it-works-network.png) no-repeat center center;
+			background-size: contain;
+			bottom: -34px;
+			height: 236px;
+			width: 275px;
+			
+			&.active {
+				left: 755px;
+			}
+		}
+		.text {
+
+		}
+	}
+	#security {
+		.stuck-wrapper {
+			display: block;
+		}
+		.wrapper {
+
+		}
+		
+		.anim {
+			background-size: contain !important;
+			left: -50px;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			
+			&.active {
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+		}
+		.text {
+
+		}
+		.tool-1 {
+			background: url(../img-new/security-tools-1.png) no-repeat;
+			bottom: 70px;
+			height: 261px;
+			position: absolute;
+			width: 81px;
+			z-index: 2;
+			
+			&.active {
+				left: 230px;
+			}
+		}
+		.tool-2 {
+			background: url(../img-new/security-tools-2.png) no-repeat;
+			bottom: 70px;
+			height: 237px;
+			position: absolute;
+			width: 115px;
+			z-index: 1;
+			
+			&.active {
+				left: 140px;
+			}
+		}
+		.tool-3 {
+			background: url(../img-new/security-tools-3.png) no-repeat;
+			bottom: 95px;
+			height: 335px;
+			position: absolute;
+			width: 139px;
+			
+			&.active {
+				left: 40px;
+			}
+		}
+	}
+	#see-the-tools {
+		h1 {
+			margin-top: 1em;
+			width: 10%;
+			
+			&:before {
+				color: lighten($gray_light, 30%);
+				display: block;
+				float: right;
+				margin: 11px 0 0 5px;
+			}
+		}
+		hr {
+			border: none;
+			border-bottom: 1px solid $black;
+			display: block;
+			position: relative;
+			top: -100px;
+		}
+		nav {
+			clear: none;
+		}
+		
+		.next {
+			bottom: 10%;
+		}
+		.wrapper {
+			left: auto;
+			margin: 0 auto;
+			padding-top: 95px;
+			position: relative;
+			top: auto;
+		}
+	}
+	#security {
+		.wrapper {
+			padding-bottom: 200px;
+		}
+		h1 {
+			width: 300px;
+		}
+	}
+	#stories {
+		background-size: cover;
+		
+		nav, .wrapper {
+			position: static;
+		}
+		nav {
+			bottom: 0;
+			left: 50%;
+			margin: 0 0 0 -400px;
+			position: absolute;
+			width: 800px;
+			
+			li {
+				bottom: 100px;
+			}
+		}
+		
+		.gradient {
+			padding-top: 95px;
+		}
+		.wrapper {
+			left: auto;
+			margin: 0 auto;
+			position: static;
+			padding: 0;
+			top: auto;
+		}
+	}
+	@-moz-document url-prefix() {
+	    
+	}
+	#why-fluke-connect {
+		.anim {
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			-webkit-transform: scale(0);
+			-moz-transform: scale(0);
+			transform: scale(0);
+			
+			&.active {
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				filter: alpha(opacity=100);
+				opacity: 1;
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+		.anim-block {
+			bottom: 40px;
+			height: 275px;
+			left: 0;
+			position: absolute;
+			width: 275px;
+		}
+		.center {
+			background: url(../img-new/collaborate-circle-logo.png) no-repeat;
+			height: 60px;
+			left: 50%;
+			margin: -23px 0 0 -25px;
+			position: absolute;
+			top: 50%;
+			width: 50px;
+		}
+		.upper-left {
+			background: url(../img-new/collaborate-circle-1.png) no-repeat;
+			height: 111px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 116px;
+			-webkit-transition: all 0.75s ease-in-out;
+			-moz-transition: all 0.75s ease-in-out;
+			transition: all 0.75s ease-in-out;
+		}
+		.upper-right {
+			background: url(../img-new/collaborate-circle-2.png) no-repeat;
+			height: 111px;
+			right: 0;
+			position: absolute;
+			top: 0;
+			width: 116px;
+			-webkit-transition: all 1s ease-in-out;
+			-moz-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+		}
+		.lower-right {
+			background: url(../img-new/collaborate-circle-3.png) no-repeat;
+			bottom: 0;
+			height: 111px;
+			right: 0;
+			position: absolute;
+			width: 116px;
+			-webkit-transition: all 1.25s ease-in-out;
+			-moz-transition: all 1.25s ease-in-out;
+			transition: all 1.25s ease-in-out;
+		}
+		.lower-left {
+			background: url(../img-new/collaborate-circle-4.png) no-repeat;
+			bottom: 0;
+			height: 111px;
+			left: 0;
+			position: absolute;
+			width: 116px;
+			-webkit-transition: all 1.5s ease-in-out;
+			-moz-transition: all 1.5s ease-in-out;
+			transition: all 1.5s ease-in-out;
+		}
+		.text {
+
+		}
+		.wrapper {
+			padding-bottom: 105px;
+		}
+	}
+	#why-fluke-connect-2 {
+		.wrapper {
+			padding-bottom: 160px;
+		}
+		
+		.background-tools {
+			bottom: 140px;
+			background: url(../img-new/why-fluke-connect-2-back.png) no-repeat;
+			background-size: contain;
+			left: 0;
+			height: 282px;
+			position: absolute;
+			width: 207px;
+			z-index: 1;
+		}
+		.cloud {
+			background: url(../img-new/cloud.png) no-repeat;
+			bottom: 270px;
+			height: 114px;
+			left: 130px;
+			position: absolute;
+			width: 222px;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			
+			&.active {
+				bottom: 310px;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+		}
+		.text {
+
+		}
+	}
+	#why-fluke-connect-3 {		
+		.background-tools {
+			background: url(../img-new/why-fluke-connect-3-back.png) no-repeat;
+			background-size: contain;
+			bottom: 125px;
+			height: 330px;
+			left: 130px;
+			position: absolute;
+			width: 170px;
+			z-index: 1;
+		}
+		.clock {
+			background: url(../img-new/clock.png) no-repeat;
+			bottom: 320px;
+			height: 141px;
+			left: 0;
+			position: absolute;
+			width: 153px;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-transform-origin: 84px 70px;
+			-moz-transform-origin: 84px 70px;
+			transform-origin: 84px 70px;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			
+			&.active {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+		}
+		.text {
+
+		}
+		.wrapper {
+			padding-bottom: 70px;
+		}
+	}
+	#why-fluke-connect-4 {
+		.wrapper {
+			padding-bottom: 120px;
+		}
+		
+		.anim {
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			
+			&.active {
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+		}
+		.background-tools {
+			background: url(../img-new/why-fluke-connect-4-back.png) no-repeat;
+			background-size: contain;
+			bottom: 15px;
+			height: 365px;
+			left: 180px;
+			position: absolute;
+			width: 279px;
+			z-index: 1;
+			
+			&.active {
+				left: 130px;
+			}
+		}
+		.graph {
+			background: url(../img-new/graph.png) no-repeat;
+			bottom: 130px;
+			height: 124px;
+			left: 180px;
+			position: absolute;
+			width: 165px;
+			
+			&.active {
+				left: 0;
+			}
+		}
+		.text {
+
+		}
+	}
+	
+	.anim {
+		display: block;
+	}
+	.categories {
+		margin-top: 1em;
+		
+		img {
+			margin-bottom: 20px;
+		}
+		li {
+			margin: 0;
+			width: auto;
+			
+			&:last-child {
+				p {
+					border: 0;
+				}
+			}
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+			&:nth-child(6n+1) {
+				clear: none;
+			}
+		}
+		p {
+			@include cf;
+			border-right: 1px solid;
+			padding: 20px 18px;
+			text-align: left;
+		}
+		
+		&.js {
+			img {
+				margin-bottom: 20px;
+			}
+			li {
+				margin: 0;
+				width: auto;
+				
+				&:last-child {
+					p {
+						border: 0;
+					}
+				}
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+				&:nth-child(6n+1) {
+					clear: none;
+				}
+			}
+			p {
+				@include cf;
+				border: none;
+				border-right: 1px solid;
+				padding: 20px 18px;
+				text-align: left;
+			}
+			ul {
+				width: auto !important;
+			}
+
+			.conceal {
+				display: inline;
+				margin: 10% 0;
+				width: auto;
+			}
+			.controls {
+				display: none;
+			}
+		}
+	}
+	.close, .control {
+		display: none;
+	}
+	.faq {
+		top: 69px;
+	}
+	.gradient {
+		padding-top: 0;
+	}
+	.image-desktop {
+		background: url(../img-new/how-it-works-phone.png) no-repeat 50% 0;
+		background-size: cover;
+		display: block;
+		height: 626px;
+		left: 50%;
+		margin-left: -143px;
+		position: absolute;
+		top: -80px;
+		width: 286px;
+		z-index: 1;
+	}
+	.next {
+		bottom: 65px;
+		display: block;
+	}
+	.stories li {
+		margin: 0;
+	}
+	.story-overlay {
+		.story-frame {
+			margin: 0 auto;
+			padding: 0;
+			width: 870px;
+
+			h1, p {
+				width: 75%;
+			}
+		}
+	}
+	.stuck-wrapper {
+		display: block;
+	}
+	.tool .text, .tool-window .text {
+		width: 45%;
+	}
+	.tool-window {
+		height: auto;
+		padding-top: 32%;
+		
+		.panel {
+			height: auto;
+			width: 1120px;
+		}
+		.start {
+			margin: 0 auto;
+			width: 900px;
+			
+			.billboard {
+				font-size: 4rem;
+				line-height: 1.2;
+			}
+		}
+	}
+	.video-overlay {
+		.video-embed {
+			padding-top: 39.8%;
+			top: 8.7%;
+		}
+		.video-frame {
+			height: 489px;
+			margin-left: -523px;
+			margin-top: -244px;
+			padding: 0;
+			width: 1027px;
+		}
+	}
+
+	/* JS Supported Only */
+	body.js {
+		header.site {
+			nav {
+				float: right;
+				position: static;
+				right: auto;
+				top: auto;
+				width: auto;
+			}
+		}
+		section {
+			.image, .image-desktop {
+				display: none;
+			}
+			
+			&.tool, .tool-window {
+				.image {
+					display: block;
+				}
+			}
+		}
+		
+		#intro {
+			.image {
+				display: block;
+			}
+		}
+		#security {
+			.sticky-phone {
+				background-image: url(../img-new/phone-bg.png);
+				display: block;
+				height: 422px;
+				top: 0;
+				width: 205px;
+				
+				&:after {
+					background: url(../img-new/screen-reflection.png) no-repeat;
+					background-size: contain;
+					content: ' ';
+					display: block;
+					height: 99px;
+					position: absolute;
+					right: 14px;
+					top: 15px;
+					width: 59px;
+					z-index: 1;
+				}
+				
+				&.fixed {
+					left: 50%;
+					margin: -211px 0 0 -102px !important;
+					position: fixed;
+					top: 53%;
+				}
+			}
+			.stuck-wrapper {
+				display: block;
+			}
+		}
+		
+		.close, .control {
+			display: none;
+		}
+	}
+}
+@media only screen and (min-width: 1150px) {
+	header.site {
+		nav {
+			padding: 0 50px;
+			
+			li {
+				margin-left: 50px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	header.site {
+		.wrapper {
+			margin: 0 auto;
+			width: 1200px;
+		}
+	}
+	
+	.tool-window {
+		margin: 0 -40px;
+		padding: 32% 40px 0;
+	}
+}
+@media only screen and (min-width: 1100px) and (max-height: 720px) {
+	section {
+		&.story, .story-frame {
+			.portrait {
+				clear: both;
+				float: left;
+			}
+			.story-window .text {
+				float: right;
+				margin: 0;
+				width: 75%;
+			}
+		}
+		
+		.next {
+			display: none;
+		}
+		.story-frame {
+			.story-window .text {
+				width: 70%;
+			}
+		}
+	}
+	
+	#stories {
+		nav {
+			margin-left: -25%;
+			width: 50%;
+			
+			li {
+				left: -10%;
+				
+				&:nth-child(3) {
+					left: 71%;
+				}
+			}
+		}
+		
+		.gradient {
+			min-height: 0 !important;
+		}
+	}
+	
+	.story-overlay {
+		.story-frame {
+			margin: 0 auto;
+			padding: 0;
+			width: 870px;
+
+			h1, p {
+				width: 75%;
+			}
+		}
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	header.site h3 {
+		background-image: url(../img-new/logo_@2x);
+		background-size: contain;
+	}
+	#how-it-works {
+		.image {
+			background-image: url(../img-new/how-it-works-phone_@2x.png);
+		}
+		.devices {
+			background-image: url(../img-new/how-it-works-devices_@2x.png);
+			background-size: contain;
+		}
+		.network {
+			background-image: url(../img-new/how-it-works-network_@2x.png);
+			background-size: contain;
+		}
+	}
+	#why-fluke-connect {
+		.image {
+			background-image: url(../img-new/why-fluke-connect-phone_@2x.png);
+		}
+		.upper-left {
+			background-image: url(../img-new/collaborate-circle-1_@2x.png);
+			background-size: contain;
+		}
+		.upper-right {
+			background-image: url(../img-new/collaborate-circle-2_@2x.png);
+			background-size: contain;
+		}
+		.bottom-right {
+			background-image: url(../img-new/collaborate-circle-3_@2x.png);
+			background-size: contain;
+		}
+		.bottom-left {
+			background-image: url(../img-new/collaborate-circle-4_@2x.png);
+			background-size: contain;
+		}
+	}
+	#why-fluke-connect-2 {
+		.image {
+			background-image: url(../img-new/why-fluke-connect-2-phone_@2x.png);
+		}
+		.background-tools {
+			background-image: url(../img-new/why-fluke-connect-2-back_@2x.png);
+			background-size: contain;
+		}
+		.cloud {
+			background-image: url(../img-new/cloud_@2x.png);
+			background-size: contain;
+		}
+	}
+	#why-fluke-connect-3 {
+		.image {
+			background-image: url(../img-new/why-fluke-connect-3-phone_@2x.png);
+		}
+		.background-tools {
+			background-image: url(../img-new/why-fluke-connect-3-back_@2x.png);
+			background-size: contain;
+		}
+		.clock {
+			background-image: url(../img-new/clock_@2x.png);
+			background-size: contain;
+		}
+	}
+	#why-fluke-connect-4 {
+		.image {
+			background-image: url(../img-new/why-fluke-connect-4-phone_@2x.png);
+		}
+		.background-tools {
+			background-image: url(../img-new/why-fluke-connect-4-back_@2x.png);
+			background-size: contain;
+		}
+		.graph {
+			background-image: url(../img-new/graph_@2x.png);
+			background-size: contain;
+		}
+	}
+	#security {
+		.image {
+			background-image: url(../img-new/security-phone_@2x.png);
+		}
+		.tool-1 {
+			background-image: url(../img-new/security-tools-1_@2x.png);
+			background-size: contain;
+		}
+		.tool-2 {
+			background-image: url(../img-new/security-tools-2_@2x.png);
+			background-size: contain;
+		}
+		.tool-3 {
+			background-image: url(../img-new/security-tools-3_@2x.png);
+			background-size: contain;
+		}
+	}
+	.logo {
+		background-image: url(../img-new/intro-logo_@2x.gif);
+		background-size: contain;
+	}
+	.sticky-phone {
+		.screen-window {
+			background: $black url(../img-new/sticky-phone-back-horizontal_@2x.jpg) no-repeat 0 0;
+			background-size: contain;
+		}
+	}
+	
+	@media only screen and (min-width: 1100px) {
+		#how-it-works .wrapper {
+			background-image: url(../img-new/how-it-works-back-2x4_@2x.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}

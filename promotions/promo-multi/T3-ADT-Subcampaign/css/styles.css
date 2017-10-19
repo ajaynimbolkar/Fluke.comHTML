@@ -1,0 +1,335 @@
+             body {
+             background-color: #000;
+             padding-top: 0px;
+             font-family: 'Roboto Slab', serif;
+         }
+         
+         .container {
+             max-width: 960px;
+         }
+         
+         h1 {
+             font-size: 52px;
+             color: #ffffff;
+             font-family: 'Roboto Slab', serif;
+             font-weight: bold;
+             margin-top: 80px;
+             margin-left: 15px;
+             margin-bottom: 0px;
+             line-height: 98%;
+         }
+         
+         h2 {
+             font-size: 30px;
+             color: #ffc20e;
+             font-family: 'Roboto Slab', serif;
+             font-weight: normal;
+             margin: 0px;
+             margin-left: 15px;
+             padding-bottom: 5px;
+         }
+         
+         #header {
+             min-height: 251px;
+             position: relative;
+         }
+         
+         .grey-bg {
+             background-color: #e6e6e6;
+         }
+         
+         .white-bg {
+             background-color: #ffffff;
+         }
+         
+         hr {
+             display: block;
+             height: 3px;
+             border: 0;
+             border-top: 3px solid;
+             color: #FFC20E;
+             width: 85%;
+         }
+         
+         .callout {
+             background-color: #ffc20e;
+             color: #000;
+             font-weight: bold;
+             font-size: 58px;
+             margin-bottom: 0px;
+         }
+         
+         .clear-padding-left {
+             padding-left: 0px;
+         }
+         
+         .clear-margin-lr {
+             margin-left: 0px;
+             margin-right: 0px;
+         }
+         
+         .no-gutter {
+             padding-left: 0px;
+             padding-right: 0px;
+         }
+         
+         a {
+             transition: 0.5s;
+         }
+         
+         a:hover {
+             transition: 0.5s;
+         }
+         /* How to Redeem directions section */
+         
+         #how-to-redeem h2 {
+             font-size: 24px;
+         }
+         
+         #how-to-redeem p {
+             padding-top: 30px;
+             font-size: 14px;
+             font-weight: bold;
+         }
+         
+         #how-to-redeem .step {
+             font-size: 36px;
+             padding-top: 20px;
+         }
+         /* Redeem button section */
+         
+         .rdm-btn {
+             margin: 10px 0px;
+         }
+         
+         .rdm-btn .btn {
+             width: 100%;
+             height: 85px;
+             font-weight: bold;
+             color: #000000;
+             text-align: left;
+             font-size: 14px;
+         }
+         
+         .rdm-btn .btn img {
+             margin-right: 5px;
+         }
+         
+         .rdm-btn .btn span {
+             display: block;
+             font-size: 24px;
+         }
+         
+         .rdm-btn .btn span:nth-child(odd) {
+             font-size: 14px;
+         }
+         
+         .grey-btn {
+             background-color: #b3b3b3;
+             border: 2px solid #d3d3d3;
+         }
+         
+         .inner-wrap {
+             padding-left: 30px;
+             padding-right: 30px;
+         }
+         
+         .inner-wrap-rdm {
+             padding-left: 15px;
+             padding-right: 15px;
+         }
+         /*Main content Section */
+         
+         .buy {
+             font-family: 'Roboto Slab', serif;
+             font-weight: bold;
+             font-size: 36px;
+             color: #000000;
+         }
+         
+         .buy2 {
+             font-family: 'Roboto Slab', serif;
+             font-weight: 400;
+             font-size: 14px;
+             color: #000000;
+         }
+         
+         .buy3 {
+             font-family: 'Roboto Slab', serif;
+             font-weight: 400;
+             font-size: 10px;
+             color: #000000;
+         }
+         
+         .buy4 {
+             font-family: 'Roboto Slab', serif;
+             font-weight: 700;
+             font-size: 14px;
+             color: #000000;
+         }
+         /* Footer Section */
+         
+         #footer {
+             background-color: #ffc20e;
+             padding: 8px 15px 0px;
+             margin: 0px;
+         }
+         
+         #footer ul {
+             padding-left: 0px;
+         }
+         
+         #footer ul li {
+             display: inline-block;
+             list-style-type: none;
+         }
+         
+         #footer ul li:first-child {
+             margin-right: 20%;
+         }
+         
+         #footer a {
+             color: #000000;
+         }
+         /*/////////////////////////////////////////////     Meadia Queries    /////////////////////////////////////////////////////////*/
+         /* Callout Section */
+         
+         @media (max-width: 990px) {
+             .callout {
+                 font-size: 54px;
+             }
+             @media (max-width: 980px) {
+                 .callout {
+                     font-size: 50px;
+                 }
+             }
+             @media (max-width: 845px) {
+                 .callout {
+                     font-size: 46px;
+                 }
+             }
+             @media (max-width: 780px) {
+                 .callout {
+                     font-size: 40px;
+                 }
+             }
+             @media (max-width: 675px) {
+                 .callout {
+                     font-size: 36px;
+                 }
+             }
+             @media (max-width: 610px) {
+                 .callout {
+                     font-size: 30px;
+                 }
+             }
+             @media (max-width: 505px) {
+                 .callout {
+                     font-size: 24px;
+                 }
+             }
+             @media (max-width: 410px) {
+                 .callout {
+                     font-size: 20px;
+                 }
+             }
+             @media (max-width: 340px) {
+                 .callout {
+                     font-size: 16px;
+                 }
+             }
+             @media (min-width: 768px) and (max-width: 796px) {
+                 .nav-tabs>li>a>span {
+                     font-size: 10px;
+                 }
+                 .nav-tabs>li>a>span:first-child {
+                     font-size: 18px;
+                 }
+             }
+             @media (min-width: 768px) {
+                 .nav-tabs.nav-justified>.active>a,
+                 .nav-tabs.nav-justified>.active>a:hover,
+                 .nav-tabs.nav-justified>.active>a:focus {
+                     border-bottom-color: #ffffff;
+                 }
+                 .nav-tabs.nav-justified>li>a {
+                     border-bottom: none;
+                     border-radius: 0 0 0 0;
+                 }
+             }
+             /* Redeem Section */
+             @media (max-width: 955px) {
+                 .rdm-btn .btn span {
+                     font-size: 18px;
+                 }
+                 .rdm-btn .btn span:nth-child(odd) {
+                     font-size: 12px;
+                 }
+             }
+             @media (max-width: 870px) {
+                 .rdm-btn .btn span:nth-child(odd) {
+                     font-size: 10px;
+                 }
+             }
+             @media (max-width: 795px) {
+                 .rdm-btn .btn span {
+                     font-size: 16px;
+                 }
+                 .rdm-btn .btn span:nth-child(odd) {
+                     font-size: 8px;
+                 }
+             }
+             @media (max-width: 765px) {
+                 .rdm-btn .btn span {
+                     display: block;
+                     font-size: 24px;
+                 }
+                 .rdm-btn .btn span:nth-child(odd) {
+                     font-size: 14px;
+                 }
+             }
+             @media (max-width: 320px) {
+                 .rdm-btn .btn span {
+                     display: block;
+                     font-size: 22px;
+                 }
+                 .rdm-btn .btn span:nth-child(odd) {
+                     font-size: 12px;
+                 }
+             }
+             /* Footer  */
+             @media (max-width: 925px) {
+                 #footer ul li:first-child {
+                     margin-right: 8%;
+                 }
+             }
+             @media (max-width: 725px) {
+                 #footer ul li {
+                     display: block;
+                     list-style-type: none;
+                     text-align: center;
+                 }
+                 #footer ul li:first-child {
+                     margin-right: 0%;
+                 }
+             }
+             @media (max-width: 525px) {
+                 .panel-body div.col-lg-3.col-xs-6 {
+                     height: 220px;
+                 }
+             }
+             @media (max-width: 460px) {
+                 .panel-body p {
+                     font-size: 12px;
+                 }
+             }
+             @media (max-width: 415px) {
+                 .panel-body p {
+                     font-size: 10px;
+                 }
+             }
+             @media (max-width: 340px) {
+                 .panel-title {
+                     font-size: 12px;
+                 }
+             }

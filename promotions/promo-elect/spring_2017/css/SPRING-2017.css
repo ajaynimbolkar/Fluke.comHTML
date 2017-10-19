@@ -1,0 +1,661 @@
+/* ----------------------------------- */
+/*!
+  DATE OF CREATION: 09-09-16
+ * This is custom CSS for the 4 new Eloqua templates, each with body IDs:
+ 
+ #t1-awareness
+ #t2-needs-research
+ #t3-research-justification
+ #t4-justification-purchase
+ 
+ */
+/* ----------------------------------- */
+
+body {
+    padding-top: 0;
+	background-color: #fff;
+}
+
+
+
+p {
+	font-size:17px;
+	line-height: 22px;
+}
+
+
+
+
+li { margin-bottom: 0em;
+font-size:17px;
+	line-height: 1.2; }
+	
+	
+
+.row-no-margin {
+   margin-left: -30px;
+   margin-right: -30px;
+}
+
+.no-margin {
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.no-padding {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.row-no-margin-left {
+   margin-left: -30px;
+}
+
+.row-no-margin-right {
+   margin-right: -30px;
+}
+
+.no-margin-right {
+   margin-right: 0;
+} 
+
+.no-margin-top{
+  margin-top: 0px !important;
+}
+
+#t3-research-justification h1, #t4-justification-purchase h1 {
+  font-size:47px;
+}
+
+#t4-justification-purchase h2 {
+  font-size:30px;
+}
+
+#t4-justification-purchase p, #t4-justification-purchase li {
+  font-size:19px;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab","Arial Black",serif;
+}
+
+h2, h3, h4, h5 {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight:bold;
+}
+
+h3 { 
+  font-size: 19px;
+}
+
+.bg-dark-gray {
+	background-color:#ebebeb;
+	margin-bottom:20px;
+	
+}
+
+.bg-999 {
+	background-color:#999999;
+	margin: 0 0 20px 0;
+	
+	
+}
+
+.light-gray{
+	background-color:#EAEAEA;
+}
+
+.white {
+  background-color: #fff;
+  }
+
+.padding-right {
+	padding-right: 30px
+}
+
+figure img {
+  margin-bottom: 0;
+}
+/* ----------------------------------- */
+/* NAV */
+/* ----------------------------------- */
+
+nav { 
+	color:#fff;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#nav-branding img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  line-height: 0;
+  padding-left: 0;
+}
+
+#nav-cta {
+  height: 100%;
+  padding: 15px;
+  display: inline-block;
+}
+
+#nav-cta span, .btn-primary {
+	display: inline-block;
+	vertical-align: middle;
+	font-size:17px;
+	line-height: 150%;
+	font-weight:700;
+}
+
+#nav-cta span, .btn-secondary {
+	display: inline-block;
+	vertical-align: middle;
+	font-size:17px;
+	line-height: 150%;
+	font-weight:700;
+}
+
+#tagline { 
+	font: italic normal 700 1.1em/100% "Roboto Slab", "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+#t4-justification-purchase nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#t4-justification-purchase nav ul li {
+	display: inline-block;
+	text-align: left;
+}
+
+#t4-justification-purchase nav ul li a {
+  display: block;
+  padding: 15px 20px 0 10px;
+  text-decoration: none;
+  font-size: 14px!Important;
+  font-size: 1.1rem;
+  color: #ffc20e;
+  font-weight:bold;
+}
+
+#t4-justification-purchase nav ul li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+#t4-justification-purchase #menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../images/menu-icon.png) center;
+
+}
+
+#t4-justification-purchase nav a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+
+/* ----------------------------------- */
+/* BUTTON */
+/* ----------------------------------- */
+
+
+
+#t1-awareness .btn-primary {
+   
+
+
+    color: #6F6F6F;
+    background-color: #FFC20E;
+    border-color: #f4b600;
+}
+
+
+
+#t1-awareness .btn-primary:hover {
+    color: #6F6F6F;
+    background-color: #daa300;
+    border-color: #b68800;
+
+}
+
+.btn-primary {
+  margin-bottom: 30px;
+}
+
+nav .btn-primary {
+  margin-bottom: 0;
+}
+/* over ride Fluke yellow primary button color for t1-awareness */
+section .btn-secondary {
+	
+	
+	width:100%;
+  color: #fff;
+  background-color: #336699;
+  border-color: #003b78;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+section .btn-secondary:hover {
+  color: #ccc;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+#t1-awareness nav .btn-primary, #t3-research-justification nav .btn-primary {
+  height: 50px;
+  width:auto;
+}
+
+#t3-research-justification nav {
+  	
+}
+
+/* ----------------------------------- */
+/* MAIN */
+/* ----------------------------------- */
+
+H2 {
+	font-size:48px;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 0px;
+	margin-bottom:15px;
+	
+}
+
+.mainarticle h2 {
+	margin-top: 15px;
+	margin-bottom:10px;
+}
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main #main-overlay-image{
+  width: 33%;
+  max-width: 265px;
+  height: auto;
+  position: absolute; 
+  top: 15%;
+  right: 30px;
+}
+
+#t1-awareness #image-container { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   padding:0;
+}
+
+#t1-awareness main h1 { 
+  position: absolute; 
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -50%);
+  width: 90%;
+  color: #fff;
+  font-size: 64px;
+ 
+  
+}
+
+#t1-awareness main .leaflet { 
+  position: absolute; 
+  top: 10%;
+  right: 10%;
+  
+  width: 25%;
+  
+}
+
+#t2-needs-research main h1 { 
+  position: absolute; 
+  top: 150px;
+  left: 30px;
+  width: 90%;
+  color: #fff;
+  font-size: 64px;
+}
+
+#t2-needs-research #image-container {
+  padding-right:0;	
+}
+
+#t2-needs-research form {
+  padding:15px;	
+}
+
+#t3-research-justification h1{
+  margin-bottom: 30px;
+}
+
+#t3-research-justification h2 {
+  margin-top: 0;
+}
+
+#awards-container {
+  padding:30px; 
+  margin-top: -5px;
+}
+
+figure {
+  padding-top:20px;	
+}
+
+figcaption {
+  text-align:center;
+  padding-top:10px;	
+}
+/* ----------------------------------- */
+/* SECTION */
+/* ----------------------------------- */
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+section .col-md-6 { 
+  padding-left:0;
+}
+
+.row1 {
+	margin-right:0px;
+}
+
+section p, section li{ 
+  padding-bottom:0px;
+  font-size:15px;
+}
+
+#t4-justification-purchase section {
+  margin-top: 30px;	
+}
+
+h3 {
+	font-size: 24px;
+	  font-family: "Roboto Slab","Arial Black", serif;
+}
+
+h4 {
+	font-size: 18px;
+	  font-family: "Roboto Slab","Arial Black", serif;
+}
+
+.savings {
+	
+	background-color:#ffc20e;
+	font-family: "Roboto Slab","Arial Black", serif;
+	font-size: 22px;
+	font-weight:bold;
+	line-height:1.1;
+	margin-left:-15px;
+	margin-right:-15px;
+	padding-left:15px;
+	padding-right:15px;
+	min-height:40px;
+	vertical-align:central;
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+
+.mainarticle {
+	margin: 20px 0px 20px 0px;
+}
+
+.prod {
+	margin: 20px 0 0 0;
+	
+}
+
+.col-height-row1 {
+	height:220px;
+}
+.col-height-row2{
+	height:180px;
+}
+
+.col-height-row3{
+	height:180px;
+}
+
+.col-height-row4{
+	height:160px;
+}
+
+.col-height-row5{
+	height:260px;
+}
+
+/* ----------------------------------- */
+/* FORM */
+/* ----------------------------------- */
+
+#t1-awareness .form-container {
+  background-color: #ffc20e;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.require-block {
+  color:#e03d3d!important;
+  font-size:14px;
+  display: none;
+}
+
+#optin{
+  display: none;
+}
+
+#optin label, #optin fiedl{
+  display: inline;
+}
+
+/* Privacy link */
+
+form p a {
+  color: #336699!important;
+  font-size: 14px;
+  
+}
+
+label {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight:normal;
+  font-size:17px;
+}
+
+ .btn-primary {
+	margin-top:20px;
+}
+
+nav .btn-primary {
+	margin-top:0;
+}
+/* ----------------------------------- */
+/* FOOTER */
+/* ----------------------------------- */
+
+.sticky-footer {
+    width: 100%;
+    min-height: 60px;
+    background-color: #333;
+    border-color: #1a1a1a;
+	color: #fff;
+}
+
+.sticky-footer ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sticky-footer ul li {
+	display: inline-block;
+	text-align: left;
+	color: #fff;
+}
+
+.sticky-footer ul li a, .sticky-footer p {
+	 display: block;
+	 padding: 15px 10px;
+	 text-decoration: none;
+	 font-size: 11px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.sticky-footer ul li a:hover {
+	text-decoration: underline;
+}
+
+.sticky-footer p {
+  font-size: 11px!Important;
+}
+
+/* ----------------------------------- */
+/* MEDIA QUERIES */
+/* ----------------------------------- */
+
+
+
+@media (max-width: 1280px) { 
+	/* At first breakpoint, the form then becomes taller than the image, so let's kill the background */
+#t2-needs-research .bg-dark-gray { 
+  background-color: #EAEAEA; 
+  }
+  
+  .col-height-row1 {
+	height:230px;
+}
+.col-height-row2{
+	height:220px;
+}
+
+.col-height-row3{
+	height:200px;
+}
+
+.col-height-row4{
+	height:200px;
+}
+
+  
+}
+
+@media (max-width: 1032px) {
+	
+#t4-justification-purchase #nav-cta { display: none; }
+
+#t4-justification-purchase #nav-cta-mobile { display: block; }
+
+ 
+section .col-md-6 { 
+  padding-left:15px;
+}
+  
+/* Redlines requests the gray background removed on table for some reason. */
+#t2-needs-research .bg-dark-gray { 
+  background-color: #fff; 
+}
+
+.padding-left-medium {
+  padding-left: 30px;	
+}
+
+#t3-research-justification h1, #t4-justification-purchase h1 {
+  padding-left: 15px;	
+}
+
+#t3-research-justification #image-container, #t4-justification-purchase #image-container {
+  padding-bottom: 30px;	
+}
+
+#t3-research-justification h2 {
+  margin-top: 20px;
+}
+
+#t3-research-justification h1, #t4-justification-purchase h1 {
+    font-size: 32px!Important;
+}
+}
+
+@media (min-width: 1033px) { 
+
+#t4-justification-purchase #nav-cta { display: block; }
+
+#t4-justification-purchase #nav-cta-mobile { display: none; }
+
+section {
+	display:table;
+    width: 100%;
+    /*margin-top: -50px;
+    padding-top: 50px;*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section .container {
+	padding: 0;	
+}
+
+#t1-awareness section .row,  {
+    height: 100%;
+    display: table-row;
+	margin: auto 0 auto 0;
+}
+
+#t1-awareness section .col-md-4 {
+
+  display: table-cell;
+  background-color: #ffffff;
+  float: none;
+  }
+
+
+#t1-awareness section .col-md-8 {
+  display: table-cell;
+  float: none;
+  }
+
+section img {
+  width: 100%;
+  height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 { font-size: 42px!Important;
+  }
+}
+
+@media (max-width: 500px) {
+
+h1 {
+  font-size: 32px!Important;
+  line-height:36px;
+  padding-left: 5px;
+  }
+  
+}
+
+
+
+@media (max-width: 390px) {
+  
+}

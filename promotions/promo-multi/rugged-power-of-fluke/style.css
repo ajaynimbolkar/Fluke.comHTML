@@ -1,0 +1,275 @@
+<link rel=stylesheet href="http://en-us.fluke.com/includes/css_for_old_promos.css?1">
+<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel=stylesheet type="text/css">
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #000;
+    }
+    
+    #wrapper {
+        width: 1280px;
+        background-color: #ffffff;
+        margin: 0 auto;
+    }
+    
+    #wrapper p,
+    #wrapper a,
+    #wrapper #footer-lp span,
+    #wrapper h3,
+    #wrapper li {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        line-height: 1.4;
+    }
+    
+    #wrapper h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 3.8em;
+        line-height: 60px;
+        margin-top: 60px;
+        padding-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    #wrapper a,
+    #wrapper img {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+    }
+    
+    a {
+        color: #0058b3;
+    }
+    
+    a:hover {
+        text-decoration: none !important;
+        color: #006B78;
+    }
+    
+    .clear-fix:after,
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .col-25 {
+        float: left;
+        width: 25%;
+    }
+    
+    #header-lp {
+        background: url(http://media.fluke.com/images/0banner-rugged.jpg) no-repeat;
+        height: 448px;
+        padding-top: 10px;
+    }
+    
+    #headline {
+        margin-top: 358px;
+        background: #000;
+        height: 80px;
+        padding: 0 0 0 20px;
+    }
+    
+    #headline h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 4.5em;
+        line-height: 80px;
+        padding-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .section-content {
+        margin-bottom: 0;
+        margin-top: 0;
+        background: -moz-radial-gradient(center, ellipse cover, #ffffff 36%, #ffffff 36%, #c0c0c0 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(36%, #ffffff), color-stop(36%, #ffffff), color-stop(100%, #c0c0c0));
+        background: -webkit-radial-gradient(center, ellipse cover, #ffffff 36%, #ffffff 36%, #c0c0c0 100%);
+        background: -o-radial-gradient(center, ellipse cover, #ffffff 36%, #ffffff 36%, #c0c0c0 100%);
+        background: -ms-radial-gradient(center, ellipse cover, #ffffff 36%, #ffffff 36%, #c0c0c0 100%);
+        background: radial-gradient(ellipse at center, #ffffff 36%, #ffffff 36%, #c0c0c0 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#c0c0c0', GradientType=1);
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 24px 0 0 30px;
+        height: 360px;
+        position: relative;
+    }
+    
+    #nav {
+        width: 1280px;
+    }
+    
+    #nav li {
+        display: inline-block;
+        height: 80px;
+    }
+    
+    #nav li {
+        font-size: 1.3em;
+        display: table-cell;
+        vertical-align: middle;
+        color: #000000;
+        font-weight: bold;
+        width: 182.8px;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 4px solid rgb(255, 194, 14);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        padding: 0 20px;
+    }
+    
+    #nav li span {
+        font-size: 1.6em;
+    }
+    
+    #nav li:hover {
+        color: #000000;
+        background-color: rgb(255, 194, 14);
+        border-bottom: 4px solid rgb(255, 194, 14);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+    }
+    
+    #nav li.active {
+        color: #000000;
+        background-color: rgb(255, 194, 14);
+    }
+    
+    #nav ul {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        list-style: none;
+    }
+    
+    #nav a {
+        color: #000;
+    }
+    
+    .inner-nav {
+        height: 83px;
+    }
+    
+    #footer {
+        width: 100%;
+        max-width: 1280px;
+        display: block;
+        background-color: #000;
+        height: 60px;
+        float: left;
+        display: block;
+    }
+    
+    #footer h2 {
+        color: #ffc203;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: 20px;
+        display: block;
+        float: right;
+        text-align: right;
+    }
+    
+    #footer h3 {
+        color: #FFF;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: block;
+        float: left;
+    }
+    
+    #footer a {
+        color: #ffc203;
+        text-decoration: none;
+        text-align: right;
+    }
+    
+    #footer a:hover {
+        color: #FFF;
+        text-decoration: none;
+        text-align: right;
+    }
+    
+    .col-3 {
+        float: left;
+        padding-top: 10px;
+        width: 33.33%;
+    }
+    
+    .col-middle {
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+    }
+    
+    .clear-fix:after,
+    .row:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    
+    .black-button {
+        display: inline-block;
+        min-width: 195px;
+        background-color: #000000;
+        color: #FFC00E;
+        font-size: 14px !important;
+        font-weight: bold;
+        text-align: center;
+        padding: 8px 0px;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+    }
+    
+    .black-button:hover {
+        color: #ffffff;
+        background-color: #161616;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+    }
+    
+    #cta {
+        background-color: #FFC10E;
+    }
+    
+    #cta div {
+        padding: 20px 0px 20px 20px;
+    }
+    
+    #cta img {
+        float: left;
+    }
+    
+    #cta a {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    #terms {
+        padding: 5px 20px 30px 30px;
+    }
+    
+    #terms p {
+        color: #000000;
+        font-family: 'Roboto Slab', serif;
+        font-size: 12px;
+        font-weight: 400;
+    }

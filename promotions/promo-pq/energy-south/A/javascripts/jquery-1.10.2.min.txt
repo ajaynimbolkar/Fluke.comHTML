@@ -1,0 +1,5 @@
+FILE QUARANTINED
+
+Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "2014-05-05 Fluke.zip->jquery-1.10.2.min.js"
+Filter name: "FILE FILTER= Blocking-by-Atttachment-Extention: *.js"
