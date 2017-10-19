@@ -1,0 +1,226 @@
+DIV.cont
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.sIFR-active
+{
+	text-align: center;
+	background-color: #f0f0f2;
+	position: relative;
+}
+
+.p-ls-wrapper-2
+{
+	position: relative;
+	text-align: left;
+	width: 220px;
+	height: 24px;
+}
+.p-ls-wrapper-2BioMed
+{
+	position: relative;	
+	width: 160px;
+	height: 24px;
+}
+
+.p-ls-wrapper-2 IMG
+{
+	border: 0;
+}
+
+.p-ls-wrapper-2BioMed IMG
+{
+	border: 0;
+}
+
+
+DIV.p-ls-hover-container-2
+{
+	line-height: 24px;
+	width: 220px;
+	height: 24px;
+	color: white;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+DIV.p-ls-hover-container-2BioMed
+{
+	line-height: 20px;
+	width: 160px;
+	height: 24px;
+	color: #000000;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left :-50px;
+}
+
+DIV.p-ls-hover-container-2:hover
+{
+	/*	text-decoration: underline;		*/
+}
+DIV.p-ls-hover-container-2BioMed:hover
+{
+	/*	text-decoration: underline;		*/
+}
+DIV.p-ls-hover-container-2 IMG
+{
+	float: left;
+	vertical-align: middle;
+	margin: 3 10 3 6;
+}
+DIV.p-ls-hover-container-2BioMed IMG
+{
+	float: left;
+	vertical-align: middle;
+	/*margin: 3 10 3 6;*/
+}
+DIV.p-ls-hover-container-2 A
+{
+	display: block;
+	color: White;
+}
+
+DIV.p-ls-hover-container-2BioMed A
+{
+	display: block;
+	color: White;
+}
+DIV.p-ls-hover-container-2 A:link
+{
+	color: White;
+}
+DIV.p-ls-hover-container-2BioMed A:link
+{
+	color: #000;
+}
+DIV.p-ls-hover-container-2 A:hover
+{
+	color: White;
+}
+DIV.p-ls-hover-container-2BioMed A:hover
+{
+	color: #000;
+}
+DIV.p-ls-hover-container-2 A:focus
+{
+	outline-style: none;
+	outline-color: invert;
+	outline-width: 0px;
+}
+DIV.p-ls-hover-container-2BioMed A:focus
+{
+	outline-style: none;
+	outline-color: invert;
+	outline-width: 0px;
+}
+
+.p-ls-body
+{
+	border-bottom: #c5c7d1 1px solid;
+}
+
+.p-ls-bodyBioMed
+{
+	border-bottom: #c5c7d1 1px solid;
+}
+
+DIV.p-ls-body
+{
+	position: relative;
+	border-left: #c5c7d1 1px solid;
+	width: 220px;
+	background: #fff;
+	max-height: 275px;
+	overflow: auto;
+	border-right: #c5c7d1 1px solid;
+}
+
+DIV.p-ls-bodyBioMed
+{
+	position: relative;
+	border-left: #c5c7d1 1px solid;
+	width: 160px;
+	height: 150px;
+	background: #fff;
+	overflow: auto;
+	border-right: #c5c7d1 1px solid;
+}
+
+
+TABLE.p-ls-list .p-ls-list-left
+{
+	width: 37px;
+	vertical-align: top;
+}
+TABLE.p-ls-list .p-ls-list-left IMG
+{
+	margin: 4px;
+}
+TABLE.p-ls-list .p-ls-list-right
+{
+	width: 163px;
+	vertical-align: top;
+}
+TABLE.p-ls-list UL.p-ls-localelist LI
+{
+	border-bottom: 0px;
+	padding-bottom: 0px !important;
+	margin: 4px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	background: none transparent scroll repeat 0% 0%;
+	padding-top: 0px !important;
+	line-height:  normal;
+}
+
+.p-ls-list-left A
+{
+	width: 17px;
+	display: block;
+	height: 14px;
+}
+TABLE.p-ls-list .p-ls-list-right
+{
+	width: 163px;
+}
+
+TABLE.p-ls-list TD
+{
+	line-height: 17px;
+}
+
+.top-border {
+    border-top: 1px solid #c5c7d1;
+    padding: 4px;
+}
+
+TABLE.p-ls-list UL
+{
+	padding-bottom: 0px;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+TABLE.p-ls-list UL LI A
+{
+	width: 100%;
+	display: block;
+	color: Black;
+}
+TABLE.p-ls-list UL LI A:visited
+{
+	text-decoration: none;
+	color: Black;
+}
+TABLE.p-ls-list UL LI A:link
+{
+	text-decoration: none;
+	color: Black;
+}

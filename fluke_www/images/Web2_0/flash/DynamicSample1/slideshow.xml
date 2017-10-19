@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<slideshow randomDisplay='true'>
+
+        <image src='1.png' link='http://www.flukenetworks.com/nsv' inEffect='Slide Up' outEffect='None'>
+        <caption>This is my first caption</caption>
+		</image>
+		
+		<image src='2.png' link='http://www.flukenetworks.com/optiview' inEffect='Slide Up' outEffect='None'>
+		<caption>This is my second caption</caption>
+		</image>
+		
+		<image src='3.png' link='http://www.flukenetworks.com/nettool' inEffect='Slide Up' outEffect='None'>
+		<caption>This is my third caption</caption>
+		</image>
+		
+		<image src='4.png' link='http://www.flukenetworks.com/fnet_www/Search/playflash.aspx?p=%2ffnet_www%2fdownload%2fvirtualdemo%2fPNT_ENGLISH%2fRIGHTTOOL-V4-ENGLISH.SWF' inEffect='Slide Up' outEffect='None'>
+		<caption>This is my fourth caption</caption>
+		</image>
+		
+		<image src='5.png' link='http://www.flukenetworks.com/fnet/en-us/products/NetFlow+Tracker/Downloads/' inEffect='Slide Up' outEffect='None'>
+    	<caption>This is my fifth caption</caption>
+		</image>
+   
+</slideshow>

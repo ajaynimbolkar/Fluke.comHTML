@@ -1,0 +1,158 @@
+/* selector, TD for attribtue values */
+.Small { FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; align-vertical: middle;}
+
+/* selector, <SPAN> for attribute category  */
+.MediumBold { FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-STYLE: normal; padding: 0px, 0px, 0px, 16px;}
+
+
+/* selector, TD for Model names within the product image table */
+.ProdImgN { FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; align-vertical: middle; text-align:center; }
+
+/* selector, TABLE the individual table each product image has */
+.ProdImgT { background-color: #FFFFFF; }
+
+/* selector, the outer TABLE containing product images (a shade of Blue) */
+.OuterPrdImgT { background-color: #FFF5b8; }
+/* selector, TD for the phrase "Product Matches", above the Product Image table */
+.ProdM { FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #172F94; FONT-STYLE: normal; font-family:arial, helvetica, sans-serif, verdana;}
+
+/* selector, the TD containing the outer table which contains an attribute and its values */
+.AttTD { background-color: #FFCC00; align-vertical: absmiddle; }
+
+/* selector, the TD containing the outer table which contains an attribute and its values */
+.AttTD2_0 { background-color: #FFC20E; align-vertical: absmiddle; }
+
+
+/* selector, the TD containing the inner table which contains an attribute values E9E7E7 */
+.AttValTD { background-color: #eeeeee; width: 100%; }
+
+/* selector, the TD for attribute values */
+.Attribute { FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; padding: 0px, 0px, 0px, 6px; background-color: #D3D3D3;}
+
+/* selector, the TR providing white gutters in attribute table */
+.AttSpacer { background-color: #FFFFFF; }
+
+/* selector, <A> for unselected & selected image checkboxes (and other links) */
+A.Glink { text-decoration: none; COLOR: #000000;}
+A.Glink:hover { cursor: pointer; COlOR: #FFCC00;}
+
+/* selector, <A> for autoselected & deselected image checkboxes */
+A.Dlink:hover { cursor: default;}
+
+/* comparator, Image Row */
+.ImageRow { border: #cccccc solid 1px; }
+
+/* comparator, Model names (below images) and the link behavior */
+.ProdName { FONT-WEIGHT: bold; COLOR: #FFCC00; background-color: #969696; text-align: center; FONT-SIZE: 9pt; padding: 2px 2px 2px 2px;}
+A.ProdName { text-decoration: none;}
+A.ProdName:hover { cursor: pointer;}
+
+/* comparator, Model names (below images) and the link behavior */
+.ProdName2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0; background-color: #969696; text-align: center; padding: 2px 2px 2px 2px;}
+A.ProdName2_0 { text-decoration: none;color:#000000;}
+A.ProdName2_0:hover { cursor: pointer;text-decoration: none;color:#000000;}
+
+/* comparator, TD for attribute categories */
+.CategoryName { FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; background-color: #FFCC00; FONT-STYLE: normal; padding: 2px, 2px, 2px, 16px;}
+
+/* comparator, TD for attribute categories */
+.CategoryName2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0; background-color: #FFC20E; FONT-STYLE: normal; padding: 2px, 2px, 2px, 16px;}
+
+
+/* comparator, TD for "Model name" */
+.ModelNames { COLOR: #FFFFFF; FONT-WEIGHT: bold; background-color: #969696; FONT-SIZE: 9pt; padding: 2px 6px 2px 2px; text-align: right;}
+
+/* comparator, TD for "Model name" */
+.ModelNames2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0; background-color: #969696; padding: 2px 6px 2px 2px; text-align: right;}
+
+/* comparator TR, attribute */
+.AttRow { background-color:#cccccc;}
+
+/* comparator TR, attribute */
+.AttRow2_0 { background-color:#dde6ed;}
+
+/* comparator, TD for attribute values */
+.AttVal { FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; align-vertical: middle;
+  text-align:center; background-color:#eeeeee; padding: 2px 2px 2px 2px;}
+  
+/* comparator, TD for attribute values */
+.AttVal2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color: #000000;	font-size:11px; align-vertical: middle;
+  text-align:center; background-color:#e9eff4; padding: 2px 2px 2px 2px;}
+
+/* comparator, TD for attribute values which match */
+.AttValMatch { FONT-SIZE: 8pt; COLOR: #999999; FONT-STYLE: normal; align-vertical: middle;
+  text-align:center; background-color:#eeeeee; padding: 2px 2px 2px 2px;}
+  
+/* comparator, TD for attribute values which match */
+.AttValMatch2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-size:11px; COLOR: #7d8b94; FONT-STYLE: normal; align-vertical: middle;
+  text-align:center; background-color:#e9eff4; padding: 2px 2px 2px 2px;}
+
+/* comparator, TD for attributes */
+.AttComp { FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; padding: 2px 2px 2px 2px;align-vertical: top;}
+
+/* comparator, TD for attributes */
+.AttComp2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px; padding: 2px 2px 2px 2px;align-vertical: top;}
+
+/* comparator, <A> for "Bring back last row/product */
+A.ABBack {text-decoration: none;}
+.BBack {FONT-SIZE: 8pt; FONT-STYLE: normal; COLOR: #D3D3D3; background-color: #969696;
+  border: #D3D3D3 solid 3px; width: 100%; padding: 2px; text-decoration: none;}
+.BBackActive {FONT-SIZE: 8pt; FONT-STYLE: normal; COLOR: #FFCC00; background-color: #000000;
+  border: #FFCC00 solid 3px; width: 100%; padding: 2px; text-decoration: none; cursor: pointer;}
+  
+/* comparator, <A> for "Bring back last row/product, changed as per new 2.0 look*/
+A.ABBack2_0 {text-decoration: none;}
+.BBack2_0 {font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000; font-size:11px; background-color: #DDE6ED; border: #C5CDD2 solid 3px; width: 100%; padding: 2px; text-decoration: none;}
+.BBackActive2_0 {font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFC20E; font-size:11px; background-color: #000000; border: #FFCC00 solid 3px; width: 100%; padding: 2px; text-decoration: none; cursor: pointer;}
+
+/* comparator, <A> for right side commands */
+A.SmallBold { FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; padding: 0px, 0px, 0px, 6px;text-decoration: none;}
+
+/* comparator, <A> for right side commands */
+A.SmallBold2_0 { font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0; padding: 0px, 0px, 0px, 6px;text-decoration: none;}
+
+/* comparator, TD right side "New Search" command */
+.CompRight { FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; padding: 0px, 0px, 0px, 6px; background-color: #D3D3D3;}
+
+/* comparator, TD right side "New Search" command */
+.CompRight2_0 { FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; padding: 0px, 0px, 0px, 6px; background-color: #DDE6ED;}
+
+/* comparator, TD for "Options you selected..." */
+.CompOpt { COLOR: #FFFFFF; FONT-WEIGHT: bold; background-color: #B0B0B0; FONT-SIZE: 8pt; padding: 2px 2px 2px 2px;}
+
+/* comparator, TD for "Options you selected..." */
+.CompOpt2_0 { COLOR: #FFFFFF; FONT-WEIGHT: bold; background-color: #C5CDD2; FONT-SIZE: 8pt; padding: 2px 2px 2px 2px;}
+
+/* comparator, TD right side "New Search" command */
+.CompAtts { FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #777777; FONT-STYLE: normal; padding: 2px 2px 2px 2px; background-color: #D3D3D3;}
+
+/* message DIVs */
+.msgPanel {z-index:0; FONT-SIZE: 12px; width:500; background-color:#ffffff; position:absolute; border:3px solid #4B6AA2; left:100; top:100;  visibility:hidden;}
+.DragDropBar {z-index:0; width:478; background-color:#4B6AA2; text-align:center; cursor:move;padding:0px;}
+.msgX { background-color:#4B6AA2; text-align:right;}

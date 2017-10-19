@@ -1,0 +1,1894 @@
+/**********************************************
+*               REDESIGN 2009                 *
+**********************************************/
+BODY, TABLE, TD, P
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	
+}
+	.RadWindow
+{
+    z-index: 10000 !important;
+}			
+
+INPUT, SELECT, TEXTAREA
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-size:12px;
+}
+
+
+H1, .headline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+.subhead1
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+				
+
+.subhead2
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+H2, .subhead3
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	
+}
+.divRightPlaceHolder H2
+{
+margin-top:0px !important;
+}
+H6, .largebody
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:14px;
+	text-decoration:none;
+padding-top: 0;
+}
+
+
+H3, .bodybold, .subhead4, .searchFindResource
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+I, .italic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+}
+
+
+.bolditalic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+.small
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+}
+
+
+H4, .smallbold
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+.smallitalic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-style:italic;
+}
+
+
+.smallbolditalic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+.xsmall
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:10px;
+}
+
+
+.xsmallbold
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:10px;
+	font-weight:bold;
+}
+
+
+.small_pipe
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#98A1A7;
+	font-size:11px;
+}
+	
+.footer_pipe
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#C5CDD2;
+	font-size:10px;
+	}
+
+/* ----------------- LINKS ----------------- */
+
+
+A
+{	color:#0058b3;
+	text-decoration:none;
+}
+
+
+A:hover
+{	color:#003B78;
+	text-decoration:underline;
+}
+
+
+.subhead2link
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.subhead2link:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:16px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.subhead3link
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.subhead3link:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:14px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.subhead4link
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;	
+}
+
+
+.subhead4link:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:12px;
+	text-decoration:underline;
+	font-weight:bold;	
+}
+
+
+.smalllink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.smalllink:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.xsmalllink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.xsmalllink:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:10px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.leftnavlink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#01172A;
+	font-size:12px;
+	text-decoration:none;	
+}
+
+
+.leftnavlink:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	/*font-weight:bold;*/
+	text-decoration:underline;
+}
+
+
+.leftnavlink:active
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	/* Commented on 25/11/2010 by Girish Deshpande(Abhijeet Koranne) for RI 1208	
+	 font-weight:bold; */
+	text-decoration:none;	
+}
+
+
+
+/* ----------------- Navigation ----------------- */
+
+.nav_company_location_bar
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav_company_location
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+.nav_company_location:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFFFFF;
+	font-size:10px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+.nav1
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav1:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFFFFF;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav2
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#FFFFFF;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.nav2:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/* ----------------- Tables ----------------- */
+.tableHead { background-color: #E9EFF4; border-bottom: solid #C5CDD2 1px; }
+.tableBody { border-bottom: solid #C5CDD2 1px; }
+
+/* ----------------- Images ----------------- */
+.prdButton_top { margin-bottom: 5px }
+.prdButton_bottom { margin-top: 5px }
+
+
+/**********************************************
+*                  LEGACY                     *
+**********************************************/
+		
+
+.BlackHeadline, .BlueHeadline, .PlusHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+}
+				
+
+.BlackSubHead, .BlueSubHead, .PlusSubhead
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+			
+.PrdPlainText, .PlainText, .Text1
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+}
+
+
+.PrdItalicText, .txtItalic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+}
+
+
+.PrdBoldText, .txtBold, .SearchTitle, .Text1Bold, .PlusArticleType, .PlusNewArticle
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+}
+
+
+.txtBoldItalic
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+		
+.SmallText, .copywrite, .TextSmall, .Option, .TDSub
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+}
+				
+
+.SmallTextBold
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*              Table Styles                   *
+**********************************************/
+
+.tblHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+}
+
+
+.tblSmallHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+}
+
+
+.tblItem
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.tblSubject
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.tblValue
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+}
+
+
+/**********************************************
+*     NEEDS TO BE DEFINED WHERE USED          *
+**********************************************/
+
+.Background_LightGray{background-color:#EEEEEE;}
+.Background_DarkGray{background-color:#CCCCCC;}
+
+
+.CatTab
+{
+	color:black;
+	font-size:12px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.CatTab:hover
+{
+	Text-decoration:underline;
+}
+
+
+.GetMoreNav
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058B3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+}		
+
+
+.GetMoreNav:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*              Link Styles                    *
+**********************************************/
+
+.PlainLink, .PlainLink2, .PlusLink, .Plusnew, .LinkHeadline, .FeaturedLink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.PlainLink:hover, .PlainLink2:hover, .PlusLink:hover, .Plusnew:hover, .LinkHeadline:hover, .FeaturedLink:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:12px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+
+.smlPlusLink, .hlpPlusLink, .PlusNav, .BoldLink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+.smlPlusLink:hover, .hlpPlusLink:hover, .PlusNav:hover, .BoldLink:hover
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#003B78;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+
+.FakeLink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	text-decoration:underline;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+
+/**********************************************
+*       NAV - NOT SURE HOW TO CHANGE         *
+**********************************************/
+
+
+.Nav:hover
+{
+	color:#FFC20E; 
+	font-size:12px; 
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none; 
+	font-weight:bold; 
+}
+
+.Nav
+{
+	color:#FFFFFF; 
+	font-size:12px; 
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold; 
+}
+			
+.Nav2:hover
+{ 
+	color:#FFC20E; 
+	font-size:11px; 
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none; 
+	font-weight:bold; 
+}
+				
+.Nav2
+{
+	color:#FFFFFF; 
+	font-size:11px; 
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold; 
+}	
+				
+
+.HNav:hover
+{
+	color:#000000;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+.HNav
+{
+	color:#000000; 
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.SetBgColor
+{
+	background-color: #DDE6ED;	
+}
+/**********************************************
+*               Product Page                  *
+**********************************************/
+.NewPrdSpecHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+	vertical-align:top;
+}
+
+.PrdSpecHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#FFC20E;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#000000;
+	vertical-align:top;
+}
+
+
+.PrdSpecItem
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+
+.PrdSpecSubject
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+
+.PrdSpecValue
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:top;
+	padding-left:5px;
+}
+
+
+.PrdMOAHeadline
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-weight:bold;
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#DDE6ED;
+	vertical-align:bottom;
+}
+
+
+.MOALink
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#0058b3;
+	font-size:12px;
+	font-weight:normal;
+}
+				
+.MOALink:hover
+{
+	color:#003B78;
+	text-decoration:underline;
+}
+
+.PrdItal
+{
+	font-style:italic;
+}
+
+.PrdSub
+{
+	vertical-align:sub;
+	font-size:11px;
+}
+
+.PrdSup
+{
+	vertical-align:super;
+	font-size:11px;
+}
+
+.PrdSym
+{
+	font-family:symbol;
+}
+
+.Prdtextxsml
+{
+	font-size:11px;
+}
+
+.PrdRight
+{
+	text-align:right;
+}
+
+
+.requiredTD	
+{
+	background-color:#DDE6ED;
+	font-size:11px;
+	font-weight:bold;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+}
+
+
+/**********************************************
+*           Fluke Plus - remenants            *
+**********************************************/	
+
+.Pluslog
+{
+	color:#666600;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}		
+
+
+.Plusfield
+{
+	color:#FFFFFF;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}	
+
+
+.PHBorder
+{
+	border-top:1px;
+	border-bottom:1px;
+	border-left:1px;
+	border-right:1px;
+}		
+
+
+/**********************************************
+*                 Buttons                    *
+**********************************************/
+
+.SubmitButton
+{
+	font-size:11px;
+	font-weight:bold;
+	background-color:#FFC20E;
+}
+
+.ResetButton
+{
+	font-size:11px;
+	font-weight:bold;
+	background-color:#DDE6ED;
+}
+
+.Plusbutton
+{
+	color:#FFC20E;
+	font-size:11px;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	text-decoration:none;
+	font-weight:bold;
+}	
+
+
+/**********************************************
+*               Drop-in Boxes                 *
+**********************************************/
+				
+#dropinboxv2cover{
+width:300px; /*change width to desired */
+position:absolute; /*Don't change below 4 rules*/
+z-index:100;
+overflow:hidden;
+visibility:hidden;
+}
+
+#dropinboxv2{
+width:300px; /*change width to above width-20. */
+height:200px; /*change height to above height-20. REMOVE if you wish box to be content's natural height*/
+border:2px solid #4B6AA2; /*Customize box appearance*/
+background-color:#FFFFFF;
+padding:0px;
+position:absolute; /*Don't change below 3 rules */
+}
+
+.topHeaderBarClass
+{
+	background: url(../images/fluke/Web2_0/header/nav_hdr_bg_2px_x_90px.gif);
+	height: 90px;
+	padding: 0;
+	border: 0;
+	width: 100%;
+}
+
+.leftnavlinkactive1
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;	
+}
+/*************************************************
+*               Live Chat        
+/*************************************************/
+.lpPoweredBy {
+display:none;
+}
+
+.lpStaticButton {
+margin-bottom: 0;
+padding:0px;
+}
+
+.lpStaticButtonTR {
+margin-bottom: 0;
+padding:0px;
+}
+
+.lpPoweredByDiv {
+display:none;
+}
+
+.lpEmtStarRating {
+display:none;
+}
+
+/*************************************************
+*               Dynamic Site Classes        
+/*************************************************/
+.activeTabBg
+{
+	background-color: #FFC20E;	
+}
+.staticTabBg
+{
+	background-color: #DDE6ED;	
+}
+
+/**********************************************
+*               NEW LOOK REDESIGN 2011        *
+**********************************************/
+#parentContainer
+{
+	width: 970px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#header
+{
+	width: 970px;
+}
+
+#headerParentDiv
+{
+	background: url(../images/fluke/Web2_0/header/fluke_redesign_header_bg.jpg);
+	height: 110px;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	z-index:9000;
+}
+
+#navigation
+{
+	width: 970px;
+}
+
+#contentArea
+{
+	width: 970px;	
+	background-color: WHITE;		
+}
+
+#topContent
+{
+	width: 970px;
+	height: 303px;
+	position: relative;
+}
+
+#imagePlayer
+{
+	width: 732px;
+	height: 303px;
+	background-color: #ffc20e;	
+	position: absolute;
+	left: 0px;			
+}
+
+.sliderReel
+{
+	cursor: pointer;
+	height: 303px; 
+	width: 732px; 
+	background-attachment: scroll;
+	background-position: center top;
+}
+
+.sliderTextBox
+{
+	width: 357px; 
+	height: 151px ;
+	float: left;
+	position: relative;
+	margin-left:55px; 
+	margin-top:40px; 	
+}
+
+.sliderButton
+{
+	width: 350px; 
+	height: 30px;
+	float: left;
+	position: relative;
+	margin-left: 55px; 
+	margin-top: 25px;
+}
+
+.tdSlideButLeft
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/inactive_hp_slideshow_large_button_30px_left.gif');	
+	width: 13px;
+}
+
+.tdSlideButLeftHover
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/hover_hp_slideshow_large_button_30px_left.gif');	
+	width: 13px;
+}
+
+.tdSlideButRight
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/inactive_hp_slideshow_large_button_30px_right.gif');	
+	width: 13px;
+	height: 30px;
+}
+
+.tdSlideButRightHover
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/hover_hp_slideshow_large_button_30px_right.gif');	
+	width: 13px;
+	height: 30px;
+}
+
+.tdSlideButCenter
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/inactive_hp_slideshow_large_button_30px_tile.gif');
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.tdSlideButCenterHover
+{
+	background-image: url('../images/fluke/Web2_0/ImageSlider/hover_hp_slideshow_large_button_30px_tile.gif');
+	color: #ffc20e;
+}
+
+.sliderButText
+{		
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+* 
+{
+    outline: none;
+    margin-bottom: 0px;    
+}
+IMG 
+{
+    BORDER-TOP-WIDTH: 0px; 
+    BORDER-LEFT-WIDTH: 0px; 
+    BORDER-BOTTOM-WIDTH: 0px; 
+    BORDER-RIGHT-WIDTH: 0px;
+}
+.container 
+{
+    PADDING-RIGHT: 0px; 
+    PADDING-LEFT: 0px; 
+    PADDING-BOTTOM: 0px; 
+    MARGIN: 0px auto; 
+    WIDTH: 732px; 
+    PADDING-TOP: 0px;   
+    text-align: left; 
+}
+.main_view 
+{
+    FLOAT: left; 
+    POSITION: relative;
+}
+.window 
+{
+    OVERFLOW: hidden; 
+    WIDTH: 732px; 
+    POSITION: relative; 
+    HEIGHT: 303px;
+}
+.image_reel 
+{
+    LEFT: 0px; 
+    POSITION: absolute; 
+    TOP: 0px;
+}
+.image_reel IMG 
+{
+    FLOAT: left;
+}
+.image_reel DIV 
+{
+    FLOAT: left;
+}
+.paging 
+{
+    DISPLAY: none; 
+    Z-INDEX: 100; 
+    LEFT: 55px; 	     
+    WIDTH: auto;
+    TOP: 271px; 
+    POSITION: absolute; 
+    HEIGHT: 12px; 
+}
+.paging A 
+{
+	FONT: 10px Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;    
+    background-image: url('../images/fluke/Web2_0/imageslider/inactive_hp_bullet_banner_indicator_12px_x_12px.png');
+    background-repeat:no-repeat;
+}
+.paging A.active,
+.paging A:hover
+{        
+	FONT: 10px Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-image: url('../images/fluke/Web2_0/imageslider/active_hp_bullet_banner_indicator_12px_x_12px.png');	   
+    background-repeat:no-repeat;
+} 
+
+
+#divideLine
+{
+	width: 1px;
+	background-color: #7b7e84;	
+	position: absolute;
+	left: 732px;
+	height: 303px;
+}
+
+#subNavigation
+{
+	height: 303px;
+	width: 237px;
+	background-color: #7b7e84;	
+	position: absolute;
+	right: 0px;
+	text-align: left;
+}
+
+.subNavContainer
+{
+	position: relative; 
+	width:237; 
+	height:75px;
+}
+
+
+
+.subNavTextBlock {
+    cursor: pointer;
+    display: table-cell;    
+    position: relative;
+    vertical-align: middle;
+    width: 195px;
+}
+
+.subNavIcon
+{
+	margin-top: 10px; 
+	margin-left: 10px;	
+}
+
+.subNavLink, .subNavLink:link 
+{
+	background-image: url("../images/fluke/Web2_0/homesubnav/subnav_button_static_tiling_1px_x_75px.gif");
+    color: #FFFFFF;
+    display: table;
+    font-size: 14px;
+    font-weight: bold;
+    height: 75px;
+    text-decoration: none;
+    width: 237px;
+    position: relative; 
+}
+
+.subNavLink:hover
+{	
+	text-decoration: none;
+	color: #ffc20e;	
+	background-image: url('../images/fluke/Web2_0/homesubnav/subnav_button_hover_tiling_1px_x_75px.gif');
+}
+
+.subNavLink .dvIEHack
+{
+	position: absolute;
+	top: 50%;	
+}
+
+.subNavLink .dvIEHack span
+{	
+	padding-left: 7px;
+	position: relative;
+	top: -50%;	
+}
+
+.hzDivideSubNav
+{
+	width: 237px;
+	background-color: #7b7e84;
+	position: relative;
+	text-align: left;
+	height: 1px;
+	overflow:hidden;
+}
+
+
+
+.subNavTab 
+{	
+	position: relative;
+	text-align: left;
+	height: 75px;
+	width: 237px;	
+	background-image: url('../images/fluke/Web2_0/homesubnav/subnav_button_static_tiling_1px_x_75px.gif');
+	
+}
+
+.subNavTab:hover
+{
+	cursor:pointer;
+	background-image: url('../images/fluke/Web2_0/homesubnav/subnav_button_hover_tiling_1px_x_75px.gif');	
+}
+
+.subNavTab:hover a
+{
+	text-decoration: none;	
+	color: Yellow;
+}
+
+.subNavTab:hover div
+{
+	color: Yellow;
+}
+
+.subNavTabText
+{
+	height:55px; 
+	width: 185px; 
+	position:absolute; 
+	left: 43px; 
+	top: 10px; 
+	padding:1em 0 1em 0;	
+}
+
+.subNavTabIcon
+{
+	height:55px; 
+	width: 125px; 
+	position:absolute; 
+	left: 10px; 
+	top: 10px;
+}
+
+#secondaryBanner
+{
+	width: 970px;
+	height: 220px;
+	background-color: #FFFFFF;		
+	text-align:left;
+}
+
+#secBannerLeft
+{	
+	cursor: pointer;
+	width: 435px;
+	height: 160px;	
+	position: absolute;		
+	margin-top: 30px;
+	margin-left: 35px;
+}
+
+.secBannerTextBox
+{
+	height: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    width: 200px;
+    overflow: hidden;
+}
+
+.secBannerTextBody
+{		
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color: #000000;
+	font-size: 13px;
+}
+
+.secBannerTextHeader
+{	
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.secBannerButtonLeft,
+.secBannerButtonRight 
+{
+	width: 350px; 
+	height: 30px;
+	float: left;
+	position: absolute;
+	margin-left: 20px; 
+	margin-top: 115px;	
+}
+
+.tdSecBanButLeft
+{
+	width: 13px;
+	height: 25px;
+	background-image: url('../images/fluke/Web2_0/SecondaryBanner/static_hp_sub_banner_small_button_25px_left.gif');
+}
+
+.tdSecBanButLeftHov
+{
+	width: 13px;
+	height: 25px;
+	background-image: url('../images/fluke/Web2_0/SecondaryBanner/hover_hp_sub_banner_small_button_25px_left.gif');
+}
+
+.tdSecBanButCenter
+{	
+	background-image: url("../images/fluke/Web2_0/SecondaryBanner/static_hp_sub_banner_small_button_25px_tile.gif");
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tdSecBanButCenterHov
+{	
+	background-image: url("../images/fluke/Web2_0/SecondaryBanner/hover_hp_sub_banner_small_button_25px_tile.gif");
+    color: #FFC20E;
+	font-weight: bold;
+}
+
+.tdSecBanButRight
+{
+	width: 13px;
+	background-image: url('../images/fluke/Web2_0/SecondaryBanner/static_hp_sub_banner_small_button_25px_right.gif');
+}
+
+.tdSecBanButRightHov
+{
+	width: 13px;
+	background-image: url('../images/fluke/Web2_0/SecondaryBanner/hover_hp_sub_banner_small_button_25px_right.gif');
+}
+
+#secBannerRight
+{
+	cursor: pointer;
+	width: 435px;
+	height: 160px;	
+	position: absolute;		
+	margin-top: 30px;
+	margin-left: 500px;
+}
+
+/* -----------------social bar ----------------- */
+#newsSocialBar
+{
+	width: 970px;
+	height: 50px;
+	background-color: #FFFFFF;	
+}
+              
+#news-container
+{
+    
+    margin: 0px;
+    text-align: left;
+    font-size: 12px;
+    height: 33px;
+    overflow:hidden;
+}
+
+#news-container ul
+{	   
+    list-style-type: none; 
+    margin:0 0 0 0px;
+}
+
+#news-container ul li div
+{	
+    background: none repeat scroll 0 0 #FFFFFF;    
+    left: 10px;
+    padding: 9px 0px 8px 20px;
+    text-align: LEFT;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+    font-weight:normal;
+}
+
+.latestNewsHeader
+{
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#news-container a
+{
+	color: Black;
+	font-size:12px;
+    font-weight:normal;
+}
+
+#news-container a:hover 
+{
+   	text-decoration: underline;
+   	color: black;
+	font-size:12px;
+}
+
+#latestNews
+{
+	height: 50px;	
+	float: left;
+	text-align: left;
+	margin-left: 35px;
+	width: 900px;	
+}
+
+
+#newsTicker
+{
+	height: 50px;
+	float: left;
+}
+
+.socialBarContent
+{
+	padding: 9px 10px 0px 10px;	
+}
+	
+/* -----------------bottom links ----------------- */
+#bottomLinksHeader
+{
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+}
+
+#bottomLinksCopy
+{
+	font-size: 13px;
+	color: #000000;
+}
+
+#bottomLinksCopy a:hover 
+{
+	font-size: 13px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#bottomLinks
+{
+	position: relative;
+	text-align: left;
+	width: 970px;
+	background-color: #FFFFFF;
+}
+
+.bottomLinksBox
+{
+	border: solid 1px red; 
+	width: 158px; 
+	height: 200px; 
+	float: left; 
+}
+
+#genericPh
+{
+	position: relative;
+	text-align: center;
+	width: 970px;
+	background-color: #FFFFFF;
+}
+
+#dvGenImg
+{
+	width: 950px;	
+	margin: 0 10 0 10;	
+}
+
+.spacingGenPh
+{
+	height: 35px;		
+}
+
+#MetaControls
+{
+	left: 0px;
+	top: 0px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+
+/********************************************** New Header 2011 **********************************************/
+#headerParentDiv
+{
+	width:970px;
+	height: 110px;
+	position: relative;
+}
+#newHomeSearchBox
+{
+	position: absolute;
+	text-align: right;
+	right: 10px;
+	bottom: 15px;	
+}
+#newHdrLogo
+{
+	position: absolute;
+	text-align: left;
+	left: 0px;
+	top: 15px;
+	height: 50px;
+	width: 166px;
+}
+#newHdrTag
+{
+	position: absolute;
+	text-align: left;
+	left: 201px;
+	top: 15px;
+}
+#newHeaderCPicker
+{
+	text-align: right;
+	right: 10;		
+	top: 8px;
+	position: absolute;
+}
+/********************************************** New Footer 2011 **********************************************/
+#footer
+{
+	text-align: left;	
+	width: 970px;
+	position: absolute;
+	background-color: #000;	
+}
+
+.footerContainer
+{
+	width: 100%;
+	background-color: Black;
+}
+
+.footerContent
+{
+	text-align: left;
+	padding-left: 8px;
+	vertical-align: top;
+	width: 70%;
+}
+.footerLinks
+{
+	font-size: 11px;
+	color: #cccccc;
+}
+
+.footerLinks:hover 
+{
+	font-size: 11px;
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+.copywriteNew
+{
+	font-size: 11px;
+	color: #cccccc;
+	vertical-align: top;
+	text-align: right;
+	padding-right: 8px;
+	width: 30%;
+}
+
+
+/***classes for background switching***/
+.bodyOldStyle
+{
+	margin: 0; 
+	background: url(../images/fluke/Web2_0/background/tiling_bg_8px_x_8px.gif);
+}
+
+.bodyNewStyleIE7
+{
+	margin: 0;
+	text-align:center;	
+    background-color: black;
+}
+
+.bodyNewStyle
+{
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    background-image: url(../images/fluke/Web2_0/background/fluke_grunge_bg_1600px_v6.jpg);
+    margin: 0px;
+    padding: 0px;        
+    text-align:center;	
+    background-color: black;
+}
+
+.bgLeftOldStyle
+{
+	width: 10px; 
+	background: url(../images/fluke/Web2_0/background/page_shadow_left_10px_x_1px.gif);	
+}
+.bgLeftNewStyle
+{	
+	width: 10px;	
+}
+.bgLeftNewStyleIE7
+{
+	width: 10px; 
+}
+.bgRightOldStyle
+{
+	width: 10px; 
+	background: url(../images/fluke/Web2_0/background/page_shadow_right_10px_x_1px.gif);
+}
+.bgRightNewStyle
+{	
+	width: 10px;
+}
+.bgRightNewStyleIE7
+{
+	width: 10px;
+}
+.bgBotOldStyle
+{
+	height: 10px;
+	background: url(../images/fluke/Web2_0/background/page_shadow_bottom_990px_x_10px.gif);
+}
+.bgBotNewStyle
+{
+	
+}
+
+
+/* ----------------- Header ----------------- */
+
+.p-header-localeselector
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#cccccc;
+	font-size:11px;
+	
+}
+
+.p-header-searchbox
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	color:#000000;
+	font-size:12px;	
+}
+
+
+/* -----------------bottom links ----------------- */
+
+.bottomNavigationHeader
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+}
+
+.bottomnavigation
+{
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";
+	font-size:13px;
+	color:#000;
+	padding-top: 4px;
+}
+
+.bottomnavigation a 
+{
+	text-decoration:none;
+	color:#000;
+}
+
+.bottomnavigation a:hover 
+{
+	text-decoration:underline;
+	color:#000;
+}
+.bottomnavigation a:visited 
+{
+	color:#000;
+}
+
+/* -----------------footer----------------- */
+
+#footerLinks
+{
+	font-size: 11px;
+	color: #cccccc;
+}
+
+#footerLinks a:hover 
+{
+	font-size: 11px;
+	color: #cccccc;
+	text-decoration: underline
+}
+
+/* -----------------footer-end----------------- */
+
+.authorHeadings
+{
+	font-weight: bold;
+	font-size: 15px;	
+}
+
+.fontTimesNewRoman
+{
+	font-family: "Times New Roman", "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial";	
+}
+
+.fontArial
+{
+	font-family: "Arial", "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande";
+}
+
+.imgClose
+{
+	background: transparent url(../images/fluke/Web2_0/Home/Close_Window_16x16px.png) no-repeat;
+}
+
+.newsSBTopLeft
+{
+ height: 9px;
+ width: 10px;
+ 
+ background : url(../images/fluke/Web2_0/NewsBar/news_bar_10px_x_9px_top_left.gif) no-repeat;
+}
+
+.newsSBTopTile
+{
+	height: 1px; 
+	width: 10px; 
+	background-image: url(../images/fluke/Web2_0/NewsBar/news_bar_1px_x_9px_top_tile.gif);
+	background-color :#FFC20E;
+}
+
+.newsSBTopRight
+{
+	height: 9px; 
+	width: 10px; 
+	background : url(../images/fluke/Web2_0/NewsBar/news_bar_10px_x_9px_top_right.gif) no-repeat;
+}
+
+.newsSBTightTile
+{
+	background-image: url(../images/fluke/Web2_0/NewsBar/news_bar_9px_x_1px_right_tile.gif);
+}
+
+.newsSBBottomLeft
+{
+	background-color: #FFC20E; 
+	background : url(../images/fluke/Web2_0/NewsBar/news_bar_10px_x_9px_bottom_left.gif) no-repeat;
+}
+
+.newsSBBottomTile
+{
+	background-color : #FFC20E;
+	background-image: url(../images/fluke/Web2_0/NewsBar/news_bar_1px_x_9px_bottom_tile.gif);
+}
+
+.newsSBBottomRight
+{
+	background : url(../images/fluke/Web2_0/NewsBar/news_bar_10px_x_9px_bottom_right.gif) no-repeat;
+}
+/*--------*/
+.bkgcolor
+{
+	background-color: #FFC20E;
+}
+
+.newsSBTop
+{
+	width: 95px; 
+	background-color: #FFC20E;
+}
+
+.newsSBtextBG
+{
+	padding-right: 8px;  
+	width: 90px;
+}
+
+.secbanbottomleft
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/bottom_left_home_page_sub_banner_corners_10px_x_10px.png); 
+	height: 10px; 
+	width: 10px;
+}
+
+.secbanbottomtile
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/bottom_tiling_border_home_page_sub_banner_1px_x_10px.png); 
+	height: 10px; 
+	width: 425px;	
+}
+
+.secbanbottomright
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/bottom_right_home_page_sub_banner_corners_10px_x_10px.png); 
+	height: 10px; 
+	width: 10px;
+}
+
+.secBanRightTile
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/right_tiling_border_home_page_sub_banner_10px_x_1px.png);
+	height: 140px; 
+	width: 10px;
+}
+
+.secBanLeftTile
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/left_tiling_border_home_page_sub_banner_10px_x_1px.png); 
+	height: 140px; 
+	width: 10px;
+}
+
+.secBanTopRight
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/top_right_home_page_sub_banner_corners_10px_x_10px.png); 
+	height: 10px; 
+	width: 10px;
+}
+
+.secBanTopTile
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/top_tiling_border_home_page_sub_banner_1px_x_10px.png); 
+	height: 10px; 
+	width: 425px;
+}
+
+.secBanTopLeft
+{
+	background-image: url(../images/fluke/Web2_0/SecondaryBanner/top_left_home_page_sub_banner_corners_10px_x_10px.png); 
+	height: 10px; 
+	width: 10px;
+}

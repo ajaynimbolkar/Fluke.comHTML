@@ -1,0 +1,162 @@
+<style type="text/css">
+
+body {
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-position: center top; 
+	background-image: url(../../fluke_www/images/fluke/Web2_0/background/fluke_grunge_bg_1600px_v6.html); 
+	padding: 0px; 
+	background-color: black;
+	margin-left:auto;
+    margin-right:auto;
+	text-align:center;
+	line-height:17px;
+	font-family:Helvetica, Arial, sans-serif;
+	}
+
+#wrapper{
+	width:978px;
+	text-align:left;
+	color:#000;
+	margin-left:auto;
+    margin-right:auto;
+	position:relative;
+	background-color:#FFF;
+	}
+
+#topHead {
+	position:absolute;
+	left: 50px;
+	top: 108px;
+	width: 482px;
+	font-size:38px;
+	line-height:38px;
+	height: 140px;
+	font-family: 'Sanchez', serif;
+	}
+
+#centerContent {
+	position:absolute;
+	left: 49px;
+	top: 327px;
+	width: 655px;
+	font-size:16px;
+	}
+
+
+#moreTests {
+	position:absolute;
+	left: 50px;
+	top: 410px;
+	width: 220px;
+	font-size:14px;
+	height: 70px;
+	}
+	
+#lessTime {
+	position:absolute;
+	left: 50px;
+	top: 510px;
+	width: 220px;
+	font-size:14px;
+	height: 70px;
+	}
+		
+#reducedComplex {
+	position:absolute;
+	left: 50px;
+	top: 625px;
+	width: 220px;
+	font-size:14px;
+	height: 70px;
+	}
+	
+#enhancedData {
+	position:absolute;
+	left: 50px;
+	top: 760px;
+	width: 220px;
+	font-size:14px;
+	height: 70px;
+	}
+
+#moreTestsBullet {
+	position:absolute;
+	left: 25px;
+	top: 394px;
+	width: 16px;
+	font-size:15px;
+	height: 22px;
+	}
+	
+#lessTimeBullet  {
+	position:absolute;
+	left: 25px;
+	top: 494px;
+	width: 16px;
+	font-size:15px;
+	height: 20px;
+	}
+		
+#reducedComplexBullet  {
+	position:absolute;
+	left: 25px;
+	top: 610px;
+	width: 18px;
+	font-size:15px;
+	height: 19px;
+	}
+	
+#enhancedDataBullet  {
+	position:absolute;
+	left: 25px;
+	top: 745px;
+	width: 18px;
+	font-size:15px;
+	height: 21px;
+	}
+	
+#demoButton {
+	position:absolute;
+	left: 62px;
+	top: 973px;
+	padding-top:20;
+	padding-left:80px;
+	width: 269px;
+	font-size:16px;
+	height: 81px;
+	color:#FFC20e;
+	text-decoration:none;
+	}
+	
+#specButton {
+	position:absolute;
+	left: 357px;
+	top: 974px;
+	padding-top:17;
+	padding-left:80px;
+	width: 266px;
+	font-size:16px;
+	height: 80px;
+	color:#FFC20e;
+	text-decoration:none;
+	}
+	
+#brochureButton {
+	position:absolute;
+	left: 651px;
+	top: 973px;
+	padding-top:12px;
+	padding-left:70px ;
+	width: 270px;
+	font-size:16px;
+	height: 78px;
+	color:#FFC20e;
+	text-decoration:none;
+	}
+	
+#wrapper span {
+	color:#FFC20e;
+	font-size:40px;	
+	}
+</style>

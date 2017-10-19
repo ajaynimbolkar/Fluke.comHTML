@@ -1,0 +1,61 @@
+.indextext { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; margin-top: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px}
+.indextextBold { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold}
+.indextextBoldOrder { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold; margin-top: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px}
+.indextextBoldOrderRed { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ff0000; font-weight: bold; margin-top: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px}
+.bullettext { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; }
+
+.normaltext { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; }
+.normaltextred { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #FF0000; }
+.smalltext { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; }
+
+
+.normal { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; }
+.normalbold { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold}
+.normalboldgreen { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #99cc00; font-weight: bold;text-decoration: none;}
+.normalboldgreen:hover { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #333399; font-weight: bold;text-decoration: none}
+.heading1white {font-family: Arial, Helvetica, sans-serif;	font-size: 18px;	color: #00FFFF; font-weight: bold;	text-indent: 5px;}
+.heading2white {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #FFFFFF; font-weight: bold}
+.heading2 { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold}
+.heading3 { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000}
+.boldtable { font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	font-weight: bold;}
+.normaltable { font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	font-style: normal;	color: #000000;}
+.heading1 {	font-family: Arial, Helvetica, sans-serif;	font-size: 18px;	font-weight: bold;	text-indent: 5px;}
+
+.tabtext { font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-style: normal;	font-weight: bold; color: #000000;	text-indent: 5px; text-decoration: none;}
+.tabtext:hover { font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-style: normal;	font-weight: bold; color: #000066;	text-indent: 5px; text-decoration: none;}
+.promo {font-family: Arial, Helvetica, sans-serif; font-size: 12px;	font-style: oblique;	font-weight: bold;	font-variant: normal;	color: #000000;}
+.formtext { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; padding-left: 5px}
+.formtextBold { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold; padding-left: 5px}
+.boldstrike {	font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	font-weight: bold;	text-decoration: line-through;	color: #FF0000;}
+.button {	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	font-style: normal;	background-image: url(images/groen3.html);	background-color: #99CC00;}
+.boldwhite {	font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	font-weight: bold;	color: #FFFFFF;}
+.indextext { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; list-style-type: disc; list-style-position: inside}
+.indextextBoldheader { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold ; margin-top: 3px; margin-right: 3px; margin-left: 2px; padding-top: 3px; padding-right: 3px; padding-left: 2px}
+.indextextBoldheaderblue { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000099; font-weight: bold ; margin-top: 3px; margin-right: 3px; margin-left: 2px; padding-top: 3px; padding-right: 3px; padding-left: 2px }
+.indextextBoldheaderblue:hover{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #99CC00; font-weight: bold ; margin-top: 3px; margin-right: 3px; margin-left: 2px; padding-top: 3px; padding-right: 3px; padding-left: 2px }
+.indextexte-mailafriend { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000099; margin-left: 2px; padding-left: 2px; margin-top: 2px; padding-top: 2px}
+.indextext2 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; list-style-type: disc; list-style-position: inside}
+.indextextBoldheaderBig { font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000; font-weight: bold; margin-top: 4px; margin-right: 3px; margin-left: 2px; padding-top: 4px; padding-right: 3px; padding-left: 2px }
+.indextextBoldheaderblueBig { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000099; font-weight: bold ; margin-top: 2px; margin-right: 3px; margin-left: 2px; padding-top: 2px; padding-right: 3px; padding-left: 2px }
+.indextextBoldheaderblueBig:hover{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #99CC00; font-weight: bold ; margin-top: 2px; margin-right: 3px; margin-left: 2px; padding-top: 2px; padding-right: 3px; padding-left: 2px }
+.indextext3 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; list-style-type: square}
+.indextextBoldheaderBig2 { font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000; font-weight: bold; margin-top: 4px; margin-right: 3px; padding-top: 4px; padding-right: 3px}
+.indextext4 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; margin-left: -10px; padding-left: -10px}
+.indextextBoldheaderBigItalic {	font-family: Arial, Helvetica, sans-serif;	font-size: 20px;	color: #000000;	font-weight: bold;	margin-top: 4px;	margin-right: 3px;	margin-left: 2px;	padding-top: 4px;	padding-right: 3px;	padding-left: 2px;	font-style : italic;}
+.promoTextBoldSmallBlue { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: bold }
+.promoTextBoldSmallBlue:hover{ font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000099; font-weight: bold}
+
+.Nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: white; FONT-FAMILY: arial, helvetica, sans-serif, verdana; TEXT-DECORATION: none
+}
+.Nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: arial, helvetica, sans-serif, verdana; TEXT-DECORATION: none
+; margin-left: 2px; padding-left: 2px
+}
+.NavStandard:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffcc00; FONT-FAMILY: arial, helvetica, sans-serif, verdana; TEXT-DECORATION: none
+}
+.NavStandard {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: white; FONT-FAMILY: arial, helvetica, sans-serif, verdana; TEXT-DECORATION: none
+; margin-left: 2px; padding-left: 2px
+}

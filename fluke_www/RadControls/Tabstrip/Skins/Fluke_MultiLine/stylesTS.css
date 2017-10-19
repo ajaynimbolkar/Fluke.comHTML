@@ -1,0 +1,162 @@
+.RadTabStrip_Fluke_Multiline
+{
+	font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: solid 4px #FFC20E;
+	text-align:center; 
+	text-decoration: none;
+	min-height: 19px;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLI,
+.RadTabStrip_Fluke_Multiline .rtsLink
+{
+	font: 12px/16px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+	font-weight:bold;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsLI,
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsLink
+{
+	color: Black;
+	margin: 0px;
+	margin-right: 2px;
+	padding: 0px;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsLink:hover,
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsSelected,
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsSelected:hover
+{
+	text-decoration: none;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsLink:hover,
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsSelected,
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsSelected:hover
+{
+	text-decoration: none;
+}
+
+.RadTabStripLeft_Fluke_Multiline .rtsSeparator,
+.RadTabStripRight_Fluke_Multiline .rtsSeparator
+{
+	background: #000000;
+}
+
+/* <disabled tabs> */
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsDisabled
+{
+	/* color: Red; */
+}
+/* </disabled tabs> */
+
+/* <scrolling arrows> */
+.RadTabStrip_Fluke_Multiline .rtsNextArrow,
+.RadTabStrip_Fluke_Multiline .rtsPrevArrow,
+.RadTabStrip_Fluke_Multiline .rtsPrevArrowDisabled,
+.RadTabStrip_Fluke_Multiline .rtsNextArrowDisabled
+{
+	/* background-image: url('TabStrip/TabStripStates.png'); */
+}
+/* </scrolling arrows> */
+
+/* <tab backgrounds> */
+
+.RadTabStrip_Fluke_Multiline .rtsLevel { background: Yellow; }
+
+.RadTabStrip_Fluke_Multiline .rtsLevel1 { background-color: White; padding:0px; }
+.RadTabStripTop_Fluke_Multiline .rtsLevel2 { background: #ccdbee url('TabStrip/Level2Bg.html') repeat-x 0 0; padding:0px; }
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel .rtsLink,
+.RadTabStripTop_Fluke_Multiline .rtsLevel .rtsOut { background-image: none; }
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsLink,
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsOut,
+.RadTabStripBottom_Fluke_Multiline .rtsLevel1 .rtsLink,
+.RadTabStripBottom_Fluke_Multiline .rtsLevel1 .rtsOut,
+.RadTabStripTop_Fluke_Multiline .rtsLevel1,
+.RadTabStripBottom_Fluke_Multiline .rtsLevel1 { }
+
+.RadTabStripLeft_Fluke_Multiline .rtsLink,
+.RadTabStripRight_Fluke_Multiline .rtsLink { }
+
+.RadTabStripLeft_Fluke_Multiline .rtsLast .rtsLink,
+.RadTabStripRight_Fluke_Multiline .rtsLast .rtsLink
+{
+	border-bottom: 1px solid #898C95;
+	padding:0px;
+}
+
+.RadTabStripRight_Fluke_Multiline .rtsLink,
+.RadTabStripRight_Fluke_Multiline .rtsLI .rtsDisabled:hover { background-position: 100% 0; }
+.RadTabStripRight_Fluke_Multiline .rtsLink:hover { background-position: 100% -200px; }
+.RadTabStripRight_Fluke_Multiline .rtsSelected,
+.RadTabStripRight_Fluke_Multiline .rtsSelected:hover { background-position: 100% -400px; }
+/* </tab backgrounds> */
+
+
+/* <background positioning: tabs with hovers> */
+
+/* <orientation: top> */
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsLink { background-position: 0 0; background: transparent url('img/static_tab_left_side_corner_10px_x_32px.gif') 0px 0px no-repeat; }
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsOut { background-position: 100% 0; }
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsLink:hover { background-position: 0 -52px; }
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsLink:hover .rtsOut { background-position: 100% -52px; background: transparent url('img/static_tab_left_side_corner_10px_x_32px.gif') 0px 0px no-repeat; }
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsSelected,
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsSelected:hover { background-position: 0 -26px; background: transparent url('img/active_tab_left_side_corner_10px_x_32px.gif') 0px 0px no-repeat;}
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsSelected .rtsOut,
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsSelected:hover .rtsOut { background-position: 100% -26px; background: transparent url('img/active_tab_left_side_corner_10px_x_32px.gif') 0px 0px no-repeat;}
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsDisabled:hover { background-position: 0 0; }
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 .rtsDisabled:hover .rtsOut { background-position: 100% 0; }
+
+.RadTabStripTop_Fluke_Multiline .rtsLevel1 { background-position: 0 100%; background-repeat: repeat-x;  }
+
+
+
+/* </background positioning: tabs with hovers> */
+
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsOut
+{
+	padding: 0 0px; background:transparent url('img/static_tab_right_side_corner_10px_x_32px.gif') right 0px no-repeat; margin: 0px;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsSelected .rtsTxt, .RadTabStripVertical_Fluke_Multiline .rtsLevel1 .rtsSelected .rtsTxt
+{
+	background:transparent url('img/active_tab_top_border_1px_x_32px.gif') 0px 0px repeat-x; 
+	/* padding: 0 0px; */
+	/* margin: 0px; padding: 0px; */
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel .rtsSelected .rtsOut, .RadTabStrip_Fluke_Multiline .rtsLevel .rtsSelected:hover .rtsOut
+{
+	background:transparent url('img/active_tab_right_side_corner_10px_x_32px.gif') right 0px no-repeat; 
+	/* margin: 0px; padding: 0px; */
+}
+
+.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsTxt
+{
+	padding: 0 0px; 
+	background:transparent url('img/static_tab_top_border_1px_x_32px.gif') 0px 0px repeat-x;
+	margin: 0px;
+	padding-right:0px;
+}
+
+div.RadTabStrip_Fluke_Multiline .rtsLevel1 .rtsTxt,
+div.RadTabStripVertical_Fluke_Multiline .rtsLevel1 .rtsTxt 
+{
+	 padding: 0px;
+}
+
+.RadTabStrip_Fluke_Multiline .rtsIn, .RadTabStripVertical_Fluke_Multiline .rtsIn
+{
+	padding: 0px;
+}
